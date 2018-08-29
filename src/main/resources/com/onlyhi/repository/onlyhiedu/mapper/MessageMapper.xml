@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.onlyhi.repository.onlyhiedu.mapper.MessageMapper" >
+  <resultMap id="BaseResultMap" type="com.onlyhi.repository.onlyhiedu.mbg_po.Message" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="msg_id" property="msgId" jdbcType="VARCHAR" />
+    <result column="send_msg" property="sendMsg" jdbcType="VARCHAR" />
+    <result column="code" property="code" jdbcType="VARCHAR" />
+    <result column="send_time" property="sendTime" jdbcType="TIMESTAMP" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="send_info" property="sendInfo" jdbcType="VARCHAR" />
+    <result column="extno" property="extno" jdbcType="VARCHAR" />
+    <result column="send_type" property="sendType" jdbcType="INTEGER" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.onlyhi.repository.onlyhiedu.mbg_po.Message" extends="BaseResultMap" >
+    <result column="send_phone" property="sendPhone" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, msg_id, send_msg, code, send_time, `status`, send_info, extno, send_type
+  </sql>
+  <sql id="Blob_Column_List" >
+    send_phone
+  </sql>
+  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.MessageExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from message
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.MessageExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from message
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from message
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from message
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.MessageExample" >
+    delete from message
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.Message" >
+    insert into message (id, msg_id, send_msg, 
+      code, send_time, `status`, 
+      send_info, extno, send_type, 
+      send_phone)
+    values (#{id,jdbcType=BIGINT}, #{msgId,jdbcType=VARCHAR}, #{sendMsg,jdbcType=VARCHAR}, 
+      #{code,jdbcType=VARCHAR}, #{sendTime,jdbcType=TIMESTAMP}, #{status,jdbcType=INTEGER}, 
+      #{sendInfo,jdbcType=VARCHAR}, #{extno,jdbcType=VARCHAR}, #{sendType,jdbcType=INTEGER}, 
+      #{sendPhone,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.Message" >
+    insert into message
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="msgId != null" >
+        msg_id,
+      </if>
+      <if test="sendMsg != null" >
+        send_msg,
+      </if>
+      <if test="code != null" >
+        code,
+      </if>
+      <if test="sendTime != null" >
+        send_time,
+      </if>
+      <if test="status != null" >
+        `status`,
+      </if>
+      <if test="sendInfo != null" >
+        send_info,
+      </if>
+      <if test="extno != null" >
+        extno,
+      </if>
+      <if test="sendType != null" >
+        send_type,
+      </if>
+      <if test="sendPhone != null" >
+        send_phone,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="msgId != null" >
+        #{msgId,jdbcType=VARCHAR},
+      </if>
+      <if test="sendMsg != null" >
+        #{sendMsg,jdbcType=VARCHAR},
+      </if>
+      <if test="code != null" >
+        #{code,jdbcType=VARCHAR},
+      </if>
+      <if test="sendTime != null" >
+        #{sendTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="sendInfo != null" >
+        #{sendInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="extno != null" >
+        #{extno,jdbcType=VARCHAR},
+      </if>
+      <if test="sendType != null" >
+        #{sendType,jdbcType=INTEGER},
+      </if>
+      <if test="sendPhone != null" >
+        #{sendPhone,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.MessageExample" resultType="java.lang.Integer" >
+    select count(*) from message
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update message
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.msgId != null" >
+        msg_id = #{record.msgId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sendMsg != null" >
+        send_msg = #{record.sendMsg,jdbcType=VARCHAR},
+      </if>
+      <if test="record.code != null" >
+        code = #{record.code,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sendTime != null" >
+        send_time = #{record.sendTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.status != null" >
+        `status` = #{record.status,jdbcType=INTEGER},
+      </if>
+      <if test="record.sendInfo != null" >
+        send_info = #{record.sendInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.extno != null" >
+        extno = #{record.extno,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sendType != null" >
+        send_type = #{record.sendType,jdbcType=INTEGER},
+      </if>
+      <if test="record.sendPhone != null" >
+        send_phone = #{record.sendPhone,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map" >
+    update message
+    set id = #{record.id,jdbcType=BIGINT},
+      msg_id = #{record.msgId,jdbcType=VARCHAR},
+      send_msg = #{record.sendMsg,jdbcType=VARCHAR},
+      code = #{record.code,jdbcType=VARCHAR},
+      send_time = #{record.sendTime,jdbcType=TIMESTAMP},
+      `status` = #{record.status,jdbcType=INTEGER},
+      send_info = #{record.sendInfo,jdbcType=VARCHAR},
+      extno = #{record.extno,jdbcType=VARCHAR},
+      send_type = #{record.sendType,jdbcType=INTEGER},
+      send_phone = #{record.sendPhone,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update message
+    set id = #{record.id,jdbcType=BIGINT},
+      msg_id = #{record.msgId,jdbcType=VARCHAR},
+      send_msg = #{record.sendMsg,jdbcType=VARCHAR},
+      code = #{record.code,jdbcType=VARCHAR},
+      send_time = #{record.sendTime,jdbcType=TIMESTAMP},
+      `status` = #{record.status,jdbcType=INTEGER},
+      send_info = #{record.sendInfo,jdbcType=VARCHAR},
+      extno = #{record.extno,jdbcType=VARCHAR},
+      send_type = #{record.sendType,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.Message" >
+    update message
+    <set >
+      <if test="msgId != null" >
+        msg_id = #{msgId,jdbcType=VARCHAR},
+      </if>
+      <if test="sendMsg != null" >
+        send_msg = #{sendMsg,jdbcType=VARCHAR},
+      </if>
+      <if test="code != null" >
+        code = #{code,jdbcType=VARCHAR},
+      </if>
+      <if test="sendTime != null" >
+        send_time = #{sendTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null" >
+        `status` = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="sendInfo != null" >
+        send_info = #{sendInfo,jdbcType=VARCHAR},
+      </if>
+      <if test="extno != null" >
+        extno = #{extno,jdbcType=VARCHAR},
+      </if>
+      <if test="sendType != null" >
+        send_type = #{sendType,jdbcType=INTEGER},
+      </if>
+      <if test="sendPhone != null" >
+        send_phone = #{sendPhone,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.Message" >
+    update message
+    set msg_id = #{msgId,jdbcType=VARCHAR},
+      send_msg = #{sendMsg,jdbcType=VARCHAR},
+      code = #{code,jdbcType=VARCHAR},
+      send_time = #{sendTime,jdbcType=TIMESTAMP},
+      `status` = #{status,jdbcType=INTEGER},
+      send_info = #{sendInfo,jdbcType=VARCHAR},
+      extno = #{extno,jdbcType=VARCHAR},
+      send_type = #{sendType,jdbcType=INTEGER},
+      send_phone = #{sendPhone,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.Message" >
+    update message
+    set msg_id = #{msgId,jdbcType=VARCHAR},
+      send_msg = #{sendMsg,jdbcType=VARCHAR},
+      code = #{code,jdbcType=VARCHAR},
+      send_time = #{sendTime,jdbcType=TIMESTAMP},
+      `status` = #{status,jdbcType=INTEGER},
+      send_info = #{sendInfo,jdbcType=VARCHAR},
+      extno = #{extno,jdbcType=VARCHAR},
+      send_type = #{sendType,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -1,0 +1,350 @@
+
+.main {
+  //filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#000,endcolorstr=#202227,gradientType=0);
+  //-ms-filter:alpha(opacity=100 finishopacity=50 style=1 startx=0,starty=0,finishx=0,finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#000,endcolorstr=#202227,gradientType=0);/*IE8*/
+  background:#000; /* 一些不支持背景渐变的浏览器 */
+  //background:-moz-linear-gradient(top, #000, #202227);
+  //background: -webkit-gradient(linear, 0 0, 0 bottom, from(#000), to(#202227));
+  padding-bottom: 115px;
+  .content {
+    width: 1200px;
+    margin:0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  .bar1 img {
+    width: 100%;
+    display: block;
+  }
+  .bar2{
+    margin-top: 200px;
+    position: relative;
+    .bar1Body{
+      background: url("../images/darkHorse/b1C.png") no-repeat center;
+      height: 686px;
+      li{
+        float: left;
+        width: 598px;
+        height: 351px;
+        cursor: pointer;
+        padding-top: 150px;
+        position: relative;
+      }
+      li:nth-child(2n-1){
+        text-align: right;
+        padding-right: 30px;
+      }
+      li:nth-child(2n){
+        padding-left: 30px;
+        text-align: left;
+      }
+      li:first-child{
+        img:nth-child(2){
+          position: absolute;
+          right: -150px;
+          bottom: 191px;
+          display: none;
+        }
+      }
+      li:nth-child(2){
+        img:nth-child(2){
+          position: absolute;
+          left: -21px;
+          bottom: 191px;
+          display: none;
+        }
+      }
+      li:nth-child(3){
+        img:nth-child(2){
+          position: absolute;
+          left: 196px;
+          top: 157px;
+          display: none;
+        }
+      }
+      li:nth-child(4){
+        img:nth-child(2){
+          position: absolute;
+          left:-22px;
+          top: 157px;
+          display: none;
+        }
+      }
+      li:hover{
+        img:nth-child(2){
+          display: block;
+        }
+      }
+      li:first-child:hover{
+        background: url(../images/darkHorse/a12.png) no-repeat bottom right;
+      }
+      li:nth-child(2):hover{
+        background: url(../images/darkHorse/a22.png) no-repeat bottom left;
+      }
+      li:nth-child(3):hover{
+        background: url(../images/darkHorse/a32.png) no-repeat top right;
+      }
+      li:nth-child(4):hover{
+        background: url(../images/darkHorse/a42.png) no-repeat top left;
+      }
+    }
+    .bar1L{
+      position: absolute;
+      width: 666px;
+      height: 409px;
+      background: url(../images/darkHorse/b1L.png) no-repeat center;
+      bottom: -150px;
+      left: 0;
+    }.bar1R{
+       position: absolute;
+       width: 610px;
+       height: 409px;
+       background: url(../images/darkHorse/b1R.png) no-repeat center;
+       bottom: -150px;
+       right: 0;
+     }
+  }
+  .bar3{
+    height: 925px;
+    background: url(../images/darkHorse/b2.png) no-repeat center;
+    .content{
+      img:first-child{
+        display: block;
+        margin: 0 auto;
+        margin-top: 160px;
+      }
+      img:nth-child(2){
+        display: block;
+        margin: 0 auto;
+        margin-top: 85px;
+        margin-left: 3.4%;
+      }
+    }
+  }
+  .bar4{
+    background: url(../images/darkHorse/b2.png) no-repeat top left;
+
+    >img:first-child{
+      display: block;
+      margin: 0 auto;
+      margin-top: 126px;
+    }
+    div.content{
+      width: 80%;
+      min-width: 1200px;
+      margin: 0;
+      margin-left: -2%;
+      div{
+        position: relative;
+        width: 0;
+        overflow: hidden;
+        //height: 500px;
+        margin:0;
+
+        img{
+          display: block;
+          margin-top: 54px;
+          width:79vw;
+          min-width: 960px;
+          margin-left:0;
+        }
+      }
+    }
+  }
+  .bar5{
+    height: 737px;
+    background: url(../images/darkHorse/b5.png) no-repeat center;
+    p{
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      padding-top: 450px;
+    }
+  }
+  .bar6{
+    >img:first-child{
+      display: block;
+      margin: 0 auto;
+    }
+    div.bar6Body{
+      background: url(../images/darkHorse/b6.png) no-repeat bottom left;
+      .content{
+        position: relative;
+        >img{
+          display: block;
+          margin: 0 auto;
+          margin-top: 100px;
+        }
+        .conNav{
+          p{
+            position: absolute;
+            width: 195px;
+            height: 195px;
+            border-radius: 200px;
+            cursor: pointer;
+            //background-color: red;
+            z-index: 3;
+          }
+          p:first-child{
+            top: 13px;
+            left: 404px;
+          }
+          p:nth-child(2){
+            top: 13px;
+            left: 603px;
+          }
+          p:nth-child(3){
+            top: 187px;
+            left: 703px;
+          }
+          p:nth-child(4){
+             top: 359px;
+             left: 603px;
+           }
+          p:nth-child(5){
+            top: 359px;
+            left: 403px;
+          }
+        }
+        .conShow{
+          div{
+            width: 472px;
+            display: none;
+            img{
+              display: block;
+            }
+            p{
+              margin-top: 10px;
+              color: #fff;
+              font-size: 24px;
+              line-height: 35px;
+            }
+          }
+          div:first-child{
+            position: absolute;
+            left: 0;
+            top: 70px;
+          }
+          div:nth-child(2){
+            position: absolute;
+            top: 70px;
+            right:0px;
+            p{
+              margin-left: 110px;
+            }
+          }
+          div:nth-child(3){
+            position: absolute;
+            top: 234px;
+            right: 0px;
+            p{
+              margin-left: 231px;
+            }
+          }
+          div:nth-child(4){
+            position: absolute;
+            top: 400px;
+            right: 0px;
+            p{
+              margin-left: 100px;
+            }
+          }
+          div:nth-child(5){
+            position: absolute;
+            top: 410px;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+  .bar7{
+    background: url(../images/darkHorse/b7.png) no-repeat top center;
+    >img:first-child{
+      display: block;
+      margin: 0 auto;
+      padding-top:180px;
+    }
+    div.bar7Body{
+      background: url(../images/darkHorse/b6.png) no-repeat bottom left;
+      div.content{
+        position: relative;
+        img:first-child {
+          display: block;
+          margin: 0 auto;
+          margin-top: 135px;
+        }
+        img:nth-child(2) {
+          position: absolute;
+          top: 62px;
+          left: 124px;
+        }
+        img:nth-child(3) {
+          position: absolute;
+          top: 222px;
+          left: 58px;
+        }
+        img:nth-child(4) {
+          position: absolute;
+          top: 158px;
+          right: 100px;
+        }
+        img:nth-child(5) {
+          position: absolute;
+          top: 346px;
+          right: 5px;
+        }
+        img:nth-child(6) {
+          position: absolute;
+          top: 380px;
+          left: -85px;
+        }
+      }
+    }
+  }
+  .bar8{
+    background: url(../images/darkHorse/b8.png) no-repeat bottom center;
+    img:first-child{
+      display: block;
+      margin: 0 auto;
+      padding-top: 170px;
+    }
+    img:nth-child(2){
+      display: block;
+      width: 76%;
+      margin-left: 16%;
+      margin-top: 90px;
+    }
+    .lastImg{
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.video-window {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.video-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.video-info {
+  position: absolute;
+  width: 888px;
+  z-index: 99;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}

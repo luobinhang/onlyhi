@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嗨课堂-足不出户，遇见天下 </title>
+    <link rel="icon" href="../../images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../buy_css/payment.css">
+    <link rel="stylesheet" href="../buy_css/common.css">
+</head>
+<body style="min-width: 1180px">
+<a href='AliPay.html' target='_blank' style="display: none;"> <span id="AliPay_trigger">点击支付跳转</span></a>
+<a href='javascript:;' target='_blank' style="display: none;"> <span id="BaiduUmoney_trigger">点击支付跳转</span></a>
+<a href='javascript:;' target='_blank' style="display: none;"> <span id="MianXi_trigger">点击支付跳转</span></a>
+
+<div class="nav">
+    <div id="overlay">
+
+    </div>
+    <div id="weixin">
+        <a class="complete" href="javascript:;">支付完成</a>
+        <img class="close" src="../buy_images/payment/close.png" width=15 height=15 alt="">
+    </div>
+    <div id="tool">
+        <img id="login" src="../buy_images/payment/logo.png" width=121 height=43 alt="">
+        <img id="close" src="../buy_images/payment/close.png" width=15 height=15 alt="">
+        <p class="F14">支付完成前，请不要关闭此支付验证窗口</p>
+        <p class="F14" style="margin-bottom: 30px">支付完成后，请根据您支付情况点击下面的按钮</p>
+        <a class="FL F14" href="javascript:;" id="complete">支付遇到问题</a>
+        <a class="FR F14 complete" href="javascript:;" id="problem">支付完成</a>
+    </div>
+    <div id="BaiduUmoney">
+        <img id="close1" src="../buy_images/payment/close.png" width=15 height=15 alt="">
+        <p class="title">请输入分期贷款人信息</p>
+        <p class="msg">（监护人信息）</p>
+        <p class="name"><label>姓名：</label><input type="text"></p>
+        <p class="phone"><label>手机号码：</label><input type="text"></p>
+        <!--<p class="IdCard"><label>身份证号码：</label><input type="text"></p>-->
+        <button class="put">提交分期</button>
+    </div>
+    <div id="MianXi">
+        <img id="close2" src="../buy_images/payment/close.png" width=15 height=15 alt="">
+        <p class="title">请输入分期贷款人信息</p>
+        <p class="msg">（监护人信息）</p>
+        <p class="name"><label>姓名：</label><input type="text"></p>
+        <p class="phone"><label>手机号码：</label><input type="text"></p>
+        <p class="applyTerm"><label>选择分期：</label>
+            <select><option value="6">6期</option><option value="12">12期</option></select></p>
+        <!--<p class="IdCard"><label>身份证号码：</label><input type="text"></p>-->
+        <button id="Mput">提交分期</button>
+    </div>
+    <div class="content site-nav-r">
+        <ul>
+            <li>你好，<i class="userName_name"></i></li>
+            <li class="line"></li>
+            <li class="login0"><a href="../personal.html" class="">登录</a></li>
+            <li class="Register">
+                <div class="Register2"><a href="javascript:;">注册</a></div>
+                <!--<div class="Register_over0" style="display: none;">-->
+                <!--<a href="javascript:;">退出</a>-->
+                <!--</div>-->
+            </li>
+            <li class="line"></li>
+            <li class="line"></li>
+            <li><span class="font3"></span>400-876-3300</li>
+        </ul>
+    </div>
+    <div id="ICBCPayMethod">
+        <div>
+            <img class="closeICBC" src="../buy_images/payment/close.png" width=15 height=15 alt="">
+            <img class="ICBCCode" src="../buy_images/payment/ICBCPay.jpg" alt="二维码">
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="content">
+        <div class="FL left">
+            <a href="../../index.html"><img src="../../images/logo1.png" width=121  alt="嗨课堂logo"></a>
+            <ul>
+                <li><a href="../../index.html">首页</a></li>
+                <li><a href="../personal.html">我的嗨课堂</a></li>
+                <li><a href="../course.html">课程优惠</a></li>
+                <li><a  href="../summer.html">常规暑秋</a></li>
+                <li><a  href="../summer1.html">精品暑秋</a></li>
+                <!--<li><a href="../summer.html">暑期优惠</a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="content clearfix">
+        <div class="order clearfix">
+            <div class="orderLeft FL">
+                <p><span class="orderGrade"><span id="s_grade"></span>课程<span id="s_keshi"></span>小时课程包</span><span
+                        style="font-size: 12px">交易方：上海济忆网络科技有限公司</span></p>
+                <!--<p>支付帐号：41023456776@luna9216.com<span id="OrderID"></span></p>-->
+                <p id="lessThan120" style="display: none;color:#f40009;font-size: 16px;">* 小于120课时课程包不支持分期</p>
+            </div>
+            <div class="orderRight FR">
+                <p class="Money color F16">订单金额：<span id="s_new"></span>元</p>
+                <div class="F12 color">请于<span id="time_expire"></span>之前完成订单支付，超过时间需重新下单，付款剩余时间：
+                <p id="count"><span id="Hour"></span>小时 <span id="minute"></span>分 <span id="second"></span>秒
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="payment">
+            <div class="paymentTop clearfix">
+                <p class="paymentTopR">支付遇到问题？也可以去我们的<a id="taobao" href="javascript:;" target=_blank>淘宝店铺支付</a>哦！</p>
+                <div class="paymentTopL">
+                    <p class="F14">选择支付方式</p>
+                    <ul id="payment">
+                        <li data-payMethod="wx_pub_qr" class="weixin pick0 pick" style="color: #FFF;">微信支付</li>
+                        <li data-payMethod="alipay_pc_direct" class="alipay pick0">支付宝钱包</li>
+                        <!--<li data-payMethod="upacp_pc" disabled="true" class="unionpay pick0">银联支付</li>-->
+                        <li data-payMethod="BaiduUmoney" disabled="true" id="baiduMoney" class="BaiduUmoney pick0"></li>
+                        <li data-payMethod="MianXi" class="MianXi pick0" id="haiMi"></li>
+                        <li data-payMethod="offline_transfer" id="offline" class="offLine outLine pick0">线下转账</li>
+                        <li data-payMethod="ICBC_E" id="ICBC_E" class="ICBC_E pick0"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="paymentBottom clearfix">
+                <div class="ICBCback">
+                    <h3><img src="../buy_images/payment/bank_logo.png" width=57 height=19 alt="">&nbsp;&nbsp;<span>工商银行打浦桥支行</span></h3>
+                    <p class="F14 color">户名：上海济忆网络科技有限公司 <br>
+                        开户银行：中国工商银行有限公司上海市打浦桥支行 <br>
+                        账号：1001 1981 0900 6878 045</p>
+                </div>
+            </div>
+        </div>
+        <a class="next0 next1" id="payAtOnce"  href="javascript:;" target="_blank">
+            <button class="next">
+                支付订单<img src="../buy_images/Maximise.png" width=9 height=6 alt="确认下一步">
+            </button>
+        </a>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer1">
+        <div class="content">
+            <a class="footer_logo" href="javascript:;"></a>
+            <div class="footer-us t_c">
+                <a href="../../about-us.html">关于我们</a><span></span><a href="javascript:;">联系我们</a><span></span><a
+                    href="javascript:;">新闻资讯</a>
+                <p>Copyright © 2017 上海济忆网络科技有限公司( 沪ICP备17009480号-5 )</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../js/jquery.js"></script>
+<script src="../../js/lib/jquery-cookie/jquery.cookie.js"></script>
+<script src="../../js/gotoTop.js"></script>
+<script src="../../js/login.js"></script>
+<script src="../../js/api-config.js"></script>
+<script src="../buy_js/common.js"></script>
+<script src="../buy_js/pingpp-js/dist/pingpp.js"></script>
+<script src="../buy_js/payment.js"></script>
+<!--百度统计代码-->
+<script>
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,486 @@
+.main {
+  overflow: hidden;
+  .join {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    background-color: #f40009;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .barTitle {
+    padding-top: 60px;
+    text-align: center;
+    color: #0f1d33;
+    font-size: 40px;
+    line-height: 35px;
+    span {
+      font-size: 26px;
+      color: #989898;
+    }
+  }
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .bar1 {
+    position: relative;
+    img {
+      width: 100%;
+      display: block;
+    }
+    .join {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #cc3339;
+    }
+  }
+  .bar2 {
+    .bar2Body {
+      display: flex;
+      padding: 0 10px;
+      margin-top: 70px;
+      li {
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+        p {
+          margin-top: 23px;
+          text-align: center;
+          font-size: 26px;
+          color: #0f1d33;
+          line-height: 30px;
+          span {
+            font-size: 18px;
+            margin-left: -5px;
+            color: #989898;
+          }
+        }
+      }
+    }
+    .join {
+      margin-top: 54px;
+      margin-bottom: 204px;
+    }
+  }
+  .bar3 {
+    background: url(../images/advantage/b3.jpg) no-repeat center;
+    height: 550px;
+    background-color: #f6f7fe;
+    .bar3Body {
+      position: relative;
+      height: 100%;
+      .courseInfo {
+        .barTitle{
+          text-align: left;
+          padding-top: 72px;
+          line-height: 52px;
+          margin-bottom: 60px;
+        }
+        .borderBottom{
+          border-bottom:1px solid #cccdd2;
+        }
+        .info1{
+          width: 560px;
+          margin: 0;
+          p{
+            display: inline-block;
+            height: 120px;
+            width: 300px;
+            text-align: center;
+            font-size: 18px;
+            color:#0f1d33;
+           //letter-spacing: 1px;
+            img{
+              display: block;
+              margin-top: 20px;
+              margin-bottom: 20px;
+            }
+            a{
+              display: block;
+              font-size: 36px;
+              color:#f40009;
+
+            }
+            i{
+              display: block;
+            }
+          }
+          p:first-child{
+            width: 250px;
+            border-right:1px solid #cccdd2;
+          }
+        }
+      }
+      .person {
+        position: absolute;
+        right: -85px;
+        bottom: 0;
+      }
+    }
+  }
+  .bar4 {
+    background: url(../images/advantage/b4.jpg) no-repeat center;
+    height: 561px;
+    .bar4Body {
+      .barTitle{
+        text-align: left;
+        color:#fff;
+        padding-top: 140px;
+      }
+      .info2{
+        color:#fff;
+        font-size: 26px;
+        margin-top: 62px;
+      }
+      .join{
+        margin: 0;
+        margin-top: 100px;
+      }
+    }
+  }
+  .bar5 {
+    background: #9e0006 url(../images/advantage/b5.jpg) no-repeat center;
+    height: 660px;
+    padding-bottom: 35px;
+    .bar5Head {
+      padding-left: 87px;
+      p:first-child {
+        font-size: 40px;
+        line-height: 40px;
+        color: #fff;
+        padding: 95px 0 18px 0;
+      }
+      p:nth-child(2) {
+        font-size: 26px;
+        line-height: 26px;
+        color: #fff;
+      }
+    }
+    .bar5Body {
+      position: relative;
+      height: 471px;
+      .point{
+        background: url(../images/advantage/point.png) no-repeat center;
+        width: 81px;
+        height: 81px;
+        position: absolute;
+        left: -20px;
+        top: 196px;
+      }
+      .textInfo{
+        position: absolute;
+        font-size: 24px;
+        color:#fff;
+        p{
+          height: 84px;
+          width: 2px;
+          display: inline-block;
+          position: relative;
+          margin-right: 10px;
+          vertical-align: 3px;
+          i{
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            border-radius: 4px;
+            position: absolute;
+            bottom: 0;
+            left: -3px;
+          }
+        }
+        span{
+          cursor:pointer;
+          &:hover{
+            .textDes{
+              display: block;
+            }
+          }
+        }
+        >div.textDes{
+          position: absolute;
+          color: #12192b;
+          font-size: 18px;
+          background-color: #fff;
+          border-radius: 10px;
+          padding: 14px;
+          line-height: 28px;
+          height: 110px;
+          width: 374px;
+          display: none;
+        }
+      }
+      .textInfo span:hover{
+        &+.textDes{
+          display: block;
+        }
+      }
+      .textInfo:nth-child(2n){
+        p{
+          vertical-align: -73px;
+          i{
+            top:0;
+          }
+        }
+      }
+      .t1{
+        top: 212px;
+        left: 52px;
+        p,i{
+          background-color:#f47301;
+        }
+        >div.textDes{
+          top: 100px;
+          left: 0;
+        }
+      }
+      .t2{
+        z-index: 2;
+        top: 68px;
+        left: 235px;
+        p,i{
+          background-color:#f46902;
+        }
+        >div.textDes{
+          top: 40px;
+          left: 16px;
+        }
+      }
+      .t3{
+        top: 170px;
+        left: 533px;
+        p,i{
+          background-color:#f43a15;
+        }
+        >div.textDes{
+          top: 100px;
+          left: 17px;
+        }
+      }
+      .t4{
+        top: 36px;
+        left: 742px;
+        p,i{
+          background-color:#f44705;
+        }
+        >div.textDes{
+          top: 40px;
+          left: 16px;
+        }
+      }
+      .t5{
+        top: 230px;
+        left: 1004px;
+        p,i{
+          background-color:#f42107;
+        }
+        >div.textDes{
+          top: 95px;
+          right: 0;
+        }
+      }
+    }
+  }
+  .bar6 {
+    .bar8Head {
+      p:first-child {
+        font-size: 40px;
+        line-height: 40px;
+        color: #0f1d33;
+        padding: 75px 0 11px 0;
+        text-align: center;
+      }
+      p:nth-child(2) {
+        font-size: 26px;
+        line-height: 26px;
+        color: #989898;
+        text-align: center;
+      }
+    }
+    .bar8Body {
+      position: relative;
+      img:first-child {
+        display: block;
+        margin-top: 25px;
+        margin-left: 221px;
+      }
+      img:nth-child(2) {
+        position: absolute;
+        top: 62px;
+        left: 114px;
+      }
+      img:nth-child(3) {
+        position: absolute;
+        top: 222px;
+        left: 58px;
+      }
+      img:nth-child(4) {
+        position: absolute;
+        top: 158px;
+        right: 118px;
+      }
+      img:nth-child(5) {
+        position: absolute;
+        top: 346px;
+        right: 25px;
+      }
+      img:nth-child(6) {
+        position: absolute;
+        top: 380px;
+        left: -90px;
+      }
+    }
+  }
+  .bar7 {
+     background-color: #0f1d34;
+     padding-bottom: 60px;
+     .barTitle {
+       color: #fff;
+       span {
+         color: #eee;
+       }
+     }
+     .bar7Body {
+       margin: 270px auto 129px;
+       position: relative;
+       > img {
+         display: block;
+         margin: 0 auto;
+       }
+       .bar7-overlay {
+         width: 315px;
+         height: 316px;
+         top: 0px;
+         left: 50%;
+         margin-left: -157.5px;
+         position: absolute;
+         border-radius: 158px;
+         overflow: hidden;
+         z-index: 2;
+         & > div {
+           position: absolute;
+           cursor: pointer;
+           &:nth-of-type(1) {
+             width: 142px;
+             height: 37px;
+             transform: rotate(-68deg);
+             left: 122px;
+             bottom: 218px;
+           }
+           &:nth-of-type(2) {
+             width: 158px;
+             height: 37px;
+             transform: rotate(-38deg);
+             left: 161px;
+             bottom: 224px;
+           }
+           &:nth-of-type(3) {
+             width: 112px;
+             height: 106px;
+             transform: rotate(51deg);
+             left: 214px;
+             bottom: 108px;
+           }
+           &:nth-of-type(4) {
+             width: 133px;
+             height: 97px;
+             transform: rotate(33deg);
+             left: 148px;
+             bottom: 14px;
+           }
+           &:nth-of-type(5) {
+             width: 130px;
+             height: 137px;
+             transform: rotate(-5deg);
+             left: 5px;
+             bottom: 12px;
+           }
+           &:nth-of-type(6) {
+             width: 181px;
+             height: 176px;
+             transform: rotate(103deg);
+             left: -1px;
+             bottom: 164px;
+           }
+         }
+       }
+       .bar7-detail {
+         & > p {
+           //display: none;
+           cursor: pointer;
+           position: absolute;
+           text-align: left;
+           color: #fff;
+           font-size: 18px;
+           position: absolute;
+           line-height: 28px;
+           padding-top: 60px;
+           span {
+             font-size: 20px;
+           }
+           &:nth-of-type(1) {
+             width: 400px;
+             height: 245px;
+             background: url(../images/advantage/13.png) no-repeat center;
+             top: -225px;
+             right: 131px;
+             padding-left: 52px;
+           }
+           &:nth-of-type(2) {
+             width: 498px;
+             height: 184px;
+             background: url(../images/advantage/32.png) no-repeat center;
+             top: 2px;
+             right: 14px;
+             padding-left: 150px;
+           }
+           &:nth-of-type(3) {
+             width: 421px;
+             height: 191px;
+             background: url(../images/advantage/48.png) no-repeat center;
+             top: 210px;
+             right: 45px;
+             padding-left: 76px;
+             padding-top: 68px;
+           }
+           &:nth-of-type(4) {
+             width: 555px;
+             height: 186px;
+             background: url(../images/advantage/64.png) no-repeat center;
+             top: 215px;
+             left: 50px;
+             padding-left: 23px;
+             padding-top: 64px;
+           }
+           &:nth-of-type(5) {
+             width: 488px;
+             height: 264px;
+             background: url(../images/advantage/83.png) no-repeat center;
+             top: -16px;
+             left: 0px;
+             padding-left: 16px;
+             padding-top: 64px;
+           }
+           &:nth-of-type(6) {
+             width: 447px;
+             height: 233px;
+             background: url(../images/advantage/100.png) no-repeat center;
+             top: -224px;
+             left: 117px;
+             padding-left: 20px;
+           }
+         }
+       }
+     }
+   }
+}
+
+
+
+

@@ -1,0 +1,522 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ab0103 url(../images/Anniversary/bg.png) no-repeat center;
+  background-size: cover;
+  min-width: 1200px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+img {
+  border: 0;
+  max-width: 100%;
+}
+input {
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+.f4 {
+  color: #f40009;
+}
+.main {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.bar-btn {
+  width: 325px;
+  height: 66px;
+  font-size: 26px;
+  background: #fcd002;
+  margin: 67px auto 67px auto;
+  border-radius: 5px;
+}
+.bar-title {
+  background: url("../images/Anniversary/titlebg.png") no-repeat center;
+  height: 109px;
+  text-align: center;
+  color: #fdffff;
+  font-size: 42px;
+  font-weight: normal;
+  line-height: 109px;
+}
+.bg-left {
+  background: url("../images/Anniversary/bg-left.png");
+  background-size: cover;
+  width: 173px;
+  height: 452px;
+  position: absolute;
+  left: -94px;
+  bottom: -219px;
+}
+.bg-right {
+  background: url("../images/Anniversary/bg-right.png");
+  background-size: cover;
+  width: 173px;
+  height: 452px;
+  position: absolute;
+  right: -94px;
+  bottom: -219px;
+}
+.bg-right2 {
+  background: url("../images/Anniversary/bg-right2.png");
+  background-size: cover;
+  width: 173px;
+  height: 452px;
+  position: absolute;
+  right: -94px;
+  bottom: -219px;
+}
+.backToTop {
+  z-index: 6;
+}
+.banner {
+  margin-top: -80px;
+  background-size: cover;
+  height: 700px;
+  position: relative;
+}
+.banner .banner-center {
+  left: 50%;
+  top: 100px;
+  width: 571px;
+  height: 521px;
+  margin-left: -285.5px;
+  position: absolute;
+  z-index: 1;
+}
+.bar2 {
+  margin-top: 103px;
+  margin-bottom: 100px;
+}
+.bar2 .main {
+  height: 655px;
+  background: #fdffff;
+  border-radius: 50px;
+}
+.bar2 .main .bar2-main {
+  background: url("../images/Anniversary/bar2-main.png") no-repeat center;
+  height: 653px;
+  background-size: cover;
+  position: absolute;
+  top: -103px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.bar2 .main .bar2-btn {
+  color: #0255ff;
+  position: absolute;
+  z-index: 5;
+  cursor: pointer;
+}
+.bar2 .main .u1-btn {
+  left: 360px;
+  top: 189px;
+}
+.bar2 .main .u2-btn {
+  left: 360px;
+  top: 475px;
+}
+.bar2 .main .u3-btn {
+  left: 890px;
+  top: 189px;
+}
+.bar2 .main .u4-btn {
+  left: 890px;
+  top: 475px;
+}
+.bar2 .main .bar2-detail {
+  width: 490px;
+  height: 305px;
+  border-radius: 10px;
+  color: #fff;
+  padding: 20px 40px;
+  background: rgba(171, 1, 3, 0.88);
+  box-shadow: 0px 4px 10px rgba(171, 1, 3, 0.88);
+  z-index: 999;
+  position: absolute;
+  display: none;
+}
+.bar2 .main .bar2-detail .bar2-window-title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+.bar2 .main .bar2-detail .bar2-window-main {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.bar2 .main .bar2-detail .bar2-window-btn {
+  width: 176px;
+  line-height: 50px;
+  color: #333;
+  background: #fcd002;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+}
+.bar2 .main .bar2-detail1 {
+  left: 540px;
+  top: 50px;
+}
+.bar2 .main .bar2-detail2 {
+  left: 540px;
+  top: 336px;
+}
+.bar2 .main .bar2-detail3 {
+  right: 540px;
+  top: 50px;
+}
+.bar2 .main .bar2-detail4 {
+  right: 540px;
+  top: 336px;
+}
+.bar2 .main .bar2-detail1 .bar2-arrow,
+.bar2 .main .bar2-detail2 .bar2-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -20px;
+  top: 50%;
+  margin-top: -10px;
+  border-top: 10px solid transparent;
+  border-right: 20px solid rgba(171, 1, 3, 0.88);
+  border-bottom: 10px solid transparent;
+}
+.bar2 .main .bar2-detail3 .bar2-arrow,
+.bar2 .main .bar2-detail4 .bar2-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -20px;
+  top: 50%;
+  margin-top: -10px;
+  border-top: 10px solid transparent;
+  border-left: 20px solid rgba(171, 1, 3, 0.88);
+  border-bottom: 10px solid transparent;
+}
+.bar3 {
+  margin-bottom: 100px;
+}
+.bar3 .main {
+  height: 400px;
+  background: url("../images/Anniversary/bar3-bg.png") no-repeat center;
+  border-radius: 50px;
+}
+.bar3 .main .bar3-time {
+  position: relative;
+  height: 160px;
+  color: #fff8db;
+  font-size: 26px;
+  line-height: 90px;
+}
+.bar3 .main .bar3-time span {
+  position: absolute;
+  left: 170px;
+  top: 40px;
+}
+.bar3 .main .bar3-time .digits {
+  position: absolute;
+  left: 404px;
+  top: 40px;
+}
+.bar3 .main .btn1 {
+  width: 325px;
+  height: 66px;
+  font-size: 26px;
+  color: #000;
+  text-align: center;
+  display: block;
+  margin: 10px auto 30px;
+  background: #fee302;
+  border-radius: 5px;
+}
+.bar3 .main .bar3_rule {
+  background: url("../images/Anniversary/rule.png") no-repeat center;
+  width: 408px;
+  height: 92px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-top: 14px;
+  font-size: 12px;
+  line-height: 28px;
+  color: #ffebc9;
+}
+.bar4 .main {
+  background: #fdffff;
+  border-radius: 50px;
+  padding-bottom: 10px;
+}
+.bar4 .main .bar4-girl {
+  width: 481px;
+  margin: 260px auto 0;
+}
+.bar4 .main .bar4-detail {
+  position: absolute;
+}
+.bar4 .main .bar4-detail .bar4-detail-title {
+  height: 70px;
+  display: table;
+  vertical-align: middle;
+}
+.bar4 .main .bar4-detail .bar4-detail-title p {
+  padding: 13px 8px 13px 0 ;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.bar4 .main .bar4-detail .bar4-detail-title p span {
+  height: 44px;
+  padding: 0 13px;
+  display: block;
+  background: #e66100;
+  line-height: 44px;
+  border-radius: 5px;
+  color: #fdffff;
+  font-size: 24px;
+}
+.bar4 .main .bar4-detail .bar4-detail-main {
+  width: 275px;
+  border: 2px solid #32695c;
+  border-radius: 10px;
+  padding: 13px;
+}
+.bar4 .main .bar4-detail1 {
+  top: 150px;
+  left: 50%;
+  margin-left: -137.5px;
+}
+.bar4 .main .bar4-detail2 {
+  top: 354px;
+  left: 96px;
+}
+.bar4 .main .bar4-detail3 {
+  top: 330px;
+  left: 824px;
+}
+.bar4 .main .bar4-detail3 .bar4-detail-main {
+  width: 318px;
+}
+.bar5 .main {
+  background: #fdffff;
+  border-radius: 50px;
+}
+.bar5 .main .bar5-title {
+  margin-top: 85px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.bar5 .main .bar5-title h3 {
+  font-size: 36px;
+  color: #000;
+  font-weight: normal;
+}
+.bar5 .main .bar5-title p {
+  font-size: 24px;
+  color: #575858;
+}
+.bar5 .main .bar5-content {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 40px 0 0;
+}
+.bar5 .main .bar5-content .bar5-mian {
+  width: 390px;
+  margin: 0 65px;
+  height: 490px;
+  float: left;
+}
+.bar5 .main .bar5-content .bar5-mian .bar5-img {
+  border: 10px solid #33b4fb;
+  box-shadow: 0 12px 30px rgba(255, 64, 25, 0.4);
+  width: 390px;
+  height: 265px;
+  overflow: hidden;
+}
+.bar5 .main .bar5-content .bar5-mian .bar5-img img {
+  display: block;
+  transition-duration: 1.5s;
+  -moz-transition-duration: 1.5s;
+  -webkit-transition-duration: 1.5s;
+  -ms-transition-duration: 1.5s;
+}
+.bar5 .main .bar5-content .bar5-mian .bar5-img:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+.bar5 .main .bar5-content .bar5-mian .bar5-mian-title {
+  font-size: 24px;
+  text-align: center;
+  background: url("../images/Anniversary/bar5-t.png") no-repeat 66px center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.bar5 .main .bar5-content .bar5-mian .bar5-mian-detail {
+  padding: 0 30px;
+}
+.bar6 .main {
+  background: #fdffff;
+  border-radius: 50px;
+  padding-bottom: 50px;
+}
+.bar6 .bar6-title {
+  margin-top: 85px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+.bar6 .bar6-title h3 {
+  font-size: 36px;
+  color: #000;
+  font-weight: normal;
+}
+.bar6 .bar6-title p {
+  font-size: 24px;
+  color: #575858;
+}
+.bar6 .bar6-main {
+  background: url("../images/Anniversary/bar6-center2.png") no-repeat center;
+  height: 733px;
+}
+.bar7 .main {
+  background: #fdffff;
+  border-radius: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.bar7 .main .bar7-top {
+  display: inline-block;
+  margin: 30px auto 60px;
+}
+.bar7 .main .bar7-top .bar7-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #f40009;
+  margin: 0 22.5px;
+  display: table;
+  float: left;
+}
+.bar7 .main .bar7-top .bar7-circle div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.bar7 .main .bar7-top .bar7-circle div p {
+  font-size: 30px;
+  line-height: 1.2;
+}
+.bar7 .main .bar7-left {
+  padding-left: 96px;
+}
+.bar7 .main .bar7-left .bar7-left-title {
+  padding-left: 30px;
+  border-left: 10px solid #f40009;
+  font-size: 24px;
+  color: #000;
+  line-height: 33px;
+  margin-bottom: 28px;
+}
+.bar7 .main .bar7-left .bar7-left-detail {
+  margin-bottom: 25px;
+}
+.bar7 .main .bar7-left .bar7-left-detail span {
+  width: 45px;
+  float: left;
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: 2px solid #f40009;
+  text-align: center;
+}
+.bar7 .main .bar7-left .bar7-left-detail b {
+  float: left;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: normal;
+  border-bottom: 2px solid #b1b2b2;
+  padding: 0 10px;
+}
+.bar7 .main .bar7-left .bar7-left-detail b label {
+  font-size: 19px;
+  line-height: 1;
+}
+.bar7 .main .bar7-right {
+  background: url("../images/Anniversary/pie.jpg");
+  right: 96px;
+  top: 300px;
+  width: 493px;
+  height: 333px;
+  position: absolute;
+}
+.bar8 {
+  padding-bottom: 100px;
+}
+.bar8 .main {
+  background: #fdffff;
+  border-radius: 50px;
+  text-align: center;
+}
+.bar8 .main .bar8-main {
+  display: inline-block;
+  padding: 80px 0;
+}
+.bar8 .main .bar8-detail {
+  width: 194px;
+  height: 195px;
+  float: left;
+  margin: 0 40px;
+  text-align: center;
+}
+.ribbon {
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  animation-timing-function: linear;
+}
+.firework canvas {
+  z-index: -9;
+}
+.nav {
+  position: relative;
+  z-index: 2;
+}
+.footer {
+  font-size: 12px;
+}
+.fixedBottom {
+  z-index: 999;
+}
+.banner-bg {
+  width: 100%;
+  height: 100%;
+  background: url('../images/Anniversary/banner2.jpg') no-repeat center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -99;
+}
+.header {
+  position: relative;
+  z-index: 10;
+}

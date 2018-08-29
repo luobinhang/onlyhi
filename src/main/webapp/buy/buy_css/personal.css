@@ -1,0 +1,234 @@
+body {
+  background-color: #F5F5F5;
+  text-align: center;
+}
+body .nav #overlay,
+body .nav #overlay-m {
+  background: #000;
+  filter: alpha(opacity=50);
+  /* IE的透明度 */
+  opacity: 0.5;
+  /* 透明度 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  /* 此处的图层要大于页面 */
+  display: none;
+}
+body .nav .close1 {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background: url("../buy_images/packet/close1.png") no-repeat center;
+}
+body .nav #overlay3 {
+  background-color: #FFF;
+  float: left;
+  height: 630px;
+  width: 430px;
+  background: url("../buy_images/packet/erweima_bg.jpg") no-repeat center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 0 34px;
+  box-sizing: border-box;
+  z-index: 9999;
+  display: none;
+}
+body .nav #overlay3 .overlay3Money {
+  width: 100%;
+  position: relative;
+  top: 280px;
+  text-align: center;
+}
+body .header {
+  background-color: #FFF;
+}
+body .main .study {
+  height: 140px;
+  line-height: 140px;
+  width: 100%;
+  position: relative;
+  font-size: 16px;
+}
+body .main .study img {
+  margin-right: 30px;
+}
+body .main .study .study_name {
+  display: inline-block;
+  float: left;
+  padding-left: 10px;
+}
+body .main .study .study_order {
+  float: right;
+  width: 110px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+body .main .study .study_order a {
+  display: block;
+  border-radius: 4px;
+  margin: 10px 0;
+  color: #FFF;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  width: 110px;
+  background-color: #f40009;
+}
+body .main .study_color {
+  background-color: #FFF;
+}
+body .main h3 {
+  line-height: 46px;
+  padding: 0 10px;
+  font-size: 20px;
+  margin-top: 15px;
+  text-align: left;
+}
+body .main .activity {
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+body .main .activity #personalCarousel {
+  height: 250px;
+}
+body .main .activity #personalCarousel .carousel-control {
+  background-image: none;
+}
+body .main .order {
+  background-color: #F5F5F5;
+}
+body .main .order #order {
+  border: 0;
+  display: flex;
+}
+body .main .order #order li {
+  width: 100%;
+  background-color: #FFF;
+}
+body .main .order #order li.active a {
+  background-color: #C2C2C2;
+  border: 0;
+  color: #FFF;
+}
+body .main .order #order li a {
+  font-size: 16px;
+  flex: 1;
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  border-left: 1px solid #E9E9E9;
+  line-height: 70px;
+  text-align: center;
+  font-weight: bold;
+  color: #767676;
+}
+body .main .order #order li a span {
+  margin-left: 10px;
+}
+body .main .order #order li a img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+body .main .order .orderList li {
+  width: 33.33%;
+  float: left;
+  text-align: left;
+  font-size: 15px;
+}
+body .main .order .orderList li img {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+body .main .order #orderList #OrderL {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+body .main .order #orderList table {
+  margin-top: 30px;
+  font-size: 14px;
+}
+body .main .order #orderList table td,
+body .main .order #orderList table th {
+  border: 1px solid #E0E0E0;
+  text-align: center;
+  height: 60px;
+  width: 17%;
+}
+body .main .order #orderList table thead {
+  font-size: 16px;
+}
+body .main .order #orderList table thead tr {
+  height: 40px;
+  background-color: #DEDEDE;
+}
+body .main .order #orderList table tbody tr {
+  border-left: 3px solid #f40009;
+}
+body .main .order #orderList table tbody tr td a {
+  line-height: 20px;
+  display: inline-block;
+  background-color: #f40009;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #FFF;
+}
+body .main .order #orderList table tbody tr td:first-child {
+  width: 20%;
+}
+body .main .order #orderList table tbody .split-list {
+  border-left: 0;
+}
+body .main .order #orderList table tbody .split-list td {
+  border: 0;
+  border-bottom: 1px solid #E0E0E0;
+}
+body .main .order #orderList table tbody .split-list td:first-child {
+  width: 20%;
+  padding-left: 50px;
+}
+body .main .order #orderList table tbody .toggle {
+  display: none;
+}
+body .main .order #orderList table tfoot td {
+  border: 0;
+}
+body .main .order #orderList #page {
+  margin-top: 20px;
+  text-align: right;
+}
+body .main .order #orderList #page a {
+  margin-left: 10px;
+  text-align: center;
+  line-height: 30px;
+  color: #FFF;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  background-color: #f40009;
+  display: inline-block;
+}
+body .main .order #orderList #page #allOrderList {
+  vertical-align: bottom;
+  margin-left: 5px;
+}

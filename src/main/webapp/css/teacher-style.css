@@ -1,0 +1,758 @@
+h1 {
+  font-size: 40px;
+  color: #33332d;
+}
+h1 span {
+  color: #f40009;
+}
+.banner-top {
+  padding-top: 60px;
+}
+.main .banner1 {
+  height: 400px;
+  background: url("../images/teacher-style/banner.jpg") no-repeat center;
+}
+.main .banner1 .content {
+  position: relative;
+  height: 100%;
+}
+.main .banner1 .content .center {
+  display: inline-block;
+  position: absolute;
+  left: 150px;
+  top: 28%;
+}
+.main .banner1 .content .center h1 {
+  color: #f40009;
+  line-height: 60px;
+}
+.main .banner1 .content .center p {
+  color: #585858;
+  font-size: 23px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.main .banner1 .content .center button {
+  width: 169px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #f40009;
+  color: #FFF;
+  font-size: 16px;
+}
+.main .banner2 {
+  padding-bottom: 60px;
+}
+.main .banner2 .content h2 {
+  font-size: 24px;
+  line-height: 90px;
+  color: #333333;
+}
+.main .banner2 .content .teacher {
+  text-align: center;
+}
+.main .banner2 .content .teacher .teacher-li {
+  display: inline-block;
+  width: 355px;
+  height: 376px;
+  margin: 0 5px;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  vertical-align: middle;
+  -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.16);
+  -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.16);
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.main .banner2 .content .teacher .teacher-li img {
+  height: 225px;
+}
+.main .banner2 .content .teacher .teacher-li:hover {
+  -webkit-box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.16);
+  -ms-box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.16);
+  -webkit-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+.main .banner2 .content .teacher .teacher-li .teach {
+  padding: 10px 15px;
+}
+.main .banner2 .content .teacher .teacher-li .teach .teacher-n,
+.main .banner2 .content .teacher .teacher-li .teach ul {
+  text-align: center;
+}
+.main .banner2 .content .teacher .teacher-li .teach .teacher-n {
+  font-size: 20px;
+  line-height: 45px;
+}
+.main .banner2 .content .teacher .teacher-li .teach ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.main .banner2 .content .teacher .teacher-li .teach ul li span {
+  display: block;
+  font-size: 22px;
+  color: #f40009;
+}
+.main .banner2 .content .teacher .teacher-li .teach ul li p {
+  font-size: 14px;
+  color: #a8a8a8;
+}
+.main .banner3 {
+  height: 710px;
+  background: url("../images/teacher-style/b3.jpg") no-repeat center;
+}
+.main .banner3 .content {
+  height: 100%;
+  overflow: hidden;
+}
+.main .banner3 .content h1 {
+  color: #FFF;
+}
+.main .banner3 .content .title {
+  margin-bottom: 60px;
+  width: 920px;
+  margin-top: 30px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #FFF;
+}
+.main .banner3 .content #Teachers-style .carousel-indicators {
+  bottom: -80px;
+}
+.main .banner3 .content #Teachers-style .carousel-indicators li {
+  border: 1px solid #f40009;
+  margin: 0 10px;
+}
+.main .banner3 .content #Teachers-style .carousel-indicators .active {
+  background-color: #f40009;
+}
+.main .banner3 .content #Teachers-style .carousel-inner {
+  overflow: visible;
+  background-color: transparent;
+}
+.main .banner3 .content #Teachers-style .carousel-inner .item {
+  text-align: center;
+}
+.main .banner3 .content #Teachers-style .carousel-inner .item .center {
+  display: inline-block;
+}
+.main .banner3 .content #Teachers-style .carousel-inner .item .center li {
+  float: left;
+  width: 500px;
+  height: 295px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  margin: 0 25px;
+  padding: 20px 45px;
+  font-size: 16px;
+  position: relative;
+}
+.main .banner3 .content #Teachers-style .carousel-inner .item .center li img {
+  position: absolute;
+  left: -15px;
+  top: -37px;
+}
+.main .banner3 .content #Teachers-style .carousel-inner .item .center li .p1 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 40px;
+}
+.main .banner3 .content #Teachers-style .carousel-inner .item .center li .p2 {
+  padding-left: 25px;
+}
+.main .banner3 .content #Teachers-style .carousel-inner .item .center li .p2 span {
+  display: inline-block;
+  padding: 3px 5px;
+  background-color: #9b9b9b;
+  color: #FFF;
+  margin: 8px 15px;
+}
+.main .banner3 .content #Teachers-style .carousel-inner .item .center li .p3 {
+  text-align: left;
+  margin-top: 25px;
+  padding: 0 15px;
+  position: relative;
+  font-size: 16px;
+}
+.main .banner3 .content #Teachers-style .carousel-inner .item .center li .p3:before,
+.main .banner3 .content #Teachers-style .carousel-inner .item .center li .p3:after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main .banner3 .content #Teachers-style .carousel-inner .item .center li .p3:before {
+  background-image: url("../images/teacher-style/yl.png");
+  left: -20px;
+  top: -7px;
+}
+.main .banner3 .content #Teachers-style .carousel-inner .item .center li .p3:after {
+  background-image: url("../images/teacher-style/yr.png");
+  right: -15px;
+  bottom: -7px;
+}
+.main .banner4 {
+  background-color: #FFF;
+  padding-bottom: 60px;
+}
+.main .banner4 .content {
+  text-align: center;
+}
+.main .banner4 .content .ul-title {
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.main .banner4 .content .ul-title li {
+  text-align: left;
+  color: #626262;
+  font-size: 16px;
+  line-height: 30px;
+}
+.main .banner4 .content .video {
+  text-align: center;
+}
+.main .banner4 .content .video .video-ready,
+.main .banner4 .content .video .video-loading {
+  display: inline-block;
+}
+.main .banner4 .content .video .video-ready {
+  width: 793px;
+  height: 446px;
+  background-color: #000;
+  margin-right: 25px;
+  vertical-align: top;
+}
+.main .banner4 .content .video .video-loading li {
+  text-indent: -9999px;
+  width: 188px;
+  height: 132px;
+  margin-bottom: 25px;
+  background-color: #000;
+  position: relative;
+}
+.main .banner4 .content .video .video-loading li img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.main .banner4 .content .video .video-loading li:last-child {
+  margin-bottom: 0;
+}
+.main .banner4 .content .video .video-loading li.active {
+  border: 2px solid #f40009;
+  position: relative;
+}
+.main .banner4 .content .video .video-loading li.active:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid red;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.main .banner2-1 {
+  margin-bottom: 35px;
+}
+.main .banner2-1 .content {
+  width: 1100px;
+  margin-top: 60px;
+  background: url("../images/teacher-style/banner2.jpg") no-repeat center;
+  background-size: cover;
+  height: 533px;
+  position: relative;
+}
+.main .banner2-1 .content .banner2-font {
+  position: absolute;
+  right: 50px;
+  width: 460px;
+  top: 100px;
+}
+.main .banner2-1 .content .banner2-font h2 {
+  font-weight: normal;
+  font-size: 30px;
+  color: #52242a;
+  white-space: 8px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.main .banner2-1 .content .banner2-font p {
+  font-size: 20px;
+  line-height: 36px;
+}
+.main .banner2-1 .content .banner2-font span {
+  text-align: right;
+  margin-top: 60px;
+  display: block;
+  margin-right: 60px;
+  font-size: 16px;
+  color: #626262;
+}
+.main .banner2-2 .content {
+  width: 1100px;
+  text-align: center ;
+}
+.main .banner2-2 .content > h2 {
+  font-size: 40px;
+  text-align: center;
+}
+.main .banner2-2 .content #Teachers-style2 {
+  overflow: hidden;
+  padding-bottom: 100px;
+  padding-top: 40px;
+}
+.main .banner2-2 .content #Teachers-style2 .carousel-indicators {
+  bottom: 50px;
+}
+.main .banner2-2 .content #Teachers-style2 .carousel-indicators li {
+  border: 1px solid #f40009;
+  margin: 0 10px;
+}
+.main .banner2-2 .content #Teachers-style2 .carousel-indicators .active {
+  background-color: #f40009;
+}
+.main .banner2-2 .content #Teachers-style2 .carousel-inner {
+  overflow: visible;
+  background-color: transparent;
+}
+.main .banner2-2 .content #Teachers-style2 .carousel-inner .item li {
+  float: left;
+  width: 320px;
+  height: 656px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  margin: 0 23.3333px;
+  position: relative;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.main .banner2-2 .content #Teachers-style2 .carousel-inner .item li i {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 290px;
+  height: 4px;
+  background: #f40009;
+}
+.main .banner2-2 .content #Teachers-style2 .carousel-inner .item li .teacher-header {
+  width: 150px;
+  height: 150px;
+  margin: 18px auto 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .banner2-2 .content #Teachers-style2 .carousel-inner .item li .teacher-name {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.main .banner2-2 .content #Teachers-style2 .carousel-inner .item li .teacher-tag {
+  display: inline-block;
+  margin: 0 auto 20px;
+}
+.main .banner2-2 .content #Teachers-style2 .carousel-inner .item li .teacher-tag span {
+  display: inline-block;
+  text-align: center;
+  padding: 7px 10px;
+  background: #e0e0e0;
+  margin: 5px 8px;
+  font-size: 14px;
+  min-width: 95px;
+}
+.main .banner2-2 .content #Teachers-style2 .carousel-inner .item li .teacher-student {
+  border-top: 1px solid #ecebeb;
+  padding-top: 30px;
+}
+.main .banner2-2 .content #Teachers-style2 .carousel-inner .item li .teacher-student h2 {
+  color: #f40009;
+  font-size: 16px;
+  margin-bottom: 33px;
+  text-align: center;
+}
+.main .banner2-2 .content #Teachers-style2 .carousel-inner .item li .teacher-student p {
+  color: #626262;
+  margin-bottom: 26px;
+  font-size: 14px;
+  padding-left: 40px;
+}
+.main .banner2-2 .content #Teachers-style2 .carousel-inner .item li:hover {
+  -webkit-box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.16);
+  -ms-box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.16);
+  -webkit-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+.main .newBanner2 {
+  height: 1000px;
+  background: url(../images/teacher-style/newB2.png) no-repeat center;
+}
+.main .newBanner2 .newBanner2-1 img {
+  text-align: center;
+  display: block;
+}
+.main .newBanner2 .newBanner2-1 .b2Title {
+  padding-top: 50px;
+}
+.main .newBanner2 .newBanner2-1 .b2Title2 {
+  padding-top: 5px;
+}
+.main .newBanner2 .newBanner2-1 .slogan {
+  padding-top: 26px;
+}
+.main .newBanner2 .newBanner2-1 p {
+  font-size: 16px;
+  color: #636363;
+  text-align: center;
+}
+.main .newBanner2 .newBanner2-1 p > img {
+  display: inline-block;
+  vertical-align: -2px;
+}
+.main .newBanner2 .newBanner2-1 p:nth-child(4) {
+  padding: 60px 0 22px 0;
+}
+.main .newBanner2 .newBanner2-1 p:nth-child(4) img {
+  padding-right: 10px;
+}
+.main .newBanner2 .newBanner2-1 p:nth-child(5) img,
+.main .newBanner2 .newBanner2-1 p:nth-child(6) img {
+  padding: 0 10px;
+}
+.main .newBanner2 .newBanner2-1 p:nth-child(6) {
+  padding-top: 30px;
+  padding: 30px 0 60px 0;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li {
+  width: 333px;
+  margin: 0px 30px;
+  float: left;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li > p:first-child {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li > p:first-child > img {
+  vertical-align: -3px;
+  margin-left: 5px;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li > ul {
+  height: 291px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 25px 10px 0 10px;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li > ul li {
+  float: left;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li > ul > li:first-child {
+  margin-top: 33px;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li > ul > li:nth-child(2) {
+  width: 168px;
+  margin-left: 20px;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li > ul > li:nth-child(2) p {
+  font-size: 16px;
+  color: #333;
+  line-height: 30px;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li > ul > li:nth-child(2) p span {
+  color: #f40009;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li > ul > li:nth-child(2) > span {
+  font-size: 14px;
+  color: #767676;
+  margin-top: 10px;
+  display: block;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li > img:last-child {
+  margin-top: 2px;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li:first-child {
+  margin-top: 106px;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li:nth-child(2) {
+  margin-top: 46px;
+  position: relative;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li:nth-child(2) > p:nth-child(2) {
+  position: absolute;
+  top: 18px;
+  left: -48px;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li:nth-child(2) > ul {
+  height: 330px;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li:last-child {
+  margin-top: 152px;
+}
+.main .newBanner2 .newBanner2-2 .teacherStar > li:last-child > ul li:last-child {
+  margin-left: 14px;
+}
+.main .newbanner3 .content {
+  width: 1100px;
+  margin-top: 60px;
+  background: url(../images/teacher-style/newB3.png) no-repeat center;
+  background-size: cover;
+  height: 540px;
+  position: relative;
+}
+.main .newbanner3 .content .banner2-font {
+  position: absolute;
+  left: 40px;
+  width: 466px;
+  top: 100px;
+}
+.main .newbanner3 .content .banner2-font img {
+  margin-bottom: 20px;
+}
+.main .newbanner3 .content .banner2-font p {
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+.main .newbanner3 .content .banner2-font span {
+  text-align: right;
+  display: block;
+  font-size: 16px;
+  color: #626262;
+}
+.main .newbanner4 .content {
+  width: 1100px;
+}
+.main .newbanner4 .content div > img:first-child {
+  display: block;
+  margin: 0 0 30px 0;
+}
+.main .newbanner4 .content > div:not(:last-child) {
+  border-bottom: 1px solid #d2d2d2;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+}
+.main .newbanner4 .content > div:not(:last-child) div {
+  position: relative;
+  left: 50%;
+  display: inline-block;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+.main .newbanner4 .content > div:not(:last-child) div ul {
+  float: left;
+}
+.main .newbanner4 .content > div:not(:last-child) div ul li {
+  float: left;
+}
+.main .newbanner4 .content > div:not(:last-child) div ul > li:last-child {
+  margin: 25px 0 0px 30px;
+}
+.main .newbanner4 .content > div:not(:last-child) div ul > li:last-child img:first-child {
+  margin-bottom: 10px;
+}
+.main .newbanner4 .content > div:not(:last-child) div ul > li:last-child p {
+  font-size: 16px;
+  color: #7d7d7d;
+  line-height: 25px;
+}
+.main .newbanner4 .content > div:not(:last-child) div ul > li:last-child p:nth-child(4) {
+  font-size: 22px;
+  color: #333;
+  margin: 10px 0;
+}
+.main .newbanner4 .content > div:not(:last-child) div ul > li:last-child span {
+  color: #b61616;
+}
+.main .newbanner4 .content > div:not(:last-child) div ul > li:last-child p:last-child {
+  color: #333;
+}
+.main .newbanner4 .content > div:not(:last-child) div ul > li:last-child p:last-child span {
+  font-size: 20px;
+}
+.main .newbanner4 .content > div:last-child {
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+}
+.main .newbanner4 .content > div:last-child div {
+  position: relative;
+  left: 50%;
+  display: inline-block;
+  transform: translateX(-50%);
+}
+.main .newbanner4 .content > div:last-child div ul {
+  float: left;
+  margin-right: 62px;
+}
+.main .newbanner4 .content > div:last-child div ul li {
+  float: left;
+}
+.main .newbanner4 .content > div:last-child div ul > li:first-child img {
+  display: block;
+}
+.main .newbanner4 .content > div:last-child div ul > li:first-child img:first-child {
+  margin-bottom: 15px;
+}
+.main .newbanner4 .content > div:last-child div ul > li:last-child {
+  margin: 18px 0 0px 20px;
+}
+.main .newbanner4 .content > div:last-child div ul > li:last-child img:first-child {
+  margin-bottom: 10px;
+}
+.main .newbanner4 .content > div:last-child div ul > li:last-child p {
+  font-size: 16px;
+  color: #7d7d7d;
+  line-height: 25px;
+}
+.main .newbanner4 .content > div:last-child div ul > li:last-child p:nth-child(3) {
+  font-size: 22px;
+  color: #333;
+  margin: 15px 0 10px 0;
+}
+.main .newbanner4 .content > div:last-child div ul > li:last-child span {
+  color: #b61616;
+}
+.main .newbanner4 .content > div:last-child div ul > li:last-child p:nth-child(6) {
+  margin-top: 12px;
+}
+.main .newbanner4 .content > div:last-child div ul > li:last-child p:nth-child(6),
+.main .newbanner4 .content > div:last-child div ul > li:last-child p:last-child {
+  color: #333;
+}
+.main .newbanner4 .content > div:last-child div ul > li:last-child p:nth-child(6) span,
+.main .newbanner4 .content > div:last-child div ul > li:last-child p:last-child span {
+  font-size: 20px;
+}
+.main .newBanner5 {
+  height: 710px;
+  background: url("../images/teacher-style/b3.jpg") no-repeat center;
+}
+.main .newBanner5 .content {
+  width: 1100px;
+  height: 100%;
+  overflow: hidden;
+}
+.main .newBanner5 .content > img {
+  margin-left: 0;
+  text-align: left;
+  display: block;
+}
+.main .newBanner5 .content .title {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #FFF;
+  text-align: left;
+}
+.main .newBanner5 .content #Teachers-style .carousel-indicators {
+  bottom: -80px;
+}
+.main .newBanner5 .content #Teachers-style .carousel-indicators li {
+  border: 1px solid #f40009;
+  margin: 0 10px;
+}
+.main .newBanner5 .content #Teachers-style .carousel-indicators .active {
+  background-color: #f40009;
+}
+.main .newBanner5 .content #Teachers-style .carousel-inner {
+  overflow: visible;
+  background-color: transparent;
+}
+.main .newBanner5 .content #Teachers-style .carousel-inner .item {
+  text-align: center;
+}
+.main .newBanner5 .content #Teachers-style .carousel-inner .item .center {
+  display: inline-block;
+}
+.main .newBanner5 .content #Teachers-style .carousel-inner .item .center > li:nth-child(3n-1) {
+  margin: 50px 94px 0;
+}
+.main .newBanner5 .content #Teachers-style .carousel-inner .item .center li {
+  float: left;
+  width: 303px;
+  height: 148px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  padding: 16px 0 20px 20px;
+  font-size: 16px;
+  margin-top: 50px;
+}
+.main .newBanner5 .content #Teachers-style .carousel-inner .item .center li .fL {
+  float: left;
+}
+.main .newBanner5 .content #Teachers-style .carousel-inner .item .center li .teacherInfo {
+  margin: -6px 0 0 13px;
+}
+.main .newBanner5 .content #Teachers-style .carousel-inner .item .center li .teacherInfo p:first-child {
+  margin-top: 15px;
+}
+.main .newBanner5 .content #Teachers-style .carousel-inner .item .center li .teacherInfo p:first-child span {
+  font-size: 20px;
+  color: #333;
+  margin-right: 5px;
+  padding-bottom: 10px;
+  display: block;
+}
+.main .newBanner5 .content #Teachers-style .carousel-inner .item .center li .teacherInfo p {
+  color: #7d7d7d;
+  font-size: 14px;
+  line-height: 24px;
+}
+.main .newBanner5 .content #Teachers-style .carousel-inner .item .center li .teacherInfo p:last-child span {
+  color: #b81e1e;
+  margin-left: 3px;
+}
+.main .newBanner5 .content .review {
+  display: block;
+  margin: 0;
+}
+.video-window {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.video-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.video-info {
+  position: absolute;
+  width: 888px;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}

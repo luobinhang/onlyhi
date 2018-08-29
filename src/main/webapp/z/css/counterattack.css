@@ -1,0 +1,598 @@
+.main .contain {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.main .bar1 img {
+  width: 100%;
+  display: block;
+}
+.main .banner1 {
+  position: relative;
+}
+.main .banner1 .newArrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main .banner1 #myCarousel0 {
+  font-family: Microsoft YaHei;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.main .banner1 #myCarousel0 ol {
+  z-index: 1;
+}
+.main .banner1 #myCarousel0 ol li {
+  margin: 0 5px;
+  background-color: #b9b9b9;
+  border: 0;
+}
+.main .banner1 #myCarousel0 ol .active {
+  border: 0;
+  background-color: #f40009;
+}
+.main .banner1 .three2 {
+  background: url("../images/index/banner-bg0.jpg") no-repeat center center;
+  background-size: cover;
+  height: 600px;
+  text-align: center;
+}
+.main .banner1 .three2 .content .title {
+  margin-top: 160px;
+  float: left;
+  width: 700px;
+  text-align: center;
+}
+.main .banner1 .three2 .content .title img {
+  margin-bottom: 28px;
+}
+.main .banner1 .three2 .content .title p {
+  margin-bottom: 30px;
+}
+.main .banner1 .three2 .content .title .title1 {
+  letter-spacing: 5px;
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 60px;
+}
+.main .banner1 .three2 .content .title .title2 {
+  font-family: Microsoft YaHei;
+  line-height: 35px;
+  font-size: 26px;
+  font-family: Simsun;
+  font-weight: bold;
+}
+.main .banner1 .three3 {
+  height: 600px;
+  text-align: center;
+  background: url("../images/index/banner-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+.main .banner1 .content .title {
+  margin-top: 230px;
+  margin-left: 40px;
+  float: left;
+  width: 700px;
+  text-align: left;
+  color: #FFF;
+  font-size: 26px;
+}
+.main .banner1 .content .title p {
+  line-height: 46px;
+}
+.main .banner1 .content .title .title_2 {
+  margin-top: 10px;
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  padding: 0 65px;
+}
+.main .banner1 .content .title .title_2:before,
+.main .banner1 .content .title .title_2:after {
+  position: absolute;
+  content: "";
+  width: 55px;
+  height: 1px;
+  background-color: #FFF;
+}
+.main .banner1 .content .title .title_2:before {
+  left: 0;
+  top: 50%;
+}
+.main .banner1 .content .title .title_2:after {
+  right: 0;
+  top: 50%;
+}
+.main .bar2 {
+  position: relative;
+  background: url("../images/counterattack/b2.jpg") no-repeat center;
+  height: 454px;
+}
+.main .bar2 .bar2Body {
+  background: url(../images/counterattack/a1.png) no-repeat center;
+  height: 595px;
+  position: absolute;
+  width: 100%;
+  top: -140px;
+}
+.main .bar2 .bar2Body p {
+  padding-top: 150px;
+  width: 1021px;
+  margin: 0 auto;
+  height: 595px;
+  font-size: 28px;
+  color: #1a1f37;
+  text-indent: 1.5em;
+  letter-spacing: 2px;
+  line-height: 70px;
+  margin-top: -1px;
+}
+.main .bar2 .bar2Body p span {
+  font-size: 40px;
+}
+.main .bar3 {
+  background: url("../images/counterattack/b3.jpg") no-repeat center;
+  height: 1205px;
+}
+.main .bar3 .bar3Title img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 84px;
+}
+.main .bar3 .bar3Body {
+  display: flex;
+  justify-contain: space-between;
+  flex-wrap: wrap;
+  width: 1280px;
+}
+.main .bar3 .bar3Body li {
+  cursor: pointer;
+  width: 584px;
+  height: 423px;
+  margin-bottom: 40px;
+}
+.main .bar3 .bar3Body li:hover {
+  background: url("../images/counterattack/h1.png") no-repeat center;
+}
+.main .bar3 .bar3Body li:hover img {
+  display: none;
+}
+.main .bar3 .bar3Body li:hover p {
+  display: block;
+}
+.main .bar3 .bar3Body li img {
+  display: block;
+}
+.main .bar3 .bar3Body li p {
+  display: none;
+  color: #081935;
+  font-size: 20px;
+  line-height: 56px;
+  padding-left: 80px;
+  padding-top: 67px;
+}
+.main .bar3 .bar3Body li p span {
+  display: block;
+  font-size: 30px;
+  padding-left: 25px;
+  margin-bottom: 7px;
+}
+.main .bar4 {
+  background: url("../images/counterattack/b4.png") no-repeat center;
+  height: 1000px;
+  overflow: hidden;
+}
+.main .bar4 > img:first-child {
+  display: block;
+  margin: 0 auto;
+  padding-top: 72px;
+}
+.main .bar4 .bar4Body {
+  width: 1340px;
+  min-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.main .bar4 .bar4Body div {
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  margin: 0;
+}
+.main .bar4 .bar4Body div img {
+  display: block;
+  margin-top: 54px;
+  max-width: 1340px;
+  min-width: 960px;
+  margin-left: 0;
+}
+.main .bar5 {
+  background: url("../images/counterattack/b4-1.jpg") no-repeat center;
+  height: 764px;
+}
+.main .bar5 > img:first-child {
+  display: block;
+  margin: 0 auto;
+  padding-top: 102px;
+  margin-bottom: 90px;
+}
+.main .bar5 .bar5Body .thead span {
+  font-size: 26px;
+  color: #e78d23;
+  text-align: center;
+  background-color: #f5dc80;
+  line-height: 84px;
+  display: inline-block;
+}
+.main .bar5 .bar5Body .thead span:nth-child(2) {
+  margin: 0 -2px 0 -3px;
+}
+.main .bar5 .bar5Body .tbody p {
+  background-color: #fff;
+  margin-top: 3px;
+}
+.main .bar5 .bar5Body .tbody p span {
+  font-size: 26px;
+  color: #081935;
+  text-align: center;
+  line-height: 84px;
+  display: inline-block;
+  width: 210px;
+}
+.main .bar5 .bar5Body .tbody p span:nth-child(3) {
+  text-align: left;
+  padding-left: 18px;
+  width: 770px;
+}
+.main .bar5 .bar5Body .tbody p:nth-child(2) {
+  background-color: #f5dc80;
+}
+.main .bar6 {
+  background: url("../images/counterattack/b4-2.jpg") no-repeat center;
+  height: 979px;
+}
+.main .bar6 > img:first-child {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 119px;
+}
+.main .bar6 .bar6Body {
+  position: relative;
+}
+.main .bar6 .bar6Body .imgCenter {
+  display: block;
+  margin-left: 82px;
+}
+.main .bar6 .bar6Body p {
+  position: absolute;
+  text-align: center;
+  color: #081935;
+  z-index: 1;
+}
+.main .bar6 .bar6Body p span:first-child {
+  font-size: 22px;
+  margin-bottom: 10px;
+  display: block;
+}
+.main .bar6 .bar6Body p span:nth-child(2) {
+  font-size: 20px;
+  line-height: 28px;
+}
+.main .bar6 .bar6Body p:first-child {
+  top: -33px;
+  right: 337px;
+}
+.main .bar6 .bar6Body p:nth-child(2) {
+  top: 116px;
+  right: -10px;
+}
+.main .bar6 .bar6Body p:nth-child(3) {
+  bottom: -50px;
+  right: 348px;
+}
+.main .bar6 .bar6Body p:nth-child(4) {
+  bottom: 0px;
+  left: 215px;
+}
+.main .bar6 .bar6Body p:nth-child(5) {
+  top: 165px;
+  left: 2px;
+}
+.main .bar7 .bar7Head {
+  background: url("../images/counterattack/b5.jpg") no-repeat center;
+  height: 507px;
+}
+.main .bar7 .bar7Head img {
+  display: block;
+  margin: 0 auto;
+}
+.main .bar7 .bar7Head .join {
+  display: block;
+  margin: 0 auto;
+  padding-top: 64px;
+  margin-bottom: 145px;
+  cursor: pointer;
+}
+.main .bar7 .bar7Body {
+  background: url("../images/counterattack/b6.jpg") no-repeat center;
+  height: 505px;
+}
+.main .bar7 .bar7Body ul {
+  display: flex;
+  justify-content: space-between;
+}
+.main .bar7 .bar7Body ul li {
+  background: url("../images/counterattack/liBg.png") no-repeat center;
+  width: 226px;
+  height: 326px;
+  margin-top: 50px;
+  color: #081935;
+  font-size: 18px;
+  text-align: center;
+  line-height: 30px;
+}
+.main .bar7 .bar7Body ul li p:first-child {
+  background: url("../images/counterattack/liT.png") no-repeat center;
+  width: 165px;
+  height: 48px;
+  padding-top: 4px;
+  font-size: 26px;
+  margin-top: 43px;
+  margin-bottom: 50px;
+}
+.main .bar7 .bar7Body ul li p:nth-child(3) {
+  width: 66px;
+  height: 4px;
+  margin: 0 auto;
+  background-color: #d285f6;
+  margin-top: 50px;
+}
+.main .bar8 {
+  background: url("../images/counterattack/b7.jpg") no-repeat center;
+  height: 1001px;
+}
+.main .bar8 > img:first-child {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 110px;
+}
+.main .bar8 .bar8Body {
+  position: relative;
+  height: 778px;
+}
+.main .bar8 .bar8Body p {
+  position: absolute;
+  color: #1d1f44;
+  text-align: center;
+  padding-top: 26px;
+}
+.main .bar8 .bar8Body p span:first-child {
+  font-size: 30px;
+  margin-bottom: 17px;
+  display: block;
+}
+.main .bar8 .bar8Body p span:nth-child(2) {
+  font-size: 18px;
+  line-height: 28px;
+}
+.main .bar8 .bar8Body p:first-child {
+  width: 344px;
+  height: 452px;
+  background: url("../images/counterattack/e1.png") no-repeat center;
+  top: 0;
+  left: -10px;
+}
+.main .bar8 .bar8Body p:nth-child(2) {
+  width: 427px;
+  height: 452px;
+  background: url("../images/counterattack/e2.png") no-repeat center;
+  top: 0;
+  left: 330px;
+}
+.main .bar8 .bar8Body p:nth-child(3) {
+  width: 454px;
+  height: 325px;
+  background: url("../images/counterattack/e3.png") no-repeat center;
+  top: 0;
+  right: -10px;
+}
+.main .bar8 .bar8Body p:nth-child(4) {
+  width: 540px;
+  height: 325px;
+  background: url("../images/counterattack/e4.png") no-repeat center;
+  bottom: 0px;
+  left: -10px;
+  padding-top: 80px;
+}
+.main .bar8 .bar8Body p:nth-child(4) span {
+  width: 220px;
+  display: block;
+  margin-left: 15px;
+}
+.main .bar8 .bar8Body p:nth-child(5) {
+  width: 682px;
+  height: 449px;
+  background: url("../images/counterattack/e5.png") no-repeat center;
+  bottom: 0px;
+  right: -10px;
+}
+.main .bar9 {
+  background: url("../images/counterattack/b8.jpg") no-repeat center;
+  height: 669px;
+}
+.main .bar9 .bar9Title {
+  display: block;
+  margin: 0 auto;
+  padding-top: 97px;
+  margin-bottom: 82px;
+}
+.main .bar9 .bar9Body ul {
+  display: flex;
+  justify-content: space-between;
+}
+.main .bar9 .bar9Body ul li {
+  background: url("../images/counterattack/f1.png") no-repeat center;
+  width: 412px;
+  height: 359px;
+  color: #23325a;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+}
+.main .bar9 .bar9Body ul li img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 14px;
+  margin-bottom: 80px;
+}
+.main .bar10 {
+  background: url("../images/counterattack/b9.jpg") no-repeat center;
+  height: 640px;
+}
+.main .bar10 .join {
+  display: block;
+  margin: 0 auto;
+  padding-top: 54px;
+  margin-bottom: 105px;
+  cursor: pointer;
+}
+.main .bar10 .bar10Body {
+  display: flex;
+  justify-content: space-between;
+}
+.main .bar10 .bar10Body li {
+  background: url("../images/counterattack/g1.png") no-repeat center;
+  width: 226px;
+  height: 262px;
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+}
+.main .bar10 .bar10Body li img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 29px;
+}
+.tanBox {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.tanBox #tan1 {
+  height: 610px;
+  width: 750px;
+  position: absolute;
+  top: 50%;
+  margin-top: -305px;
+  background-image: url("../images/counterattack/tan.png");
+  box-sizing: border-box;
+  z-index: 9999;
+  left: 50%;
+  margin-left: -375px;
+}
+.tanBox #tan1 .tanForm {
+  width: 210px;
+  font: 15px "Microsoft YaHei";
+  position: absolute;
+  box-sizing: border-box;
+  left: 120px;
+  top: 235px;
+}
+.tanBox #tan1 .tanForm p {
+  border-bottom: 1px solid #cdcdcd;
+  color: #515151;
+  font-size: 14px;
+  margin: 7px 0;
+  /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+}
+.tanBox #tan1 .tanForm p input {
+  width: 210px;
+  height: 24px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: #000;
+  font-size: 14px;
+}
+.tanBox #tan1 .tanForm p select {
+  border: 0;
+  font-size: 14px;
+  width: 210px;
+  height: 24px;
+  border-radius: 3px;
+  color: #a8a8a8;
+}
+.tanBox #tan1 .tanForm p select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url(../../images/tan/arrow.png) no-repeat scroll 193px center transparent;
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 14px;
+}
+.tanBox #tan1 .tanForm p select::-ms-expand {
+  display: none;
+}
+.tanBox #tan1 .tanForm p input::-webkit-input-placeholder {
+  /* WebKit browsers*/
+  color: #a8a8a8;
+  font-size: 14px;
+}
+.tanBox #tan1 .tanForm p input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18*/
+  color: #a8a8a8;
+  font-size: 14px;
+}
+.tanBox #tan1 .tanForm p input::-moz-placeholder {
+  /* Mozilla Firefox 19+*/
+  color: #a8a8a8;
+  font-size: 14px;
+}
+.tanBox #tan1 .tanForm p input:-ms-input-placeholder {
+  /* Internet Explorer 10+*/
+  color: #a8a8a8;
+  font-size: 14px;
+}
+.tanBox #tan1 .tanForm #submitTan {
+  border: 0;
+  display: block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  background-color: #f40009;
+  border-radius: 15px;
+  margin-top: 18px;
+  color: #FFF;
+  font-family: Microsoft YaHei;
+  cursor: pointer;
+}
+.tanBox #tan1 .tanForm .disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+.tanBox .closeTan {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../images/tan/close2.png");
+  background-size: cover;
+  position: absolute;
+  top: 80px;
+  right: 100px;
+}
+.tanBox .closeTan:hover {
+  cursor: pointer;
+}

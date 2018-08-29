@@ -1,0 +1,1514 @@
+﻿<!--  -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- 页面head信息 -->
+<head>
+    <script type="text/javascript">
+
+      function GetQueryString(name)
+      {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+      }
+      var type = GetQueryString("type")||1;
+      var source = GetQueryString("source")||'415BADCE-CA15-4F2A-B561-E64F02BD7C7A';
+
+        function browserRedirect() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+               window.location.href = 'p/index.html?type=' + type + '&source=' + source;
+            }
+        }
+        browserRedirect();
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta property="qc:admins" content="1755101013252671411663757"/>
+    <meta name="keywords" content="嗨课堂,嗨课堂老师报名,嗨课堂老师招聘,嗨课堂老师兼职,嗨课堂老师">
+    <meta name="description"
+          content="嗨课堂在线兼职老师报名入口。欢迎优秀的985/211同学以及在职老师加入我们。公司提供完善的课件和竞争力的薪资，生源丰富！只要你有电脑，就可以做家教，足不出户省力省心！">
+    <meta name="baidu-site-verification" content=""/>
+
+    <link rel="apple-touch-icon-precomposed"
+          href="http://u471372-295383aa489a4fd7876810d75bd10190.ktb.wqdian.net/qngroup001%2Fu471372%2F3%2F0%2F46318dccc59a40d39e07af3284fef328.ico"/>
+    <link rel="apple-touch-icon"
+          href="http://u471372-295383aa489a4fd7876810d75bd10190.ktb.wqdian.net/qngroup001%2Fu471372%2F3%2F0%2F46318dccc59a40d39e07af3284fef328.ico"/>
+    <link rel="Shortcut Icon"
+          href="http://u471372-295383aa489a4fd7876810d75bd10190.ktb.wqdian.net/qngroup001%2Fu471372%2F3%2F0%2F46318dccc59a40d39e07af3284fef328.ico"/>
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+
+    <script type="text/javascript" src="./js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="./js/vue.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <link rel="stylesheet" type="text/css" href="./css/plugin.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.css">
+    <link rel="stylesheet" type="text/css" href="./css/component_pc.css">
+    <link rel="stylesheet" type="text/css" href="./css/wqdhost.css">
+    <link rel="stylesheet" type="text/css" href="./css/edit-mall.css">
+    <link rel="stylesheet" type="text/css" href="./css/nanoscroller.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/navtemplate1.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="./css/navtemplate2.css"> -->
+    <link rel="stylesheet" type="text/css" href="./css/members.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="./css/commoditylist.css"> -->
+    <link rel="stylesheet" type="text/css" href="./css/wechat_login.css">
+
+    <style class="wqd1450166959361serial style-element style-e-common"
+           type="text/css">#wqd1450166959361serial .wqdSecondNavbox .wqdSecondNav, .wqd-carouseOverlay .wqdSecondNavbox .wqdSecondNav {
+        background-color: rgba(0, 0, 0, 0.73);
+    }</style>
+    <style class="wqd1450170042012serial style-element style-e-common" type="text/css"
+           sectionwidth="1200">#wqd1450170042012serial:before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #333333;
+    }</style>
+    <style class="style-element style-e-common" type="text/css" data-type="viewWidth">.wqdAreaView .wqdSectiondiv {
+        min-width: 1200px;
+    }
+
+    .wqdAreaView .yzmoveContent {
+        min-width: 1200px;
+    }
+
+    .hiwqd.pc .yzmoveContent {
+        min-width: 1200px;
+    }
+
+    .wqdAreaView .wqdBkEditos {
+        width: 1200px;
+    }
+
+    .fullscreen .bannerContainer {
+        margin: 0 auto;
+        width: 1200px !important;
+    }</style>
+    <style class="elementId1450167301977 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementId1450167301977 path {
+        fill: #448585;
+    }</style>
+    <style class="elementId1450167276047 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementId1450167276047 path {
+        fill: #448585;
+    }</style>
+    <style class="elementid14501673372980 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14501673372980 path {
+        fill: #81bcb6;
+    }</style>
+    <style class="elementid14501673247120 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14501673247120 path {
+        fill: #81bcb6;
+    }</style>
+    <style class="elementId1450167309745 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementId1450167309745 path {
+        fill: #81bcb6;
+    }</style>
+    <style class="elementId1450168481441 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementId1450168481441 path {
+        fill: #448585;
+    }</style>
+    <style class="elementId1450167162346 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementId1450167162346 path {
+        fill: #333333;
+    }</style>
+    <style class="elementid14501695213190 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14501695213190 path {
+        fill: #333333;
+    }</style>
+    <style class="elementid14501695323350 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14501695323350 path {
+        fill: #333333;
+    }</style>
+    <style class="elementid14501695518640 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14501695518640 path {
+        fill: #333333;
+    }
+
+    #elementid14501695518640 {
+        transform: rotateZ(-27.984626886623907deg);
+        -webkit-transform: rotateZ(-27.984626886623907deg);
+    }</style>
+    <style class="elementid14501696128350 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14501696128350 path {
+        fill: #333333;
+    }
+
+    #elementid14501696128350 {
+        transform: rotateZ(-27.984626886623907deg);
+        -webkit-transform: rotateZ(-27.984626886623907deg);
+    }</style>
+    <style class="elementid14501858513520 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14501858513520 .wqd-line {
+        border-top-color: #bfbfbf !important;
+    }
+
+    #elementid14501858513520 {
+        transform: rotateZ(90deg);
+        -webkit-transform: rotateZ(90deg);
+    }</style>
+    <style class="elementid14501858873370 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14501858873370 .wqd-line {
+        border-top-color: #bfbfbf !important;
+    }
+
+    #elementid14501858873370 {
+        transform: rotateZ(90deg);
+        -webkit-transform: rotateZ(90deg);
+    }</style>
+    <style class="elementid14501859071690 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14501859071690 .wqd-line {
+        border-top-color: #c0c0c0 !important;
+    }</style>
+    <style class="elementid14605155739182 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14605155739182 path {
+        fill: #333333;
+    }</style>
+    <style class="elementid14605155739183 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14605155739183 path {
+        fill: #333333;
+    }</style>
+    <style class="elementid14605155739184 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14605155739184 path {
+        fill: #333333;
+    }
+
+    #elementid14605155739184 {
+        transform: rotateZ(-27.984626886623907deg);
+        -webkit-transform: rotateZ(-27.984626886623907deg);
+    }</style>
+    <style class="elementid14605155739185 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14605155739185 path {
+        fill: #333333;
+    }
+
+    #elementid14605155739185 {
+        transform: rotateZ(-27.984626886623907deg);
+        -webkit-transform: rotateZ(-27.984626886623907deg);
+    }</style>
+    <style class="elementid14605156411422 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14605156411422 path {
+        fill: #333333;
+    }</style>
+    <style class="elementid14605156411423 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14605156411423 path {
+        fill: #333333;
+    }</style>
+    <style class="elementid14605156411424 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14605156411424 path {
+        fill: #333333;
+    }
+
+    #elementid14605156411424 {
+        transform: rotateZ(-27.984626886623907deg);
+        -webkit-transform: rotateZ(-27.984626886623907deg);
+    }</style>
+    <style class="elementid14605162536160 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14605162536160 .wqd-line {
+        border-top-color: #c0c0c0 !important;
+    }</style>
+    <style class="elementId1450168209846 style-element style-e-center" type="text/css">#elementId1450168209846 path {
+        fill: #333333;
+    }</style>
+    <style class="elementId1450167507330 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementId1450167507330 path {
+        fill: #333333;
+    }</style>
+    <style class="wqd1449917140305serial style-element style-e-center" type="text/css"
+           sectionwidth="1200">#wqd1449917140305serial:before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #343434;
+    }</style>
+    <style class="elementid14501739776980 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14501739776980 a em {
+        color: #333333;
+    }
+
+    #elementid14501739776980 a {
+        background-color: rgba(255, 255, 255, 0);
+        border-color: #333333;
+    }
+
+    #elementid14501739776980 .on:hover em {
+        color: #ffffff;
+    }
+
+    #elementid14501739776980 .on:hover {
+        background-color: #333333;
+        border-color: #333333;
+    }</style>
+    <style class="elementid14605266766670 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementid14605266766670 path {
+        fill: #555;
+    }</style>
+    <style class="wqd1460534870660serial style-element style-e-center" type="text/css">#wqd1460534870660serial:before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #009788;
+    }</style>
+    <style class="elementId1450167905011 style-element style-e-center" type="text/css"
+           sectionwidth="1200">#elementId1450167905011 path {
+        fill: #ffffff;
+    }</style>
+    <script type="text/javascript">
+
+        try {
+            var domain = "http://member.wqdian.com";
+            if (domain.indexOf("wqdian.com") != -1) {
+                document.domain = "wqdian.com";
+            } else if (domain.indexOf("wqdian.net") != -1) {
+                document.domain = "wqdian.net";
+            }
+        } catch (e) {
+            //console.log("跨域");
+        }
+        (function () {
+            var userAgent = navigator.userAgent,
+                isMobile = !!userAgent.match(/AppleWebKit.*Mobile.*/);
+            if (isMobile) {
+                var viewport = document.querySelector('meta[name="viewport"]'),
+                    wWidth = document.documentElement.clientWidth || window.innerWidth || document.body.clientWidth;
+                sca = wWidth / 320,
+                    displayMode = 'pc';
+
+                if (displayMode == "phone") {
+                    viewport.content = 'width=320,initial-scale=' + sca + ',minimum-scale=' + sca + ',maximum-scale=' + sca + ', user-scalable=no';
+                } else if (displayMode == "pc") {
+                    var pcWidth = '' || 1600;
+                    sca = wWidth / pcWidth;
+                    viewport.content = 'width=320,initial-scale=1';
+                    viewport.content = 'width=320,initial-scale=' + sca + ',minimum-scale=' + sca;
+                }
+                // $(window).on("resize",function(e){
+                //     window.location.reload();
+                // })
+            }
+            //处理pc模版模版预览超链接新窗口打开问题 -- hjj
+            window.parent != window.self && $(document).find("a[target=_blank]").removeAttr("target");
+
+        })();
+    </script>
+
+    <title>
+        嗨课堂兼职老师报名</title>
+    <script type="text/javascript" src="./js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="./js/allocation.js"></script>
+    <script type="text/javascript" src="./js/wqdformdate.js"></script>
+
+    <!-- onlyhi.net Baidu tongji analytics -->
+</head>
+
+<body class="">
+
+<div style="display:none;"><img src="picture/5ed9a6dd21cc44c0bc32700e244db715.jpg" width="300" height="300"></div>
+<script type="text/javascript">
+    var CSSURLPATH = 'http://u471372-295383aa489a4fd7876810d75bd10190.ktb.wqdian.net/';
+    var companyInfo = '{"id":0,"createDate":null,"updateDate":null,"userId":0,"name":null,"brandName":null,"companyType":"国有企业","commerceCode":null,"businessLicense":null,"introduction":null,"brandLogo":null,"companyScale":"5人以下","businessModel":"生产制造","businessModelText":null,"registerYear":null,"registerFund":null,"registerProvince":"北京市","registerCity":"北京市","registerArea":"东城区","legalPerson":null,"bankName":null,"bankAccount":null,"country":null,"province":null,"city":null,"area":null,"detailAddress":null,"email":null,"mobile":null,"telephone":null,"qq":null,"contacts":null,"faxes":null,"postCode":null}' || '{}'
+    var siteInfo = '' || '{}';
+    var isAgentUser = false;
+</script>
+
+<!-- 页面主体内容  -->
+<div class="wqdView wqdHeaderView">
+    <div class="wqdAreaView">
+        <div class="yzmoveContent">
+            <div class="wqdSectiondiv" id="wqd1450166959361serial"
+                 style="background-attachment: scroll; background-position: 50% 50%; background-repeat: repeat;"
+                 partid="wqd1450166959361serial" wqdbgset="0" wqdback_position="1" partcategoryid="21"
+                 sectionname="横版导航" commonpartid="10646" sortid="17" data-type="wqdSectiondiv">
+                <header class="wqdTopNavWrap wqdBkEditos sectionV2 elementsContainer wqdCommonNav"
+                        style="position: relative; height: 2px;" wqdback_position="3" sectionwidth="1200"
+                        wqdimgurlos="http://img.wqdian.com/group1/M00/75/4A/yq0KXFZq0IiAVJ23AAATQTKOtJY138.png"
+                        wqdwidthlimit="0" wqdbgattachment="0" bac_position="5" data-maxzindex="1" wqdheight="2"
+                        wqd-bgcolor="rgba(0,0,0,0.73)">
+
+                </header>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wqdView wqdCenterView">
+    <div class="wqdAreaView">
+        <div class="yzmoveContent sectionCenter">
+            <div class="wqdSectiondiv" id="wqd1450791306654serial"
+                 style="background-attachment: scroll; background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"
+                 partid="wqd1450791306654serial" wqdback_position="1" partcategoryid="2" sectionname="顶部轮播图"
+                 commonpartid="10542" sortid="20" data-type="wqdSectiondiv">
+                <section class="wqd1445504393013css wqdBkEditos sectionV2 moveMainArea elementsContainer fullscreen"
+                         style="height: 653px; margin: 0px auto; position: relative;" sectionwidth="1200"
+                         wqdimgurlos="http" wqdwidthlimit="1" wqdbgattachment="0" bac_position="5" data-maxzindex="6"
+                         wqdheight="653" wqdbgcoloros="#eee">
+                    <div class="wqdelementEdit" data-elementtype="img" data-elemandgroup="true"
+                         style="width: 1691px; height: 650px; left: -243.5px; top: 1px; z-index: 1;"
+                         elementid="elementId15023373455760" id="elementId15023373455760" data-zindex="1">
+                        <div class="wqdelementEditBox" style="border-radius:10px;"><img class="wqd-img wqd-img-default"
+                                                                                        src="./picture/d8ef0ffde7d14d50ac2dfea6d8b3993a.jpg"
+                                                                                        ondragstart="return false;">
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" data-elementtype="img" data-elemandgroup="true"
+                         style="width: 141px; height: 115px; left: 41.5px; top: 8px; z-index: 2;"
+                         elementid="elementId15023374060440" id="elementId15023374060440" data-zindex="2">
+                        <div class="wqdelementEditBox" style="border-radius:10px;"><img class="wqd-img wqd-img-default"
+                                                                                        src="./picture/logo.svg"
+                                                                                        ondragstart="return false;">
+                        </div>
+                    </div>
+                    <!--<div class="wqdelementEdit aniunveil aniHide" data-elementtype="img" data-elemandgroup="true"-->
+                    <!--style="width: 146px; height: 144px; left: 998.496px; top: 403px; z-index: 3;"-->
+                    <!--elementid="elementId15023374211810" id="elementId15023374211810" data-zindex="3"-->
+                    <!--data-animate="flipInX" data-animation-duration="1" data-animation-delay="0"-->
+                    <!--data-animation-iteration-count="1" triggertype="unveil.wqdAnimate"-->
+                    <!--triggerelem="elementId15023374211810" triggeraction="show">-->
+                    <!--<div class="wqdelementEditBox" style="border-radius:10px;"><img class="wqd-img wqd-img-default"-->
+                    <!--src="./picture/8c0dd2f375ac462c938733ace571d8a8.png"-->
+                    <!--ondragstart="return false;">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="wqdelementEdit" data-elementtype="text" data-elemandgroup="true"-->
+                    <!--elementid="elementId15023374429760" id="elementId15023374429760" data-zindex="4"-->
+                    <!--style="width: 73px; height: 32px; left: 1048.5px; top: 562px; z-index: 4;">-->
+                    <!--<div class="wqdelementEditBox" data-emptytexttemplate="article1" style="visibility: visible;"><p-->
+                    <!--class="wqd-text-article1"><span style="font-size:14px;"><span style="color:#FF0000;">扫码报名</span></span>-->
+                    <!--</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <div class="wqdelementEdit" data-elementtype="text" data-elemandgroup="true"
+                         elementid="elementId15023374747330" id="elementId15023374747330" data-zindex="5"
+                         style="width: 280px; height: 98px; left: 829.5px; top: 36px; z-index: 5;">
+                        <div class="wqdelementEditBox" data-emptytexttemplate="title1" style="visibility: visible;"><h1
+                                class="wqd-text-title1"><a href="http://www.onlyhi.cn" target="_blank"><span
+                                style="color:#000000;"><span style="font-family:微软雅黑;">嗨课堂</span></span></a></h1>
+                        </div>
+                    </div>
+                    <!--<div class="wqdelementEdit" data-elementtype="text" data-elemandgroup="true"-->
+                    <!--elementid="elementId15023379485260" id="elementId15023379485260" data-zindex="6"-->
+                    <!--style="width: 100px; height: 25px; left: 1028.5px; top: 313px; z-index: 6;">-->
+                    <!--<div class="wqdelementEditBox" data-emptytexttemplate="article3" style="visibility: visible;"><p-->
+                    <!--class="wqd-text-article3">985和211院校</p>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </section>
+            </div>
+        </div>
+        <div class="yzmoveContent sectionCenter">
+            <div class="wqdSectiondiv" id="wqd1449917124224serial"
+                 style="background-image: url(../images/yq0kxfzq0iiavj23aaatqtkotjy138.png&quot;); background-attachment: scroll; background-position: 50% 50%; background-repeat: repeat;"
+                 partid="wqd1449917124224serial" wqdbgset="1" wqdback_position="1" partcategoryid="2" sectionname="服务范围"
+                 commonpartid="10542" sortid="2" data-type="wqdSectiondiv">
+                <section class="wqd1445504393013css wqdBkEditos sectionV2 moveMainArea elementsContainer"
+                         style="height: 868px; margin: 0px auto; position: relative;" wqdback_position="3"
+                         sectionwidth="1200"
+                         wqdimgurlos="http://img.wqdian.com/group1/M00/75/4A/yq0KXFZq0IiAVJ23AAATQTKOtJY138.png"
+                         wqdwidthlimit="0" wqdbgattachment="0" bac_position="5" data-maxzindex="30" wqdheight="868"
+                         wqdbgcoloros="#eee">
+                    <div class="wqdelementEdit" id="elementid14501858513520"
+                         style="width: 440px; height: 30px; left: 183.75px; top: 602px; z-index: 1;"
+                         data-elementtype="line" data-rotate="90" data-zindex="1" elementid="elementid14501858513520"
+                         data-elemandgroup="true" wqdpathfill="#bfbfbf" wqdhref="0">
+                        <div class="wqdelementEditBox">
+                            <div class="wqd-line"
+                                 style="height:0;border-top:1px dashed #3d9be9;position:relative;top:50%;"></div>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14501858873370"
+                         style="width: 440px; height: 30px; left: 572.25px; top: 602px; z-index: 2;"
+                         data-elementtype="line" data-rotate="90" data-zindex="2" elementid="elementid14501858873370"
+                         data-elemandgroup="true" wqdpathfill="#bfbfbf" wqdhref="0">
+                        <div class="wqdelementEditBox">
+                            <div class="wqd-line"
+                                 style="height:0;border-top:1px dashed #3d9be9;position:relative;top:50%;"></div>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14501859071690"
+                         style="width: 1106px; height: 30px; left: 47.5px; top: 823px; z-index: 3;"
+                         data-elementtype="line" data-zindex="3" elementid="elementid14501859071690"
+                         data-elemandgroup="true" wqdpathfill="#c0c0c0" wqdhref="0">
+                        <div class="wqdelementEditBox">
+                            <div class="wqd-line"
+                                 style="height:0;border-top:1px dashed #3d9be9;position:relative;top:50%;"></div>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit wqdGroup elementsContainer" id="groupId1460515352736"
+                         style="height: 349px; width: 330px; left: 47.5px; top: 438px; z-index: 4;" data-maxzindex="0"
+                         data-zindex="4" data-elemandgroup="true" groupid="groupId1460515352736">
+                        <div class="wqdelementEditBox">
+                            <div class="wqdelementEdit" id="elementId1450167309745"
+                                 style="width: 114px; height: 113px; left: 215px; top: 230.5px; z-index: 5;"
+                                 data-elementtype="icon" data-zindex="5" elementid="elementId1450167309745"
+                                 data-elemandgroup="true" wqdpathfill="#81bcb6" wqdhref="0"
+                                 triggertype="unveil.wqdAnimate" data-animation-iteration-count="1"
+                                 data-animation-delay="0" data-animation-duration="1" data-animate="fadeInRight">
+                                <div class="wqdelementEditBox wqdAnimatedos">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon"
+                                         viewBox="-250 -250 2392 2392">
+                                        <path fill="#999"
+                                              d="M 84 768 l 623 665 l -300 -665 h -323 Z m 812 772 l 349 -772 h -698 Z m -486 -900 l 204 -384 h -262 l -288 384 h 346 Z m 675 793 l 623 -665 h -323 Z m -530 -793 h 682 l -204 -384 h -274 Z m 827 0 h 346 l -288 -384 h -262 Z m 141 -486 l 384 512 q 14 18 13 41.5 t -17 40.5 l -960 1024 q -18 20 -47 20 t -47 -20 l -960 -1024 q -16 -17 -17 -40.5 t 13 -41.5 l 384 -512 q 18 -26 51 -26 h 1152 q 33 0 51 26 Z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementId1450169245163"
+                                 style="width: 208px; height: 49px; left: 45.5px; top: 0px; z-index: 9;"
+                                 data-elementtype="text" data-zindex="9" elementid="elementId1450169245163"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="title3"><h3 class="wqd-text-title3"><span
+                                        style="color:#008080;">师资要求</span></h3>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14501695213190"
+                                 style="width: 12px; height: 15px; left: 33px; top: 266px; z-index: 32;"
+                                 data-elementtype="icon" data-zindex="32" elementid="elementid14501695213190"
+                                 data-elemandgroup="true" wqdpathfill="#333333" wqdhref="0">
+                                <div class="wqdelementEditBox">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon"
+                                         viewBox="-250 -250 2392 2392">
+                                        <path fill="#999"
+                                              d="M 896 352 q -148 0 -273 73 t -198 198 t -73 273 t 73 273 t 198 198 t 273 73 t 273 -73 t 198 -198 t 73 -273 t -73 -273 t -198 -198 t -273 -73 Z m 768 544 q 0 209 -103 385.5 t -279.5 279.5 t -385.5 103 t -385.5 -103 t -279.5 -279.5 t -103 -385.5 t 103 -385.5 t 279.5 -279.5 t 385.5 -103 t 385.5 103 t 279.5 279.5 t 103 385.5 Z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14501695323350"
+                                 style="width: 12px; height: 15px; left: 33px; top: 233px; z-index: 33;"
+                                 data-elementtype="icon" data-zindex="33" elementid="elementid14501695323350"
+                                 data-elemandgroup="true" wqdpathfill="#333333" wqdhref="0">
+                                <div class="wqdelementEditBox">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon"
+                                         viewBox="-250 -250 2392 2392">
+                                        <path fill="#999"
+                                              d="M 896 352 q -148 0 -273 73 t -198 198 t -73 273 t 73 273 t 198 198 t 273 73 t 273 -73 t 198 -198 t 73 -273 t -73 -273 t -198 -198 t -273 -73 Z m 768 544 q 0 209 -103 385.5 t -279.5 279.5 t -385.5 103 t -385.5 -103 t -279.5 -279.5 t -103 -385.5 t 103 -385.5 t 279.5 -279.5 t 385.5 -103 t 385.5 103 t 279.5 279.5 t 103 385.5 Z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14501695518640"
+                                 style="width: 12px; height: 15px; left: 32.3177px; top: 298px; z-index: 34;"
+                                 data-elementtype="icon" data-rotate="-27.984626886623907" data-zindex="34"
+                                 elementid="elementid14501695518640" data-elemandgroup="true" wqdpathfill="#333333"
+                                 wqdhref="0">
+                                <div class="wqdelementEditBox">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon"
+                                         viewBox="-250 -250 2392 2392">
+                                        <path fill="#999"
+                                              d="M 896 352 q -148 0 -273 73 t -198 198 t -73 273 t 73 273 t 198 198 t 273 73 t 273 -73 t 198 -198 t 73 -273 t -73 -273 t -198 -198 t -273 -73 Z m 768 544 q 0 209 -103 385.5 t -279.5 279.5 t -385.5 103 t -385.5 -103 t -279.5 -279.5 t -103 -385.5 t 103 -385.5 t 279.5 -279.5 t 385.5 -103 t 385.5 103 t 279.5 279.5 t 103 385.5 Z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14501696128350"
+                                 style="width: 12px; height: 15px; left: 32px; top: 327px; z-index: 35;"
+                                 data-elementtype="icon" data-rotate="-27.984626886623907" data-zindex="35"
+                                 elementid="elementid14501696128350" data-elemandgroup="true" wqdpathfill="#333333"
+                                 wqdhref="0">
+                                <div class="wqdelementEditBox">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon"
+                                         viewBox="-250 -250 2392 2392">
+                                        <path fill="#999"
+                                              d="M 896 352 q -148 0 -273 73 t -198 198 t -73 273 t 73 273 t 198 198 t 273 73 t 273 -73 t 198 -198 t 73 -273 t -73 -273 t -198 -198 t -273 -73 Z m 768 544 q 0 209 -103 385.5 t -279.5 279.5 t -385.5 103 t -385.5 -103 t -279.5 -279.5 t -103 -385.5 t 103 -385.5 t 279.5 -279.5 t 385.5 -103 t 385.5 103 t 279.5 279.5 t 103 385.5 Z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14501695133020"
+                                 style="width: 80px; height: 32px; left: 50px; top: 223.5px; z-index: 36;"
+                                 data-elementtype="text" data-zindex="36" elementid="elementid14501695133020"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="article1"><p class="wqd-text-article1"> </p>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14501696250750"
+                                 style="width: 80px; height: 32px; left: 50px; top: 317px; z-index: 37;"
+                                 data-elementtype="text" data-zindex="37" elementid="elementid14501696250750"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="article1"><p class="wqd-text-article1">多面手</p>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14501696257800"
+                                 style="width: 80px; height: 32px; left: 50px; top: 287.5px; z-index: 38;"
+                                 data-elementtype="text" data-zindex="38" elementid="elementid14501696257800"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="article1"><p class="wqd-text-article1">教龄丰富</p>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14501696263790"
+                                 style="width: 80px; height: 32px; left: 50px; top: 255.5px; z-index: 39;"
+                                 data-elementtype="text" data-zindex="39" elementid="elementid14501696263790"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="article1"><p class="wqd-text-article1">名校</p>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14501693567280"
+                                 style="width: 329px; height: 36px; left: 0px; top: 169px; z-index: 11;"
+                                 data-elementtype="text" data-zindex="11" elementid="elementid14501693567280"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="article1"><p class="wqd-text-article1">以学生学习效果为本</p>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementId1450169257700"
+                                 style="width: 330px; height: 103px; left: 0px; top: 66px; z-index: 10;"
+                                 data-elementtype="text" data-zindex="10" elementid="elementId1450169257700"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="article1"><p class="wqd-text-article2">
+                                    覆盖全国所有的985院校和部分211院校、师范类院校。也欢迎国外名校的同学和在职老师加入我们</p>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementId1450168481441"
+                                 style="width: 40px; height: 40px; left: 0px; top: 7.5px; z-index: 8;"
+                                 data-elementtype="icon" data-zindex="8" elementid="elementId1450168481441"
+                                 data-elemandgroup="true" wqdpathfill="#448585" wqdhref="0"
+                                 data-animation-iteration-count="1" data-animation-delay="0" data-animation-duration="1"
+                                 data-animate="lightSpeedIn">
+                                <div class="wqdelementEditBox wqdAnimatedos">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon"
+                                         viewBox="-250 -250 2392 2392">
+                                        <path fill="#999"
+                                              d="M 84 768 l 623 665 l -300 -665 h -323 Z m 812 772 l 349 -772 h -698 Z m -486 -900 l 204 -384 h -262 l -288 384 h 346 Z m 675 793 l 623 -665 h -323 Z m -530 -793 h 682 l -204 -384 h -274 Z m 827 0 h 346 l -288 -384 h -262 Z m 141 -486 l 384 512 q 14 18 13 41.5 t -17 40.5 l -960 1024 q -18 20 -47 20 t -47 -20 l -960 -1024 q -16 -17 -17 -40.5 t 13 -41.5 l 384 -512 q 18 -26 51 -26 h 1152 q 33 0 51 26 Z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605162536160"
+                         style="width: 1106px; height: 30px; left: 47.5px; top: 377px; z-index: 5;"
+                         data-elementtype="line" data-zindex="5" elementid="elementid14605162536160"
+                         data-elemandgroup="true" wqdpathfill="#c0c0c0" wqdhref="0">
+                        <div class="wqdelementEditBox">
+                            <div class="wqd-line"
+                                 style="height:0;border-top:1px dashed #3d9be9;position:relative;top:50%;"></div>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit wqdGroup elementsContainer" id="groupId1460540197788"
+                         style="height: 259px; width: 1027px; left: 86px; top: 122px; z-index: 6;" data-maxzindex="0"
+                         data-zindex="6" data-elemandgroup="true" groupid="groupId1460540197788">
+                        <div class="wqdelementEditBox" data-maxzindex="5">
+                            <div class="wqdelementEdit" id="elementId1450147193730"
+                                 style="width: 813px; height: 74px; left: 107px; top: 83px; z-index: 1;"
+                                 data-elementtype="text" data-zindex="1" elementid="elementId1450147193730"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="article1"><h3 class="wqd-text-title3"
+                                                                           style="text-align: center;">
+                                    诚信敬业、充满激情、课件完善、时间灵活，生源充足</h3>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementId1450169051195"
+                                 style="width: 486px; height: 83px; left: 270.5px; top: 0px; z-index: 2;"
+                                 data-elementtype="text" data-zindex="2" elementid="elementId1450169051195"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="title1"><h2 class="wqd-text-title2"
+                                                                         style="text-align: center;">关于我们</h2>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementId1450167162346"
+                                 style="width: 40px; height: 40px; left: 493.5px; top: 157px; z-index: 3;"
+                                 data-elementtype="icon" data-zindex="3" elementid="elementId1450167162346"
+                                 data-elemandgroup="true" wqdpathfill="#333333" wqdhref="0">
+                                <div class="wqdelementEditBox">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon"
+                                         viewBox="-250 -250 2392 2392">
+                                        <path fill="#999"
+                                              d="M 1703 478 q 40 57 18 129 l -275 906 q -19 64 -76.5 107.5 t -122.5 43.5 h -923 q -77 0 -148.5 -53.5 t -99.5 -131.5 q -24 -67 -2 -127 q 0 -4 3 -27 t 4 -37 q 1 -8 -3 -21.5 t -3 -19.5 q 2 -11 8 -21 t 16.5 -23.5 t 16.5 -23.5 q 23 -38 45 -91.5 t 30 -91.5 q 3 -10 0.5 -30 t -0.5 -28 q 3 -11 17 -28 t 17 -23 q 21 -36 42 -92 t 25 -90 q 1 -9 -2.5 -32 t 0.5 -28 q 4 -13 22 -30.5 t 22 -22.5 q 19 -26 42.5 -84.5 t 27.5 -96.5 q 1 -8 -3 -25.5 t -2 -26.5 q 2 -8 9 -18 t 18 -23 t 17 -21 q 8 -12 16.5 -30.5 t 15 -35 t 16 -36 t 19.5 -32 t 26.5 -23.5 t 36 -11.5 t 47.5 5.5 l -1 3 q 38 -9 51 -9 h 761 q 74 0 114 56 t 18 130 l -274 906 q -36 119 -71.5 153.5 t -128.5 34.5 h -869 q -27 0 -38 15 q -11 16 -1 43 q 24 70 144 70 h 923 q 29 0 56 -15.5 t 35 -41.5 l 300 -987 q 7 -22 5 -57 q 38 15 59 43 Z m -1064 2 q -4 13 2 22.5 t 20 9.5 h 608 q 13 0 25.5 -9.5 t 16.5 -22.5 l 21 -64 q 4 -13 -2 -22.5 t -20 -9.5 h -608 q -13 0 -25.5 9.5 t -16.5 22.5 Z m -83 256 q -4 13 2 22.5 t 20 9.5 h 608 q 13 0 25.5 -9.5 t 16.5 -22.5 l 21 -64 q 4 -13 -2 -22.5 t -20 -9.5 h -608 q -13 0 -25.5 9.5 t -16.5 22.5 Z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementId1450168610054"
+                                 style="width: 468px; height: 18px; left: 559px; top: 167px; z-index: 4;"
+                                 data-elementtype="img" data-zindex="4" elementid="elementId1450168610054"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox">
+                                    <img class="wqd-img" ondragstart="return false;"
+                                         src="picture/yq0kxfzv0dcani2haaa674kkna8187.png">
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14501688698490"
+                                 style="width: 468px; height: 20px; left: 0px; top: 167px; z-index: 5;"
+                                 data-elementtype="img" data-zindex="5" elementid="elementid14501688698490"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox">
+                                    <img class="wqd-img" ondragstart="return false;"
+                                         src="picture/yq0kxfzv0dcani2haaa674kkna8187.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementId1450167276047"
+                         style="left: 430px; top: 439.5px; width: 45px; height: 49px; z-index: 7;"
+                         data-elementtype="icon" data-zindex="7" elementid="elementId1450167276047"
+                         data-elemandgroup="true" wqdpathfill="#448585" wqdhref="0" triggertype="unveil.wqdAnimate"
+                         data-animation-iteration-count="1" data-animation-delay="0" data-animation-duration="1"
+                         data-animate="lightSpeedIn">
+                        <div class="wqdelementEditBox wqdAnimatedos">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon" viewBox="-250 -250 2392 2392">
+                                <path fill="#999"
+                                      d="M 1664 640 q 53 0 90.5 37.5 t 37.5 90.5 t -37.5 90.5 t -90.5 37.5 v 384 q 0 52 -38 90 t -90 38 q -417 -347 -812 -380 q -58 19 -91 66 t -31 100.5 t 40 92.5 q -20 33 -23 65.5 t 6 58 t 33.5 55 t 48 50 t 61.5 50.5 q -29 58 -111.5 83 t -168.5 11.5 t -132 -55.5 q -7 -23 -29.5 -87.5 t -32 -94.5 t -23 -89 t -15 -101 t 3.5 -98.5 t 22 -110.5 h -122 q -66 0 -113 -47 t -47 -113 v -192 q 0 -66 47 -113 t 113 -47 h 480 q 435 0 896 -384 q 52 0 90 38 t 38 90 v 384 Z m -128 604 v -954 q -394 302 -768 343 v 270 q 377 42 768 341 Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14501673247120"
+                         style="left: 635px; top: 657px; width: 127px; height: 132px; z-index: 8;"
+                         data-elementtype="icon" data-zindex="8" elementid="elementid14501673247120"
+                         data-elemandgroup="true" wqdpathfill="#81bcb6" wqdhref="0" data-animation-iteration-count="1"
+                         data-animation-delay="0" data-animation-duration="1" data-animate="fadeInRight">
+                        <div class="wqdelementEditBox wqdAnimatedos">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon" viewBox="-250 -250 2392 2392">
+                                <path fill="#999"
+                                      d="M 1664 640 q 53 0 90.5 37.5 t 37.5 90.5 t -37.5 90.5 t -90.5 37.5 v 384 q 0 52 -38 90 t -90 38 q -417 -347 -812 -380 q -58 19 -91 66 t -31 100.5 t 40 92.5 q -20 33 -23 65.5 t 6 58 t 33.5 55 t 48 50 t 61.5 50.5 q -29 58 -111.5 83 t -168.5 11.5 t -132 -55.5 q -7 -23 -29.5 -87.5 t -32 -94.5 t -23 -89 t -15 -101 t 3.5 -98.5 t 22 -110.5 h -122 q -66 0 -113 -47 t -47 -113 v -192 q 0 -66 47 -113 t 113 -47 h 480 q 435 0 896 -384 q 52 0 90 38 t 38 90 v 384 Z m -128 604 v -954 q -394 302 -768 343 v 270 q 377 42 768 341 Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605155739181"
+                         style="left: 481.5px; top: 436px; width: 208px; height: 49px; z-index: 9;"
+                         data-elementtype="text" data-zindex="9" elementid="elementid14605155739181"
+                         data-elemandgroup="true">
+                        <div class="wqdelementEditBox" style="visibility: visible;" data-emptytexttemplate="title3"><h3
+                                class="wqd-text-title3"><span style="color:#008080;">薪资合理</span></h3>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid146051557391811"
+                         style="left: 436px; top: 504px; width: 330px; height: 103px; z-index: 10;"
+                         data-elementtype="text" data-zindex="10" elementid="elementid146051557391811"
+                         data-elemandgroup="true">
+                        <div class="wqdelementEditBox" style="visibility: visible;" data-emptytexttemplate="article1"><p
+                                class="wqd-text-article2">非常具有竞争力的薪资，50-150RMB/h。薪资根据课时数提升。清北的同学薪资更高哟</p>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid146051557391810"
+                         style="left: 436px; top: 607px; width: 329px; height: 36px; z-index: 11;"
+                         data-elementtype="text" data-zindex="11" elementid="elementid146051557391810"
+                         data-elemandgroup="true">
+                        <div class="wqdelementEditBox" style="visibility: visible;" data-emptytexttemplate="article1"><p
+                                class="wqd-text-article1">诚信敬业、勇于竞争</p>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605155739182"
+                         style="left: 469px; top: 702px; width: 12px; height: 15px; z-index: 12;"
+                         data-elementtype="icon" data-zindex="12" elementid="elementid14605155739182"
+                         data-elemandgroup="true" wqdpathfill="#333333" wqdhref="0">
+                        <div class="wqdelementEditBox">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon" viewBox="-250 -250 2392 2392">
+                                <path fill="#999"
+                                      d="M 896 352 q -148 0 -273 73 t -198 198 t -73 273 t 73 273 t 198 198 t 273 73 t 273 -73 t 198 -198 t 73 -273 t -73 -273 t -198 -198 t -273 -73 Z m 768 544 q 0 209 -103 385.5 t -279.5 279.5 t -385.5 103 t -385.5 -103 t -279.5 -279.5 t -103 -385.5 t 103 -385.5 t 279.5 -279.5 t 385.5 -103 t 385.5 103 t 279.5 279.5 t 103 385.5 Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605155739183"
+                         style="left: 469px; top: 669px; width: 12px; height: 15px; z-index: 13;"
+                         data-elementtype="icon" data-zindex="13" elementid="elementid14605155739183"
+                         data-elemandgroup="true" wqdpathfill="#333333" wqdhref="0">
+                        <div class="wqdelementEditBox">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon" viewBox="-250 -250 2392 2392">
+                                <path fill="#999"
+                                      d="M 896 352 q -148 0 -273 73 t -198 198 t -73 273 t 73 273 t 198 198 t 273 73 t 273 -73 t 198 -198 t 73 -273 t -73 -273 t -198 -198 t -273 -73 Z m 768 544 q 0 209 -103 385.5 t -279.5 279.5 t -385.5 103 t -385.5 -103 t -279.5 -279.5 t -103 -385.5 t 103 -385.5 t 279.5 -279.5 t 385.5 -103 t 385.5 103 t 279.5 279.5 t 103 385.5 Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605155739184"
+                         style="left: 468.31px; top: 734px; width: 12px; height: 15px; z-index: 14;"
+                         data-elementtype="icon" data-rotate="-27.984626886623907" data-zindex="14"
+                         elementid="elementid14605155739184" data-elemandgroup="true" wqdpathfill="#333333" wqdhref="0">
+                        <div class="wqdelementEditBox">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon" viewBox="-250 -250 2392 2392">
+                                <path fill="#999"
+                                      d="M 896 352 q -148 0 -273 73 t -198 198 t -73 273 t 73 273 t 198 198 t 273 73 t 273 -73 t 198 -198 t 73 -273 t -73 -273 t -198 -198 t -273 -73 Z m 768 544 q 0 209 -103 385.5 t -279.5 279.5 t -385.5 103 t -385.5 -103 t -279.5 -279.5 t -103 -385.5 t 103 -385.5 t 279.5 -279.5 t 385.5 -103 t 385.5 103 t 279.5 279.5 t 103 385.5 Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605155739185"
+                         style="left: 468px; top: 763px; width: 12px; height: 15px; z-index: 15;"
+                         data-elementtype="icon" data-rotate="-27.984626886623907" data-zindex="15"
+                         elementid="elementid14605155739185" data-elemandgroup="true" wqdpathfill="#333333" wqdhref="0">
+                        <div class="wqdelementEditBox">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon" viewBox="-250 -250 2392 2392">
+                                <path fill="#999"
+                                      d="M 896 352 q -148 0 -273 73 t -198 198 t -73 273 t 73 273 t 198 198 t 273 73 t 273 -73 t 198 -198 t 73 -273 t -73 -273 t -198 -198 t -273 -73 Z m 768 544 q 0 209 -103 385.5 t -279.5 279.5 t -385.5 103 t -385.5 -103 t -279.5 -279.5 t -103 -385.5 t 103 -385.5 t 279.5 -279.5 t 385.5 -103 t 385.5 103 t 279.5 279.5 t 103 385.5 Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605155739186"
+                         style="left: 486px; top: 659px; width: 149px; height: 32px; z-index: 16;"
+                         data-elementtype="text" data-zindex="16" elementid="elementid14605155739186"
+                         data-elemandgroup="true">
+                        <div class="wqdelementEditBox" style="visibility: visible;" data-emptytexttemplate="article1"><p
+                                class="wqd-text-article1">每月15号发放薪资</p>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605155739187"
+                         style="left: 486px; top: 753px; width: 103px; height: 32px; z-index: 17;"
+                         data-elementtype="text" data-zindex="17" elementid="elementid14605155739187"
+                         data-elemandgroup="true">
+                        <div class="wqdelementEditBox" style="visibility: visible;" data-emptytexttemplate="article1"><p
+                                class="wqd-text-article1">寒暑假补贴</p>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605155739188"
+                         style="left: 486px; top: 723.5px; width: 80px; height: 32px; z-index: 18;"
+                         data-elementtype="text" data-zindex="18" elementid="elementid14605155739188"
+                         data-elemandgroup="true">
+                        <div class="wqdelementEditBox" style="visibility: visible;" data-emptytexttemplate="article1"><p
+                                class="wqd-text-article1">高三补贴</p>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605155739189"
+                         style="left: 486px; top: 691px; width: 130px; height: 32px; z-index: 20;"
+                         data-elementtype="text" data-zindex="20" elementid="elementid14605155739189"
+                         data-elemandgroup="true">
+                        <div class="wqdelementEditBox" style="visibility: visible;" data-emptytexttemplate="article1"><p
+                                class="wqd-text-article1">无任何额外交费</p>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementId1450167301977"
+                         style="left: 804.5px; top: 447px; width: 45px; height: 42px; z-index: 19;"
+                         data-elementtype="icon" data-zindex="19" elementid="elementId1450167301977"
+                         data-elemandgroup="true" wqdpathfill="#448585" wqdhref="0" data-animation-iteration-count="1"
+                         data-animation-delay="0" data-animation-duration="1" data-animate="lightSpeedIn">
+                        <div class="wqdelementEditBox wqdAnimatedos">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon" viewBox="-250 -250 2392 2392">
+                                <path fill="#999"
+                                      d="M 896 1629 l 640 -349 v -636 l -640 233 v 752 Z m -64 -865 l 698 -254 l -698 -254 l -698 254 Z m 832 -252 v 768 q 0 35 -18 65 t -49 47 l -704 384 q -28 16 -61 16 t -61 -16 l -704 -384 q -31 -17 -49 -47 t -18 -65 v -768 q 0 -40 23 -73 t 61 -47 l 704 -256 q 22 -8 44 -8 t 44 8 l 704 256 q 38 14 61 47 t 23 73 Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14501673372980"
+                         style="left: 1011px; top: 665px; width: 126px; height: 124px; z-index: 21;"
+                         data-elementtype="icon" data-zindex="21" elementid="elementid14501673372980"
+                         data-elemandgroup="true" wqdpathfill="#81bcb6" wqdhref="0" data-animation-iteration-count="1"
+                         data-animation-delay="0" data-animation-duration="1" data-animate="fadeInRight">
+                        <div class="wqdelementEditBox wqdAnimatedos">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon" viewBox="-250 -250 2392 2392">
+                                <path fill="#999"
+                                      d="M 896 1629 l 640 -349 v -636 l -640 233 v 752 Z m -64 -865 l 698 -254 l -698 -254 l -698 254 Z m 832 -252 v 768 q 0 35 -18 65 t -49 47 l -704 384 q -28 16 -61 16 t -61 -16 l -704 -384 q -31 -17 -49 -47 t -18 -65 v -768 q 0 -40 23 -73 t 61 -47 l 704 -256 q 22 -8 44 -8 t 44 8 l 704 256 q 38 14 61 47 t 23 73 Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605156411421"
+                         style="left: 853.5px; top: 440px; width: 208px; height: 49px; z-index: 22;"
+                         data-elementtype="text" data-zindex="22" elementid="elementid14605156411421"
+                         data-elemandgroup="true">
+                        <div class="wqdelementEditBox" style="visibility: visible;" data-emptytexttemplate="title3"><h3
+                                class="wqd-text-title3"><span style="color:#008080;">生源充足</span></h3>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid146051564114211"
+                         style="left: 808px; top: 504px; width: 354px; height: 103px; z-index: 23;"
+                         data-elementtype="text" data-zindex="23" elementid="elementid146051564114211"
+                         data-elemandgroup="true">
+                        <div class="wqdelementEditBox" style="visibility: visible;" data-emptytexttemplate="article1"><p
+                                class="wqd-text-article2">
+                            我们有丰富的生源，和非常完善的课件。您可以选择教授小初高，可以选择教授语文、数学、英语、物理、化学、生物、地理、历史、政治、科学</p>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid146051564114210"
+                         style="left: 808px; top: 611px; width: 329px; height: 36px; z-index: 24;"
+                         data-elementtype="text" data-zindex="24" elementid="elementid146051564114210"
+                         data-elemandgroup="true">
+                        <div class="wqdelementEditBox" style="visibility: visible;" data-emptytexttemplate="article1"><p
+                                class="wqd-text-article1">一位学员、一份计划、一种方法</p>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605156411422"
+                         style="left: 841px; top: 706px; width: 12px; height: 15px; z-index: 25;"
+                         data-elementtype="icon" data-zindex="25" elementid="elementid14605156411422"
+                         data-elemandgroup="true" wqdpathfill="#333333" wqdhref="0">
+                        <div class="wqdelementEditBox">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon" viewBox="-250 -250 2392 2392">
+                                <path fill="#999"
+                                      d="M 896 352 q -148 0 -273 73 t -198 198 t -73 273 t 73 273 t 198 198 t 273 73 t 273 -73 t 198 -198 t 73 -273 t -73 -273 t -198 -198 t -273 -73 Z m 768 544 q 0 209 -103 385.5 t -279.5 279.5 t -385.5 103 t -385.5 -103 t -279.5 -279.5 t -103 -385.5 t 103 -385.5 t 279.5 -279.5 t 385.5 -103 t 385.5 103 t 279.5 279.5 t 103 385.5 Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605156411423"
+                         style="left: 841px; top: 673px; width: 12px; height: 15px; z-index: 26;"
+                         data-elementtype="icon" data-zindex="26" elementid="elementid14605156411423"
+                         data-elemandgroup="true" wqdpathfill="#333333" wqdhref="0">
+                        <div class="wqdelementEditBox">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon" viewBox="-250 -250 2392 2392">
+                                <path fill="#999"
+                                      d="M 896 352 q -148 0 -273 73 t -198 198 t -73 273 t 73 273 t 198 198 t 273 73 t 273 -73 t 198 -198 t 73 -273 t -73 -273 t -198 -198 t -273 -73 Z m 768 544 q 0 209 -103 385.5 t -279.5 279.5 t -385.5 103 t -385.5 -103 t -279.5 -279.5 t -103 -385.5 t 103 -385.5 t 279.5 -279.5 t 385.5 -103 t 385.5 103 t 279.5 279.5 t 103 385.5 Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605156411424"
+                         style="left: 840.31px; top: 738px; width: 12px; height: 15px; z-index: 27;"
+                         data-elementtype="icon" data-rotate="-27.984626886623907" data-zindex="27"
+                         elementid="elementid14605156411424" data-elemandgroup="true" wqdpathfill="#333333" wqdhref="0">
+                        <div class="wqdelementEditBox">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon" viewBox="-250 -250 2392 2392">
+                                <path fill="#999"
+                                      d="M 896 352 q -148 0 -273 73 t -198 198 t -73 273 t 73 273 t 198 198 t 273 73 t 273 -73 t 198 -198 t 73 -273 t -73 -273 t -198 -198 t -273 -73 Z m 768 544 q 0 209 -103 385.5 t -279.5 279.5 t -385.5 103 t -385.5 -103 t -279.5 -279.5 t -103 -385.5 t 103 -385.5 t 279.5 -279.5 t 385.5 -103 t 385.5 103 t 279.5 279.5 t 103 385.5 Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605156411426"
+                         style="left: 858px; top: 663px; width: 116px; height: 32px; z-index: 28;"
+                         data-elementtype="text" data-zindex="28" elementid="elementid14605156411426"
+                         data-elemandgroup="true">
+                        <div class="wqdelementEditBox" style="visibility: visible;" data-emptytexttemplate="article1"><p
+                                class="wqd-text-article1">自由选择生源</p>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605156411428"
+                         style="left: 858px; top: 727px; width: 109px; height: 32px; z-index: 29;"
+                         data-elementtype="text" data-zindex="29" elementid="elementid14605156411428"
+                         data-elemandgroup="true">
+                        <div class="wqdelementEditBox" style="visibility: visible;" data-emptytexttemplate="article1"><p
+                                class="wqd-text-article1">自由选择科目</p>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605156411429"
+                         style="left: 858px; top: 695px; width: 116px; height: 32px; z-index: 30;"
+                         data-elementtype="text" data-zindex="30" elementid="elementid14605156411429"
+                         data-elemandgroup="true">
+                        <div class="wqdelementEditBox" style="visibility: visible;" data-emptytexttemplate="article1"><p
+                                class="wqd-text-article1">自由选择年级</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="yzmoveContent sectionCenter  ">
+            <div class="wqdSectiondiv" id="wqd1460519441343serial" partid="wqd1460519441343serial" partcategoryid="0"
+                 sectionname="模板展示" commonpartid="10542" sortid="20" data-type="wqdSectiondiv">
+                <section class="wqd1445504393013css wqdBkEditos sectionV2 moveMainArea elementsContainer"
+                         style="height: 839px; margin: 0px auto; position: relative;" sectionwidth="1200"
+                         wqdimgurlos="http" data-maxzindex="2" wqdheight="839" wqdbgcoloros="#eee">
+                    <div class="wqdelementEdit wqdGroup elementsContainer" id="groupId1460540265060"
+                         style="height: 259px; width: 1027px; left: 86px; top: 67px; z-index: 1;" data-maxzindex="0"
+                         data-zindex="1" data-elemandgroup="true" groupid="groupId1460540265060">
+                        <div class="wqdelementEditBox">
+                            <div class="wqdelementEdit" id="elementId1450168209846"
+                                 style="width: 40px; height: 40px; left: 493.5px; top: 157px; z-index: 2;"
+                                 data-elementtype="icon" data-zindex="2" elementid="elementId1450168209846"
+                                 data-elemandgroup="true" wqdpathfill="#333333" wqdhref="0">
+                                <div class="wqdelementEditBox">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon"
+                                         viewBox="-250 -250 2392 2392">
+                                        <path fill="#999"
+                                              d="M 216 1169 l 603 402 v -359 l -334 -223 Z m -62 -144 l 193 -129 l -193 -129 v 258 Z m 819 546 l 603 -402 l -269 -180 l -334 223 v 359 Z m -77 -493 l 272 -182 l -272 -182 l -272 182 Z m -411 -275 l 334 -223 v -359 l -603 402 Z m 960 93 l 193 129 v -258 Z m -138 -93 l 269 -180 l -603 -402 v 359 Z m 485 -180 v 546 q 0 41 -34 64 l -819 546 q -21 13 -43 13 t -43 -13 l -819 -546 q -34 -23 -34 -64 v -546 q 0 -41 34 -64 l 819 -546 q 21 -13 43 -13 t 43 13 l 819 546 q 34 23 34 64 Z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14605402192050"
+                                 style="width: 813px; height: 74px; left: 107px; top: 83px; z-index: 3;"
+                                 data-elementtype="text" data-zindex="3" elementid="elementid14605402192050"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="article1"><h3 class="wqd-text-title3"
+                                                                           style="text-align: center;">
+                                    真正实现‘一位老师、一台电脑、一位学员’的<span style="color:#008080;">在线教学</span>模式</h3>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14605402192051"
+                                 style="width: 486px; height: 83px; left: 270.5px; top: 0px; z-index: 4;"
+                                 data-elementtype="text" data-zindex="4" elementid="elementid14605402192051"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="title1"><h2 class="wqd-text-title2"
+                                                                         style="text-align: center;">教学环境</h2>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14605402192052"
+                                 style="width: 823px; height: 38px; left: 102px; top: 221px; z-index: 5;"
+                                 data-elementtype="text" data-zindex="5" elementid="elementid14605402192052"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="article2"><p class="wqd-text-article2"
+                                                                          style="text-align: center;">以下学校符合报名要求</p>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14605402192054"
+                                 style="width: 468px; height: 18px; left: 559px; top: 168px; z-index: 6;"
+                                 data-elementtype="img" data-zindex="6" elementid="elementid14605402192054"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox">
+                                    <img class="wqd-img" ondragstart="return false;"
+                                         src="./picture/yq0kxfzv0dcani2haaa674kkna8187.png">
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14605402192055"
+                                 style="width: 468px; height: 20px; left: 0px; top: 167px; z-index: 7;"
+                                 data-elementtype="img" data-zindex="7" elementid="elementid14605402192055"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox">
+                                    <img class="wqd-img" ondragstart="return false;"
+                                         src="./picture/yq0kxfzv0dcani2haaa674kkna8187.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" data-elementtype="text" data-elemandgroup="true"
+                         elementid="elementId15028433395550" id="elementId15028433395550" data-zindex="2"
+                         style="width: 1037px; height: 452px; left: 81.5px; top: 345px; z-index: 2;">
+                        <div class="wqdelementEditBox" data-emptytexttemplate="title4" style="visibility: visible;"><h4
+                                class="wqd-text-title4" style="text-align: justify;">
+                            北京大学，清华大学，南京大学，武汉大学，浙江大学，厦门大学，同济大学，南开大学，四川大学，山东大学， &nbsp; 天津大学，上海交通大学<br>
+                            中国科学院大学，西安交通大学，中国科学技术大学，哈尔滨工业大学，华中科技大学，大连理工大学，北京航天航空大学，吉林大学，东南大学，西北工业大学，北京理工大学，兰州大学，西北农林科技大学，中国海洋大学，中国人民大学，复旦大学，中山大学，华南理工大学，湖南大学，中南大学，重庆大学，电子科技大学，东北大学，中国农业大学，国防科技大学，中央名族大学，国际关系学院，中国政法大学，西南政法大学，华东师范大学，北京师范大学，陕西师范大学，上海外国语大学，北京外国语大学<br>
+                            中南财经政法大学，西南财经大学，中央财经大学，上海财经大学<br>
+                            在职老师<br>
+                            香港大学，香港中文大学，香港理工大学，国外名校<br>
+                            东北师范大学，华中师范大学，华南师范大学，湖南师范大学，西安电子科技大学 郑州大学，南京航空航天大学， &nbsp;
+                            中国矿业大学，武汉理工大学，北京外国语大学，南京师范大学，南京理工大学，华东理工大学，苏州大学，江南大学，中国社会科学院大学<br>
+                            &nbsp;</h4>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="yzmoveContent sectionCenter">
+            <div class="wqdSectiondiv" id="wqd1449917130192serial"
+                 style="background-image: url(../images/yq0kxfzq0iiavj23aaatqtkotjy138.png&quot;); background-attachment: scroll; background-position: 50% 50%; background-repeat: repeat;"
+                 partid="wqd1449917130192serial" wqdbgset="1" wqdback_position="1" partcategoryid="2" sectionname="产品优势"
+                 commonpartid="10542" sortid="4" data-type="wqdSectiondiv">
+                <section class="wqd1445504393013css wqdBkEditos sectionV2 moveMainArea elementsContainer"
+                         style="height: 849px; margin: 0px auto; position: relative;" wqdback_position="3"
+                         sectionwidth="1200"
+                         wqdimgurlos="http://img.wqdian.com/group1/M00/75/4A/yq0KXFZq0IiAVJ23AAATQTKOtJY138.png"
+                         wqdwidthlimit="0" wqdbgattachment="0" bac_position="5" data-maxzindex="2" wqdheight="849"
+                         wqdbgcoloros="#eee">
+                    <div class="wqdelementEdit wqdGroup elementsContainer" id="groupId1460517449881"
+                         style="height: 289px; width: 1026px; left: 92px; top: 76px; z-index: 1;" data-maxzindex="0"
+                         data-zindex="1" data-elemandgroup="true" groupid="groupId1460517449881">
+                        <div class="wqdelementEditBox">
+                            <div class="wqdelementEdit" id="elementid14501689409320"
+                                 style="width: 862px; height: 60px; left: 77px; top: 95px; z-index: 1;"
+                                 data-elementtype="text" data-zindex="1" elementid="elementid14501689409320"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="article1"><h3 class="wqd-text-title3"
+                                                                           style="text-align: center;">自成立以来<span
+                                        style="color:#008080;">一直秉承</span>‘以学生为本，以老师为本’</h3>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14501709371660"
+                                 style="width: 586px; height: 95px; left: 215px; top: 0px; z-index: 2;"
+                                 data-elementtype="text" data-zindex="2" elementid="elementid14501709371660"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="title1"><h2 class="wqd-text-title2"
+                                                                         style="text-align: center;">薪资优势</h2>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14501711324460"
+                                 style="width: 823px; height: 43px; left: 96.5px; top: 246px; z-index: 3;"
+                                 data-elementtype="text" data-zindex="3" elementid="elementid14501711324460"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="article2"><p class="wqd-text-article2"
+                                                                          style="text-align: center;">非常具有竞争力的薪资</p>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementId1450167507330"
+                                 style="width: 40px; height: 40px; left: 495.5px; top: 175px; z-index: 37;"
+                                 data-elementtype="icon" data-zindex="37" elementid="elementId1450167507330"
+                                 data-elemandgroup="true" wqdpathfill="#333333" wqdhref="0">
+                                <div class="wqdelementEditBox">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon"
+                                         viewBox="-250 -250 2392 2392">
+                                        <path fill="#999"
+                                              d="M 384 1632 l 384 -192 v -314 l -384 164 v 342 Z m -64 -454 l 404 -173 l -404 -173 l -404 173 Z m 1088 454 l 384 -192 v -314 l -384 164 v 342 Z m -64 -454 l 404 -173 l -404 -173 l -404 173 Z m -448 -293 l 384 -165 v -266 l -384 164 v 267 Z m -64 -379 l 441 -189 l -441 -189 l -441 189 Z m 1088 518 v 416 q 0 36 -19 67 t -52 47 l -448 224 q -25 14 -57 14 t -57 -14 l -448 -224 q -5 -2 -7 -4 q -2 2 -7 4 l -448 224 q -25 14 -57 14 t -57 -14 l -448 -224 q -33 -16 -52 -47 t -19 -67 v -416 q 0 -38 21.5 -70 t 56.5 -48 l 434 -186 v -400 q 0 -38 21.5 -70 t 56.5 -48 l 448 -192 q 23 -10 50 -10 t 50 10 l 448 192 q 35 16 56.5 48 t 21.5 70 v 400 l 434 186 q 36 16 57 48 t 21 70 Z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14501711806090"
+                                 style="width: 468px; height: 18px; left: 0px; top: 186px; z-index: 38;"
+                                 data-elementtype="img" data-zindex="38" elementid="elementid14501711806090"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox">
+                                    <img class="wqd-img" ondragstart="return false;"
+                                         src="picture/yq0kxfzv0dcani2haaa674kkna8187.png">
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14501711814480"
+                                 style="width: 468px; height: 18px; left: 558px; top: 186px; z-index: 39;"
+                                 data-elementtype="img" data-zindex="39" elementid="elementid14501711814480"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox">
+                                    <img class="wqd-img" ondragstart="return false;"
+                                         src="picture/yq0kxfzv0dcani2haaa674kkna8187.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" data-elementtype="img" data-elemandgroup="true"
+                         style="width: 891px; height: 355px; left: 159.5px; top: 365px; z-index: 2;"
+                         elementid="elementId15023342686780" id="elementId15023342686780" data-zindex="2">
+                        <div class="wqdelementEditBox" style="border-radius:10px;"><img class="wqd-img wqd-img-default"
+                                                                                        src="./picture/acd0b602272d4c3b87e925c2a3351b15.png"
+                                                                                        ondragstart="return false;">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="yzmoveContent sectionCenter">
+            <div class="wqdSectiondiv" id="wqd1460519716965serial"
+                 style="background-attachment: scroll; background-position: 50% 50%; background-repeat: repeat;"
+                 partid="wqd1460519716965serial" wqdbgset="0" partcategoryid="2" sectionname="团队介绍" commonpartid="10542"
+                 sortid="20" data-type="wqdSectiondiv">
+                <section class="wqd1445504393013css wqdBkEditos sectionV2 moveMainArea elementsContainer"
+                         style="height: 0px; margin: 0px auto; position: relative;" wqdback_position="3"
+                         sectionwidth="1200"
+                         wqdimgurlos="http://img.wqdian.com/group1/M00/75/4A/yq0KXFZq0IiAVJ23AAATQTKOtJY138.png"
+                         wqdwidthlimit="0" wqdbgattachment="0" bac_position="5" data-maxzindex="1" wqdheight="-1"
+                         wqdbgcoloros="#eee"></section>
+            </div>
+        </div>
+        <div class="yzmoveContent sectionCenter"></div>
+        <div class="yzmoveContent sectionCenter">
+            <div class="wqdSectiondiv" id="wqd1449917140305serial"
+                 style="background-attachment: scroll; background-image: url(../images/yq0kx1zr9pgabrgmaacma09wou8619.jpg); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat no-repeat;"
+                 partid="wqd1449917140305serial" wqdback_position="1" partcategoryid="2" sectionname="=="
+                 commonpartid="10542" sortid="7" data-type="wqdSectiondiv">
+                <section class="wqd1445504393013css wqdBkEditos sectionV2 moveMainArea elementsContainer"
+                         style="height: 331px; margin: 0px auto; position: relative;" sectionwidth="1200"
+                         wqdimgurlos="http://img.wqdian.com/group2/M00/5F/2A/yq0KX1Zr9pGABrGMAACMa09WOU8619.jpg"
+                         wqdwidthlimit="0" wqdbgattachment="0" bac_position="5" data-maxzindex="4" wqdheight="331"
+                         wqdbgcolor="#343434" wqdbgcoloros="#eee">
+                    <div class="wqdelementEdit" id="elementid14501739776980"
+                         style="width: 175px; height: 54px; left: 521.5px; top: 1039.5px; z-index: 1;"
+                         data-elementtype="button" wqdheight="45" data-zindex="1" elementid="elementid14501739776980"
+                         data-elemandgroup="true" wqdhref="0" wqdborder_width="3" hoverborcol="#333333"
+                         hovercol="#ffffff" hoverbaccol="#333333" wqdon="true" wqdbordercolor="#333333"
+                         wqdbgcolor="rgba(255,255,255,0)" wqdcolor="#333333" wqdborderradius="3">
+                        <div class="wqdelementEditBox"><a class="wqd-button wqdComponentBtn2 on"
+                                                          style="border-width: 2px; border-style: solid; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;"
+                                                          ondragstart="return false;" wqdbtnborder="false"><em>了解详情</em></a>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementId1450174019894"
+                         style="width: 651px; height: 60px; left: 274.5px; top: 43px; z-index: 2;"
+                         data-elementtype="text" data-zindex="2" elementid="elementId1450174019894"
+                         data-elemandgroup="true">
+                        <div class="wqdelementEditBox" style="visibility: visible;" data-emptytexttemplate="title3"><h3
+                                class="wqd-text-title3" style="text-align: center;"><span style="font-size:36px;"><span
+                                style="color:#FFFFFF;">您的加入为我们注入新的活力</span></span></h3>
+                        </div>
+                    </div>
+
+                    <div class="wqdelementEdit wqdGroup elementsContainer" id=""
+                         style="height: 100px; width: 100%; left: 0; top: 200px; z-index: 3;" data-maxzindex="0"
+                         data-zindex="3" data-elemandgroup="true" groupid="groupId1460538089633">
+                        <div class="wqdelementEditBox" data-maxzindex="4">
+                            <div class="wqdelementEdit" id=""
+                                 style="width: 100%; height: 100px; top: 0px; z-index: 1;text-align: center"
+                                 data-elementtype="text" data-zindex="1" elementid="elementid14605368152110"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="article2"><h4 class="wqd-text-title4">
+                                    <button class="btn0" style="color:#008080;height: 50px;line-height: 50px;width: 200px;border: 2px solid #008080;border-radius: 25px;background-color: #fff;">点击报名</button>
+                                    &nbsp;</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="wqdelementEdit aniunveil aniHide" data-elementtype="img" data-elemandgroup="true"-->
+                         <!--style="width: 141px; height: 139px; left: 538.5px; top: 130px; z-index: 3;"-->
+                         <!--elementid="elementId15023350543930" id="elementId15023350543930" data-zindex="3"-->
+                         <!--data-animate="rotateIn" data-animation-duration="1" data-animation-delay="0"-->
+                         <!--data-animation-iteration-count="1" triggertype="unveil.wqdAnimate"-->
+                         <!--triggerelem="elementId15023350543930" triggeraction="show">-->
+                        <!--<div class="wqdelementEditBox" style="border-radius:10px;"><img class="wqd-img wqd-img-default"-->
+                                                                                        <!--src="./picture/8c0dd2f375ac462c938733ace571d8a8.png"-->
+                                                                                        <!--ondragstart="return false;">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="wqdelementEdit" data-elementtype="text" data-elemandgroup="true"-->
+                         <!--elementid="elementId15023350716510" id="elementId15023350716510" data-zindex="4"-->
+                         <!--style="width: 111px; height: 25px; left: 568.5px; top: 278px; z-index: 4;">-->
+                        <!--<div class="wqdelementEditBox" data-emptytexttemplate="article3" style="visibility: visible;"><p-->
+                                <!--class="wqd-text-article3"><span style="color:#FFF0F5;">扫码报名面试</span></p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </section>
+            </div>
+        </div>
+        <div class="yzmoveContent sectionCenter">
+            <div class="wqdSectiondiv" id="wqd1450180242821serial"
+                 style="background-image: url(../images/yq0kxfzq0iiavj23aaatqtkotjy138.png&quot;); background-attachment: scroll; background-position: 50% 50%; background-repeat: repeat;"
+                 partid="wqd1450180242821serial" wqdbgset="1" wqdback_position="1" partcategoryid="2" sectionname="案例展示"
+                 commonpartid="10542" sortid="19" data-type="wqdSectiondiv">
+                <section class="wqd1445504393013css wqdBkEditos sectionV2 moveMainArea elementsContainer"
+                         style="height: 325px; margin: 0px auto; position: relative;" wqdback_position="3"
+                         sectionwidth="1200"
+                         wqdimgurlos="http://img.wqdian.com/group1/M00/75/4A/yq0KXFZq0IiAVJ23AAATQTKOtJY138.png"
+                         wqdwidthlimit="0" wqdbgattachment="0" bac_position="5" data-maxzindex="1" wqdheight="325"
+                         wqdbgcoloros="#eee">
+                    <div class="wqdelementEdit wqdGroup elementsContainer" id="groupId1460526676667"
+                         style="height: 287px; width: 1026px; left: 87px; top: 38px; z-index: 1;" data-maxzindex="0"
+                         data-zindex="1" data-elemandgroup="true" groupid="groupId1460526676667">
+                        <div class="wqdelementEditBox" data-maxzindex="5">
+                            <div class="wqdelementEdit" id="elementid14605266766670"
+                                 style="width: 40px; height: 40px; left: 493px; top: 175px; z-index: 1;"
+                                 data-elementtype="icon" data-zindex="1" elementid="elementid14605266766670"
+                                 data-elemandgroup="true" wqdpathfill="#555" wqdhref="0">
+                                <div class="wqdelementEditBox">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon"
+                                         viewBox="-250 -250 2392 2392">
+                                        <path fill="#999"
+                                              d="M 912 1696 q 0 -16 -16 -16 q -59 0 -101.5 -42.5 t -42.5 -101.5 q 0 -16 -16 -16 t -16 16 q 0 73 51.5 124.5 t 124.5 51.5 q 16 0 16 -16 Z m -666 -288 h 1300 q -266 -300 -266 -832 q 0 -51 -24 -105 t -69 -103 t -121.5 -80.5 t -169.5 -31.5 t -169.5 31.5 t -121.5 80.5 t -69 103 t -24 105 q 0 532 -266 832 Z m 1482 0 q 0 52 -38 90 t -90 38 h -448 q 0 106 -75 181 t -181 75 t -181 -75 t -75 -181 h -448 q -52 0 -90 -38 t -38 -90 q 50 -42 91 -88 t 85 -119.5 t 74.5 -158.5 t 50 -206 t 19.5 -260 q 0 -152 117 -282.5 t 307 -158.5 q -8 -19 -8 -39 q 0 -40 28 -68 t 68 -28 t 68 28 t 28 68 q 0 20 -8 39 q 190 28 307 158.5 t 117 282.5 q 0 139 19.5 260 t 50 206 t 74.5 158.5 t 85 119.5 t 91 88 Z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14605266766671"
+                                 style="width: 862px; height: 60px; left: 82px; top: 95px; z-index: 2;"
+                                 data-elementtype="text" data-zindex="2" elementid="elementid14605266766671"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="article1"><h3 class="wqd-text-title3"
+                                                                           style="text-align: center;">真正实现‘<span
+                                        style="color:#008080;">一位学员</span>、一份计划、一种方法’的针对性教学模式</h3>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14605266766672"
+                                 style="width: 586px; height: 95px; left: 215px; top: 0px; z-index: 3;"
+                                 data-elementtype="text" data-zindex="3" elementid="elementid14605266766672"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="title1"><h2 class="wqd-text-title2"
+                                                                         style="text-align: center;">明星老师</h2>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14605266766674"
+                                 style="width: 468px; height: 18px; left: 0px; top: 186px; z-index: 4;"
+                                 data-elementtype="img" data-zindex="4" elementid="elementid14605266766674"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox">
+                                    <img class="wqd-img" ondragstart="return false;"
+                                         src="./picture/yq0kxfzv0dcani2haaa674kkna8187.png">
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14605266766675"
+                                 style="width: 468px; height: 18px; left: 558px; top: 186px; z-index: 5;"
+                                 data-elementtype="img" data-zindex="5" elementid="elementid14605266766675"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox">
+                                    <img class="wqd-img" ondragstart="return false;"
+                                         src="./picture/yq0kxfzv0dcani2haaa674kkna8187.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="yzmoveContent sectionCenter">
+            <div class="wqdSectiondiv" id="wqd1450792003801serial" style="background-attachment: scroll;"
+                 partid="wqd1450792003801serial" partcategoryid="2" sectionname="案例-轮播图" commonpartid="10542"
+                 sortid="21" data-type="wqdSectiondiv">
+                <section class="wqd1445504393013css wqdBkEditos sectionV2 moveMainArea elementsContainer fullscreen"
+                         style="height: 732px; margin: 0px auto; position: relative;" sectionwidth="1200"
+                         wqdimgurlos="http" wqdwidthlimit="1" wqdbgattachment="0" bac_position="1" data-maxzindex="1"
+                         wqdheight="732" wqdbgcoloros="#eee">
+                    <div class="wqdelementEdit" data-elementtype="text" data-elemandgroup="true"
+                         elementid="elementId15023356212270" id="elementId15023356212270" data-zindex="1"
+                         style="width: 1084px; height: 617px; left: 73.5px; top: 57px; z-index: 1;">
+                        <div class="wqdelementEditBox" data-emptytexttemplate="title4" style="visibility: visible;"><h4
+                                class="wqd-text-title4">专业知识忘了怎么办，自己都没有复习资料了怎么办<br>
+                            不用担心，我们有专门面对老师的公众号，里面课件资料妥妥的一堆，PPT都是为你准备好的，只要下载下来按照自己的讲课思路稍加改动就可以啦～<br>
+                            掷出要求，符合要求的弟弟妹妹们，继续往下看～<br>
+                            如何成为一位在线兼职老师？流程是酱紫的：<br>
+                            先扫码报名，此图文末就有二维码。按常理，直接按图片就可以扫码啦～<br>
+                            然后一小时内，你会收到报名短信和邮件，按照邮件提示，安装客户端，准备ppt。然后，回复这封邮件你的ppt和学历相关证件。<br>
+                            一般三天左右就会有老师联系你，给你安排一对一真人线上试讲，像QQ视频一样简单！<br>
+                            试讲时间只有20分钟，给你表现的时间仅仅只有10分钟，所以要想成功入职一定要注意准备充分！ppt要多做几页，(给面试老师看加分呀)，试讲的时候倒不用担心讲不完，一定要淡定，详细的讲一俩个知识点就好，一定不要为了讲完ppt变成了快速照读ppt.
+                            那你可能就要和嗨课堂说再见了。。<br>
+                            面试结束：会在周末某天下午安排一个在线的培训，非常必要，教给你一些上课必备技巧和客户端使用技巧。只是一个下午的时间，如果时间安排得好，很快就会入职的！不培训也是不能入职的哦～<br>
+                            签订协议，提交银行卡等信息，入职～这个时候你就会有一张高大上的工资卡啦～<br>
+                            <br>
+                            此时此刻，恭喜你。千锤万凿出深山，你终于是一位合格的人民教师啦（兼职但是专业）</h4>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="yzmoveContent">
+            <div class="wqdSectiondiv" id="wqd1460534870660serial" style="background-attachment: scroll;"
+                 partid="wqd1460534870660serial" partcategoryid="0" sectionname="数据统计" commonpartid="10542" sortid="19"
+                 data-type="wqdSectiondiv">
+                <section class="wqd1445504393013css wqdBkEditos sectionV2 moveMainArea elementsContainer"
+                         style="height: 0px; margin: 0px auto; position: relative;" sectionwidth="1200"
+                         wqdimgurlos="http" wqdwidthlimit="0" wqdbgattachment="0" bac_position="1" data-maxzindex="1"
+                         wqdheight="0" wqdbgcolor="#009788" wqdbgcoloros="#eee"
+                         data-style="toggle0:;toggle1:on;toggle2:;loop:on;"></section>
+            </div>
+        </div>
+        <div class="yzmoveContent sectionCenter">
+            <div class="wqdSectiondiv" id="wqd1449917148913serial"
+                 style="background-attachment: scroll; background-image: url(../images/yq0kxfzq0iiavj23aaatqtkotjy138.png); background-position: 50% 50%; background-repeat: repeat repeat;"
+                 partid="wqd1449917148913serial" wqdback_position="1" partcategoryid="2" sectionname="产品报价"
+                 commonpartid="10542" sortid="10" data-type="wqdSectiondiv">
+                <section class="wqd1445504393013css wqdBkEditos sectionV2 moveMainArea elementsContainer"
+                         style="height: 0px; margin: 0px auto; position: relative;" wqdback_position="3"
+                         sectionwidth="1200"
+                         wqdimgurlos="http://img.wqdian.com/group1/M00/75/4A/yq0KXFZq0IiAVJ23AAATQTKOtJY138.png"
+                         wqdwidthlimit="0" wqdbgattachment="0" bac_position="5" data-maxzindex="1" wqdheight="-2"
+                         wqdbgcoloros="#eee"></section>
+            </div>
+        </div>
+        <div class="yzmoveContent sectionCenter">
+            <div class="wqdSectiondiv" id="wqd1449917151120serial"
+                 style="background-attachment: fixed; background-image: url(images/yq0kxfzv85-abfc2aakqfgptzc0546.jpg); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat no-repeat;"
+                 partid="wqd1449917151120serial" wqdback_position="1" partcategoryid="2" sectionname="用户留言"
+                 commonpartid="10542" sortid="11" data-type="wqdSectiondiv">
+                <section class="wqd1445504393013css wqdBkEditos sectionV2 moveMainArea elementsContainer"
+                         style="height: 1211px; margin: 0px auto; position: relative;" sectionwidth="1200"
+                         wqdimgurlos="http://img.wqdian.com/group1/M00/99/41/yq0KXFZv85-AbFC2AAKqfGPtzC0546.jpg"
+                         wqdwidthlimit="0" wqdbgattachment="1" bac_position="5" data-maxzindex="2" wqdheight="1211"
+                         wqdbgcoloros="#eee">
+                    <div class="wqdelementEdit wqdGroup elementsContainer" id="groupId1460529706978"
+                         style="height: 153px; width: 1033px; left: 83.5px; top: 87px; z-index: 1;" data-maxzindex="0"
+                         data-zindex="1" data-elemandgroup="true" groupid="groupId1460529706978">
+                        <div class="wqdelementEditBox">
+                            <div class="wqdelementEdit" id="elementid14501715209510"
+                                 style="width: 469px; height: 102px; left: 282px; top: 0px; z-index: 2;"
+                                 data-elementtype="text" data-zindex="2" elementid="elementid14501715209510"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="title1"><h2 class="wqd-text-title2"
+                                                                         style="text-align: center;"><font
+                                        color="#ffffff">常见问题</font></h2>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementId1450167905011"
+                                 style="width: 40px; height: 40px; left: 495.5px; top: 113px; z-index: 3;"
+                                 data-elementtype="icon" data-zindex="3" elementid="elementId1450167905011"
+                                 data-elemandgroup="true" wqdpathfill="#ffffff" wqdhref="0">
+                                <div class="wqdelementEditBox">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="wqd-svgicon"
+                                         viewBox="-250 -250 2392 2392">
+                                        <path fill="#999"
+                                              d="M 216 1169 l 603 402 v -359 l -334 -223 Z m -62 -144 l 193 -129 l -193 -129 v 258 Z m 819 546 l 603 -402 l -269 -180 l -334 223 v 359 Z m -77 -493 l 272 -182 l -272 -182 l -272 182 Z m -411 -275 l 334 -223 v -359 l -603 402 Z m 960 93 l 193 129 v -258 Z m -138 -93 l 269 -180 l -603 -402 v 359 Z m 485 -180 v 546 q 0 41 -34 64 l -819 546 q -21 13 -43 13 t -43 -13 l -819 -546 q -34 -23 -34 -64 v -546 q 0 -41 34 -64 l 819 -546 q 21 -13 43 -13 t 43 13 l 819 546 q 34 23 34 64 Z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14501712975020"
+                                 style="width: 468px; height: 18px; left: 565px; top: 125px; z-index: 4;"
+                                 data-elementtype="img" data-zindex="4" elementid="elementid14501712975020"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox">
+                                    <img class="wqd-img" ondragstart="return false;"
+                                         src="picture/yq0kx1zv2tsaqykfaaa8qngwalk774.png">
+                                </div>
+                            </div>
+                            <div class="wqdelementEdit" id="elementid14501713877780"
+                                 style="width: 468px; height: 18px; left: 0px; top: 125px; z-index: 5;"
+                                 data-elementtype="img" data-zindex="5" elementid="elementid14501713877780"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox">
+                                    <img class="wqd-img" ondragstart="return false;"
+                                         src="picture/yq0kx1zv2tsaqykfaaa8qngwalk774.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" data-elementtype="text" data-elemandgroup="true"
+                         elementid="elementId15023358676270" id="elementId15023358676270" data-zindex="2"
+                         style="width: 1065px; height: 952px; left: 83.5px; top: 281px; z-index: 2;">
+                        <div class="wqdelementEditBox" data-emptytexttemplate="article1" style="visibility: visible;"><p
+                                class="wqd-text-article1"><span style="color:#FFF0F5;">1、安全问题：网络授课的工资会不会按时发？<br>
+首先，我们不收取老师的任何费用，不存在骗取中介费一说，跟线下的小中介完全不一样；<br>
+其次，培训结束会和你签订协议；<br>
+再次，公司也知道线上本来就容易导致诚信问题，为了让全国各地的各位兼职老师放心，所以我们的工资从来没有拖欠过！也将不会拖欠！<br>
+<br>
+2、课件库：<br>
+嗨课堂有一套完整的课件，对，就是完整的。包含小初高各个年级和科目～所以上课的资料有多丰富你懂得～<br>
+我们平时还会组织课件的有奖征集，奖都是现金的～有些老师做的课件比我汇报项目的PPT都要好看<br>
+<br>
+3、上课时间：<br>
+每次都上课时间都是你和自己的学生去协商的，所以有多方便你也懂～上课内容也是根据学生需求，每个学生不一样的，具体自己带过线下就知道～跟线下差不多<br>
+<br>
+4、工资，还是工资：<br>
+每个月的15-20之间会发上个月工资，直接入卡。<br>
+<br>
+5、我不是985但是很想做这个兼职怎么办？<br>
+曾经有人问我，是985就一定讲的好吗？为什么要把我拒之门外，985也不一定讲的不好啊！<br>
+小伙子，我觉得你说的非常有道理～毕竟21世纪了，我们也没有辣么死板，我们也是很珍惜人才的。<br>
+如果，你有很突出的一科，比如高考数学满分，比如物理竞赛全国一等奖…………有点夸张的奖项，我自己没有拿过<br>
+那么，放心大胆的报名吧，嗨课堂欢迎你～<br>
+<br>
+6、对于老师的收费问题和生源问题！！<br>
+再次说明，对于老师是不收取任何费用的！兼职老师相当于我们的员工，肯定是给你们发工资啊，怎么会收费！<br>
+<br>
+关于生源，公司已经安排了老师专门负责招生！注意，是招生！各司其职，各位兼职老师只管带好自己的学生即可，不会让你们招学生的，放心吧。</span></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="yzmoveContent">
+            <div class="wqdSectiondiv" id="wqd1460531137323serial"
+                 style="background-attachment: scroll; background-image: url(../images/yq0kxfzq0iiavj23aaatqtkotjy138.png); background-position: 50% 50%; background-repeat: repeat repeat;"
+                 partid="wqd1460531137323serial" partcategoryid="2" sectionname="在线反馈" commonpartid="10542" sortid="47"
+                 data-type="wqdSectiondiv">
+                <section class="wqd1445504393013css wqdBkEditos sectionV2 moveMainArea elementsContainer"
+                         style="height: 0px; margin: 0px auto; position: relative;" wqdback_position="3"
+                         sectionwidth="1200"
+                         wqdimgurlos="http://img.wqdian.com/group1/M00/75/4A/yq0KXFZq0IiAVJ23AAATQTKOtJY138.png"
+                         wqdwidthlimit="0" wqdbgattachment="0" bac_position="5" data-maxzindex="1" wqdheight="0"
+                         wqdbgcoloros="#eee"></section>
+            </div>
+        </div>
+        <div class="yzmoveContent">
+            <div class="wqdSectiondiv" id="wqd1460534119659serial" style="background-attachment: scroll;"
+                 partid="wqd1460534119659serial" partcategoryid="0" sectionname="联系我们" commonpartid="10542" sortid="18"
+                 data-type="wqdSectiondiv">
+                <section class="wqd1445504393013css wqdBkEditos sectionV2 moveMainArea elementsContainer"
+                         style="height: 500px; margin: 0px auto; position: relative;" sectionwidth="1200"
+                         wqdimgurlos="http" wqdwidthlimit="0" wqdbgattachment="0" bac_position="1" data-maxzindex="4"
+                         wqdheight="607" wqdbgcoloros="#eee">
+                    <div class="wqdelementEdit" id="elementid14605361646972"
+                         style="width: 862px; height: 60px; left: 169px; top: 179px; z-index: 1;"
+                         data-elementtype="text" data-zindex="1" elementid="elementid14605361646972"
+                         data-elemandgroup="true">
+                        <div class="wqdelementEditBox" style="visibility: visible;" data-emptytexttemplate="article1">
+                            <h3 class="wqd-text-title3" style="text-align: center;">还在犹豫什么，赶快扫码报名吧！</h3>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit" id="elementid14605361646973"
+                         style="width: 586px; height: 95px; left: 309.5px; top: 84px; z-index: 2;"
+                         data-elementtype="text" data-zindex="2" elementid="elementid14605361646973"
+                         data-elemandgroup="true">
+                        <div class="wqdelementEditBox" style="visibility: visible;" data-emptytexttemplate="title1"><h2
+                                class="wqd-text-title2" style="text-align: center;">加入我们</h2>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit wqdGroup elementsContainer" id="groupId1460538089633"
+                         style="height: 100px; width: 100%; left: 0; top: 308px; z-index: 3;" data-maxzindex="0"
+                         data-zindex="3" data-elemandgroup="true" groupid="groupId1460538089633">
+                        <div class="wqdelementEditBox" data-maxzindex="4">
+                            <div class="wqdelementEdit" id="elementid14605368152110"
+                                 style="width: 100%; height: 100px; top: 0px; z-index: 1;text-align: center"
+                                 data-elementtype="text" data-zindex="1" elementid="elementid14605368152110"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="article2"><h4 class="wqd-text-title4">
+                                        <button class="btn0" style="color:#008080;height: 50px;line-height: 50px;width: 200px;border: 2px solid #008080;border-radius: 25px;background-color: #fff;">点击报名</button>
+                                    &nbsp;</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wqdelementEdit wqdGroup elementsContainer" id=""
+                         style="height: 100px; width: 100%; left: 0; top: 400px; z-index: 3;" data-maxzindex="0"
+                         data-zindex="3" data-elemandgroup="true" groupid="groupId1460538089633">
+                        <div class="wqdelementEditBox" data-maxzindex="4">
+                            <div class="wqdelementEdit" id=""
+                                 style="width: 100%; height: 100px; top: 0px; z-index: 1;text-align: center"
+                                 data-elementtype="text" data-zindex="1" elementid="elementid14605368152110"
+                                 data-elemandgroup="true">
+                                <div class="wqdelementEditBox" style="visibility: visible;"
+                                     data-emptytexttemplate="article2"><h4 class="wqd-text-title4">
+                                    公司官网：<a href="http://www.onlyhi.cn" target="_blank">www.onlyhi.cn</a></span><br>
+                                    &nbsp;</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="./js/wqdextendnav.js"></script>
+<script type="text/javascript" src="./js/baseinit.js"></script>
+<script type="text/javascript" src="./js/wqdhovercontainer.js"></script>
+<script type="text/javascript" src="./js/news.js"></script>
+<script type="text/javascript" src="./js/wqdcarousel.js"></script>
+<script type="text/javascript" src="./js/wqdcontainer.js"></script>
+<script type="text/javascript" src="./js/wqdaccordion.js"></script>
+<script type="text/javascript" src="./js/wqdvideo.js"></script>
+<script type="text/javascript" src="./js/wqdvideobackground.js"></script>
+<script type="text/javascript" src="./js/wqdmapinit.js"></script>
+<script type="text/javascript" src="./js/wqdprogress.js"></script>
+<script type="text/javascript" src="./js/wqdnumberprogress.js"></script>
+<script type="text/javascript" src="./js/wqdanimation.js"></script>
+<script type="text/javascript" src="./js/wqdnavigate.js"></script>
+<script type="text/javascript" src="./js/wqdattentionlink.js"></script>
+<script type="text/javascript" src="./js/wqdform.js"></script>
+<script type="text/javascript" src="./js/videoeditinit.js"></script>
+<script type="text/javascript" src="./js/wqdcolorbox.js"></script>
+<script type="text/javascript" src="./js/wqdpicture.js"></script>
+<script type="text/javascript" src="./js/wqdiscroll.js"></script>
+<script type="text/javascript" src="./js/wqdarticledetails.js"></script>
+<script type="text/javascript" src="./js/wqdarticlelists.js"></script>
+<script type="text/javascript" src="./js/wqdarticlelist.js"></script>
+<script type="text/javascript" src="./js/navtemplate1.js"></script>
+<script type="text/javascript" src="./js/commoditylist.js"></script>
+<script type="text/javascript" src="./js/commoditydetail.js"></script>
+<script type="text/javascript" src="./js/wqdwechatlogin.js"></script>
+<script type="text/javascript" src="./js/jquery.nanoscroller.js"></script>
+<script type="text/javascript" src="./js/editshopping.js"></script>
+<script type="text/javascript" src="./js/edit-curve.js"></script>
+<script type="text/javascript" src="./js/wqdmanageinfo.js"></script>
+
+<!--  -->
+<!--  -->
+<script type="text/javascript">
+    $(function () {
+        if ('false' == 'false') {
+            $('.formDate.wqdControlFormEl6 input').date_input();
+        }
+
+
+        //    点击跳转
+        function GetQueryString(name)
+        {
+            var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if(r!=null)return  unescape(r[2]); return null;
+        }
+
+        $(".btn0").on("click",function () {
+            console.log(GetQueryString("type"));
+            var type = GetQueryString("type")||1;
+            var source = GetQueryString("source")||'415BADCE-CA15-4F2A-B561-E64F02BD7C7A';
+            location.href = 'http://www.onlyhi.cn/t/teacher-sign.html?type='+type+'&source='+source
+        })
+
+    })
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<div style="display:none"></div>
+</body>
+</html>

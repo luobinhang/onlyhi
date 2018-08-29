@@ -1,0 +1,328 @@
+
+body{
+  background-color: #F5F5F5;
+  text-align: center;
+  .nav {
+
+    //优惠信息Start
+    #overlay1{
+      display: none;
+      background-color: #FFF;
+      float: left;
+      height: 310px;
+      width: 470px;
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      padding: 0 34px;
+
+      box-sizing: border-box;
+      z-index: 9999;
+      h1{
+        text-align: center;
+        font-size: 18px;
+        padding:27px 0;
+      }
+      .favorable{
+        width: 100%;
+        height: 30px;
+        font-size: 16px;
+        margin-bottom: 50px;
+        margin-top:10px;
+        label{
+          line-height: 30px;
+          font-size: 16px;
+        }
+        input{
+          box-sizing: border-box;
+          padding:5px;
+          float: right;
+          overflow: hidden;
+          display: inline-block;
+          border:1px solid #ccc;
+          border-radius: 5px;
+          width: 260px;
+          height: 100%;
+          display: inline-block;
+        }
+      }
+      #subtotal{
+        margin:35px 0;
+        font-size: 16px;
+        text-align: center;
+        #subtotalTotal{
+          font-size: 22px;
+        }
+        .small{
+          font-size: 14px;
+        }
+      }
+      a{
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 5px;
+        width: 100px;
+        display: block;
+        margin:0 auto;
+        background-color: #f40009;
+        font-size: 15px;
+        color: #FFF;
+        &:hover{
+          color: #FFF;
+        }
+      }
+    }
+    //优惠信息End
+
+    #overlay,#overlay-m{
+      background: #000;
+      filter: alpha(opacity=50); /* IE的透明度 */
+      opacity: 0.5;  /* 透明度 */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9998; /* 此处的图层要大于页面 */
+      display:none;
+    }
+    .close1{
+      display: inline-block;
+      position: absolute;
+      right:0;
+      top:0;
+      width: 23px;
+      height: 23px;
+      background: url("../buy_images/packet/close1.png") no-repeat center;
+    }
+    /*红包弹窗End*/
+  }
+  .header{
+    background-color: #FFF;
+  }
+  .main{
+    .activity{
+      padding:20px 0;
+      text-align: center;
+      position: relative;
+      #personalCarousel{
+        height:250px;
+        .carousel-control{
+          background-image:none;
+        }
+      }
+    }
+    .study_color{
+      padding:20px 0;
+      background-color: #FFF;
+      text-align: center;
+    }
+    #myTab{
+      margin:25px 0;
+      display: flex;
+      padding:0 100px;
+      height:50px;
+      line-height: 50px;
+      position: relative;
+      z-index: 1;
+      background-color: #FFF;
+      box-shadow:-2px 2px 5px #f5f5f5;
+      border:1px solid #f8e6e6 ;
+      li{
+        flex: 1;
+        box-sizing: border-box;
+        height:100%;
+        position: relative;
+        padding:0 5px;
+        a{
+          line-height: 49px;
+          padding: 0;
+          margin:0;
+          border: 0;
+          border-radius: 0;
+          cursor: pointer;
+          -webkit-transition: all 0.2s;
+          -moz-transition: all 0.2s;
+          -ms-transition: all 0.2s;
+          -o-transition: all 0.2s;
+          transition: all 0.2s;
+          box-sizing: border-box;
+          position: relative;
+          &:hover{
+            color: #f40009;
+            background-color: #FFF;
+            //border-bottom: 2px solid #f40009;
+            font-size: 16px;
+            &::before{
+              width:100%;
+            }
+          }
+          &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: inline-block;
+            width:0;
+            height:2px;
+            background-color: #f40009;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+          }
+        }
+        &::before{
+          content: "";
+          position: absolute;
+          left:0;
+          top:15px;
+          z-index:99;
+          display: inline-block;
+          width:1px;
+          height:20px;
+          background-color: #CCC;
+        }
+        &:first-child::before{
+          display: none;
+        }
+        &.active{
+         a{
+           color: #f40009;
+           &::before{
+             content: "";
+             position: absolute;
+             left: 0;
+             bottom: 0;
+             display: inline-block;
+             width:100%;
+             height:2px;
+             background-color: #f40009;
+           }
+         }
+        }
+      }
+    }
+    #myTabContent{
+      min-height: 600px;
+      .systemList{
+        padding-top: 92px;
+        padding-bottom: 30px;
+        display: inline-block;
+        background-color: #FFF;
+        width: 268px;
+        text-align: center;
+        margin: 0 15px 30px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        &:hover{
+          box-shadow: -3px 3px 5px #CCC;
+          -webkit-transform: scale(1.05);
+          -moz-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          -o-transform: scale(1.05);
+          transform: scale(1.05);
+        }
+        .discount{
+          position: absolute;
+          left:10px;
+          top:-0px;
+          text-align: center;
+          font-size: 30px;
+          color: #FFF;
+        }
+        p{
+          margin-bottom: 23px;
+          &.UnLine{
+            text-decoration: line-through;
+          }
+          &.zhengsong{
+            display: inline-block;
+            line-height: 40px;
+            margin-bottom: 0;
+            text-align: center;
+            color: #FFF;
+            .give{
+              display: inline-block;
+              width: 40px;
+              height:40px;
+              background-color: #FF992A;
+              margin-right: 5px;
+            }
+            i{
+              color: #FF992A;
+            }
+            .first0{
+              display: inline-block;
+              line-height: 20px;
+              -webkit-transform: translateY(11px);
+              -moz-transform: translateY(11px);
+              -ms-transform: translateY(11px);
+              -o-transform: translateY(11px);
+              transform: translateY(11px);
+              .first{
+                display: inline-block;
+                border-bottom: 1px dashed #FF992A;
+              }
+
+            }
+
+          }
+        }
+      ;
+        .shopping{
+          text-align: center;
+          display: inline-block;
+          width: 94px;
+          height: 31px;
+          line-height: 31px;
+          border-radius: 4px;
+          background-color: #f40009;
+          a{
+            display: inline-block;
+            width: 100%;
+            color: #FFF;
+          }
+        }
+        &:nth-child(4n){
+          margin-right: 0;
+        }
+      }
+      .systemList:nth-child(3){
+        background: linear-gradient(#FF4242 0% , #FF4242 79.5%,#FFF 79.5%,#FFF 100%);
+        background-color: #FF4242;
+        color: #FFF;
+        p{
+          span{
+            color: #FFF;
+          }
+          i{
+            color: #FFF;
+          }
+        }
+      }
+      .systemList:nth-child(1){
+        .zhengsong{
+          //line-height: 51px;
+          .give{
+            vertical-align:bottom;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+  }
+}

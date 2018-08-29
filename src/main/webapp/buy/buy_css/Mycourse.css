@@ -1,0 +1,50 @@
+.header {
+  border-bottom: 3px solid green;
+}
+.main {
+  margin: 0;
+}
+.main .course {
+  position: relative;
+}
+.main .course #course {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  border: 0;
+}
+.main .course #course li {
+  width: 100%;
+  line-height: 45px;
+  -webkit-transition: border 0.1s;
+  -moz-transition: border 0.1s;
+  -ms-transition: border 0.1s;
+  -o-transition: border 0.1s;
+  transition: border 0.1s;
+}
+.main .course #course li a {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  line-height: 45px;
+  border-radius: 0;
+}
+.main .course #course li:hover {
+  border-right: 3px solid red;
+}
+.main .course #course li.active {
+  border-right: 3px solid red;
+}
+.main .course #course li.active a {
+  color: #f40009;
+}
+.main .course #courseList {
+  border-left: 3px solid green;
+  width: 100%;
+  margin-left: 100px;
+}

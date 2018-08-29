@@ -1,0 +1,627 @@
+
+.main {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  .bar1 img {
+    width: 100%;
+    display: block;
+  }
+  .banner1 {
+    position: relative;
+    .newArrow{
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    #myCarousel0 {
+      font-family: Microsoft YaHei;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      ol {
+        z-index: 1;
+        li {
+          margin: 0 5px;
+          background-color: rgb(185, 185, 185);
+          border: 0;
+        }
+        .active {
+          border: 0;
+          background-color: #f40009;
+        }
+      }
+    }
+    .three2 {
+      background: url("../images/index/banner-bg0.jpg") no-repeat center center;
+      background-size: cover;
+      height: 600px;
+      text-align: center;
+      .content {
+        .title {
+          margin-top: 160px;
+          float: left;
+          width: 700px;
+          text-align: center;
+          img {
+            margin-bottom: 28px;
+          }
+          p {
+            margin-bottom: 30px;
+          }
+          .title1 {
+
+            letter-spacing: 5px;
+            color: #FFFFFF;
+            font-weight: bold;
+            line-height: 60px;
+          }
+          .title2 {
+            font-family: Microsoft YaHei;
+            line-height: 35px;
+            font-size: 26px;
+            font-family: Simsun;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .three3 {
+      height: 600px;
+      text-align: center;
+      background: url("../images/index/banner-bg.jpg") no-repeat center;
+      background-size: cover;
+    }
+    .content {
+      .title {
+        margin-top: 230px;
+        margin-left: 40px;
+        float: left;
+        width: 700px;
+        text-align: left;
+        color: #FFF;
+        font-size: 26px;
+        p {
+          line-height: 46px;
+        }
+        .title_2 {
+          margin-top: 10px;
+          font-size: 16px;
+          position: relative;
+          display: inline-block;
+          padding: 0 65px;
+          &:before, &:after {
+            position: absolute;
+            content: "";
+            width: 55px;
+            height: 1px;
+            background-color: #FFF;
+          }
+          &:before {
+            left: 0;
+            top: 50%;
+          }
+          &:after {
+            right: 0;
+            top: 50%;
+          }
+        }
+      }
+    }
+  }
+  .bar2 {
+    position: relative;
+    background: url("../images/counterattack/b2.jpg") no-repeat center;
+    height: 454px;
+    .bar2Body {
+      background: url(../images/counterattack/a1.png) no-repeat center;
+      height: 595px;
+      position: absolute;
+      width: 100%;
+      top: -140px;
+      p {
+        padding-top: 150px;
+        width: 1021px;
+        margin: 0 auto;
+        height: 595px;
+        font-size: 28px;
+        color: #1a1f37;
+        text-indent: 1.5em;
+        letter-spacing: 2px;
+        line-height: 70px;
+        margin-top: -1px;
+        span {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+  .bar3 {
+    background: url("../images/counterattack/b3.jpg") no-repeat center;
+    height: 1205px;
+    .bar3Title {
+      img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 84px;
+      }
+    }
+    .bar3Body {
+      display: flex;
+      justify-contain: space-between;
+      flex-wrap: wrap;
+      width: 1280px;
+      li {
+        cursor: pointer;
+        width: 584px;
+        height: 423px;
+        margin-bottom: 40px;
+        &:hover{
+          background: url("../images/counterattack/h1.png") no-repeat center;
+          img{
+            display: none;
+          }
+          p{
+            display: block;
+          }
+        }
+        img {
+          display: block;
+        }
+        p{
+          display: none;
+          color: #081935;
+          font-size: 20px;
+          line-height: 56px;
+          padding-left: 80px;
+          padding-top: 67px;
+          span{
+            display: block;
+            font-size: 30px;
+            padding-left: 25px;
+            margin-bottom: 7px;
+          }
+        }
+      }
+    }
+  }
+  .bar4 {
+    background: url("../images/counterattack/b4.png") no-repeat center;
+    height: 1000px;
+    overflow: hidden;
+    > img:first-child {
+      display: block;
+      margin: 0 auto;
+      padding-top: 72px;
+    }
+    .bar4Body {
+      width: 1340px;
+      min-width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+      div {
+        position: relative;
+        width: 0;
+        overflow: hidden;
+        //height: 500px;
+        margin: 0;
+
+        img {
+          display: block;
+          margin-top: 54px;
+          max-width: 1340px;
+          min-width: 960px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .bar5 {
+    background: url("../images/counterattack/b4-1.jpg") no-repeat center;
+    height: 764px;
+    > img:first-child {
+      display: block;
+      margin: 0 auto;
+      padding-top: 102px;
+      margin-bottom: 90px;
+    }
+    .bar5Body {
+      .thead {
+        span {
+          font-size: 26px;
+          color: #e78d23;
+          text-align: center;
+          background-color: #f5dc80;
+          line-height: 84px;
+          display: inline-block;
+        }
+        span:nth-child(2) {
+          margin: 0 -2px 0 -3px;
+        }
+      }
+      .tbody {
+        p {
+          background-color: #fff;
+          margin-top: 3px;
+          span {
+            font-size: 26px;
+            color: #081935;
+            text-align: center;
+            line-height: 84px;
+            display: inline-block;
+            width: 210px;
+          }
+          span:nth-child(3) {
+            text-align: left;
+            padding-left: 18px;
+            width: 770px;
+          }
+        }
+        p:nth-child(2) {
+          background-color: #f5dc80;
+        }
+      }
+    }
+  }
+  .bar6 {
+    background: url("../images/counterattack/b4-2.jpg") no-repeat center;
+    height: 979px;
+    > img:first-child {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 119px;
+    }
+    .bar6Body {
+      position: relative;
+      .imgCenter {
+        display: block;
+        margin-left: 82px;
+      }
+      p {
+        position: absolute;
+        text-align: center;
+        color: #081935;
+        z-index: 1;
+        span:first-child {
+          font-size: 22px;
+          margin-bottom: 10px;
+          display: block;
+        }
+        span:nth-child(2) {
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
+      p:first-child {
+        top: -33px;
+        right: 337px;
+      }
+      p:nth-child(2) {
+        top: 116px;
+        right: -10px;
+      }
+      p:nth-child(3) {
+        bottom: -50px;
+        right: 348px;
+      }
+      p:nth-child(4) {
+        bottom: 0px;
+        left: 215px;
+      }
+      p:nth-child(5) {
+        top: 165px;
+        left: 2px;
+      }
+    }
+  }
+  .bar7 {
+    .bar7Head {
+      background: url("../images/counterattack/b5.jpg") no-repeat center;
+      height: 507px;
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      .join {
+        display: block;
+        margin: 0 auto;
+        padding-top: 64px;
+        margin-bottom: 145px;
+        cursor: pointer;
+      }
+    }
+    .bar7Body {
+      background: url("../images/counterattack/b6.jpg") no-repeat center;
+      height: 505px;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          background: url("../images/counterattack/liBg.png") no-repeat center;
+          width: 226px;
+          height: 326px;
+          margin-top: 50px;
+          color: #081935;
+          font-size: 18px;
+          text-align: center;
+          line-height: 30px;
+          p:first-child {
+            background: url("../images/counterattack/liT.png") no-repeat center;
+            width: 165px;
+            height: 48px;
+            padding-top: 4px;
+            font-size: 26px;
+            margin-top: 43px;
+            margin-bottom: 50px;
+          }
+          p:nth-child(3) {
+            width: 66px;
+            height: 4px;
+            margin: 0 auto;
+            background-color: #d285f6;
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+  .bar8 {
+    background: url("../images/counterattack/b7.jpg") no-repeat center;
+    height: 1001px;
+    > img:first-child {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 110px;
+    }
+    .bar8Body {
+      position: relative;
+      height: 778px;
+      p {
+        position: absolute;
+        color: #1d1f44;
+        text-align: center;
+        padding-top: 26px;
+        span:first-child{
+          font-size: 30px;
+          margin-bottom: 17px;
+          display: block;
+        }
+        span:nth-child(2){
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+      p:first-child {
+        width: 344px;
+        height: 452px;
+        background: url("../images/counterattack/e1.png") no-repeat center;
+        top: 0;
+        left: -10px;
+      }
+      p:nth-child(2) {
+        width: 427px;
+        height: 452px;
+        background: url("../images/counterattack/e2.png") no-repeat center;
+        top: 0;
+        left: 330px;
+      }
+      p:nth-child(3) {
+        width: 454px;
+        height: 325px;
+        background: url("../images/counterattack/e3.png") no-repeat center;
+        top: 0;
+        right: -10px;
+      }
+      p:nth-child(4) {
+        width: 540px;
+        height: 325px;
+        background: url("../images/counterattack/e4.png") no-repeat center;
+        bottom: 0px;
+        left: -10px;
+        padding-top: 80px;
+        span{
+          width: 220px;
+          display: block;
+          margin-left: 15px;
+        }
+      }
+      p:nth-child(5) {
+        width: 682px;
+        height: 449px;
+        background: url("../images/counterattack/e5.png") no-repeat center;
+        bottom: 0px;
+        right: -10px;
+      }
+    }
+  }
+  .bar9 {
+    background: url("../images/counterattack/b8.jpg") no-repeat center;
+    height: 669px;
+    .bar9Title {
+      display: block;
+      margin: 0 auto;
+      padding-top: 97px;
+      margin-bottom: 82px;
+    }
+    .bar9Body {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+          background: url("../images/counterattack/f1.png") no-repeat center;
+          width: 412px;
+          height: 359px;
+          color: #23325a;
+          font-size: 20px;
+          text-align: center;
+          line-height: 40px;
+          img {
+            display: block;
+            margin: 0 auto;
+            margin-top: 14px;
+            margin-bottom: 80px;
+          }
+        }
+      }
+    }
+  }
+  .bar10 {
+    background: url("../images/counterattack/b9.jpg") no-repeat center;
+    height: 640px;
+    .join {
+      display: block;
+      margin: 0 auto;
+      padding-top: 54px;
+      margin-bottom: 105px;
+      cursor: pointer;
+    }
+    .bar10Body {
+      display: flex;
+      justify-content: space-between;
+      li {
+        background: url("../images/counterattack/g1.png") no-repeat center;
+        width: 226px;
+        height: 262px;
+        color: #fff;
+        font-size: 26px;
+        text-align: center;
+        img {
+          display: block;
+          margin: 0 auto;
+          margin-top: 50px;
+          margin-bottom: 29px;
+        }
+      }
+    }
+  }
+}
+
+//弹窗
+.tanBox {
+  display:none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.5);
+  #tan1 {
+    height: 610px;
+    width: 750px;
+    position: absolute;
+    top: 50%;
+    margin-top: -305px;
+    background-image: url("../images/counterattack/tan.png");
+    box-sizing: border-box;
+    z-index: 9999;
+    left: 50%;
+    margin-left: -375px;
+    .tanForm {
+      width: 210px;
+      font: 15px "Microsoft YaHei";
+      position: absolute;
+      box-sizing: border-box;
+      left: 120px;
+      top: 235px;
+      p {
+        border-bottom: 1px solid #cdcdcd;
+        color: #515151;
+        font-size: 14px;
+        margin: 7px 0;
+        input {
+          width: 210px;
+          height: 24px;
+          box-sizing: border-box;
+          border-radius: 3px;
+          color: #000;
+          font-size: 14px;
+        }
+        select {
+          border: 0;
+          font-size: 14px;
+          width: 210px;
+          height: 24px;
+          border-radius: 3px;
+          color: #a8a8a8;
+        }
+        //select图标
+        select {
+          /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+          //border: solid 1px #000;
+
+          /*很关键：将默认的select选择框样式清除*/
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+
+          /*在选择框的最右侧中间显示小箭头图片*/
+          background: url(../../images/tan/arrow.png) no-repeat scroll 193px center transparent;
+
+          /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+          padding-right: 14px;
+        }
+
+        /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+        select::-ms-expand {
+          display: none;
+        }
+        input::-webkit-input-placeholder { /* WebKit browsers*/
+          color: #a8a8a8;
+          font-size: 14px;
+        }
+
+        input:-moz-placeholder { /* Mozilla Firefox 4 to 18*/
+          color: #a8a8a8;
+          font-size: 14px;
+        }
+
+        input::-moz-placeholder { /* Mozilla Firefox 19+*/
+          color: #a8a8a8;
+          font-size: 14px;
+        }
+
+        input:-ms-input-placeholder { /* Internet Explorer 10+*/
+          color: #a8a8a8;
+          font-size: 14px;
+        }
+      }
+      #submitTan {
+        border: 0;
+        display: block;
+        width: 120px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        background-color: #f40009;
+        border-radius: 15px;
+        margin-top: 18px;
+        color: #FFF;
+        font-family: Microsoft YaHei;
+        cursor: pointer;
+      }
+      .disabled {
+        background-color: #ccc;
+        cursor: default;
+      }
+    }
+  }
+  .closeTan {
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/tan/close2.png");
+    background-size: cover;
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+

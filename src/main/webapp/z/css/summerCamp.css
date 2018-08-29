@@ -1,0 +1,254 @@
+.main {
+  background-color: #87c051;
+  overflow: hidden;
+}
+.main .contain {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main .join {
+  cursor: pointer;
+}
+.main .bar1 img {
+  display: block;
+  width: 100%;
+}
+.main .bar2 {
+  background: url(../images/summerCamp/b2.jpg) no-repeat center;
+  height: 692px;
+}
+.main .bar2 img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 14px;
+}
+.main .bar3 .bar3Head {
+  background: url(../images/summerCamp/b3.jpg) no-repeat 50%;
+  height: 270px;
+}
+.main .bar3 .bar3Head .contain {
+  display: flex;
+  padding: 0 180px;
+}
+.main .bar3 .bar3Head .contain img {
+  width: 189px;
+  height: 189px;
+  margin-top: 20px;
+}
+.main .bar3 .bar3Body {
+  background: url(../images/summerCamp/b4.jpg) no-repeat 50%;
+  height: 725px;
+  position: relative;
+}
+.main .bar3 .bar3Body > img:first-child {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -757px;
+}
+.main .bar3 .bar3Body .join {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  left: 50%;
+  margin-left: -155px;
+  bottom: -60px;
+}
+.main .bar4 {
+  position: relative;
+}
+.main .bar4 .bg5 {
+  background: url(../images/summerCamp/b5.jpg) no-repeat 50%;
+  height: 547px;
+}
+.main .bar4 .bg6 {
+  background: url(../images/summerCamp/b6.jpg) no-repeat 50%;
+  height: 644px;
+}
+.main .bar4 .bg7 {
+  background: url(../images/summerCamp/b7.jpg) no-repeat 50%;
+  height: 553px;
+}
+.main .bar4 .bg8 {
+  background: url(../images/summerCamp/b8.jpg) no-repeat 50%;
+  height: 608px;
+}
+.main .bar4 .bar4Con {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .bar4 .bar4Con .bar4Head {
+  display: block;
+  margin: 0 auto;
+  margin-top: 164px;
+}
+.main .bar4 .bar4Con .bar4Body {
+  position: relative;
+}
+.main .bar4 .bar4Con .bar4Body .day1 {
+  position: absolute;
+  top: -46px;
+  left: 18px;
+}
+.main .bar4 .bar4Con .bar4Body .day2 {
+  position: absolute;
+  top: 256px;
+  right: 14px;
+}
+.main .bar4 .bar4Con .bar4Body .day3 {
+  position: absolute;
+  top: 742px;
+  left: 0px;
+}
+.main .bar4 .bar4Con .bar4Body .day4 {
+  position: absolute;
+  top: 1375px;
+  right: 0px;
+}
+.main .bar5 {
+  background: url(../images/summerCamp/b9.jpg) no-repeat 50%;
+  height: 784px;
+}
+.main .bar5 .bar5Head {
+  display: block;
+  margin: 0 auto;
+}
+.main .bar5 .bar5Body {
+  background: url(../images/summerCamp/time.png) no-repeat 50%;
+  height: 162px;
+  margin-top: 80px;
+  position: relative;
+}
+.main .bar5 .bar5Body #timer {
+  position: absolute;
+  transform: translate(-50%, -60%);
+  left: 50%;
+  top: 50%;
+  color: #4c4f52;
+  font-size: 70px;
+}
+.main .bar5 img {
+  display: block;
+  margin: 0 auto;
+}
+.main .tanBox {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.main .tanBox #tan1 {
+  height: 692px;
+  width: 1252px;
+  position: absolute;
+  top: 50%;
+  margin-top: -346px;
+  background-image: url("../images/summerCamp/tan.png");
+  box-sizing: border-box;
+  z-index: 9999;
+  left: 50%;
+  margin-left: -626px;
+}
+.main .tanBox #tan1 .tanForm {
+  font: 15px "Microsoft YaHei";
+  position: absolute;
+  box-sizing: border-box;
+  left: 120px;
+  top: 235px;
+}
+.main .tanBox #tan1 .tanForm p {
+  margin-top: 20px;
+  /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+}
+.main .tanBox #tan1 .tanForm p input {
+  width: 410px;
+  height: 50px;
+  border: 1px solid #bababa;
+  padding-left: 64px;
+  font-size: 20px;
+  border-radius: 25px;
+  color: #000;
+}
+.main .tanBox #tan1 .tanForm p .name {
+  background: url('../images/summerCamp/i1.png') no-repeat 10px center;
+  background-size: 27px 27px;
+}
+.main .tanBox #tan1 .tanForm p .mobile {
+  background: url('../images/summerCamp/i2.png') no-repeat 10px center;
+  background-size: 27px 27px;
+}
+.main .tanBox #tan1 .tanForm p select {
+  border: 1px solid #bababa;
+  font-size: 20px;
+  width: 410px;
+  height: 50px;
+  padding-left: 64px;
+  border-radius: 25px;
+  color: #ddd;
+}
+.main .tanBox #tan1 .tanForm p select option {
+  color: #000;
+}
+.main .tanBox #tan1 .tanForm p select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url(../images/summerCamp/arrow.png) no-repeat 374px center transparent;
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 14px;
+}
+.main .tanBox #tan1 .tanForm p select::-ms-expand {
+  display: none;
+}
+.main .tanBox #tan1 .tanForm p input::-webkit-input-placeholder {
+  /* WebKit browsers*/
+  color: #dddddd;
+  font-size: 20px;
+}
+.main .tanBox #tan1 .tanForm p input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18*/
+  color: #dddddd;
+  font-size: 20px;
+}
+.main .tanBox #tan1 .tanForm p input::-moz-placeholder {
+  /* Mozilla Firefox 19+*/
+  color: #dddddd;
+  font-size: 20px;
+}
+.main .tanBox #tan1 .tanForm p input:-ms-input-placeholder {
+  /* Internet Explorer 10+*/
+  color: #dddddd;
+  font-size: 20px;
+}
+.main .tanBox #tan1 .tanForm #submitTan {
+  background: url(../images/summerCamp/btn.png) no-repeat center;
+  display: block;
+  width: 410px;
+  height: 55px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.main .tanBox #tan1 .tanForm .disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+.main .tanBox .closeTan {
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/summerCamp/close.png);
+  background-size: cover;
+  position: absolute;
+  top: 80px;
+  right: 70px;
+  cursor: pointer;
+}

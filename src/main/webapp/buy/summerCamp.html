@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嗨课堂-足不出户，遇见天下 </title>
+    <link  rel="icon"  href="../images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="buy_css/common.css">
+    <link rel="stylesheet" href="buy_css/course.css">
+    <style>
+        .none{
+            display: none;
+        }
+        #clone{
+            position: absolute;
+            right:0;
+            top:0;
+            text-align: center;
+            display: inline-block;
+            width:35px;
+            line-height: 35px;
+            cursor: pointer;
+        }
+        .coupon{
+            position: relative;
+            display: inline-block;
+        }
+        .coupon img{
+            position: absolute;
+            right:-25px;
+            top:-20px;
+        }
+        body .main #myTabContent .systemList{
+            overflow: visible;
+        }
+        body .main #myTabContent .systemList .discount{
+            left:-35px;
+            top:-10px;
+        }
+        body .main #myTabContent .systemList:nth-child(3){
+            background:#FFF;
+            color:#000;
+        }
+        body .main #myTabContent .systemList:nth-child(3) p span.color_red{
+            color: #f40009;
+        }
+        body .main #myTabContent .systemList:nth-child(3) p span.new{
+        }
+        body .main #myTabContent .systemList img{
+            display: none;
+        }
+        body .main #myTabContent .systemList:nth-child(3) img{
+            display: inline-block;
+        }
+        body .main #myTabContent .systemList .discount{
+            font-size: 22px;
+            line-height: 80px;
+        }
+        body .main #myTabContent .systemList .discount span{
+            vertical-align:middle;
+        }
+    </style>
+</head>
+<body style="min-width: 1180px ">
+<div class="nav">
+    <!--遮盖层-->
+    <div id="overlay"></div>
+    <!--遮盖层-->
+    <!--优惠信息Start-->
+    <div id="overlay1">
+        <span id="clone">X</span>
+        <h1>确认信息</h1>
+        <!--<div class="Discount favorable">-->
+            <!--<label>请输入优惠码：</label><input placeholder="请输入优惠码" type="text">-->
+        <!--</div>-->
+        <!--<div class="packet favorable">-->
+        <!--<label>请输入红包口令：</label><input placeholder="请输入红包口令" type="text">-->
+        <!--</div>-->
+        <p id="subtotal">小计：<span id="subtotalTotal" class="color_red"></span>元 &nbsp;&nbsp; <span class="small">优惠<i class="color_red" id="subtotalFavorable"></i>元</span>  </p>
+        <a href="javascript:;" class="color_red">提交购买</a>
+    </div>
+    <!--优惠信息End-->
+    <div class="content site-nav-r">
+        <ul>
+            <li><a href="../download2.html" style="background: none;padding: 0">客户端下载</a></li>
+            <li class="line"></li>
+            <li>你好，<i class="userName_name"></i></li>
+            <li class="line"></li>
+            <li class="login0"><a href="personal.html" class="">登录</a></li>
+            <li class="Register">
+                <div class="Register2"><a href="javascript:;">注册</a></div>
+                <!--<div class="Register_over0" style="display: none;">-->
+                <!--<a href="javascript:;">退出</a>-->
+                <!--</div>-->
+            </li>
+            <li><span class="font3"></span>400-876-3300</li>
+        </ul>
+    </div>
+</div>
+<div class="header">
+    <div class="content">
+        <div class="FL left">
+            <a href="../index.html" class="logo"></a>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="./personal.html">我的嗨课堂</a></li>
+                <li><a href="course.html">课程优惠</a></li>
+                <!--<li><a  href="summer.html">常规暑秋</a></li>-->
+                <!--<li><a  href="summer1.html">精品暑秋</a></li>-->
+                <!--<li><a  href="javascript:;" style="color: #f40009">夏令营</a></li>-->
+                <!--<li><a  href="sumTheme.html">暑期专题</a></li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="content">
+        <div class="activity study_color">
+            <!--<img class="clickGif" src="buy_images/personal/click.gif" width=37 height=48 alt="">-->
+            <div id="personalCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#personalCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#personalCarousel" data-slide-to="1"></li>
+                    <li data-target="#personalCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner carousel slide">
+                    <!--38节-->
+                    <!--<div class="item  three1 active" style="background: url('buy_images/3.8.jpg') no-repeat center;height: 250px;">-->
+                    <!--<a href="javascript:;" target="_blank" style="display: inline-block;height: 100%;width: 100%"></a>-->
+                    <!--</div>-->
+                    <!--38节-->
+                    <!--明星老师Start-->
+                    <div class="item  three1 active" style="background: url('buy_images/goldBanner.jpg') no-repeat center;height: 250px;">
+                        <a href="../z/gold.html" target="_blank" style="display: inline-block;height: 100%;width: 100%"></a>
+                    </div>
+                    <div class="item  three1" style="background: url('buy_images/StarCourse.jpg') no-repeat center;height: 250px;">
+                        <a href="../z/StarCourse.html" target="_blank" style="display: inline-block;height: 100%;width: 100%"></a>
+                    </div>
+                    <!--暑假班start-->
+                    <div class="item  three" style="background: url('buy_images/summer.jpg') no-repeat center;height: 250px;">
+                        <a href="../z/summer.html" target="_blank" style="display: inline-block;height: 100%;width: 100%"></a>
+                    </div>
+                    <!--暑假班end-->
+                    <!--明星老师End-->
+                    <!--百日Start-->
+                    <!--<div class="item  three1" style="background: url('buy_images/HundredDay.jpg') no-repeat center;height: 250px;">-->
+                    <!--<a href="../z/HundredDay.html" target="_blank" style="display: inline-block;height: 100%;width: 100%"></a>-->
+                    <!--</div>-->
+                    <!--百日End-->
+
+                    <!--&lt;!&ndash;一月活动Start&ndash;&gt;-->
+                    <!--<div class="item  three1" style="background: url('buy_images/personal/banner.jpg') no-repeat center;height: 250px;">-->
+                    <!--<a href="../January.html" target="_blank" style="display: inline-block;height: 100%;width: 100%"></a>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash;一月活动End&ndash;&gt;-->
+                    <!--涨价公告start-->
+                    <!--<div class="item  three" id="markup" style="background: url('buy_images/markup.jpg') no-repeat center;height: 250px;">-->
+                    <!--<a href="javascript:;" target="_blank" style="display: inline-block;height: 100%;width: 100%"></a>-->
+                    <!--</div>-->
+                    <!--涨价公告end-->
+                </div>
+
+                <!-- 轮播（Carousel）导航 -->
+                <a class="carousel-control left" href="#personalCarousel"
+                   data-slide="prev"></a>
+                <a class="carousel-control right" href="#personalCarousel"
+                   data-slide="next"></a>
+            </div>
+            <!--<img class="banner" src="buy_images/personal/banner.jpg" alt="">-->
+        </div>
+        <ul id="myTab" class="nav nav-tabs">
+            <!--<li class="active"><a href="#primary" data-toggle="tab">小学</a></li>-->
+            <li class="active"><a href="#middle_one" data-toggle="tab">初一</a></li>
+            <li><a href="#middle_two" data-toggle="tab">初二</a></li>
+            <li><a href="#middle_three" data-toggle="tab">初三</a></li>
+            <li><a href="#senior_one" data-toggle="tab">高一</a></li>
+            <li><a href="#senior_two" data-toggle="tab">高二</a></li>
+            <li><a href="#senior_three" data-toggle="tab">高三</a></li>
+            <!--<li><a href="#north" data-toggle="tab">清北</a></li>-->
+        </ul>
+        <div id="myTabContent" class="tab-content">
+        </div>
+    </div>
+</div>
+<div class="footer" style="  position: relative;z-index: 1;bottom: 0;width: 100%;">
+    <div class="footer1">
+        <div class="content">
+            <a class="footer_logo" href="javascript:;"></a>
+            <div class="footer-us t_c">
+                <a href="../about-us.html">关于我们</a><span></span><a href="javascript:;">联系我们</a><span></span><a href="javascript:;">新闻资讯</a>
+                <p>Copyright © 2017 上海济忆网络科技有限公司( 沪ICP备17009480号-5 )</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script id="Tprimary" type="text/html">
+    <!--<div class="tab-pane fade in active" id="primary">-->
+        <!--{{each primary as value i}}-->
+        <!--<div class="systemList">-->
+            <!--&lt;!&ndash;<div class="discount" style="width:135px;height: 113px;background: url('buy_images/personal/title2.png') no-repeat center;background-size:contain;">送<span>&nbsp;{{value.discount}}</span></div>&ndash;&gt;-->
+            <!--<p class="F20 coupon">夏令营<img src="buy_images/personal/hui.gif" alt=""></p>-->
+            <!--<p class="F16 keshi"><span class="color_red F22">{{value.period}}</span>课时</p>-->
+            <!--<p class="F20" style="display: none"><span class="period">{{value.period}}</span></p>-->
+            <!--<p class="F14 UnLine" style="display: none;">原价：<span class="old">{{value.old}}</span><span class="old0 none">{{value.old}}</span>元</p>-->
+            <!--<p><span class="new F20 color_red">{{value.new}}</span>元</p>-->
+            <!--<hr>-->
+            <!--<div class="shopping"><a data-lend={{value.lend}} data-course={{value.courseid}} data-coupon={{value.coupon}} data-zaoniao3={{value.zaoniao3}} data-zaoniao2={{value.zaoniao2}} data-zaoniao={{value.zaoniao}} data-scholarship ={{value.Scholarship}} href="javascript:;">立即购买</a></div>-->
+        <!--</div>-->
+        <!--{{/each}}-->
+    <!--</div>-->
+    <div class="tab-pane fade in active" id="middle_one">
+        {{each middle_one as value i}}
+        <div class="systemList">
+            <!--<div class="discount" style="width:135px;height: 113px;background: url('buy_images/personal/title2.png') no-repeat center;background-size:contain;">送<span>&nbsp;{{value.discount}}</span></div>-->
+            <p class="F20 coupon">夏令营<img src="buy_images/personal/hui.gif" alt=""></p>
+            <p class="F16 keshi"><span class="color_red F22">{{value.period}}</span>课时</p>
+            <p class="F20" style="display: none"><span class="period">{{value.period}}</span></p>
+            <p class="F14 UnLine" style="display: none;">原价：<span class="old">{{value.old}}</span><span class="old0 none">{{value.old}}</span>元</p>
+            <p><span class="new F20 color_red">{{value.new}}</span>元</p>
+            <hr>
+            <div class="shopping"><a data-lend={{value.lend}} data-course={{value.courseid}} data-coupon={{value.coupon}} data-zaoniao3={{value.zaoniao3}} data-zaoniao2={{value.zaoniao2}} data-zaoniao={{value.zaoniao}}  data-scholarship ={{value.Scholarship}} href="javascript:;">立即购买</a></div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="tab-pane fade in" id="middle_two">
+        {{each middle_two as value i}}
+        <div class="systemList">
+            <!--<div class="discount" style="width:135px;height: 113px;background: url('buy_images/personal/title2.png') no-repeat center;background-size:contain;">送<span>&nbsp;{{value.discount}}</span></div>-->
+            <p class="F20 coupon">夏令营<img src="buy_images/personal/hui.gif" alt=""></p>
+            <p class="F16 keshi"><span class="color_red F22">{{value.period}}</span>课时</p>
+            <p class="F20" style="display: none"><span class="period">{{value.period}}</span></p>
+            <p class="F14 UnLine" style="display: none;">原价：<span class="old">{{value.old}}</span><span class="old0 none">{{value.old}}</span>元</p>
+            <p><span class="new F20 color_red">{{value.new}}</span>元</p>
+            <hr>
+            <div class="shopping"><a data-lend={{value.lend}} data-course={{value.courseid}} data-coupon={{value.coupon}} data-zaoniao3={{value.zaoniao3}} data-zaoniao2={{value.zaoniao2}} data-zaoniao={{value.zaoniao}} data-scholarship ={{value.Scholarship}} href="javascript:;">立即购买</a></div>
+        </div>
+        {{/each}}
+    </div>
+
+    <div class="tab-pane fade in" id="middle_three">
+        {{each middle_three as value i}}
+        <div class="systemList">
+            <!--<div class="discount" style="width:135px;height: 113px;background: url('buy_images/personal/title2.png') no-repeat center;background-size:contain;">送<span>&nbsp;{{value.discount}}</span></div>-->
+            <p class="F20 coupon">夏令营<img src="buy_images/personal/hui.gif" alt=""></p>
+            <p class="F16 keshi"><span class="color_red F22">{{value.period}}</span>课时</p>
+            <p class="F20" style="display: none"><span class="period">{{value.period}}</span></p>
+            <p class="F14 UnLine" style="display: none;">原价：<span class="old">{{value.old}}</span><span class="old0 none">{{value.old}}</span>元</p>
+            <p><span class="new F20 color_red">{{value.new}}</span>元</p>
+            <hr>
+            <div class="shopping"><a data-lend={{value.lend}} data-course={{value.courseid}} data-coupon={{value.coupon}} data-zaoniao3={{value.zaoniao3}} data-zaoniao2={{value.zaoniao2}} data-zaoniao={{value.zaoniao}} data-scholarship ={{value.Scholarship}} href="javascript:;">立即购买</a></div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="tab-pane fade in" id="senior_one">
+        {{each senior_one as value i}}
+        <div class="systemList">
+            <!--<div class="discount" style="width:135px;height: 113px;background: url('buy_images/personal/title2.png') no-repeat center;background-size:contain;">送<span>&nbsp;{{value.discount}}</span></div>-->
+            <p class="F20 coupon">夏令营<img src="buy_images/personal/hui.gif" alt=""></p>
+            <p class="F16 keshi"><span class="color_red F22">{{value.period}}</span>课时</p>
+            <p class="F20" style="display: none"><span class="period">{{value.period}}</span></p>
+            <p class="F14 UnLine" style="display: none;">原价：<span class="old">{{value.old}}</span><span class="old0 none">{{value.old}}</span>元</p>
+            <p><span class="new F20 color_red">{{value.new}}</span>元</p>
+            <hr>
+            <div class="shopping"><a data-lend={{value.lend}} data-course={{value.courseid}} data-coupon={{value.coupon}} data-zaoniao3={{value.zaoniao3}} data-zaoniao2={{value.zaoniao2}} data-zaoniao={{value.zaoniao}} data-scholarship ={{value.Scholarship}} href="javascript:;">立即购买</a></div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="tab-pane fade in" id="senior_two">
+        {{each senior_two as value i}}
+        <div class="systemList">
+            <!--<div class="discount" style="width:135px;height: 113px;background: url('buy_images/personal/title2.png') no-repeat center;background-size:contain;">送<span>&nbsp;{{value.discount}}</span></div>-->
+            <p class="F20 coupon">夏令营<img src="buy_images/personal/hui.gif" alt=""></p>
+            <p class="F16 keshi"><span class="color_red F22">{{value.period}}</span>课时</p>
+            <p class="F20" style="display: none"><span class="period">{{value.period}}</span></p>
+            <p class="F14 UnLine" style="display: none;">原价：<span class="old">{{value.old}}</span><span class="old0 none">{{value.old}}</span>元</p>
+            <p><span class="new F20 color_red">{{value.new}}</span>元</p>
+            <hr>
+            <div class="shopping"><a data-lend={{value.lend}} data-course={{value.courseid}} data-coupon={{value.coupon}} data-zaoniao3={{value.zaoniao3}} data-zaoniao2={{value.zaoniao2}} data-zaoniao={{value.zaoniao}} data-scholarship ={{value.Scholarship}} href="javascript:;">立即购买</a></div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="tab-pane fade in" id="senior_three">
+        {{each senior_three as value i}}
+        <div class="systemList">
+            <!--<div class="discount" style="width:135px;height: 113px;background: url('buy_images/personal/title2.png') no-repeat center;background-size:contain;">送<span>&nbsp;{{value.discount}}</span></div>-->
+            <p class="F20 coupon">夏令营<img src="buy_images/personal/hui.gif" alt=""></p>
+            <p class="F16 keshi"><span class="color_red F22">{{value.period}}</span>课时</p>
+            <p class="F20" style="display: none"><span class="period">{{value.period}}</span></p>
+            <p class="F14 UnLine" style="display: none;">原价：<span class="old">{{value.old}}</span><span class="old0 none">{{value.old}}</span>元</p>
+            <p><span class="new F20 color_red">{{value.new}}</span>元</p>
+            <hr>
+            <div class="shopping"><a data-lend={{value.lend}} data-course={{value.courseid}} data-coupon={{value.coupon}} data-zaoniao3={{value.zaoniao3}} data-zaoniao2={{value.zaoniao2}} data-zaoniao={{value.zaoniao}} data-scholarship ={{value.Scholarship}} href="javascript:;">立即购买</a></div>
+        </div>
+        {{/each}}
+    </div>
+    <!--<div class="tab-pane fade in" id="north">-->
+    <!--{{each north as value i}}-->
+    <!--<div class="systemList">-->
+    <!--<div class="discount" style="width:135px;height: 113px;background: url('buy_images/personal/title2.png') no-repeat center;background-size:contain;">送<span>&nbsp;{{value.discount}}</span></div>-->
+    <!--<p class="F20 coupon">夏令营<img src="buy_images/personal/hui.gif" alt=""></p>-->
+    <!--<p class="F16 keshi"><span class="color_red F22">{{value.period}}</span>课时+<span class="color_red">80</span>课时</p>-->
+    <!--<p class="F20" style="display: none"><span class="period">{{value.period}}</span></p>-->
+    <!--<p class="F14 UnLine" style="display: none;">原价：<span class="old">{{value.old}}</span><span class="old0 none">{{value.old}}</span>元</p>-->
+    <!--<p><span class="new F20 color_red">{{value.new}}</span>元</p>-->
+    <!--<hr>-->
+    <!--<div class="shopping"><a data-lend={{value.lend}} data-course={{value.courseid}} data-coupon={{value.coupon}} data-zaoniao3={{value.zaoniao3}} data-zaoniao2={{value.zaoniao2}} data-zaoniao={{value.zaoniao}} data-scholarship ={{value.Scholarship}} href="javascript:;">立即购买</a></div>-->
+    <!--</div>-->
+    <!--{{/each}}-->
+    <!--</div>-->
+</script>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/lib/artTemplate-master/dist/template.js"></script>
+<script src="../js/lib/jquery-cookie/jquery.cookie.js"></script>
+<script src="../js/lib/js-sha512/src/sha512.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/gotoTop.js"></script>
+<script src="../js/api-config.js"></script>
+<script src="./buy_js/common.js"></script>
+<script src="../js/login.js"></script>
+<script src="./buy_js/summerCamp.js"></script>
+<!--百度统计代码Start-->
+<script>
+  //    轮播图Start
+  $(function () {
+    $("#personalCarousel").carousel({
+      interval: 5000
+    });
+  })
+  //    轮播图End
+</script>
+</html>

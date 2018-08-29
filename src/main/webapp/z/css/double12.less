@@ -1,0 +1,360 @@
+.banner{
+  //height: 805px;
+  //background:#0a968d url("../images/double12/banner.jpg") no-repeat center/cover;
+  position: relative;
+  img{
+    width: 100%;
+  }
+  .rule{
+    position: absolute;
+    right: 18%;
+    top: 96px;
+    cursor: pointer;
+  }
+  .rule-btn{
+    background: url("../images/double12/rule-btn.png") no-repeat;
+    width: 160px;
+    height: 48px;
+  }
+  .rule-window{
+    background: url("../images/double12/rule-window.png") no-repeat;
+    width: 338px;
+    height: 273px;
+    position: absolute;
+    left: -340px;
+    top: 0;
+    display: none;
+
+  }
+  .countDown{
+    position: absolute;
+    right: 13%;
+    top: 28px;
+    border-radius: 25px;
+    padding: 5px 10px 5px 20px;
+    background: #5d3990;
+    border: 3px solid #fff;
+    b{
+      font-size: 12px;
+      font-weight: normal;
+      color: #fff;
+      line-height: 15px;
+      display: block;
+    }
+    p{
+      display: inline-block;
+      font-size: 12px;
+      color: #fff;
+      margin-right: 10px;
+      span{
+        font-size: 28px;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+    }
+  }
+}
+.warpper{
+  padding-top: 35px;
+  padding-bottom: 150px;
+  background:#0a968d url("../images/double12/bg.png") repeat-y center top / 100% auto;
+  position: relative;
+  *{
+    margin: 0;
+  }
+  .bg-left{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url("../images/double12/bg-left.png") no-repeat;
+    width: 340px;
+    height: 2627px;
+  }
+  .bg-right{
+    position: absolute;
+    right: 0;
+    bottom: 327px;
+    background: url("../images/double12/bg-right.png") no-repeat;
+    width: 360px;
+    height: 2573px;
+  }
+  .bar-content{
+    width: 997px;
+    border-radius: 20px;
+    box-shadow: 7px 10px 11px rgba(0,0,0,0.35);
+    position: relative;
+    margin: 0 auto 120px;
+  }
+  .bar-title{
+    background: url("../images/double12/title-bg.png") no-repeat;
+    width: 627px;
+    height: 141px;
+    position: absolute;
+    left: 50%;
+    top: -80px;
+    margin-left: -313.5px;
+    padding-top: 54px;
+    padding-left: 55px;
+    h2{
+      height: 61px;
+    }
+  }
+  .bar1{
+    .content{
+      padding-top: 64px;
+      padding-bottom: 12px;
+      background: #fff url("../images/double12/bar1-bg.jpg") no-repeat bottom;
+      .bar-title{
+        h2{
+          background: url("../images/double12/title1.png") no-repeat center center;
+        }
+      }
+      .swiper-container{
+        margin: 0 auto;
+        width: 800px;
+        overflow: hidden;
+      }
+      .swiper-slide{
+        cursor: pointer;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .swiper-button-next{
+        background: url("../images/double12/arrowR.png") no-repeat;
+        width: 50px;
+        height: 82px;
+        margin-top: -41px;
+      }
+      .swiper-button-prev{
+        background: url("../images/double12/arrowL.png") no-repeat;
+        width: 50px;
+        height: 82px;
+        margin-top: -41px;
+      }
+    }
+  }
+  .bar2{
+
+    .content{
+      .bar-title{
+        h2{
+          background: url("../images/double12/title2.png") no-repeat center center;
+        }
+      }
+      background: #fff url("../images/double12/bar2-bg.jpg") no-repeat center;
+      height: 569px;
+      position: relative;
+      span{
+        position: absolute;
+        width: 240px;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: left;
+        &:nth-of-type(1){
+          left: 217px;
+          top: 198px;
+        }
+        &:nth-of-type(2){
+          left: 530px;
+          top: 190px;
+        }
+        &:nth-of-type(3){
+          left: 217px;
+          top: 420px;
+        }
+        &:nth-of-type(4){
+          left: 530px;
+          top: 420px;
+        }
+      }
+    }
+  }
+  .bar3{
+    .content{
+      .bar-title{
+        h2{
+          background: url("../images/double12/title3.png") no-repeat center center;
+        }
+      }
+      background: #fff url("../images/double12/bar3-bg.jpg") no-repeat center;
+      height: 450px;
+      position: relative;
+      padding-top: 72px;
+      padding-left: 134px;
+      .bar3-icon1{
+        background: url("../images/double12/bar3-icon1.png") no-repeat;
+        position: absolute;
+        left: -37px;
+        top: 37px;
+        height: 81px;
+        width: 71px;
+      }
+      .bar3-icon2 {
+        background: url("../images/double12/bar3-icon2.png") no-repeat;
+        width: 164px;
+        height: 124px;
+        position: absolute;
+        right: -60px;
+        top: -60px;
+      }
+      ul{
+        text-align: left;
+      }
+      li{
+        display: inline-block;
+        margin-right: 36px;
+        position: relative;
+        vertical-align: middle;
+        .bar3-border{
+          background: url("../images/double12/bar3-border.png") no-repeat;
+          width: 210px;
+          height: 300px;
+          position: relative;
+          z-index: 1;
+          text-align: center;
+          padding: 35px 22px 0;
+          h2{
+            font-size: 26px;
+            margin-bottom: 35px;
+          }
+          p{
+            font-size: 16px;
+            text-align: left;
+            height: 88px;
+          }
+          button{
+            width: 169px;
+            height: 39px;
+            color: #fff;
+            font-size: 20px;
+            margin-top: 10px;
+            background: url("../images/double12/bar3-btn.png") no-repeat;
+          }
+        }
+        .bar3-card{
+          position: absolute;
+          height: 300px;
+          width: 210px;
+          right: -6px;
+          bottom: -6px;
+          z-index: 0;
+          background: #f5f5f5;
+          border-radius: 7px;
+        }
+      }
+    }
+  }
+  .bar4{
+    .content{
+      height: 537px;
+      background: #fff;
+      padding-top: 87px;
+      .bar-title{
+        h2{
+          background: url("../images/double12/title4.png") no-repeat center center;
+        }
+      }
+      ul{
+        li{
+          display: inline-block;
+          vertical-align: middle;
+          padding-top: 250px;
+          font-size: 18px;
+          line-height: 26px;
+          width: 257px;
+          height: 406px;
+          margin: 0 17px;
+          cursor: pointer;
+          &:nth-of-type(1){
+            background: url("../images/double12/b4-bg1.jpg") no-repeat;
+          }
+          &:nth-of-type(2){
+            background: url("../images/double12/b4-bg2.jpg") no-repeat;
+          }
+          &:nth-of-type(3){
+            background: url("../images/double12/b4-bg3.jpg") no-repeat;
+          }
+        }
+      }
+    }
+  }
+  .bar5{
+    .content{
+      width: 1200px;
+      background: #ffffd8;
+      height: 262px;
+      margin: 0 auto;
+      border-radius: 26px;
+      overflow: hidden;
+      position: relative;
+      .bar5-title{
+        background: url("../images/double12/bar5-title.png") no-repeat;
+        height: 79px;
+      }
+      .bar5-main{
+        padding: 44px 100px 0;
+        li{
+          float: left;
+          width: 33.333%;
+          height: 100px;
+          padding-left: 111px;
+          &:nth-of-type(1){
+            background: url("../images/double12/bar5-icon1.png") no-repeat left center;
+          }
+          &:nth-of-type(2){
+            background: url("../images/double12/bar5-icon2.png") no-repeat 10px center;
+          }
+          &:nth-of-type(3){
+            background: url("../images/double12/bar5-icon3.png") no-repeat 10px center;
+          }
+          b{
+            font-size: 20px;
+            color: #fff;
+            background: #fe8b01;
+            display: inline-block;
+            border-radius: 10px;
+            padding: 0 5px;
+            margin-right: 5px;
+          }
+          span{
+            color: #fe8b01;
+            font-size: 20px;
+            font-weight: bold;
+          }
+          p{
+            font-size: 18px;
+            margin-top: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+.video-window{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.video-info{
+  position: absolute;
+  width: 888px;
+  z-index: 99;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+}
+.video-bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.7);
+}

@@ -1,0 +1,853 @@
+body {
+  background-color: #FFF;
+}
+.select {
+  background-color: #FFF;
+  overflow: hidden;
+}
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes opacity {
+  /* Firefox */
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes opacity {
+  /* Safari 和 Chrome */
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes opacity {
+  /* Opera */
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h1 {
+  font-size: 0.53333333rem;
+  height: 2.4rem;
+  width: 100%;
+  position: relative;
+  margin: 0.93333333rem auto;
+  margin-bottom: 1.2rem;
+  background-size: cover;
+}
+button {
+  position: relative;
+}
+button a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.orders {
+  display: inline-block;
+  width: 4.66666667rem;
+  height: 0.98666667rem;
+  line-height: 0.98666667rem;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.34666667rem;
+  color: #fff;
+  background-color: #f40009;
+  border-radius: 0.49333333rem;
+  cursor: pointer;
+  margin-top: 0.26666667rem;
+}
+nav {
+  height: 1.6rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url("../images/weixin/nav.jpg") no-repeat center;
+  background-size: cover;
+  z-index: 9999;
+}
+nav .nav-left {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+nav .nav-left img {
+  position: absolute;
+  width: 0.50666667rem;
+  height: 0.50666667rem;
+  left: 50%;
+  top: 50%;
+}
+nav .nav-right {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+nav .nav-right img {
+  position: absolute;
+  width: 0.44rem;
+  height: 0.45333333rem;
+  left: 50%;
+  top: 50%;
+}
+nav2 {
+  height: 1.2rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #f40009;
+}
+nav2 img {
+  width: 2.86666667rem;
+  height: 0.84rem;
+  padding-left: 0.2rem;
+  padding-top: 0.17333333rem;
+}
+.newSelect1 {
+  margin-top: 1.2rem;
+  height: 6rem;
+}
+.newSelect1 .swiper-container {
+  height: 100%;
+}
+.newSelect1 .swiper-container .swiper-slide div {
+  height: 100%;
+}
+.newSelect1 .swiper-container .swiper-pagination-bullet-active {
+  background-color: #E7312D;
+}
+.newSelect2 {
+  background-color: #f3f2f8;
+  padding-top: 0.8rem;
+  position: relative;
+  text-align: center;
+}
+.newSelect2 > p:first-child {
+  font-size: 0.53333333rem;
+  line-height: 0.53333333rem;
+  padding-bottom: 0.66666667rem;
+  color: #414141;
+}
+.newSelect2 > p:first-child span {
+  color: #f40009;
+}
+.newSelect2 > img {
+  width: 8.94666667rem;
+  height: 2.06666667rem;
+  position: relative;
+}
+.newSelect2 > div {
+  width: 8rem;
+  padding-top: 0.53333333rem;
+  border-radius: 3px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.newSelect2 > div .myForm {
+  box-sizing: border-box;
+  padding-bottom: 0;
+  width: 6.61333333rem;
+  margin: 0 auto;
+}
+.newSelect2 > div .myForm input::-webkit-input-placeholder {
+  /* WebKit browsers*/
+  color: #d3d3d3;
+  font-size: 0.34666667rem;
+}
+.newSelect2 > div .myForm input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18*/
+  color: #d3d3d3;
+  font-size: 0.34666667rem;
+}
+.newSelect2 > div .myForm input::-moz-placeholder {
+  /* Mozilla Firefox 19+*/
+  color: #d3d3d3;
+  font-size: 0.34666667rem;
+}
+.newSelect2 > div .myForm input:-ms-input-placeholder {
+  /* Internet Explorer 10+*/
+  color: #d3d3d3;
+  font-size: 0.34666667rem;
+}
+.newSelect2 > div .myForm p {
+  height: 0.93333333rem;
+  margin: 0.29333333rem 0;
+}
+.newSelect2 > div .myForm p input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  padding-left: 0.2rem;
+  font-size: 0.34666667rem;
+}
+.newSelect2 > div .myForm p select {
+  background: url('../images/weixin/downicon.png') no-repeat center;
+  background-position-y: 50%;
+  background-position-x: 90%;
+  background-size: 7px;
+  height: 100%;
+  width: 48%;
+  padding-left: 0.22666667rem;
+  border: 1px solid #d3d3d3;
+  font-size: 0.37333333rem;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.newSelect2 > div .myForm p select option {
+  background: transparent;
+}
+.newSelect2 > div .myForm .F-button {
+  height: 1.8rem;
+}
+.newSelect2 > div .myForm #code {
+  display: none;
+}
+.newSelect2 > div .myForm #code .code {
+  width: 60%;
+  float: left;
+}
+.newSelect2 > div .myForm #code .send {
+  width: 35%;
+  float: right;
+  padding: 0;
+}
+.newSelect2 .telPhone {
+  margin: 0.46666667rem 0 0.53333333rem;
+  font-size: 0.66666667rem;
+  color: #f40009;
+}
+.newSelect2 .telPhone img {
+  display: inline-block;
+  width: 1rem;
+  height: 0.8rem;
+  margin-right: 0.26666667rem;
+  vertical-align: -0.09333333rem;
+}
+.newSelect2 .order p {
+  font-size: 0.34666667rem;
+  line-height: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+.newSelect2 .order .order-table {
+  background: url("../images/weixin/order.jpg") no-repeat center;
+  background-size: 100%;
+  height: 7.66666667rem;
+  width: 100%;
+  padding-top: 0.73333333rem;
+}
+.newSelect2 .order .order-table .order-center {
+  height: 100%;
+  overflow: hidden;
+}
+.newSelect3 {
+  height: 10.66666667rem;
+  background: url(../images/weixin/t5.png) no-repeat 50%;
+  background-size: cover;
+}
+.newSelect3 > p:first-child {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  color: #fff;
+  text-align: center;
+  padding: 1.33333333rem 0;
+}
+.newSelect3 div {
+  margin-bottom: 0.4rem;
+}
+.newSelect3 div img {
+  display: inline-block;
+  width: 3.37333333rem;
+  height: 2.02666667rem;
+  margin: 0 0.2rem 0.2rem;
+}
+.newSelect4 {
+  height: 12rem;
+  background: url(../images/weixin/b4.png) no-repeat 50%;
+  background-size: cover;
+}
+.newSelect4 > p:first-child {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 0.85333333rem;
+}
+.newSelect4 p.orders {
+  margin-top: 8.57333333rem;
+  background-color: #fff;
+  color: #f40009;
+}
+.newSelect5 > p:first-child {
+  font-size: 0.58666667rem;
+  line-height: 0.58666667rem;
+  color: #12192b;
+  text-align: center;
+  padding-top: 0.8rem;
+}
+.newSelect5 > p:nth-child(2) {
+  font-size: 0.4rem;
+  line-height: 0.4rem;
+  color: #989898;
+  text-align: center;
+  padding-top: 0.26666667rem;
+  padding-bottom: 0.53333333rem;
+}
+.newSelect5 div {
+  position: relative;
+}
+.newSelect5 div p.orders {
+  position: absolute;
+  bottom: 0.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #f40009;
+}
+.newSelect6 {
+  background-color: #202020;
+  text-align: center;
+  color: #989898;
+  font-size: 0.24rem;
+  line-height: 0.98666667rem;
+}
+.select1 {
+  margin-top: 1.6rem;
+  height: 4.48rem;
+}
+.select1 .swiper-container {
+  height: 100%;
+}
+.select1 .swiper-container .swiper-slide div {
+  height: 100%;
+}
+.select1 .swiper-container .swiper-pagination-bullet-active {
+  background-color: #E7312D;
+}
+.select2 {
+  background-color: #F8F8F8;
+  padding-top: 0.66666667rem;
+  position: relative;
+  text-align: center;
+}
+.select2 > img {
+  width: 8.94666667rem;
+  height: 2.06666667rem;
+  position: relative;
+}
+.select2 .myForm {
+  box-sizing: border-box;
+  padding-bottom: 0;
+  width: 7.62666667rem;
+  margin: 0 auto;
+}
+.select2 .myForm p {
+  height: 1.06666667rem;
+  margin: 0.29333333rem 0;
+}
+.select2 .myForm p input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #f0d8d8;
+  padding-left: 0.22666667rem;
+  font-size: 0.37333333rem;
+  background-color: #FFF;
+}
+.select2 .myForm p input,
+.select2 .myForm p select {
+  border-radius: 5px;
+}
+.select2 .myForm p select {
+  background: url('../images/weixin/downicon.png') no-repeat center;
+  background-position-y: 50%;
+  background-position-x: 90%;
+  background-size: 0.26666667rem 0.26666667rem;
+  height: 100%;
+  width: 48%;
+  padding-left: 0.22666667rem;
+  border: 1px solid #f0d8d8;
+  font-size: 0.37333333rem;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.select2 .myForm p select option {
+  background: transparent;
+}
+.select2 .myForm p button {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url("../images/weixin/btn1.png") no-repeat center;
+  background-size: 100%;
+}
+.select2 .myForm .F-button {
+  height: 1.8rem;
+}
+.select2 .myForm #code {
+  display: none;
+}
+.select2 .myForm #code .code {
+  width: 60%;
+  float: left;
+}
+.select2 .myForm #code .send {
+  width: 35%;
+  float: right;
+  padding: 0;
+}
+.select2 .order p {
+  font-size: 0.34666667rem;
+  line-height: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+.select2 .order .order-table {
+  background: url("../images/weixin/order.jpg") no-repeat center;
+  background-size: 100%;
+  height: 7.66666667rem;
+  width: 100%;
+  padding-top: 0.73333333rem;
+}
+.select2 .order .order-table .order-center {
+  height: 100%;
+  overflow: hidden;
+}
+.select3 p {
+  font-size: 0.53333333rem;
+  line-height: 0.73333333rem;
+}
+.select3 .select3-img {
+  width: 100%;
+  padding: 0 0.53333333rem;
+  margin-bottom: 0.53333333rem;
+}
+.select3 .select3-img img {
+  margin-top: 0.4rem;
+  height: auto;
+  width: 100%;
+  display: inherit;
+}
+.select4 {
+  background-color: #FFF;
+}
+.select4 .center {
+  background-color: #FFF;
+}
+.select4 .center .center-img {
+  padding: 0 0.53333333rem;
+}
+.select4 .center button {
+  margin-top: 0.53333333rem;
+  display: inline-block;
+  height: 1.8rem;
+  width: 100%;
+  background: url("../images/weixin/btn.png") no-repeat center;
+  background-size: 100%;
+}
+.select5 ul li {
+  height: 4rem;
+  width: 90%;
+  margin: 0.4rem auto;
+  position: relative;
+  padding: 0.26666667rem 0.26666667rem 0.26666667rem 4.22666667rem;
+  background-color: #F1F4F6;
+}
+.select5 ul li img {
+  width: 4.22666667rem;
+  height: 4.90666667rem;
+  position: absolute;
+  left: -0.33333333rem;
+  top: -0.48rem;
+}
+.select5 ul li .center {
+  text-align: left;
+}
+.select5 ul li .center h2 {
+  font-size: 0.34666667rem;
+  margin-bottom: 0.26666667rem;
+  line-height: 0.53333333rem;
+}
+.select5 ul li .center h2 span {
+  vertical-align: bottom;
+  display: inline-block;
+  padding: 0 0.06666667rem;
+  background-color: #FF4118;
+  color: #FFF;
+  font-size: 0.26666667rem;
+  margin-left: 0.26666667rem;
+  border-radius: 0.06666667rem;
+}
+.select5 ul li .center p {
+  font-size: 0.24rem;
+  color: #3c3939;
+  line-height: 0.46666667rem;
+}
+.select5 ul li .center button {
+  margin-top: 0.26666667rem;
+  height: 0.8rem;
+  width: 100%;
+  border-radius: 0.10666667rem;
+  border: 2px solid #FF4118;
+  font-size: 0.34666667rem;
+  color: #FF4118;
+}
+.select6 .center {
+  height: 5.18666667rem;
+  position: relative;
+  padding-top: 1.13333333rem;
+  margin-bottom: 0.4rem;
+}
+.select6 .center span {
+  position: absolute;
+  background-color: #FF4018;
+}
+.select6 .center .span1 {
+  left: 3.6rem;
+  top: 0.33333333rem;
+  width: 0.21333333rem;
+  height: 0.21333333rem;
+  border-radius: 0.10666667rem;
+}
+.select6 .center .span2 {
+  left: 0.66666667rem;
+  top: 3.86666667rem;
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  border-radius: 0.26666667rem;
+}
+.select6 .center .span3 {
+  right: 0.81081081rem;
+  top: 2.13333333rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 0.4rem;
+}
+.select6 .center img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: auto;
+  height: 100%;
+}
+.select6 .center p {
+  font-size: 0.4rem;
+  line-height: 0.73333333rem;
+}
+.select6 > .weixin {
+  width: 7.17333333rem;
+  height: 4.25333333rem;
+}
+.select6 .bottom .p1 {
+  font-size: 0.26666667rem;
+  line-height: 0.53333333rem;
+}
+.select6 .bottom .p2 {
+  font-size: 0.32rem;
+  line-height: 0.53333333rem;
+}
+.select6 .bottom .p3 {
+  font-size: 0.24rem;
+  line-height: 0.53333333rem;
+}
+.select6 .bottom .center1 {
+  position: relative;
+  height: 12rem;
+  background: url("../images/weixin/P4-foot.jpg") no-repeat center bottom;
+  background-size: 100%;
+}
+.select6 .bottom .center1 .p6-0 {
+  position: absolute;
+  width: 6.32rem;
+  height: 5.90666667rem;
+  left: 50%;
+  top: 2.26666667rem;
+}
+.select6 .bottom .center1 .p6 {
+  position: absolute;
+  width: 4rem;
+  height: 2.26666667rem;
+}
+.select6 .bottom .center1 .p6-1 {
+  left: 53%;
+  top: 0%;
+  opacity: 0;
+  animation: opacity 10s 0s infinite alternate;
+  -moz-animation: opacity 10s 0s infinite alternate;
+  /* Firefox */
+  -webkit-animation: opacity 10s 0s infinite alternate;
+  /* Safari 和 Chrome */
+  -o-animation: opacity 10s 0s infinite alternate;
+  /* Opera */
+}
+.select6 .bottom .center1 .p6-2 {
+  left: 60%;
+  top: 13%;
+  opacity: 0;
+  animation: opacity 10s 2s infinite alternate;
+  -moz-animation: opacity 10s 2s infinite alternate;
+  /* Firefox */
+  -webkit-animation: opacity 10s 2s infinite alternate;
+  /* Safari 和 Chrome */
+  -o-animation: opacity 10s 2s infinite alternate;
+  /* Opera */
+}
+.select6 .bottom .center1 .p6-3 {
+  left: 49%;
+  top: 70%;
+  opacity: 0;
+  animation: opacity 10s 4s infinite alternate;
+  -moz-animation: opacity 10s 4s infinite alternate;
+  /* Firefox */
+  -webkit-animation: opacity 10s 4s infinite alternate;
+  /* Safari 和 Chrome */
+  -o-animation: opacity 10s 4s infinite alternate;
+  /* Opera */
+}
+.select6 .bottom .center1 .p6-4 {
+  left: 15%;
+  top: 70%;
+  opacity: 0;
+  animation: opacity 10s 6s infinite alternate;
+  -moz-animation: opacity 10s 6s infinite alternate;
+  /* Firefox */
+  -webkit-animation: opacity 10s 6s infinite alternate;
+  /* Safari 和 Chrome */
+  -o-animation: opacity 10s 6s infinite alternate;
+  /* Opera */
+}
+.select6 .bottom .center1 .p6-5 {
+  left: 3%;
+  top: 13%;
+  opacity: 0;
+  animation: opacity 10s 8s infinite alternate;
+  -moz-animation: opacity 10s 8s infinite alternate;
+  /* Firefox */
+  -webkit-animation: opacity 10s 8s infinite alternate;
+  /* Safari 和 Chrome */
+  -o-animation: opacity 10s 8s infinite alternate;
+  /* Opera */
+}
+.select6 button {
+  display: inline-block;
+  height: 3.06666667rem;
+  width: 100%;
+  background: url("../images/weixin/btn.png") no-repeat center;
+  background-size: 100%;
+}
+.select8 {
+  padding-bottom: 0.8rem;
+}
+.select8 h2 {
+  height: 0.76rem;
+}
+.select8 h2 img {
+  right: 100%;
+}
+.select8 h2 p {
+  font-size: 0.53333333rem;
+  line-height: 0.93333333rem;
+  display: inline-block;
+  position: relative;
+  font-weight: 500;
+}
+.select8 h2 p::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.02666667rem;
+  position: absolute;
+  left: -0.53333333rem;
+  top: 50%;
+  background-color: #000;
+}
+.select8 h2 p::after {
+  content: "";
+  width: 0.4rem;
+  height: 0.02666667rem;
+  position: absolute;
+  right: -0.53333333rem;
+  top: 50%;
+  background-color: #000;
+}
+footer {
+  background-color: #f40009;
+  width: 100%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+}
+footer a {
+  display: inline-block;
+  width: 49%;
+  height: 100%;
+}
+footer a img {
+  width: 0.37333333rem;
+  height: 0.37333333rem;
+  vertical-align: middle;
+}
+footer a span {
+  line-height: 100%;
+  color: #FFF;
+  vertical-align: middle;
+  font-size: 0.4rem;
+  font-weight: bold;
+}
+footer a:last-child {
+  position: relative;
+}
+footer a:last-child span {
+  font-style: italic;
+}
+footer a:last-child span i {
+  position: absolute;
+  display: inline-block;
+  height: 0.4rem;
+  width: 2px;
+  left: -1px;
+  top: 50%;
+  background-color: #FFF;
+}
+/*返回顶部start*/
+a.backToTop {
+  width: 0.66666667rem;
+  height: 0.66666667rem;
+  background: url('../images/weixin/top.png') no-repeat center;
+  background-size: cover;
+  text-indent: -999em;
+  right: 0.26666667rem;
+  bottom: 1.33333333rem;
+}
+/*返回顶部end*/
+.sign_rule {
+  text-align: left;
+  padding: .7333rem .5333rem;
+}
+.sign_rule p {
+  margin-bottom: .6rem;
+  font-size: .34rem;
+}
+.sign_rule li {
+  color: #6a6a6a;
+  font-size: .32rem;
+  line-height: .5333rem;
+}
+.starFotter {
+  font-size: .32rem;
+  padding-bottom: .4rem;
+}
+.warpper {
+  text-align: center;
+}
+.warpper img {
+  display: block;
+  margin: 0 auto;
+}
+.warpper h2 {
+  font-size: 0.6rem;
+  color: #3c3939;
+  margin-bottom: 0.13333333rem;
+}
+.warpper h2 span {
+  color: #f40009;
+}
+.bar2 {
+  padding-top: 1.2rem;
+}
+.bar2 p {
+  font-size: 0.45333333rem;
+  color: #727272;
+  margin-bottom: 0.93333333rem;
+  font-weight: 600;
+}
+.bar2 img {
+  width: 8.93333333rem;
+}
+.bar2 a {
+  height: 1.8rem;
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  background: url(../images/weixin/btn.png) no-repeat center;
+  background-size: 100%;
+}
+.bar3 .video-info {
+  background: url("../images/prop/bar3.jpg") no-repeat center / cover;
+  height: 5.65333333rem;
+  width: 9.48rem;
+  margin: 1.33333333rem auto 2.26666667rem;
+  box-shadow: 0 0 0.5rem rgba(55, 43, 42, 0.53);
+}
+.bar3 .video-info #trump_main_unique_1 {
+  background: none;
+}
+.bar4 h2 {
+  margin-bottom: 1rem;
+}
+.bar4 img {
+  width: 100%;
+}
+.bar5 {
+  padding-top: 1.33333333rem;
+  padding-bottom: 2rem;
+}
+.bar5 h3 {
+  font-size: 0.6rem;
+  color: #f40009;
+  margin-bottom: 0.66666667rem;
+}
+.bar5 h4 {
+  color: #3c3939;
+  font-size: 0.50666667rem;
+  margin-bottom: 0.1rem;
+}
+.bar5 img {
+  width: 9.17333333rem;
+}

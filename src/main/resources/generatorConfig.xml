@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <classPathEntry  location="E:\\mysql-connector-java-5.1.25-bin.jar"/>  
+	<context id="PYF_MyBatis_Generator" targetRuntime="MyBatis3">
+		<property name="autoDelimitKeywords" value="true" />
+		<property name="beginningDelimiter" value="`" />
+		<property name="endingDelimiter" value="`" />
+		<property name="javaFileEncoding" value="UTF-8" />
+
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+			<property name="suppressDate" value="true" />
+		</commentGenerator>
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://192.168.1.250:3306/onlyhi" userId="onlyhi"
+			password="123456">
+		</jdbcConnection>
+
+		<!--需要修改不同的数据库（领域集）名称，替换MYSQL_FinSM -->
+		<javaModelGenerator targetPackage="com.onlyhi.repository.onlyhiedu.mbg_po"
+			targetProject="src\main\java\">
+			<property name="constructorBased" value="false" />
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<!--需要修改不同的数据库（领域集）名称，替换MYSQL_FinSM -->
+		<sqlMapGenerator targetPackage="com.onlyhi.repository.onlyhiedu.mapper"
+			targetProject="src\main\resources\">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<!--需要修改不同的数据库（领域集）名称，替换MYSQL_FinSM -->
+		<!--Java客户端仅在首次生成即可，一个mapper对应多个xml和po， xml和po随着数据库的变化可以进行多次生成 -->
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.onlyhi.repository.onlyhiedu.mapper"
+			targetProject="src\main\java\">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+		<!-- <table tableName="channel">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyChannelMapper" />
+		</table>
+		<table tableName="channel_type">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyChannelTypeMapper" />
+		</table>
+		<table tableName="forms_channel">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyFormsChannelMapper" />
+		</table>
+		<table tableName="leads">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyLeadsMapper" />
+		</table>		
+		<table tableName="leads_log">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyLeadsLogMapper" />
+		</table>
+
+		<table tableName="organization">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyOrganizationMapper" />
+		</table>
+		<table tableName="posts">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyPostsMapper" />
+		</table>
+		<table tableName="resource">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyResourceMapper" />
+		</table>
+		<table tableName="role">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyRoleMapper" />
+		</table>
+		<table tableName="role_resource">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyRoleResourceMapper" />
+		</table>
+		<table tableName="sys_log">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MySysLogMapper" />
+		</table>
+		<table tableName="team">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyTeamMapper" />
+		</table>
+		<table tableName="user">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyUserMapper" />
+		</table>
+		<table tableName="user_role">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyUserRoleMapper" />
+		</table>
+		<table tableName="user_task">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyUserTaskMapper" />
+		</table>
+		<table tableName="user_team">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyUserTeamMapper" />
+		</table>
+		<table tableName="message">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyMessageMapper" />
+		</table> 
+		<table tableName="contact_info">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyContactInfoMapper" />
+		</table>
+		<table tableName="order">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyOrderMapper" />
+		</table>
+		<table tableName="order_info">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyOrderInfoMapper" />
+		</table>-->
+		<table tableName="orders">
+			<property name="rootInterface"
+				value="com.onlyhi.repository.onlyhiedu.my_mapper.MyOrdersMapper" />
+		</table>
+	</context>
+</generatorConfiguration>

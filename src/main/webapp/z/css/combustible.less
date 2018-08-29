@@ -1,0 +1,585 @@
+body{
+  min-width: 1200px;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .content{
+    width: 1200px;
+    position: relative;
+    z-index: 1;
+  }
+  .bar-content{
+    padding-bottom: 100px;
+    .content-shadow{
+      padding: 110px 78px 0;
+    }
+  }
+}
+.footer .form1 ul li img{
+  display: inline-block;
+}
+header div{
+  margin: 0 auto;
+}
+
+
+.warpper{
+  background: url("../images/combustible/bg.jpg") repeat-x;
+}
+.aside{
+  background: url("../images/combustible/asid-bg.png") no-repeat;
+  width: 250px;
+  height: 616px;
+  position: fixed;
+  right: 0;
+  top:50%;
+  margin-top: -308px;
+  z-index: 2;
+
+  .aside-content{
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 65px;
+    .aside-main{
+      margin-bottom: 40px;
+      .aside-img{
+        width: 70px;
+        height: 70px;
+        overflow: hidden;
+        float: left;
+      }
+      .aside-detail{
+        width: 130px;
+        padding-left:10px;
+        float: left;
+        padding-top: 12px;
+        p{
+          line-height: 1;
+          margin-bottom: 10px;
+          label{
+            font-size: 18px;
+            color: #ffeaa1;
+            display: inline-block;
+          }
+          b{
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            background: #fb7512;
+            text-align: center;
+            font-size: 12px;
+            line-height: 19px;
+            vertical-align: top;
+            color: #fff;
+          }
+        }
+        span{
+          font-size: 16px;
+          color: #ffeaa1;
+          display: inline-block;
+          margin-right: 15px;
+        }
+        i{
+          display: inline-block;
+          vertical-align: top;
+        }
+      }
+      &:first-child{
+        .aside-detail{
+          p{
+            label{
+              color: #fb1212;
+            }
+            b{
+              background: #fb1212;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.banner{
+  width: 100%;
+  height: 600px;
+  position: relative;
+  z-index: 1;
+  .content{
+    height: 100%;
+  }
+  .banner-bg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    background: url("../images/combustible/banner.jpg") no-repeat center;
+    background-size: cover;
+    z-index: -9;
+  }
+  .banner-font{
+    width: 800px;
+    height: 481px;
+    background: url("../images/combustible/banner-font.png") no-repeat center;
+    background-size: cover;
+    z-index: 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    top:70px;
+  }
+  .banner-light1{
+    width: 100%;
+    background: url("../images/combustible/light3.png") center center;
+    background-size: cover;
+    height: 600px;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: -7;
+    animation: light 1.5s linear infinite both;
+    -webkit-animation: light 1.5s linear infinite both;
+  }
+  .banner-biu1{
+    width: 537px;
+    height: 202px;
+    position: absolute;
+    z-index: -6;
+    left: 0px;
+    top:287px;
+    background: url("../images/combustible/biu1.png") no-repeat;
+    -webkit-animation: biu1 2s linear infinite both;
+    -o-animation:biu1 2s linear infinite both;
+    animation:biu1 2s linear infinite both;
+  }
+  .banner-biu2{
+    width: 247px;
+    height: 69px;
+    position: absolute;
+    z-index: -6;
+    left: 164px;
+    top:130px;
+    background: url("../images/combustible/biu2.png") no-repeat;
+    -webkit-animation: biu2 1.8s  linear infinite both;
+    -o-animation:biu2 1.8s linear infinite both;
+    animation:biu2 1.8s linear infinite both;
+  }
+  .banner-biu3{
+    width: 239px;
+    height: 98px;
+    position: absolute;
+    z-index: -6;
+    right: 112px;
+    top:90px;
+    background: url("../images/combustible/biu3.png") no-repeat;
+    -webkit-animation: biu3 1.9s  linear infinite both;
+    -o-animation:biu3 1.9s linear infinite both;
+    animation:biu3 1.9s linear infinite both;
+  }
+  .banner-biu4{
+    width: 417px;
+    height: 132px;
+    position: absolute;
+    z-index: -6;
+    right: -161px;
+    top:400px;
+    background: url("../images/combustible/biu4.png") no-repeat;
+    -webkit-animation: biu4 1.95s  linear infinite both;
+    -o-animation:biu4 1.95s linear infinite both;
+    animation:biu4 1.95s linear infinite both;
+  }
+
+}
+
+@keyframes light{
+  0%{opacity: 0;}
+  50%{opacity: 1;}
+  100%{opacity: 0;}
+}
+@-webkit-keyframes light{
+  0%{opacity: 0;}
+  50%{opacity: 1;}
+  100%{opacity: 0;}
+}
+@keyframes biu1{
+  0%{transform:translate3d(0,0,0)}
+  70%{transform:translate3d(-4000px,1400px,0px);}
+  100%{transform:translate3d(-4000px,1400px,0px);}
+}
+@keyframes biu2{
+  0%{transform:translate3d(0,0,0)}
+  70%{transform:translate3d(-4000px,-800px,0px);}
+  100%{transform:translate3d(-4000px,-800px,0px);}
+}
+@keyframes biu3{
+  0%{transform:translate3d(0,0,0)}
+  70%{transform:translate3d(4000px,-800px,0px);}
+  100%{transform:translate3d(4000px,-800px,0px);}
+}
+@keyframes biu4{
+  0%{transform:translate3d(0,0,0)}
+  70%{transform:translate3d(4000px,1200px,0px);}
+  100%{transform:translate3d(4000px,1200px,0px);}
+}
+.bar1{
+  margin-top: -16px;
+  .content-shadow{
+    background: url("../images/combustible/bg1.png") no-repeat center;
+    background-size: cover;
+    width: 1402px;
+    height: 674px;
+    margin: 0 -101px;
+  }
+  .bar1-title{
+    width: 112px;
+    height: 360px;
+    font-size: 42px;
+    color: #f9c000;
+    line-height: 1;
+    font-weight: normal;
+    letter-spacing: 4px;
+    float:left;
+    text-align: center;
+    padding: 60px 20px 0;
+    writing-mode:lr-tb;
+    background: url("../images/combustible/title1.png") no-repeat;
+    margin-left: 101px;
+  }
+  ul{
+    float: left;
+    width: 930px;
+    margin-left: 38px;
+    margin-bottom: 60px;
+  }
+  li{
+    margin-bottom: 20px;
+    line-height: 32px;
+    font-size: 20px;
+    color: #fff;
+  }
+  p{
+    font-size: 20px;
+    color: #ffc600;
+    text-align: center;
+    float: left;
+    width: 100%;
+  }
+}
+.bar2{
+  .content-shadow{
+    background: url("../images/combustible/bg2.png") no-repeat center;
+    background-size: cover;
+    width: 1249px;
+    height: 2100px;
+    margin: 0 -24.5px;
+  }
+  .bar2-title{
+    width: 518px;
+    height: 239px;
+    margin: -130px 0 50px 233px ;
+    background: url("../images/combustible/title2.png");
+    color: #ffeaa1;
+    font-weight: normal;
+    text-align: center;
+    font-size: 42px;
+    padding: 154px 0 0 100px;
+
+  }
+  .bar2-content{
+    width: 1000px;
+    margin: 0 auto;
+    .bar2-main{
+      width: 21%;
+      height: 292px;
+      float: left;
+      border:1px solid #fff;
+      margin: 28px 2%;
+      box-shadow: 0 0 20px rgba(255,249,208,0.82);
+      transition-duration: 0.3s;
+      -webkit-transition-duration: 0.3s;
+      position: relative;
+      &:hover{
+        box-shadow: 0 0 28px #f9b95f;
+        border-color: #f9b95f;
+        .bar2-play{
+          background: transparent;
+          .bar2-play-btn{
+            background-position: -40px 0;
+          }
+        }
+      }
+      .bar2-img{
+        width: 100%;
+        height: 162px;
+        overflow: hidden;
+        >img{
+          width: 100%;
+          min-height: 100%;
+        }
+      }
+      .bar2-play{
+        background: rgba(0,0,0,0.4);
+        width: 100%;
+        height: 162px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+        .bar2-play-btn{
+          position: absolute;
+          width: 37px;
+          height: 46px;
+          background: url("../images/combustible/play.png") no-repeat;
+          background-position: 0 0;
+          left: 50%;
+          top:50%;
+          margin: -23px 0 0 -18.5px;
+          cursor: pointer;
+
+        }
+      }
+      .bar2-detail{
+        padding: 20px 15px 0;
+        position: relative;
+        h3{
+          font-size: 20px;
+          color: #ffeaa1;
+          line-height: 1;
+          margin-bottom: 10px;
+          font-weight:normal;
+        }
+        p{
+          font-size: 16px;
+          color: #fff;
+          margin-bottom:10px;
+        }
+        .bar2-echod{
+          width: 235px;
+          height: 235px;
+          position: absolute;
+          left: -12.5px;
+          bottom: -260px;
+          background: #e38600;
+          padding: 23px 0;
+          text-align: center;
+          font-size: 16px;
+          display: none;
+          z-index: 2;
+          .bar2-echod-img{
+            width: 168px;
+            margin: 0 auto 10px;
+          }
+          i{
+            border-bottom: 15px solid #e38600;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            width: 0;
+            height: 0;
+            position: absolute;
+            top:-15px;
+            left: 110px;
+          }
+        }
+        button{
+          width: 100px;
+          height: 35px;
+          font-size: 20px;
+          color: #f40009;
+          border: 1px solid #f40009;
+          background: transparent;
+          display: block;
+          margin: 0 auto;
+          &:hover +.bar2-echod{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bar3{
+  .bar-content{
+    padding-bottom: 50px;
+  }
+  .content-shadow{
+    background: url("../images/combustible/bg3.png") no-repeat center;
+    background-size: cover;
+    width: 1236px;
+    height: 845px;
+    margin: 0 -18px;
+  }
+  .bar3-title{
+    margin: -130px 0 50px 361px ;
+    width: 458px;
+    height: 239px;
+    background: url("../images/combustible/title3.png");
+    color: #ffeaa1;
+    padding: 145px 0 0 100px;
+    font-size: 42px;
+    font-weight: normal;
+  }
+  p{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 35px;
+    label{
+      color: #ffeaa1;
+    }
+  }
+  span{
+    display: block;
+    font-size: 18px;
+    text-decoration: underline;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 90px;
+  }
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+}
+.video-window{
+  width: 100%;
+  height:100%;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top:0;
+  display: none;
+  .video-bg{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0,0,0,.8);
+    position: absolute;
+    left: 0;
+    top:0;
+    cursor: pointer;
+  }
+  .video-warpper{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    -webkit-transform: translate3d(-50%,-50%,0);
+  }
+}
+
+.sou{
+  position: absolute;
+  width: 375px;
+  right: -375px;
+  z-index: 0;
+}
+.sou:nth-of-type(7){
+  width: 280px;
+  top:-30px;
+  animation: sou 2.8s linear infinite;
+  -webkit-animation: sou 2.8s linear infinite;
+}
+.sou:nth-of-type(8){
+  width: 350px;
+  top:200px;
+  animation: sou 3.3s 0.5s linear infinite;
+  -webkit-animation: sou 3.3s 0.5s linear infinite;
+}
+.sou:nth-of-type(1){
+  top:630px;
+  animation: sou 4s linear infinite;
+  -webkit-animation: sou 4s linear infinite;
+}
+.sou:nth-of-type(2){
+  width: 300px;
+  top:1000px;
+  animation: sou 3s 0.5s linear infinite;
+  -webkit-animation: sou 3s 0.5s linear infinite;
+}
+.sou:nth-of-type(3){
+  width: 330px;
+  top:1300px;
+  animation: sou 3.5s 1s linear infinite;
+  -webkit-animation: sou 3.5s 1s linear infinite;
+}
+
+.sou:nth-of-type(4){
+  width: 260px;
+  top:1600px;
+  animation: sou 2.8s linear infinite;
+  -webkit-animation: sou 2.8s linear infinite;
+}
+.sou:nth-of-type(4){
+  width: 310px;
+  top:1900px;
+  animation: sou 3.7s linear infinite;
+  -webkit-animation: sou 3.7s linear infinite;
+}
+.sou:nth-of-type(5){
+  width: 370px;
+  top:2100px;
+  animation: sou 3.2s linear infinite;
+  -webkit-animation: sou 3.2s linear infinite;
+}
+.sou:nth-of-type(5){
+  width: 330px;
+  top:2400px;
+  animation: sou 3.5s linear infinite;
+  -webkit-animation: sou 3.5s linear infinite;
+}
+.sou:nth-of-type(6){
+  width: 200px;
+  top:2600px;
+  animation: sou 4s linear infinite;
+  -webkit-animation: sou 4s linear infinite;
+}
+.sou:nth-of-type(6){
+  width: 280px;
+  top:2900px;
+  animation: sou 2.8s linear infinite;
+  -webkit-animation: sou 2.8s linear infinite;
+}
+.sou:nth-of-type(9){
+  width: 320px;
+  top:3100px;
+  animation: sou 3.2s linear infinite;
+  -webkit-animation: sou 3.2s linear infinite;
+}
+.sou:nth-of-type(10){
+  width: 370px;
+  top:3300px;
+  animation: sou 3.6s linear infinite;
+  -webkit-animation: sou 3.6s linear infinite;
+}
+
+@keyframes sou{
+  0%{transform:translate3d(0,0,0)}
+  40%{transform:translate3d(-3000px,1500px,0)}
+  100%{transform:translate3d(-3000px,1500px,0)}
+}
+.backToTop{
+  display: none!important;
+}
+
+@media screen and (max-width: 1600px){
+  .aside{
+    transition-duration: 0.6s;
+    transform: translateX(60%);
+    &:hover{
+      transform: translateX(0);
+    }
+  }
+}

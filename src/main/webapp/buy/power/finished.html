@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嗨课堂-足不出户，遇见天下 </title>
+    <link  rel="icon"  href="../../images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../buy_css/payment.css">
+    <link rel="stylesheet" href="../buy_css/common.css">
+</head>
+<body style="min-width: 1180px">
+<div class="nav">
+    <div id="weixin">
+        <a class="complete" href="javascript:;">支付完成</a>
+        <img class="close" src="../buy_images/payment/close.png" width=15 height=15 alt="">
+    </div>
+    <div id="tool">
+        <img id="login" src="../buy_images/payment/logo.png" width=121 height=43 alt="">
+        <img id="close" src="../buy_images/payment/close.png" width=15 height=15 alt="">
+        <p class="F14">支付完成前，请不要关闭此支付验证窗口</p>
+        <p class="F14" style="margin-bottom: 30px">支付完成后，请根据您支付情况点击下面的按钮</p>
+        <a class="FL F14" href="javascript:;" id="complete">支付遇到问题</a>
+        <a class="FR F14 complete" href="javascript:;" id="problem">支付完成</a>
+    </div>
+    <div class="content site-nav-r">
+        <ul>
+            <li>你好，<i class="userName_name"></i></li>
+            <li class="line"></li>
+            <li class="login0"><a href="../personal.html" class="">登录</a></li>
+            <li class="Register">
+                <div class="Register2"><a href="javascript:;">注册</a></div>
+                <!--<div class="Register_over0" style="display: none;">-->
+                <!--<a href="javascript:;">退出</a>-->
+                <!--</div>-->
+            </li>
+            <li class="line"></li>
+            <li class="line"></li>
+            <li><span class="font3"></span>400-876-3300</li>
+        </ul>
+    </div>
+</div>
+<div class="header">
+    <div class="content">
+        <div class="FL left">
+            <a href="../../index.html"><img src="../../images/logo1.png" width=121 alt=""></a>
+            <ul>
+                <li><a href="../../index.html">首页</a></li>
+                <li><a href="../personal.html">我的嗨课堂</a></li>
+                <li><a href="../course.html">课程优惠</a></li>
+                <li><a  href="../summer.html">常规暑秋</a></li>
+                <li><a  href="../summer1.html">精品暑秋</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="main" style="margin-top: 140px">
+    <div class="content">
+        <img id="payState" width=81 height=81 alt="">
+        <p id="pay" style="font-size: 14px;color: #333333;margin-top: 52px"></p>
+        <p style="font-size: 14px;color: #333333;margin-top: 52px"><span id="time">5</span>秒钟后跳转至我的订单</p>
+        <a href="../personal.html" style="display: inline-block;margin-top: 20px;color: #f40009;">点击此处跳转至我的订单</a>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer1">
+        <div class="content">
+            <a class="footer_logo" href="javascript:;"></a>
+            <div class="footer-us">
+                <a href="../../about-us.html">关于我们</a><span></span><a href="javascript:;">联系我们</a><span></span><a href="javascript:;">新闻资讯</a>
+                <p>Copyright © 2017 上海济忆网络科技有限公司( 沪ICP备17009480号-5 )</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../js/jquery.js"></script>
+<script src="../../js/lib/jquery-cookie/jquery.cookie.js"></script>
+<script src="../../js/login.js"></script>
+<script src="../../js/api-config.js"></script>
+<script src="../buy_js/common.js"></script>
+<script>
+    $(function () {
+        if(sessionStorage.getItem("pay") == 1){
+            $("#pay").html("购买课程成功，稍后教务老师会与您取得联系");
+            $("#payState").attr("src","../buy_images/check.png");
+        }else if(sessionStorage.getItem("pay") == 2){
+            $("#pay").html("购买课程失败，请返回嗨课堂重新支付");
+            $("#payState").attr("src","../buy_images/error.png");
+        }else if(sessionStorage.getItem("pay") == 3){
+            $("#pay").html("此订单已支付完成，请返回嗨课堂已支付查看");
+            $("#payState").attr("src","../buy_images/check.png");
+        }
+    })
+    begin("../../index.html");
+    var a = 5;
+    var time = setInterval(function () {
+        a--;
+        $("#time").html(a);
+        if(a<1){
+            clearInterval(time);
+            window.location.href = "../personal.html";
+        }
+    },1000);
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,263 @@
+.warpper{
+  *{
+    margin: 0;
+  }
+}
+.banner{
+  background: url("../images/double11/banner.jpg") no-repeat center;
+  background-size: cover;
+  height: 600px;
+}
+.winners{
+  position: fixed;
+  right: 5px;
+  top:50%;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  z-index: 2;
+  .winners-title{
+    position: absolute;
+    left: 0;
+    top:135px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    z-index: 0;
+  }
+  .winners-list{
+    position: relative;
+    z-index: 1;
+    .winner-top{
+      text-align: center;
+    }
+    .winners-main{
+      width: 280px;
+      background: #e62c2a;
+      border-radius: 7px;
+      padding: 15px 20px;
+      div{
+        height: 300px;
+        overflow: hidden;
+      }
+      >a{
+        background: #fff;
+        color: #e62c2a;
+        font-size: 22px;
+        display: block;
+        width: 70%;
+        margin: 20px auto 5px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 10px;
+      }
+      li{
+        display: flex;
+        -webkit-display: flex;
+        justify-content:space-between;
+        -webkit-justify-content:space-between;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        line-height: 33px;
+        font-size: 20px;
+        label{
+          font-weight: normal;
+        }
+      }
+      p{
+        font-size: 26px;
+        display: flex;
+        -webkit-display: flex;
+        justify-content:space-between;
+        -webkit-justify-content:space-between;
+        color: #fff;
+        line-height: 45px;
+        label{
+          font-weight: normal;
+          width: 90px;
+        }
+      }
+    }
+  }
+  .btn1{
+    background: url("../images/double11/wbtn.png") no-repeat center;
+    width: 198px;
+    height: 67px;
+    padding-top: 22px;
+    display: block;
+    margin:-10px auto 0;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+}
+@media (max-width: 1500px){
+  .winners{
+    right: -280px;
+    .winners-title{
+      left: -44px;
+    }
+    &:hover{
+      right: 5px;
+      .winners-title{
+        left: 0;
+      }
+    }
+  }
+}
+.warpper{
+  position: relative;
+  .warpper-bg{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    img{
+      width: 100%;
+    }
+  }
+  .content{
+    width: 1145px;
+    padding: 70px 0 95px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    .title{
+      line-height: 97px;
+      text-align: center;
+      font-size: 50px;
+      color: #fff;
+      font-weight: bolder;
+    }
+    .bar1{
+      position: relative;
+      text-align: center;
+      .bar1-border{
+        background: url("../images/double11/border1.png") no-repeat center;
+        background-size: cover;
+        position: relative;
+        width: 1145px;
+        height: 603px;
+        z-index: 1;
+        h2{
+          letter-spacing: 15px;
+        }
+        .prize{
+          position: absolute;
+        }
+        .s1{
+          position: absolute;
+          top: 475px;
+          left: 730px;
+          font-size: 26px;
+          color: #fff;
+          line-height: 43px;
+          text-align: center;
+          background: url("../images/double11/font-bg.png") no-repeat center;
+          width: 279px;
+          height: 43px;
+        }
+        .s2{
+          position: absolute;
+          left: 695px;
+          bottom: 42px;
+          font-size: 26px;
+          color: #ff2002;
+          font-weight: bolder;
+          width: 350px;
+          text-align: center;
+        }
+
+      }
+      .bar1-bg{
+        width: 816px;
+        left: 27px;
+        top: 135px;
+        height: 458px;
+        position: absolute;
+        z-index: 0;
+      }
+      .btn1{
+        margin: 36px auto 70px;
+        width: 300px;
+        height: 60px;
+        color: #fff;
+        font-size: 30px;
+        border-radius: 60px;
+        display: block;
+        background: #f40009;
+      }
+      .bar1-over{
+        font-weight: bolder;
+        font-size: 40px;
+        line-height: 44px;
+        position: relative;
+        text-align: center;
+        margin-bottom: 35px;
+        color: #f40009;
+        &:after{
+          content: '';
+          width: 95px;
+          height: 3px;
+          background: #f40009;
+          position: absolute;
+          right: 307px;
+          top:20.5px;
+        }
+        &:before{
+          content: '';
+          width: 95px;
+          height: 3px;
+          background: #f40009;
+          position: absolute;
+          left: 307px;
+          top:20.5px;
+        }
+      }
+      .digits{
+        display: inline-block;
+        .cntSeparator{
+          padding-top: 55px;
+          font-size: 22px;
+        }
+      }
+    }
+    .bar2{
+      margin-top: 150px;
+      background: url("../images/double11/border.png") no-repeat center;
+      background-size: cover;
+      height: 532px;
+      h2{
+        letter-spacing: 15px;
+      }
+     ul{
+       padding-top: 55px;
+     }
+      li{
+        padding-left: 70px;
+        font-size: 26px;
+        line-height: 66px;
+      }
+    }
+    .bar3{
+      margin-top: 150px;
+      background: url("../images/double11/border2.png") no-repeat center;
+      background-size: cover;
+      height: 533px;
+      ul{
+        padding-top: 130px;
+      }
+      li{
+        float: left;
+        width: 20%;
+        text-align: center;
+        line-height: 35px;
+        font-size: 22px;
+        img{
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

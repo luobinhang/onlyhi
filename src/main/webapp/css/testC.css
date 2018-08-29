@@ -1,0 +1,38 @@
+.wrapper .banner {
+  background: url("../images/news/banner.jpg") no-repeat center;
+  height: 847px;
+  padding-top: 300px;
+}
+.wrapper .banner h1 {
+  font-size: 78px;
+  color: #fff;
+  line-height: 88px;
+}
+.wrapper .banner a {
+  background: #f40009;
+  display: block;
+  margin: 70px auto;
+  border-radius: 25px;
+  width: 220px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 26px;
+}
+.wrapper .section1 .content .line {
+  background: url("../images/news/line.png") no-repeat center;
+  width: 1166px;
+  height: 294px;
+  margin: 0 auto;
+  position: relative;
+}
+.wrapper .section1 .content .point {
+  width: 27px;
+  height: 27px;
+  background: red;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}

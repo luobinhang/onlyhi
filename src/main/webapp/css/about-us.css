@@ -1,0 +1,159 @@
+.main {
+  background-color: #F6F6F6;
+}
+.main .banner1 {
+  height: 620px;
+  background: url("../images/about_us/banner.jpg") no-repeat center;
+  background-size: cover;
+}
+.main .banner2 {
+  height: 800px;
+}
+.main .banner2 .content {
+  margin-top: -80px;
+  height: 100%;
+  background: url("../images/about_us/b2.png") no-repeat center;
+  position: relative;
+}
+.main .banner2 .content .title {
+  position: absolute;
+  width: 310px;
+  top: 140px;
+  right: 110px;
+}
+.main .banner2 .content .title h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.main .banner2 .content .title p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.main .banner3 {
+  position: relative;
+}
+.main .banner3 .bg3-bg {
+  position: absolute;
+}
+.main .banner3 .bg3-bg1 {
+  top: 250px;
+  right: 0;
+}
+.main .banner3 .bg3-bg2 {
+  bottom: 400px;
+  left: 0;
+}
+.main .banner3 .content {
+  position: relative;
+  z-index: 1;
+}
+.main .banner3 .content h1 {
+  height: 110px;
+  background: url("../images/about_us/b3-title.png") no-repeat center;
+  margin: 90px;
+}
+.main .banner3 .content .section {
+  height: 580px;
+  text-align: center;
+}
+.main .banner3 .content .section .center {
+  width: 500px;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 20px;
+  margin-top: 120px;
+}
+.main .banner3 .content .section .center h3 {
+  font-size: 30px;
+  line-height: 80px;
+}
+.main .banner3 .content .section .center p {
+  font-size: 18px;
+  line-height: 35px;
+  text-indent: 2em;
+}
+.main .banner3 .content .section .center a {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 180px;
+  color: #FFF;
+  font-size: 20px;
+}
+.main .banner3 .content .section .center a button {
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+  text-align: left;
+  background: url("../images/about_us/b3-right.png") no-repeat 250px center;
+  padding-left: 50px;
+}
+.main .banner4 .content {
+  position: relative;
+  padding-top: 30px;
+}
+.main .banner4 .content .myCarousel_top {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 30px;
+  height: 110px;
+  background: url("../images/about_us/b4-title.png") no-repeat center top;
+}
+.main .banner4 .content .myCarousel_top .carousel-indicators {
+  position: relative;
+  left: -5px;
+  margin-left: 0;
+  top: 50px;
+}
+.main .banner4 .content .myCarousel_top .active {
+  color: #f40009;
+  background-color: transparent;
+  top: 0;
+}
+.main .banner4 .content .myCarousel_top .num {
+  padding: 0 30px;
+  top: 0;
+}
+.main .banner4 .content .myCarousel_top .left {
+  position: relative;
+}
+.main .banner4 .content .three1,
+.main .banner4 .content .three2 {
+  height: 628px;
+}
+.main .banner5 {
+  padding-bottom: 50px;
+}
+.main .banner5 .content {
+  margin: 90px auto;
+}
+.main .banner5 .content h1 {
+  height: 110px;
+  width: 1180px;
+  background: url("../images/about_us/b5-title.jpg") no-repeat center;
+  display: table-cell;
+  vertical-align: bottom;
+  font-size: 45px;
+  font-weight: normal;
+}
+.main .banner5 ul {
+  text-align: center;
+  height: 577px;
+  margin: 0 auto;
+  width: 1300px;
+  background-size: cover;
+  background: url("../images/about_us/b5.png") no-repeat center;
+  padding-top: 150px;
+}
+.main .banner5 ul li {
+  width: 250px;
+  height: 222px;
+  vertical-align: top;
+  text-indent: 2em;
+  text-align: left;
+  font-size: 18px;
+  margin: 0 65px;
+  display: inline-block;
+}

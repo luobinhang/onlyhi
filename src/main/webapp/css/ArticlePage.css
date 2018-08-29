@@ -1,0 +1,154 @@
+.banner1 {
+  height: 350px;
+  position: relative;
+  z-index: 1;
+}
+.banner2 {
+  padding-bottom: 40px;
+}
+.banner2 .left {
+  width: 840px;
+  position: relative;
+  z-index: 2;
+}
+.banner2 .left .title {
+  height: 30px;
+  margin-bottom: 30px;
+}
+.banner2 .left .title h1 {
+  position: relative;
+  padding-left: 8px;
+}
+.banner2 .left .title h1::before {
+  content: '';
+  width: 4px;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  background-color: #FF5610;
+}
+.banner2 .left .title span a {
+  color: #CCC;
+}
+.banner2 .left .title span a:hover {
+  color: #FF5610;
+}
+.banner2 .left .center {
+  padding: 22px 65px;
+  box-shadow: 0 1px 4px #fd5001;
+}
+.banner2 .left .center .margin {
+  margin: 10px 0;
+}
+.banner2 .left .center .marginTop {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.banner2 .left .center button {
+  width: 100%;
+  height: 50px;
+  background-color: #009B4C;
+  color: #FFF;
+}
+.banner2 .left .bottom {
+  margin: 30px 0;
+  width: 100%;
+  height: 346px;
+  padding: 20px 30px;
+  box-shadow: 0 1px 4px red;
+}
+.banner2 .left .bottom .title {
+  margin-bottom: 10px;
+}
+.banner2 .left .bottom .title a {
+  color: #999999;
+}
+.banner2 .left .bottom .correlation > p {
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px;
+  color: #999999;
+}
+.banner2 .left .bottom .correlation ul li {
+  float: left;
+  width: 40%;
+  margin-right: 10%;
+  line-height: 30px;
+  color: #999999;
+}
+.banner2 .left .bottom .correlation ul li a {
+  color: #999999;
+}
+.banner2 .left .bottom .correlation ul li a:hover {
+  color: #fd5001;
+}
+.banner2 .left .bottom .correlation ul li p {
+  color: #333;
+  display: inline-block;
+}
+.banner2 .left .bottom-tab {
+  margin-top: 30px;
+  width: 100%;
+  height: 366px;
+  background: url("../images/ArticlePage/form-bg.png") left top;
+  position: relative;
+  box-shadow: 0px 2px 4px #fd5001;
+}
+.banner2 .left .bottom-tab form {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  right: 50px;
+}
+.banner2 .left .bottom-tab form p {
+  line-height: 34px;
+  font-size: 18px;
+}
+.banner2 .left .bottom-tab form p label {
+  font-weight: normal;
+}
+.banner2 .left .bottom-tab form input,
+.banner2 .left .bottom-tab form select {
+  padding: 5px;
+  margin: 10px 0;
+  width: 153px;
+  height: 34px;
+  border: 1px solid #CCC;
+}
+.banner2 .left .bottom-tab form button {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #fd5001;
+  color: #FFF;
+  height: 34px;
+  line-height: 34px;
+}
+.banner2 .right form {
+  padding: 100px 20px 20px 20px;
+  font-size: 20px;
+  top: 50%;
+  box-shadow: 0px 2px 4px #fd5001;
+}
+.banner2 .right form p {
+  line-height: 34px;
+}
+.banner2 .right form p label {
+  font-weight: normal;
+  margin-right: 10px;
+}
+.banner2 .right form input,
+.banner2 .right form select {
+  padding: 5px;
+  margin: 10px 0;
+  width: 180px;
+  height: 34px;
+  border: 1px solid #CCC;
+}
+.banner2 .right form button {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #fd5001;
+  color: #FFF;
+  height: 34px;
+  line-height: 34px;
+}

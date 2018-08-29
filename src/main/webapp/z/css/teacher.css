@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  font-family: PingFang SC, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.main {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: url(../images/teacher/b1.png) no-repeat center;
+  background-size: cover;
+}
+.main.active0 {
+  background: url(../images/teacher/b1.png) no-repeat center;
+  background-size: cover;
+}
+.main.active4 {
+  background: url(../images/teacher/b5.png) no-repeat center;
+  background-size: cover;
+}
+.main.active1 {
+  background: url(../images/teacher/b2.png) no-repeat center;
+  background-size: cover;
+}
+.main {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.main .contain {
+  width: 1200px;
+  margin: 0 auto;
+  background-size: cover;
+}
+.main .head {
+  position: fixed;
+  top: 22px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #5e7ab7;
+}
+.main .head p.left {
+  margin-left: 15.52%;
+}
+.main .head p.left .logo {
+  vertical-align: middle;
+}
+.main .head p.left .line {
+  display: inline-block;
+  width: 2px;
+  height: 35px;
+  background-color: #5e7ab7;
+  vertical-align: middle;
+  margin: 0 8px 0 15px;
+}
+.main .head p.right {
+  margin-right: 21%;
+}
+.main .head p.right a {
+  font-size: 18px;
+  color: #5e7ab7;
+  line-height: 36px;
+}
+.main .swiper-container {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.main .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #fff !important;
+  margin: 15px 0!important;
+}
+.main .bar1 {
+  background: url(../images/teacher/b1.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.main .bar1 .bar1Body img {
+  height: 100%;
+}
+.main .bar1 .bar1Body .barTitle {
+  height: 6.66%;
+  position: absolute;
+  top: 13.7%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+.main .bar1 .bar1Body .computer {
+  height: 67.40%;
+  position: absolute;
+  top: 26.66%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+.main .bar2 {
+  position: relative;
+}
+.main .bar2 .bar2Body img {
+  height: 100%;
+}
+.main .bar2 .bar2Body .barTitle {
+  height: 6.85%;
+  position: absolute;
+  top: 13.15%;
+  left: 22%;
+}
+.main .bar2 .bar2Body .img1 {
+  height: 48.52%;
+  position: absolute;
+  bottom: 6.66%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+.main .bar2 .bar2Body .img2 {
+  height: 39.25%;
+  position: absolute;
+  top: 26.75%;
+  left: 50%;
+  transform: translateX(-58%);
+  -webkit-transform: translateX(-58%);
+  -ms-transform: translateX(-58%);
+}
+.main .bar2 .bar2Body .img3 {
+  height: 37.22%;
+  position: absolute;
+  top: 37.59%;
+  left: 50%;
+  transform: translateX(-34%);
+  -webkit-transform: translateX(-34%);
+  -ms-transform: translateX(-34%);
+}
+.main .bar2 .bar2Body .img4 {
+  height: 9.53%;
+  position: absolute;
+  top: 32.49%;
+  left: 50%;
+  transform: translateX(-84%);
+  -webkit-transform: translateX(-84%);
+  -ms-transform: translateX(-84%);
+}
+.main .bar2 .bar2Body .img5 {
+  height: 9.53%;
+  position: absolute;
+  top: 30.95%;
+  left: 50%;
+  transform: translateX(194%);
+  -webkit-transform: translateX(194%);
+  -ms-transform: translateX(194%);
+}
+.main .bar3 .bar3Body img {
+  height: 100%;
+}
+.main .bar3 .bar3Body .barTitle {
+  height: 6.85%;
+  position: absolute;
+  top: 13.33%;
+  left: 22%;
+}
+.main .bar3 .bar3Body .img1 {
+  height: 48.52%;
+  position: absolute;
+  bottom: 6.66%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+.main .bar3 .bar3Body .img2 {
+  height: 41.85%;
+  position: absolute;
+  top: 33.05%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+.main .bar3 .bar3Body .img3 {
+  height: 32.68%;
+  position: absolute;
+  top: 53.22%;
+  left: 50%;
+  transform: translateX(-151%);
+  -webkit-transform: translateX(-151%);
+  -ms-transform: translateX(-151%);
+}
+.main .bar3 .bar3Body .img4 {
+  height: 9.53%;
+  position: absolute;
+  top: 50.16%;
+  left: 50%;
+  transform: translateX(-265%);
+  -webkit-transform: translateX(-265%);
+  -ms-transform: translateX(-265%);
+}
+.main .bar3 .bar3Body .img5 {
+  height: 9.53%;
+  position: absolute;
+  top: 30.90%;
+  left: 50%;
+  transform: translateX(-250%);
+  -webkit-transform: translateX(-250%);
+  -ms-transform: translateX(-250%);
+}
+.main .bar3 .bar3Body .img6 {
+  height: 9.53%;
+  position: absolute;
+  top: 22.5%;
+  left: 50%;
+  transform: translateX(96%);
+  -webkit-transform: translateX(96%);
+  -ms-transform: translateX(96%);
+}
+.main .bar4 .bar4Body img {
+  height: 100%;
+}
+.main .bar4 .bar4Body .barTitle {
+  height: 6.85%;
+  position: absolute;
+  top: 13.51%;
+  left: 22%;
+}
+.main .bar4 .bar4Body .img1 {
+  height: 48.52%;
+  position: absolute;
+  bottom: 6.66%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+.main .bar4 .bar4Body .img2 {
+  height: 40.55%;
+  position: absolute;
+  top: 33.05%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+.main .bar4 .bar4Body .img3 {
+  height: 9.53%;
+  position: absolute;
+  top: 45.8%;
+  left: 50%;
+  transform: translateX(-217%);
+  -webkit-transform: translateX(-217%);
+  -ms-transform: translateX(-217%);
+}
+.main .bar4 .bar4Body .img4 {
+  height: 9.53%;
+  position: absolute;
+  top: 28.7%;
+  left: 50%;
+  transform: translateX(88%);
+  -webkit-transform: translateX(88%);
+  -ms-transform: translateX(88%);
+}
+.main .bar5 .bar5Body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main .bar5 .bar5Body img {
+  height: 100%;
+  display: block;
+}
+.main .bar5 .bar5Body .barTitle {
+  height: 6.38%;
+  position: absolute;
+  top: 16.11%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+.main .bar5 .bar5Body .img1 {
+  height: 40.64%;
+  position: absolute;
+  top: 39.16%;
+  left: 50%;
+  transform: translateX(-80%);
+  -webkit-transform: translateX(-80%);
+  -ms-transform: translateX(-80%);
+}
+.main .bar5 .bar5Body .img2 {
+  height: 28.24%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-97%);
+  -webkit-transform: translateX(-97%);
+  -ms-transform: translateX(-97%);
+}
+.main .bar5 .bar5Body .img3 {
+  height: 25.35%;
+  position: absolute;
+  top: 35.92%;
+  left: 50%;
+  transform: translateX(-202%);
+  -webkit-transform: translateX(-202%);
+  -ms-transform: translateX(-202%);
+}
+.main .bar5 .bar5Body .img4 {
+  height: 10.27%;
+  position: absolute;
+  top: 42.9%;
+  left: 50%;
+  transform: translateX(-705%);
+  -webkit-transform: translateX(-705%);
+  -ms-transform: translateX(-705%);
+}
+.main .bar5 .bar5Body .barTitle2 {
+  height: 3.611%;
+  position: absolute;
+  top: 45.74%;
+  left: 56.66%;
+}
+.main .bar5 .bar5Body .computer {
+  height: 8.518%;
+  position: absolute;
+  top: 54.25%;
+  left: 57%;
+  cursor: pointer;
+}

@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>上海交大 课程免费预约中</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="../images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link href="//cdn.bootcss.com/Swiper/3.4.1/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/w_global.css">
+    <link rel="stylesheet" href="css/w_index.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/lib/js-sha512/build/sha512.min.js"></script>
+    <script src="//cdn.bootcss.com/Swiper/3.4.1/js/swiper.jquery.min.js"></script>
+    <script src="./js/gotoTop.js"></script>
+    <!-- adhoc sdk -->
+    <script src=https://sdk.appadhoc.com/ab.plus.js></script>
+    <script>
+        adhoc('init', {
+            appKey: 'ADHOC_32535b96-aeaa-4f2a-8354-3d353bfc92ad'
+        })
+    </script>
+    <!-- adhoc sdk end -->
+
+</head>
+<body id="bodyTop">
+<!--<nav>-->
+<!--<a class="nav-left" href="#bodyTop"><img class="translateXY" src="./images/weixin/nav-left.png" alt="嗨课堂" title=嗨课堂></a>-->
+<!--<a class="nav-right" href="tel:400-876-3300">-->
+<!--<img class="translateXY" src="./images/weixin/top-icon.png" alt="嗨课堂" title=嗨课堂>-->
+<!--</a>-->
+<!--</nav>-->
+<nav2>
+    <!--<a class="nav-right" href="tel:400-876-3300">-->
+    <img src="./images/weixin/logo.png" alt="嗨课堂logo" title=嗨课堂>
+</nav2>
+<div class="newSelect1">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div style="background: url('./images/weixin/bg2.jpg') no-repeat center;background-size: cover">
+
+                </div>
+            </div>
+            <!--<div class="swiper-slide">-->
+            <!--<div style="background: url('./images/weixin/bg2.png') no-repeat center;background-size: cover">-->
+
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<div class="select newSelect2" id="myForm">
+    <!--<img src="./images/weixin/info.png" alt="嗨课堂" title=嗨课堂>-->
+    <p>免费领取价值<span>300元</span>名师特训课</p>
+    <div>
+        <form class="myForm">
+            <input type="text" name="adid" class="adid" value="" style="display:none">
+            <input type="text" name="jh" class="jh" value="" style="display:none">
+            <input type="text" name="dy" class="dy" value="" style="display:none">
+            <input type="text" name="keyNum" class="keyNum" value="" style="display:none">
+            <p>
+                <input type="text" id="name" name='name' class="name" placeholder="姓名">
+            </p>
+            <p>
+                <input name='phone' id="phone" placeholder="电话" class="mobile">
+            </p>
+            <p id="code">
+                <input type="text" placeholder="请输入验证码" name="code" class="code"><input class="send" value="获取验证码" type=button id="btn">
+            </p>
+            <p class="clearfix"><select name="grade" style="float: left;" class="grade">
+                <option value="请选择" selected style="display: none;">年级</option>
+                <option value="小三">新小四</option>
+                <option value="小四">新小五</option>
+                <option value="小五">新小六</option>
+                <option value="小六">新预初</option>
+                <option value="预初">新初一</option>
+                <option value="初一">新初二</option>
+                <option value="初二">新初三</option>
+                <option value="初三">新初四</option>
+                <option value="初四">新高一</option>
+                <option value="高一">新高二</option>
+                <option value="高二">新高三</option>
+            </select>
+                <select name="subject" style="float: right;" class="kemu">
+                    <option value="请选择" selected style="display: none;">科目</option>
+                    <option value="数学">数学</option>
+                    <option value="语文">语文</option>
+                    <option value="英语">英语</option>
+                    <option value="地理">地理</option>
+                    <option value="政治">政治</option>
+                    <option value="科学">科学</option>
+                    <option value="历史">历史</option>
+                    <option value="生物">生物</option>
+                    <option value="物理">物理</option>
+                    <option value="化学">化学</option>
+                </select>
+            </p>
+            <p class="F-button">
+                <button class="submit orders" type='button'>免费领取</button>
+            </p>
+        </form>
+    </div>
+    <p class="telPhone"><img src="./images/weixin/phone.png" alt="电话">400-876-3300</p>
+    <!--<div class="order">-->
+    <!--<p>本周已有<span class="order-span" style="color: rgb(255,64,25);"></span>人报名</p>-->
+    <!--<div class="order-table">-->
+    <!--<div class="order-center">-->
+    <!--<img class="order-img" src="./images/weixin/order-table.png" width=100% height=auto alt="报名名单" title=报名名单>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+</div>
+<div class="select newSelect3">
+    <p>源自交大，值得信赖</p>
+    <div>
+        <img src="./images/weixin/t1.png">
+        <img src="./images/weixin/t2.png">
+        <img src="./images/weixin/t3.png">
+        <img src="./images/weixin/t4.png">
+    </div>
+    <a href="#myForm"><p class="orders">免费预约</p></a>
+</div>
+<div class="select newSelect4">
+    <p>嗨课堂·提分系统</p>
+    <a href="#myForm"><p class="orders">免费预约</p></a>
+</div>
+<div class="select newSelect5">
+    <!--<p>独创5V1陪伴式服务模式</p>-->
+    <!--<p>激发孩子学习兴趣，全程管理学习进度</p>-->
+    <div>
+        <img src="./images/weixin/b5.jpg" width=100% height=auto alt="">
+        <a href="#myForm"><p class="orders">免费预约</p></a>
+    </div>
+</div>
+<div class="select newSelect6">
+    <p>Copyright © 2017 上海济忆网络科技有限公司( 沪ICP备17009480号-5 )</p>
+</div>
+<!--<div class="select select3">-->
+<!--<h1 style="background: url('./images/weixin/P1-top.jpg') no-repeat left; background-size: cover"></h1>-->
+<!--<p class="color_red_bold">上海交通大学控股</p>-->
+<!--<p>国内A股上市教育品牌</p>-->
+<!--<div class="select3-img">-->
+<!--<img src="./images/weixin/University.jpg" alt="国内A股上市教育品牌" title=国内A股上市教育品牌>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="select select4">-->
+<!--<h1 style="background: url('./images/weixin/P2-top.jpg') no-repeat right; background-size: cover"></h1>-->
+<!--<div class="center">-->
+<!--<div class="center-img">-->
+<!--<img src="././images/weixin/P2.jpg" width=100% height=auto alt="">-->
+<!--</div>-->
+<!--<button><a href="#myForm"></a></button>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="select select5">-->
+<!--<h1 style="background: url('./images/weixin/P3-top.jpg') no-repeat left; background-size: cover"></h1>-->
+<!--<ul>-->
+<!--<li>-->
+<!--<img src="./images/weixin/p1.png" alt="孙莹" title=孙莹>-->
+<!--<div class="center">-->
+<!--<h2>孙莹</h2>-->
+<!--<p>英语专八特级 </p>-->
+<!--<p>擅于因材施教，擅长全年级英语辅导</p>-->
+<!--<p>所带学生平均成绩提升41%</p>-->
+<!--<button>预约 <a href="#myForm"></a></button>-->
+<!--</div>-->
+<!--</li>-->
+<!--<li>-->
+<!--<img src="./images/weixin/p2.png" alt="许杨涛" title=许杨涛>-->
+<!--<div class="center">-->
+<!--<h2>许杨涛</h2>-->
+<!--<p>数学专业特级 </p>-->
+<!--<p>擅于培养学生数学思维，</p>-->
+<!--<p>锻炼举一反三能力，达到快速提升</p>-->
+<!--<button>预约 <a href="#myForm"></a></button>-->
+<!--</div>-->
+<!--</li>-->
+<!--<li>-->
+<!--<img src="./images/weixin/p3.png" alt="叶桂煜" title=叶桂煜>-->
+<!--<div class="center">-->
+<!--<h2>叶桂煜</h2>-->
+<!--<p>化学专业特级 </p>-->
+<!--<p>多年教学经验，擅于因材施教</p>-->
+<!--<p>所带学生平均成绩提升32%</p>-->
+<!--<button>预约 <a href="#myForm"></a></button>-->
+<!--</div>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--<div class="select select6">-->
+<!--<h1 style="background: url('./images/weixin/P4-top.jpg') no-repeat right; background-size: cover"></h1>-->
+<!--<div class="center">-->
+<!--<span class="span1"></span>-->
+<!--<span class="span2"></span>-->
+<!--<span class="span3"></span>-->
+<!--<img class="translateX" src="./images/weixin/triangle.png" alt="电脑 平板 pad 手机 均可上课" title="电脑 平板 pad 手机 均可上课">-->
+<!--<p style="font-weight: bold">电脑 平板 pad 手机 均可上课</p>-->
+<!--<p class="color_red">让课堂更有趣，让学习更便捷</p>-->
+<!--<p class="color_red">上课实时录制，课后随时温习</p>-->
+<!--<p style="font-weight: bold">家长可旁听，教学效果一目了然</p>-->
+<!--</div>-->
+<!--<img class="weixin" src="./images/weixin/yd.jpg" alt="">-->
+<!--<div class="bottom">-->
+<!--<div class="p1"></div>-->
+<!--<div class="p2"></div>-->
+<!--<div class="p3"></div>-->
+<!--<div class="center1">-->
+<!--<img class="p6-0 translateX" src="./images/weixin/p6-0.png" alt="老师">-->
+<!--<img class="p6-1 translateX p6" src="./images/weixin/p6-1.png" alt="班主任">-->
+<!--<img class="p6-2 p6" src="./images/weixin/p6-2.png" alt="学科老师">-->
+<!--<img class="p6-3 p6" src="./images/weixin/p6-3.png" alt="兼课老师">-->
+<!--<img class="p6-4 p6" src="./images/weixin/p6-4.png" alt="心理辅导老师">-->
+<!--<img class="p6-5 p6" src="./images/weixin/p6-5.png" alt="课程教研专员">-->
+
+<!--</div>-->
+<!--</div>-->
+<!--<button><a href="#myForm"></a></button>-->
+<!--</div>-->
+<!--<div class="select select7">-->
+<!--<h1 style="background: url('./images/weixin/P5-top.jpg') no-repeat left; background-size: cover"></h1>-->
+<!--<img src="./images/weixin/p7.jpg" width=95% height=auto alt="名校录取率">-->
+<!--</div>-->
+<!--<div class="select select8">-->
+<!--<h1 style="background: url('./images/weixin/P6-top.jpg') no-repeat right; background-size: cover"></h1>-->
+<!--<div>-->
+<!--<img src="./images/weixin/Brand-media.jpg" width=100% height=auto alt="合作媒体品牌">-->
+<!--</div>-->
+<!--</div>-->
+<!--<footer>-->
+<!--<a href="#myForm">-->
+<!--<img src="images/weixin/Signed.png" alt="">-->
+<!--<span>立即预约</span>-->
+<!--</a>-->
+<!--<a href="tel:400-876-3300">-->
+<!--<img src="images/weixin/tel.png" alt="">-->
+<!--<span><i class="translateY"></i>400-876-3300</span>-->
+<!--</a>-->
+<!--</footer>-->
+</body>
+<script src="../js/api-config.js"></script>
+<script src="js/sign.js"></script>
+<!--百度统计代码-->
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?8785cb45f8a7565aad198bde904d51f9";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!--百度统计代码-->
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?8785cb45f8a7565aad198bde904d51f9";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!--百度统计代码end-->
+<script type="text/javascript">
+    window._pt_lt = new Date().getTime();
+    window._pt_sp_2 = [];
+    _pt_sp_2.push('setAccount,571db548');
+    var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    (function() {
+        var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+        atag.src = _protocol + 'js.ptengine.cn/571db548.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(atag, s);
+    })();
+</script>
+
+</html>

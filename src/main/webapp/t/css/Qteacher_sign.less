@@ -1,0 +1,183 @@
+@input-height:.8rem;
+//html {
+//  font-size: 62.5%;
+//  height:100%;
+//}
+
+body {
+  //min-width:320px;
+  //max-width: 640px;
+  margin: 0 auto;
+  height:100%;
+  .seccess {
+    padding: .2rem 10%;
+    background: url("../img/teacher-sign/seccess.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    color: #FFF;
+    display: none;
+    h1 {
+      font-size: .6rem;
+      line-height: 4rem;
+    }
+    p, #p {
+      font-weight: bold;
+      span {
+        color: #A10404;
+      }
+    }
+
+    .top {
+      font-size: .4rem;
+      padding-bottom: .8rem;
+      line-height: .8rem;
+    }
+    .bottom {
+      padding-top: 1.25rem;
+      font-size: .2rem;
+      line-height: .6rem;
+    }
+    >img {
+      width: 3rem;
+      height: 3rem;
+    }
+    #qqLink {
+      display: block;
+      width: 2.2rem;
+      height: .6rem;
+      line-height: .6rem;
+      border-radius: 5px;
+      background-color: #F73406;
+      color: #FFF;
+      font-size: .2rem;
+      margin: 0 auto;
+      margin-bottom: .6rem;
+    }
+  }
+  .first {
+    background-size: 100% 100%;
+    position: relative;
+    .header{
+      height:.8rem;
+      background-color: #3F3F3F;
+      font-size: .48rem;
+      line-height: .8rem;
+      color: #fff;
+      padding-left: .44rem;
+    }
+    #bottom{
+      margin-bottom: 1rem;
+      #btn{
+        background-color: #108EE9;
+        color:#fff;
+        &.disabled {
+          background-color: #ccc;
+          cursor: default;
+          color: #FFF;
+        }
+      }
+      #res{
+        background-color: #F3F3F3;
+      }
+      .btn {
+        width: 2rem;
+        height: .8rem;
+        border-radius: .1rem;
+        background-color: #FFF;
+        font-size: .3rem;
+        color: #FFA62F;
+        z-index: 999;
+        margin:0 .4rem;
+      }
+
+    }
+    .border {
+      padding: .12rem;
+      margin: 0 auto;
+      background-color: #F4F4F4;
+      .content {
+        background-color: #fff;
+        padding: 0 .32rem;
+        text-align: left;
+        margin: 0 auto;
+        border: .02rem solid #EBEBEB;
+        overflow: hidden;
+      }
+    }
+    section {
+      position: relative;
+      z-index: 999;
+      padding-bottom: .6rem;
+      &.select{
+        & div{
+          line-height: 1rem;
+          position: relative;
+          &:before{
+            content: '';
+            background-color: #ccc;
+            width:1000%;
+            height:1px;
+            position: absolute;
+            left:-20rem;
+            bottom: 0;
+          }
+        }
+      }
+      h1 {
+        font-size: .48rem;
+        color: #F6A41D;
+        display: inline-block;
+      }
+      p {
+        height: @input-height;
+        margin: .46rem 0;
+        label {
+          text-align: center;
+          font-size: .3rem;
+          width: 30%;
+          display: inline-block;
+          height: @input-height;
+          vertical-align: middle;
+          line-height: @input-height;
+        }
+        input, select {
+          font-size: .2rem;
+          //height: 45/75rem;
+          height:@input-height;
+          border: 1px solid #CCC;
+          border-radius: 0.1rem;
+          width: 68%;
+          padding-left: .2rem;
+        }
+        &.college-city{
+          select{
+            width:22%;
+          }
+        }
+        .sex{
+          width:.5rem;
+        }
+        .es-list{
+          li{
+            font-size: .4rem;
+            border-bottom: 1px dashed #CCC;
+            margin:0 .1rem;
+          }
+          li:hover{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .select1{
+      z-index: 9999;
+    }
+  }
+}
+
+//@media screen and (max-width: 600px) {
+//  html{
+//    font-size: 42.5%;
+//  }
+//
+//}

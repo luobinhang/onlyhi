@@ -1,0 +1,414 @@
+.main{
+  overflow: hidden;
+  .join{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    background-color: #f40009;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .barTitle{
+    padding-top: 60px;
+    text-align: center;
+    color: #0c1d2f;
+    font-size: 40px;
+    line-height: 35px;
+    span{
+      font-size: 26px;
+      color:#989898;
+    }
+  }
+  .contain{
+    width:1200px;
+    margin:0 auto;
+  }
+  .bar1{
+    position: relative;
+    img{
+      width: 100%;
+      display: block;
+    }
+    .join{
+      position: absolute;
+      bottom: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .bar2{
+    background: url(../images/teaRecource/b2.jpg) no-repeat center;
+    height: 646px;
+    .bar2Body{
+      display: flex;
+      padding: 0 40px;
+      li{
+        width:250px;
+        height: 336px;
+        margin: 40px 15px 0;
+        padding-top: 275px;
+        text-align: center;
+        font-size:22px;
+        color:#0c1d2f;
+        line-height: 22px;
+        span{
+          font-size:16px;
+          //margin-left: -5px;
+        }
+      }
+      li:first-child{
+        background: url(../images/teaRecource/a1.jpg)  no-repeat center;
+      }
+      li:nth-child(2){
+        background: url(../images/teaRecource/a2.jpg)  no-repeat center;
+      }
+      li:nth-child(3){
+        background: url(../images/teaRecource/a3.jpg)  no-repeat center;
+      }
+      li:nth-child(4){
+        background: url(../images/teaRecource/a4.jpg)  no-repeat center;
+      }
+    }
+    .join{
+      margin-top: 48px;
+    }
+  }
+  .bar3{
+       background-color: #fafafa;
+       .bar3Body{
+         position:relative;
+         margin-top: 75px;
+         height: 500px;
+         ul{
+           li{
+             height: 100px;
+             margin-left: 5px;
+             padding-left: 100px;
+             background-color: #efefef;
+             line-height: 100px;
+             cursor:pointer;
+             img{
+               display: inline-block;
+               margin-right: 24px;
+             }
+             .eHide{
+               display: none;
+             }
+             .eShow{
+               display: inline-block;
+             }
+             p{
+               display: inline-block;
+               font-size: 26px;
+               color:#0c1d2f;
+               vertical-align: middle;
+               line-height: 30px;
+             }
+           }
+           li.active{
+             background-color: #f7f7f7;
+             .eHide{
+               display: inline-block;
+             }
+             .eShow{
+               display: none;
+             }
+             p{
+               color: #f40009;
+             }
+           }
+         }
+         .courseInfo{
+           display: none;
+           background: url(../images/teaRecource/b3.png) no-repeat center;
+           width:738px;
+           height: 492px;
+           position: absolute;
+           top:-30px;
+           right: -21px;
+           color:#fff;
+           padding-top: 108px;
+           padding-left: 118px;
+           p:first-child{
+             font-size: 26px;
+             padding-left: 12px;
+             margin-bottom: 8px;
+           }
+           p:nth-child(2){
+             font-size:20px;
+             text-indent: 35px;
+           }
+           .join{
+             color: #db2219;
+             background-color: #fefefe;
+             margin-top: 66px;
+             margin-left: -7px;
+           }
+         }
+       }
+     }
+  .bar4{
+    overflow: hidden;
+    height: 638px;
+    .bar4Body{
+      position: relative;
+      margin-top: 80px;
+      //background: url(../images/teaRecource/b4.jpg) no-repeat 74% center;
+      //height: 535px;
+      height: 423px;
+      >div{
+        padding-left: 110px;
+        padding-top: 40px;
+        >p:first-child{
+          font-size: 26px;
+          color:#0c1d2f;
+          margin-bottom: 8px;
+          span{
+            display: inline-block;
+            background-color: #f40009;
+            width:5px;
+            height:27px ;
+            margin-right:3px;
+            vertical-align: -4px;
+          }
+        }
+        >p:nth-child(2){
+          font-size: 16px;
+          color:#989898;
+          line-height: 20px;
+        }
+        >div{
+          margin-top: 45px;
+          p{
+            width:427px;
+            margin: 0;
+            span{
+              display: inline-block;
+              width: 138px;
+              color: #0c1d2f;
+              text-align: center;
+              font-size: 18px;
+              padding-top:10px;
+              height: 47px;
+            }
+            span:nth-child(2){
+              width:143px;
+              border-right:1px solid #e4e4ea;
+              border-left:1px solid #e4e4ea;
+            }
+          }
+          p:first-child{
+            border-bottom:1px solid #e4e4ea;
+            span{
+              font-size: 30px;
+              i{
+                width: 16px;
+                height: 16px;
+                border-radius: 8px;
+                background-color: #aaa;
+                font-size: 12px;
+                text-align: center;
+                color: #fff;
+                display: inline-block;
+                margin-left: -5px;
+              }
+            }
+          }
+        }
+        .join{
+          margin: 0;
+          margin-top: 54px;
+        }
+      }
+      >img{
+        position: absolute;
+        top:-44px;
+        right:-76px;
+        z-index: -1;
+      }
+    }
+  }
+  .bar5 {
+    background: #9e0006 url(../images/teaRecource/b5-2.png) no-repeat center;
+    height: 650px;
+    padding-bottom: 35px;
+    .bar5Head {
+      padding-left: 87px;
+      p:first-child {
+        font-size: 40px;
+        line-height: 40px;
+        color: #fff;
+        padding: 95px 0 18px 0;
+      }
+      p:nth-child(2) {
+        font-size: 26px;
+        line-height: 26px;
+        color: #fff;
+      }
+    }
+    .bar5Body {
+      //text-align: center;
+      //display: block;
+      //width: 70.3%;
+      //min-width: 1200px;
+      //margin: 0 auto;
+      //margin-top: -20px;
+      //>div{
+      //  position: relative;
+      //  width: 0;
+      //  overflow: hidden;
+      //  margin: 0;
+      //  opacity: 1!important;
+      //  img {
+      //    display: block;
+      //    max-width: 1314px;
+      //    margin-left: 0;
+      //    margin-top: 10px;
+      //  }
+      //}
+      position: relative;
+      height: 471px;
+      .point{
+        background: url(../images/teaRecource/point.png) no-repeat center;
+        width: 81px;
+        height: 81px;
+        position: absolute;
+        left: -20px;
+        top: 242px;
+      }
+      .textInfo{
+        position: absolute;
+        font-size: 24px;
+        color:#fff;
+        p{
+          height: 84px;
+          width: 2px;
+          display: inline-block;
+          position: relative;
+          margin-right: 10px;
+          vertical-align: 3px;
+          i{
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            border-radius: 4px;
+            position: absolute;
+            bottom: 0;
+            left: -3px;
+          }
+        }
+      }
+      .textInfo:nth-child(2n){
+        p{
+          vertical-align: -73px;
+          i{
+            top:0;
+          }
+        }
+      }
+      .t1{
+        top: 262px;
+        left: 52px;
+        p,i{
+          background-color:#f47301;
+        }
+      }
+      .t2{
+        top: 118px;
+        left: 235px;
+        p,i{
+          background-color:#f46902;
+        }
+      }
+      .t3{
+        top: 220px;
+        left: 533px;
+        p,i{
+          background-color:#f43a15;
+        }
+      }
+      .t4{
+        top: 86px;
+        left: 742px;
+        p,i{
+          background-color:#f44705;
+        }
+      }
+      .t5{
+         top: 280px;
+         left: 1004px;
+        p,i{
+          background-color:#f42107;
+        }
+       }
+      .t6{
+        top: 65px;
+        right: 96px;
+        p{
+          margin-left: 10px;
+          margin-right: 0;
+        }
+        p,i{
+          background-color:#f41108;
+        }
+      }
+    }
+  }
+  .bar6{
+    background:  #f2f1ed url(../images/teaRecource/b6.jpg) no-repeat center;
+    height: 680px;
+    .bar6Body{
+      position: relative;
+      height: 530px;
+      padding-top: 446px;
+      z-index: 1;
+      img.b6{
+        position: absolute;
+        top: 65px;
+        left: 50%;
+        transform: translateX(-54%);
+        z-index: 2;
+      }
+      .b1{
+        position: absolute;
+        top: 18px;
+        left: 120px;
+        z-index: 3;
+      }
+      .b2{
+        position: absolute;
+        top: 50px;
+        right: 40px;
+        z-index: 3;
+      }
+      .b3{
+        position: absolute;
+        top: 171px;
+        left: -40px;
+        z-index: 1;
+      }
+      .b4{
+        position: absolute;
+        top: 254px;
+        right: -20px;
+        z-index: 1;
+      }
+      .b5{
+        position: absolute;
+        top: 316px;
+        left:56px;
+        z-index:3;
+      }
+      .join{
+
+      }
+    }
+  }
+}
+
+
+
+

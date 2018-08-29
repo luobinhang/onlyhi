@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="嗨课堂,昂立嗨课堂,交大昂立嗨课堂">
+    <meta name="description"
+          content="上海交大昂立嗨课堂，传承百年交大精神，深耕教育辅导行业30余年。昂立嗨课堂从清、北、复、交等著名学府层层筛选团队，专注中小学一对一在线教育，致力于打造行业权威在线教育平台！">
+    <title>拜托了暑假</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/animate2.css">
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="css/summerCamp.css">
+    <script src="../js/Ie.js"></script>
+</head>
+<body style="min-width: 1180px ">
+@@include('../include/header.html')
+<div class="main">
+    <div class="bar1">
+        <img src="images/summerCamp/b1.png" alt="banner">
+    </div>
+    <div class="bar2">
+        <img class="wow fadeInUp" src="images/summerCamp/text.png">
+    </div>
+    <div class="bar3">
+        <div class="bar3Head">
+            <div class="contain">
+                <img class="wow fadeInUp" data-wow-delay="0.3s" src="images/summerCamp/a1.png">
+                <img class="wow fadeInUp" data-wow-delay="0.6s" src="images/summerCamp/a2.png">
+                <img class="wow fadeInUp" data-wow-delay="0.9s" src="images/summerCamp/a3.png">
+            </div>
+        </div>
+        <div class="bar3Body">
+            <img class="wow fadeInUp" data-wow-delay="0.5s"src="images/summerCamp/c2.png" alt="一次沉浸式教育拓展">
+            <img class="join btns wow fadeInUp" data-wow-delay="0.7s" src="images/summerCamp/join.png" alt="立即报名">
+        </div>
+    </div>
+    <div class="bar4">
+        <p class="bg5"></p>
+        <p class="bg6"></p>
+        <p class="bg7"></p>
+        <p class="bg8"></p>
+        <div class="bar4Con">
+            <img class="bar4Head wow fadeInUp" data-wow-delay="0.9s" src="images/summerCamp/c3.png" alt="精彩行程概览">
+            <div class="bar4Body contain">
+                <img class="day1 wow fadeInLeft" data-wow-delay="1.2s" src="images/summerCamp/D1.png" alt="day1">
+                <img class="day2 wow fadeInRight" data-wow-delay="1.5s" src="images/summerCamp/D2.png" alt="day2">
+                <img class="day3 wow fadeInLeft" data-wow-delay="1.5s" src="images/summerCamp/D3.png" alt="day3">
+                <img class="day4 wow fadeInRight" data-wow-delay="1.5s" src="images/summerCamp/D4.png" alt="day4">
+            </div>
+        </div>
+    </div>
+    <div class="bar5">
+        <img class="bar5Head wow fadeInUp" src="images/summerCamp/t2.png" alt="距离报名结束">
+        <div class="bar5Body contain wow fadeInUp" data-wow-delay="0.5s">
+            <p id="timer"></p>
+        </div>
+        <img style="margin-top: 58px;" class="wow fadeInUp" data-wow-delay="0.8s" src="images/summerCamp/e1.png" alt="立即集结">
+        <img style="margin-top: 82px;" class="join btns wow fadeInUp" data-wow-delay="1.2s" src="images/summerCamp/join.png" alt="立即报名">
+    </div>
+    <!--弹窗-->
+    <div class="tanBox">
+        <div id="tan1">
+            <span class="closeTan" href="javascript:;"></span>
+            <form class="tanForm" id="tanForm">
+                <input type="text" name="adid" class="adid" value="" style="display:none">
+                <input type="text" name="jh" class="jh" value="" style="display:none">
+                <input type="text" name="dy" class="dy" value="" style="display:none">
+                <input type="text" name="keyNum" class="keyNum" value="" style="display:none">
+                <p>
+                    <input type="text" name='name' class="name" placeholder="请输入学生姓名">
+                </p>
+                <p>
+                    <input name='phone' placeholder="请输入手机号" class="mobile">
+                </p>
+                <p>
+                    <select name="grade" class="grade">
+                        <option value="请选择" selected style="display: none;color: #ddd;">请选择年级</option>
+                        <option value="小四">小四</option>
+                        <option value="小五">小五</option>
+                        <option value="小六">小六</option>
+                        <option value="预初">预初</option>
+                        <option value="初一">初一</option>
+                        <option value="初二">初二</option>
+                        <option value="初三">初三</option>
+                        <option value="初四">初四</option>
+                        <option value="高一">高一</option>
+                        <option value="高二">高二</option>
+                        <option value="高三">高三</option>
+                    </select>
+                </p>
+                <p>
+                    <select name="subject" class="kemu">
+                        <option value="请选择" selected style="display: none;color: #ddd;">请选择科目</option>
+                        <option value="数学">数学</option>
+                        <option value="语文">语文</option>
+                        <option value="英语">英语</option>
+                        <option value="地理">地理</option>
+                        <option value="政治">政治</option>
+                        <option value="科学">科学</option>
+                        <option value="历史">历史</option>
+                        <option value="生物">生物</option>
+                        <option value="物理">物理</option>
+                        <option value="化学">化学</option>
+                    </select>
+                </p>
+                <button class='submitTan' id="submitTan" type='button'></button>
+            </form>
+            <!--<a class="layer3" href="#"></a>-->
+        </div>
+    </div>
+</div>
+@@include('../include/footer.html')
+</body>
+<script src="../js/jquery.js"></script>
+<script src='../js/swiper-3.4.2.min.js'></script>
+<script src="../js/lib/path/jquery.path.js"></script>
+<script src="../js/lib/artTemplate-master/dist/template.js"></script>
+<script src="../js/lib/jquery-cookie/jquery.cookie.js"></script>
+<script src="../js/lib/js-sha512/src/sha512.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/lib/kissy/kissy.js"></script>
+<script src="../js/gotoTop.js"></script>
+<script src="../js/api-config.js"></script>
+<script src="../js/common.js"></script>
+<!--<script src="js/index.js"></script>-->
+<!--<script src="../js/newIndex.js"></script>-->
+<script src="../js/login.js"></script>
+<script src="//imgcache.qq.com/open/qcloud/video/vcplayer/TcPlayer-2.2.1.js" charset="utf-8"></script>;
+<script src="../js/wow.min.js"></script>
+
+<script>
+    $(function () {
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true
+        });
+        wow.init();
+        // 表单提交
+        $(".btns").click(function(){
+            $(".tanBox").show();
+        });
+        $(".closeTan").click(function(){
+            $(".tanBox").hide();
+        });
+        //表单提交Start
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null)return unescape(r[2]);
+            return "";
+        }
+        $(".tanForm select").on("change", function () {
+            if ($(".tanForm .grade").val() == "请选择") {
+                $(".tanForm .grade").css("color", "#a8a8a8");
+                $(".tanForm .grade option").css("color", "#000");
+            } else {
+                $(".tanForm .grade").css("color", "#000");
+                $(".tanForm .grade option").css("color", "#000");
+            }
+
+            if ($(".tanForm .kemu").val() == "请选择") {
+                $(".tanForm .kemu").css("color", "#a8a8a8");
+                $(".tanForm .kemu option").css("color", "#000");
+            } else {
+                $(".tanForm .kemu").css("color", "#000");
+                $(".tanForm .kemu option").css("color", "#000");
+            }
+        })
+        $('#submitTan').on('click', function () {
+            var $this = $($(this).parent());
+            $this.find(".adid").val(GetQueryString("adid"));
+            $this.find(".jh").val(GetQueryString("adid"));
+            $this.find(".dy").val(GetQueryString("adid"));
+            $this.find(".keyNum").val(GetQueryString("adid"));
+
+            // $("#tanForm .adid").val(GetQueryString("adid"))
+            // $("#tanForm .jh").val(GetQueryString("jh"));
+            // $("#tanForm .dy").val(GetQueryString("dy"));
+            // $("#tanForm .keyNum").val(GetQueryString("keynum"));
+            var mobileReg = /^1(3[0-9]|4[57]|5[0-35-9]|7[0135678]|8[0-9])\d{8}$/;
+            var nameReg = /^([\u4e00-\u9fa5]{1,20}|[a-zA-Z\.\s]{1,20})$/;
+            var formData = $('.tanForm').serialize();
+            var name = $this.find(".name")
+            var mobile = $this.find(".mobile");
+            var button = $this.find("button");
+            // var adid = window.location.href.split("?");
+            // // var adid1 = adid.split("&");
+            // console.log(adid);
+            $.ajax({
+                type: 'get',
+                url: CMSAPI + '/NewNameList/createNewNameList',
+                data: formData,
+                dataType: "jsonp",
+                jsonp: "jsoncallback",
+                timeout: 5000,
+                // 发起请求前就调用
+                beforeSend: function (data) {
+                    if (!name.val()) {
+                        name.attr({placeholder: "名字不能为空"}).focus().val("");
+                        return false;
+                    }
+                    if (!nameReg.test(name.val())) {
+                        name.val("");
+                        name.attr({placeholder: "请输入正确姓名"}).focus().val("");
+                        return false;
+                    }
+                    if (!mobileReg.test(mobile.val())) {
+                        button.attr("input::-webkit-input-placeholder", "color", "#FF0000");
+                        mobile.attr({placeholder: "手机号不正确"}).focus().val("");
+                        return false;
+                    }
+                    console.log($(".tanForm .grade").val());
+                    if ($(".tanForm .grade").val() == "请选择" || $(".tanForm .kemu").val() == "请选择") {
+                        alert("请选择年级和科目");
+                        return false;
+                    }
+                    button.html('正在提交...').addClass("disabled").attr("disabled", true);
+                },
+                success: function (data) {
+                    //var data = JSON.parse(data);
+                    console.log(data);
+                    if (data.code == 100) {
+                        $(name, mobile).focus();
+                        window.location.href = "../succeed.html";
+                        button.html('免费试听').removeClass('disabled').attr("disabled", false);
+                    } else if (data.code == 101) {
+                        alert("预约失败！");
+                        button.css({background:"#e32d1f"}).attr("disabled",false);
+                        name.val("");
+                        mobile.val("");
+                        return false;
+                    }
+                    else {
+                    }
+                    console.log(1);
+                },
+                complete: function () { // 请求完成时会调用
+                    // 还原状态
+                    $(".tanForm input").val("");
+                    button.html('免费试听').removeClass('disabled').attr("disabled", false);
+                },
+                error: function () {
+                    console.log(3);
+                    // window.location.href = "./error.html";
+                }
+            });
+        });
+    });
+
+    //        倒计时
+    function checkTime(i) { //将0-9的数字前面加上0，例1变为01
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+    function leftTimer(year, month, day, hour, minute, second) {
+        var leftTime = (new Date(year, month - 1, day, hour, minute, second)) - (new Date()); //计算剩余的毫秒数
+        var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数
+        var hours = parseInt(leftTime / 1000 / 60 / 60 % 24, 10); //计算剩余的小时
+        var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩余的分钟
+        var seconds = parseInt(leftTime / 1000 % 60, 10);//计算剩余的秒数
+        if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
+            clearInterval(sTimer);
+        }
+        if(leftTime<0){
+            days = '00';
+            hours = '00';
+            minutes = '00';
+            seconds = '00';
+        }else {
+            days = checkTime(days);
+            hours = checkTime(hours);
+            minutes = checkTime(minutes);
+            seconds = checkTime(seconds);
+        }
+        document.getElementById("timer").innerHTML = "<span>" + days + "</span>" +  "<span style='margin-left: 136px;'>" + hours + "</span>"  + "<span style='margin: 0 133px;'>" + minutes + "</span>" +"<span>" + seconds + "</span>";
+    }
+
+    leftTimer(2018, 7, 31, 24, 0, 0);
+    var sTimer = setInterval("leftTimer(2018,7,31,24,0,0)", 1000);
+</script>
+
+
+</html>

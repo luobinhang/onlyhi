@@ -1,0 +1,210 @@
+body {
+    font-size: 12px;
+    font-family: "PingHei", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+    color: #000;
+    background: #fff center top no-repeat;
+}
+
+/*去除滚动条*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+img,
+strong,
+sub,
+sup,
+tt,
+dd,
+dl,
+dt,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+ul,
+li,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input,
+select,
+textarea {
+    vertical-align: middle;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    border: 0;
+}
+.disabled{
+    background-color: #ccc;
+    cursor: default;
+}
+
+input,
+select,
+button,
+textarea {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+html,
+body {
+    background-color: #FFF;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #010101;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.overhide {
+    overflow: hidden;
+    text-indent: -100em;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+html {
+    font-size: calc(10vw);
+    /*font-size: 10px;*/
+    /*10 ÷ 16 × 100% = 62.5%*/
+}
+
+body .hide {
+    display: none;
+}
+
+body .container {
+    padding: 0;
+}
+
+body .img-thumbnail {
+    background-color: #cccccc;
+}
+
+body .fl {
+    float: left;
+    display: inline;
+}
+
+body .fr {
+    float: right;
+    display: inline;
+}
+
+div {
+    text-align: center;
+}
+
+input {
+    outline: none;
+    appearance: none;
+}
+
+h1 {
+    font-size: 0.4rem;
+}
+
+p {
+    font-size: 0.293rem;
+}
+
+.color_red {
+    color: #f40009;
+}
+
+.t_c {
+    text-align: center;
+}
+
+.t_l {
+    text-align: left;
+}
+
+.t_r {
+    text-align: right;
+}
+
+.translateX {
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.translateY {
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.translateXY {
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

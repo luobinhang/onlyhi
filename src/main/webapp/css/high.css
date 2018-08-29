@@ -1,0 +1,907 @@
+.one {
+  animation: one 2s ease forwards;
+  -moz-animation: one 2s ease forwards;
+  /* Firefox */
+  -webkit-animation: one 2s ease forwards;
+  /* Safari 和 Chrome */
+  -o-animation: one 2s ease forwards;
+  /* Opera */
+}
+.two {
+  animation: two 2s ease forwards;
+  -moz-animation: two 2s ease forwards;
+  /* Firefox */
+  -webkit-animation: two 2s ease forwards;
+  /* Safari 和 Chrome */
+  -o-animation: two 2s ease forwards;
+  /* Opera */
+}
+.three {
+  animation: three 2s ease forwards;
+  -moz-animation: three 2s ease forwards;
+  /* Firefox */
+  -webkit-animation: three 2s ease forwards;
+  /* Safari 和 Chrome */
+  -o-animation: three 2s ease forwards;
+  /* Opera */
+}
+.four {
+  animation: four 2s ease forwards;
+  -moz-animation: four 2s ease forwards;
+  /* Firefox */
+  -webkit-animation: four 2s ease forwards;
+  /* Safari 和 Chrome */
+  -o-animation: four 2s ease forwards;
+  /* Opera */
+}
+.five {
+  animation: five 2s ease forwards;
+  -moz-animation: five 2s ease forwards;
+  /* Firefox */
+  -webkit-animation: five 2s ease forwards;
+  /* Safari 和 Chrome */
+  -o-animation: five 2s ease forwards;
+  /* Opera */
+}
+@keyframes one {
+  from {
+    height: 0;
+  }
+  to {
+    height: 276px;
+  }
+}
+@keyframes two {
+  from {
+    height: 0;
+  }
+  to {
+    height: 326px;
+  }
+}
+@keyframes three {
+  from {
+    height: 0;
+  }
+  to {
+    height: 366px;
+  }
+}
+@keyframes four {
+  from {
+    height: 0;
+  }
+  to {
+    height: 426px;
+  }
+}
+@keyframes five {
+  from {
+    height: 0;
+  }
+  to {
+    height: 486px;
+  }
+}
+.banner6-0 {
+  height: 918px;
+  background-color: #FFF;
+}
+.banner6-0 .content h1 {
+  padding: 60px 0;
+}
+.banner6-0 .content .myWinter #winterContent ul,
+.banner6-0 .content .myWinter #winterTab {
+  border: 1px solid #f40009;
+  border-radius: 5px;
+  text-align: center;
+}
+.banner6-0 .content .myWinter #winterContent ul li,
+.banner6-0 .content .myWinter #winterTab li {
+  float: left;
+  height: 48px;
+  line-height: 48px;
+  border-right: 1px solid #f40009;
+  font-size: 18px;
+  font-weight: bold;
+}
+.banner6-0 .content .myWinter #winterContent ul li a,
+.banner6-0 .content .myWinter #winterTab li a {
+  border: 0;
+}
+.banner6-0 .content .myWinter #winterContent ul li.active a,
+.banner6-0 .content .myWinter #winterTab li.active a,
+.banner6-0 .content .myWinter #winterContent ul li.active a:hover,
+.banner6-0 .content .myWinter #winterTab li.active a:hover,
+.banner6-0 .content .myWinter #winterContent ul li.active a:focus,
+.banner6-0 .content .myWinter #winterTab li.active a:focus {
+  border: 1px solid #f40009;
+  border-radius: 0;
+}
+.banner6-0 .content .myWinter #winterContent ul li a,
+.banner6-0 .content .myWinter #winterTab li a {
+  display: inline-block;
+  color: #000;
+  line-height: 48px;
+  width: 100%;
+  height: 100%;
+}
+.banner6-0 .content .myWinter #winterContent ul li:last-child,
+.banner6-0 .content .myWinter #winterTab li:last-child {
+  border-right: none;
+}
+.banner6-0 .content .myWinter .winterTit #winterTab {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+}
+.banner6-0 .content .myWinter .winterTit #winterTab li {
+  width: 170px;
+}
+.banner6-0 .content .myWinter #winterContent ul li {
+  width: 106px;
+}
+.banner6-0 .content .myWinter #winterContent ul {
+  margin: 50px 0;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.banner6-0 .content .myWinter #winterAll h1 {
+  padding: 0;
+}
+.banner6-0 .content .myWinter #winterAll ul {
+  position: relative;
+  height: 460px;
+}
+.banner6-0 .content .myWinter #winterAll ul li {
+  bottom: 0;
+  position: absolute;
+  float: left;
+  width: 220px;
+  vertical-align: bottom;
+  overflow: hidden;
+}
+.banner6-0 .content .myWinter #winterAll ul li p {
+  font-size: 14px;
+  position: relative;
+  padding-left: 30px;
+  margin-top: 20px;
+}
+.banner6-0 .content .myWinter #winterAll ul li p span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 0 30px;
+  line-height: 26px;
+  color: #FFF;
+}
+.banner6-0 .content .myWinter #winterAll ul li p i {
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 50%;
+  border-top: 14px solid transparent;
+  border-left: 20px solid #fff;
+  border-bottom: 14px solid transparent;
+  position: absolute;
+}
+.banner6-0 .content .myWinter #winterAll ul li:first-child i {
+  border: 0;
+}
+.banner6-0 .content .myWinter #winterAll ul li:nth-child(1) {
+  color: #f46a6f;
+  left: 0;
+  height: 276px;
+}
+.banner6-0 .content .myWinter #winterAll ul li:nth-child(1) p {
+  background-color: #f46a6f;
+  height: 190px;
+}
+.banner6-0 .content .myWinter #winterAll ul li:nth-child(2) {
+  color: #f45258;
+  left: 228px;
+  height: 326px;
+}
+.banner6-0 .content .myWinter #winterAll ul li:nth-child(2) p {
+  background-color: #f45258;
+  height: 240px;
+}
+.banner6-0 .content .myWinter #winterAll ul li:nth-child(3) {
+  color: #f4383f;
+  left: 456px;
+  height: 366px;
+}
+.banner6-0 .content .myWinter #winterAll ul li:nth-child(3) p {
+  background-color: #f4383f;
+  height: 280px;
+}
+.banner6-0 .content .myWinter #winterAll ul li:nth-child(4) {
+  color: #f42129;
+  left: 684px;
+  height: 426px;
+}
+.banner6-0 .content .myWinter #winterAll ul li:nth-child(4) p {
+  background-color: #f42129;
+  height: 340px;
+}
+.banner6-0 .content .myWinter #winterAll ul li:nth-child(5) {
+  color: #f40009;
+  left: 912px;
+  height: 486px;
+}
+.banner6-0 .content .myWinter #winterAll ul li:nth-child(5) p {
+  background-color: #f40009;
+  height: 400px;
+}
+.banner6-1 {
+  height: 700px;
+  background: url("../images/system/b5-banner.jpg") fixed no-repeat center;
+}
+.banner6-1 h1 {
+  padding-top: 60px;
+  line-height: 40px;
+  color: #FFF;
+}
+.banner6-1 .content {
+  height: 100%;
+  position: relative;
+}
+.banner6-1 .content img,
+.banner6-1 .content h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.banner6-1 .content h2 {
+  top: 47%;
+  font-weight: bold;
+}
+.banner6-1 .content div {
+  position: absolute;
+  background-color: transparent;
+  color: #FFF;
+  width: 370px;
+}
+.banner6-1 .content div span {
+  display: block;
+}
+.banner6-1 .content .b5-1 {
+  left: 20px;
+  top: 170px;
+}
+.banner6-1 .content .b5-2 {
+  left: 0px;
+  top: 380px;
+}
+.banner6-1 .content .b5-3 {
+  left: 770px;
+  top: 170px;
+}
+.banner6-1 .content .b5-4 {
+  left: 810px;
+  top: 390px;
+}
+.banner6-1 .content .b5-5 {
+  left: 50%;
+  top: 540px;
+}
+@-webkit-keyframes icon0 {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes icon0 {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes icon1 {
+  0%,
+  50% {
+    opacity: 0;
+    left: 300px;
+  }
+  100% {
+    opacity: 1;
+    left: 374px;
+  }
+}
+@keyframes icon1 {
+  0%,
+  50% {
+    opacity: 0;
+    left: 300px;
+  }
+  100% {
+    opacity: 1;
+    left: 374px;
+  }
+}
+@-webkit-keyframes icon2 {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes icon2 {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes icon3 {
+  0%,
+  50% {
+    opacity: 0;
+    left: 780px;
+    top: 340px;
+  }
+  100% {
+    opacity: 1;
+    top: 390px;
+    left: 750px;
+  }
+}
+@keyframes icon3 {
+  0%,
+  50% {
+    opacity: 0;
+    left: 780px;
+    top: 340px;
+  }
+  100% {
+    opacity: 1;
+    top: 390px;
+    left: 750px;
+  }
+}
+@-webkit-keyframes icon4 {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes icon4 {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes icon5 {
+  0%,
+  50% {
+    opacity: 0;
+    left: 265px;
+    top: 620px;
+  }
+  100% {
+    opacity: 1;
+    left: 220px;
+    top: 560px;
+  }
+}
+@keyframes icon5 {
+  0%,
+  50% {
+    opacity: 0;
+    left: 265px;
+    top: 620px;
+  }
+  100% {
+    opacity: 1;
+    left: 220px;
+    top: 560px;
+  }
+}
+@-webkit-keyframes icon6 {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes icon6 {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.banner4 .AEF .america-go .center {
+  -webkit-animation: icon0 .6s ease 0;
+  animation: icon0 .6s ease 0;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.banner4 .AEF .america-go .AEF-T {
+  -webkit-animation: icon1 1.2s ease .4s;
+  animation: icon1 1.2s ease .4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.banner4 .AEF .america-go .AEF-E {
+  -webkit-animation: icon2 1.2s ease .8s;
+  animation: icon2 1.2s ease .8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.banner4 .AEF .america-go .AEF-R {
+  -webkit-animation: icon3 1.2s ease 1.2s;
+  animation: icon3 1.2s ease 1.2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.banner4 .AEF .america-go .AEF-F {
+  -webkit-animation: icon4 1.2s ease 1.4s;
+  animation: icon4 1.2s ease 1.4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.banner4 .AEF .america-go .AEF-L {
+  -webkit-animation: icon5 1.2s ease 1.8s;
+  animation: icon5 1.2s ease 1.8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.banner4 .AEF .america-go .AEF-A {
+  -webkit-animation: icon6 1.2s ease 2.2s;
+  animation: icon6 1.2s ease 2.2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+h1 {
+  font-size: 40px;
+  color: #33332d;
+}
+h1 span {
+  color: #f40009;
+}
+.main .banner1 {
+  height: 400px;
+  background: url("../images/high/banner.jpg") no-repeat center;
+}
+.main .banner1 .content {
+  position: relative;
+  height: 100%;
+}
+.main .banner1 .content .center {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+}
+.main .banner1 .content .center h1 {
+  color: #ffffff;
+  line-height: 60px;
+  text-space: 20px;
+  letter-spacing: 7px;
+}
+.main .banner1 .content .center p {
+  color: #ffffff;
+  font-size: 23px;
+  line-height: 60px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+.main .banner1 .content .center button {
+  width: 169px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #f40009;
+  color: #FFF;
+  font-size: 16px;
+}
+.main .banner2 {
+  padding: 50px;
+  text-align: center;
+}
+.main .banner2 .content h1 {
+  margin-bottom: 50px;
+}
+.main .banner2 .content ul {
+  margin: 0 auto;
+  display: inline-block;
+}
+.main .banner2 .content ul li {
+  float: left;
+  text-align: left;
+  border: 1px solid #e1e1e1;
+  background-color: #fbfbfb;
+  width: 349px;
+  height: 410px;
+  margin: 0 10px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.16);
+  -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.16);
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.main .banner2 .content ul li:hover {
+  -webkit-box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.16);
+  -ms-box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.16);
+  -webkit-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+.main .banner2 .content ul li:before {
+  content: '';
+  width: 349px;
+  left: -1px;
+  top: -1px;
+  height: 48px;
+  position: absolute;
+  background: url("../images/high/bg.jpg") no-repeat center;
+}
+.main .banner2 .content ul li h2 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 48px;
+  font-weight: bold;
+  color: #FFF;
+  position: relative;
+}
+.main .banner2 .content ul li .frist-li {
+  padding: 10px 25px;
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 600;
+}
+.main .banner2 .content ul li .frist-li .frist-0 {
+  float: left;
+}
+.main .banner2 .content ul li .frist-li .left {
+  width: 80px;
+}
+.main .banner2 .content ul li .frist-li .right {
+  width: 215px;
+}
+.main .banner2 .content ul li .frist-li span {
+  font-weight: normal;
+}
+.main .banner2 .content ul li .frist-li:last-child {
+  line-height: 25px;
+}
+.main .banner2 .content ul li .frist span {
+  display: inline-block;
+  background-color: #9b9b9b;
+  line-height: 30px;
+  margin: 0 5px;
+  padding: 0 5px;
+  color: #FFF;
+}
+.main .banner3 {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+}
+.main .banner3 .content > p {
+  line-height: 60px;
+  font-size: 16px;
+  color: #626262;
+  display: inline-block;
+  position: relative;
+}
+.main .banner3 .content > p:before {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background-color: #e7e7e7;
+  position: absolute;
+  left: -50px;
+  top: 50%;
+}
+.main .banner3 .content > p:after {
+  content: '';
+  width: 40px;
+  height: 1px;
+  background-color: #e7e7e7;
+  position: absolute;
+  right: -50px;
+  top: 50%;
+}
+.main .banner3 .content .teacher {
+  text-align: center;
+}
+.main .banner3 .content .teacher .t_ul {
+  display: inline-block;
+}
+.main .banner3 .content .teacher .t_ul .t_li {
+  float: left;
+  width: 311px;
+  height: 543px;
+  margin: 0 10px;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  background-color: #FFF;
+}
+.main .banner3 .content .teacher .t_ul .t_li img {
+  height: 225px;
+}
+.main .banner3 .content .teacher .t_ul .t_li .teach {
+  text-align: center;
+}
+.main .banner3 .content .teacher .t_ul .t_li .teach .title {
+  color: #626262;
+  font-size: 20px;
+  line-height: 50px;
+}
+.main .banner3 .content .teacher .t_ul .t_li .teach .t-content {
+  padding: 0 20px;
+  border-top: 1px solid #f5f5f5;
+  font-size: 16px;
+  padding-top: 20px;
+  text-align: left;
+  text-indent: 2em;
+}
+.main .banner3 .content .teacher .t_ul .t_li .teach ul {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.main .banner3 .content .teacher .t_ul .t_li .teach ul li {
+  float: left;
+  margin: 0 14px;
+}
+.main .banner3 .content .teacher .t_ul .t_li .teach ul li p {
+  font-size: 22px;
+  color: #f40009;
+}
+.main .banner3 .content .teacher .t_ul .t_li .teach ul li span {
+  color: #a8a8a8;
+  font-size: 14px;
+}
+.main .banner4 {
+  padding: 50px 0;
+}
+.main .banner4 .content .AEF {
+  width: 1047px;
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+.main .banner4 .content .AEF .center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+}
+.main .banner4 .content .AEF .america {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  opacity: 0;
+}
+.main .banner4 .content .AEF .america .AEF-A {
+  position: absolute;
+  left: 175px;
+  top: 310px;
+  opacity: 0;
+}
+.main .banner4 .content .AEF .america .AEF-A p {
+  position: absolute;
+  left: -160px;
+  top: 165px;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: right;
+}
+.main .banner4 .content .AEF .america .AEF-E {
+  position: absolute;
+  left: 690px;
+  top: 240px;
+  opacity: 0;
+}
+.main .banner4 .content .AEF .america .AEF-E p {
+  position: absolute;
+  right: -195px;
+  top: 40px;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: right;
+}
+.main .banner4 .content .AEF .america .AEF-F {
+  position: absolute;
+  left: 500px;
+  top: 560px;
+  opacity: 0;
+}
+.main .banner4 .content .AEF .america .AEF-F p {
+  position: absolute;
+  right: -240px;
+  top: 140px;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+}
+.main .banner4 .content .AEF .america .AEF-L {
+  position: absolute;
+  left: 220px;
+  top: 560px;
+  opacity: 0;
+}
+.main .banner4 .content .AEF .america .AEF-T {
+  position: absolute;
+  left: 374px;
+  top: 75px;
+  opacity: 0;
+}
+.main .banner4 .content .AEF .america .AEF-R {
+  position: absolute;
+  left: 750px;
+  top: 390px;
+  opacity: 0;
+}
+.main .banner5 {
+  height: 480px;
+  background: url("../images/high/bg4.jpg") no-repeat center;
+  padding-top: 100px;
+  padding-left: 160px;
+}
+.main .banner5 .content .left p {
+  font-size: 40px;
+  line-height: 80px;
+  color: #FFF;
+}
+.main .banner5 .content .left ul li {
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFF;
+}
+.main .banner6 {
+  height: 630px;
+  background-color: #FFF;
+  overflow: hidden;
+}
+.main .banner6 .content {
+  height: 100%;
+}
+.main .banner6 .content #myCarousel0 {
+  height: 100%;
+  width: 478px;
+  padding-top: 100px;
+}
+.main .banner6 .content #myCarousel0 .carousel-inner {
+  margin-left: -50%;
+  overflow: visible;
+  height: 100%;
+  padding-top: 109px;
+  background: url("../images/primary/iPhone-.jpg") no-repeat left top;
+}
+.main .banner6 .content #myCarousel0 .carousel-inner .item {
+  position: relative;
+}
+.main .banner6 .content #myCarousel0 .carousel-inner .item img {
+  -webkit-transform: translateX(8px);
+  -moz-transform: translateX(8px);
+  -ms-transform: translateX(8px);
+  -o-transform: translateX(8px);
+  transform: translateX(8px);
+}
+.main .banner6 .content #myCarousel0 .carousel-inner .item .P-item {
+  position: absolute;
+  right: -410px;
+  top: 60px;
+}
+.main .banner6 .content #myCarousel0 .carousel-inner .item .P-item h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.main .banner6 .content #myCarousel0 .carousel-inner .item .P-item h2 span {
+  color: #f40009;
+}
+.main .banner6 .content #myCarousel0 .carousel-inner .item .P-item p {
+  font-size: 22px;
+}
+.main .banner6 .content #myCarousel0 .carousel-inner .item .P-item img {
+  margin-top: 20px;
+  display: block;
+}
+.main .banner6 .content #myCarousel0 .carousel-inner .item .P-item .P-item-p {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+}
+.main .banner6 .content #myCarousel0 .t-left {
+  background: url("../images/primary/btn-left.png") no-repeat center;
+  width: 25px;
+  height: 49px;
+  top: 50%;
+  left: -280px;
+}
+.main .banner6 .content #myCarousel0 .t-right {
+  background: url("../images/primary/btn-right.png") no-repeat center;
+  height: 49px;
+  width: 25px;
+  top: 50%;
+  left: 720px;
+}
+.main .banner7 {
+  height: 378px;
+  padding: 96px 0;
+  background: url("../images/primary/bg6.jpg") fixed center;
+}
+.main .banner7 .content p {
+  font-size: 40px;
+  color: #FFF;
+  line-height: 80px;
+}
+.main .banner7 .content span {
+  font-size: 16px;
+  color: #FFF;
+  display: block;
+  margin-bottom: 40px;
+}
+.main .banner7 .content span a {
+  color: #FFF;
+  text-decoration: underline;
+}
+.main .banner7 .content button {
+  display: block;
+  margin: 20px auto;
+  width: 290px;
+  height: 46px;
+  border-radius: 23px;
+  font-size: 24px;
+  color: #f40009;
+  background-color: #fff;
+}
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}

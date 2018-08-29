@@ -1,0 +1,208 @@
+.active {
+  color: #f40009 !important;
+}
+body {
+  background-color: #fff;
+}
+.nav {
+  height: 38px;
+  line-height: 38px;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+}
+.nav .nav_content {
+  max-width: 1100px;
+  position: relative;
+}
+.nav .nav_content .nav_left {
+  color: #f40009;
+  font-size: 16px;
+  background: url(../images/download/phone.png) no-repeat left center;
+  padding-left: 16px;
+}
+.nav .nav_content .nav_left img {
+  vertical-align: middle;
+}
+.nav .nav_content .nav_left span {
+  margin-left: 10px;
+}
+.nav .nav_content .nav_right {
+  color: #999;
+  font-size: 14px;
+  overflow: hidden;
+}
+.nav .nav_content .nav_right a {
+  color: #999;
+  padding-right: 25px;
+  margin-right: 25px;
+  position: relative;
+}
+.nav .nav_content .nav_right a:after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 14px;
+  background: #999;
+  right: 0;
+  top: 50%;
+  margin-top: -7px;
+}
+.header {
+  display: inline-block;
+  width: 1100px;
+  height: 80px;
+}
+.header .header_left {
+  height: 80px;
+  width: 130px;
+  line-height: 80px;
+  text-indent: -9999em;
+  display: inline-block;
+  background: url("../images/download/logo.svg") no-repeat center;
+}
+.header .header_right {
+  height: 100%;
+  line-height: 80px;
+}
+.header .header_right li {
+  margin-right: 50px;
+  float: left;
+  font-size: 20px;
+}
+.header .header_right li:last-child {
+  margin: 0;
+}
+.header .header_right li a {
+  display: inline-block;
+}
+.header .header_right li .active {
+  color: #f40009;
+}
+.header .header_right li img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.header .header_right li img:last-child {
+  display: none;
+}
+.download_content .banner {
+  height: 560px;
+  background: url("../images/download/banner.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  text-align: center;
+}
+.download_content .banner .banner_content {
+  margin: 0 auto;
+  display: none;
+}
+.download_content .banner .banner_content:first-child {
+  display: inline-block;
+}
+.download_content .banner .banner_content .banner_left {
+  width: 510px;
+}
+.download_content .banner .banner_content .banner_right {
+  margin-left: 60px;
+  color: #fff;
+  text-align: left;
+  position: relative;
+  width: 435px;
+  white-space: nowrap;
+}
+.download_content .banner .banner_content .banner_right h1 {
+  text-align: left;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.download_content .banner .banner_content .banner_right > p {
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+.download_content .banner .banner_content .banner_right .banner-main li {
+  margin-bottom: 20px;
+}
+.download_content .banner .banner_content .banner_right .banner-main p {
+  font-size: 16px;
+}
+.download_content .banner .banner_content .banner_right a,
+.download_content .banner .banner_content .banner_right button {
+  width: 180px;
+  height: 46px;
+  border-radius: 7px;
+  color: #ff7069;
+  background: #fff;
+  overflow: hidden;
+  transition-duration: .3s;
+  -webkit-transition-duration: .3s;
+  -moz-transition-duration: .3s;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 46px;
+  text-align: center;
+}
+.download_content .banner .banner_content .banner_right a:hover,
+.download_content .banner .banner_content .banner_right button:hover {
+  background: #ececec;
+}
+.download_content .banner .banner_content .banner_right a:hover + .download-code,
+.download_content .banner .banner_content .banner_right button:hover + .download-code {
+  display: block;
+}
+.download_content .banner .banner_content .banner_right .download-code {
+  position: absolute;
+  display: none;
+  bottom: -168px;
+  left: 10px;
+  width: 160px;
+}
+.download_content .banner .banner_content .banner_right .download-code img {
+  width: 160px;
+  height: 160px;
+}
+.download_content .more {
+  height: 300px;
+  max-width: 1300px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.download_content .more ul {
+  line-height: 300px;
+  text-align: center;
+  width: 100%;
+}
+.download_content .more ul li {
+  display: inline-block;
+  margin: 0 50px;
+  color: #666666;
+  font-size: 14px;
+}
+.download_content .more ul li img {
+  vertical-align: middle;
+  margin-right: 14px;
+}
+.footer {
+  height: 120px;
+  padding-top: 50px;
+  text-align: center;
+}
+.footer .top {
+  font-size: 16px;
+  color: #666666;
+}
+.footer .top span {
+  margin: 0 47px;
+}
+.footer .top i {
+  display: inline-block;
+  height: 16px;
+  width: 1px;
+  background-color: #ebebeb;
+}
+.footer .bottom {
+  font-size: 12px;
+  color: #999999;
+  margin-top: 20px;
+}

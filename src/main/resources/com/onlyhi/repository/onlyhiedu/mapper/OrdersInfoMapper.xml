@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.onlyhi.repository.onlyhiedu.mapper.OrdersInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.onlyhi.repository.onlyhiedu.mbg_po.OrdersInfo" >
+    <id column="order_info_id" property="orderInfoId" jdbcType="BIGINT" />
+    <result column="order_info_no" property="orderInfoNo" jdbcType="VARCHAR" />
+    <result column="order_no" property="orderNo" jdbcType="VARCHAR" />
+    <result column="transaction_no" property="transactionNo" jdbcType="VARCHAR" />
+    <result column="course_id" property="courseId" jdbcType="BIGINT" />
+    <result column="course_name" property="courseName" jdbcType="VARCHAR" />
+    <result column="account_payable" property="accountPayable" jdbcType="DOUBLE" />
+    <result column="already_pay" property="alreadyPay" jdbcType="DOUBLE" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="split_time" property="splitTime" jdbcType="TIMESTAMP" />
+    <result column="split_user" property="splitUser" jdbcType="VARCHAR" />
+    <result column="pay_status" property="payStatus" jdbcType="INTEGER" />
+    <result column="pay_method" property="payMethod" jdbcType="VARCHAR" />
+    <result column="pay_time" property="payTime" jdbcType="TIMESTAMP" />
+    <result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
+    <result column="update_date" property="updateDate" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    order_info_id, order_info_no, order_no, transaction_no, course_id, course_name, account_payable, 
+    already_pay, `status`, split_time, split_user, pay_status, pay_method, pay_time, 
+    create_date, update_date
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.OrdersInfoExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from orders_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from orders_info
+    where order_info_id = #{orderInfoId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from orders_info
+    where order_info_id = #{orderInfoId,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.OrdersInfoExample" >
+    delete from orders_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.OrdersInfo" >
+    insert into orders_info (order_info_id, order_info_no, order_no, 
+      transaction_no, course_id, course_name, 
+      account_payable, already_pay, `status`, 
+      split_time, split_user, pay_status, 
+      pay_method, pay_time, create_date, 
+      update_date)
+    values (#{orderInfoId,jdbcType=BIGINT}, #{orderInfoNo,jdbcType=VARCHAR}, #{orderNo,jdbcType=VARCHAR}, 
+      #{transactionNo,jdbcType=VARCHAR}, #{courseId,jdbcType=BIGINT}, #{courseName,jdbcType=VARCHAR}, 
+      #{accountPayable,jdbcType=DOUBLE}, #{alreadyPay,jdbcType=DOUBLE}, #{status,jdbcType=INTEGER}, 
+      #{splitTime,jdbcType=TIMESTAMP}, #{splitUser,jdbcType=VARCHAR}, #{payStatus,jdbcType=INTEGER}, 
+      #{payMethod,jdbcType=VARCHAR}, #{payTime,jdbcType=TIMESTAMP}, #{createDate,jdbcType=TIMESTAMP}, 
+      #{updateDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.OrdersInfo" useGeneratedKeys="true" keyProperty="orderInfoId">
+    insert into orders_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="orderInfoId != null" >
+        order_info_id,
+      </if>
+      <if test="orderInfoNo != null" >
+        order_info_no,
+      </if>
+      <if test="orderNo != null" >
+        order_no,
+      </if>
+      <if test="transactionNo != null" >
+        transaction_no,
+      </if>
+      <if test="courseId != null" >
+        course_id,
+      </if>
+      <if test="courseName != null" >
+        course_name,
+      </if>
+      <if test="accountPayable != null" >
+        account_payable,
+      </if>
+      <if test="alreadyPay != null" >
+        already_pay,
+      </if>
+      <if test="status != null" >
+        `status`,
+      </if>
+      <if test="splitTime != null" >
+        split_time,
+      </if>
+      <if test="splitUser != null" >
+        split_user,
+      </if>
+      <if test="payStatus != null" >
+        pay_status,
+      </if>
+      <if test="payMethod != null" >
+        pay_method,
+      </if>
+      <if test="payTime != null" >
+        pay_time,
+      </if>
+      <if test="createDate != null" >
+        create_date,
+      </if>
+      <if test="updateDate != null" >
+        update_date,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="orderInfoId != null" >
+        #{orderInfoId,jdbcType=BIGINT},
+      </if>
+      <if test="orderInfoNo != null" >
+        #{orderInfoNo,jdbcType=VARCHAR},
+      </if>
+      <if test="orderNo != null" >
+        #{orderNo,jdbcType=VARCHAR},
+      </if>
+      <if test="transactionNo != null" >
+        #{transactionNo,jdbcType=VARCHAR},
+      </if>
+      <if test="courseId != null" >
+        #{courseId,jdbcType=BIGINT},
+      </if>
+      <if test="courseName != null" >
+        #{courseName,jdbcType=VARCHAR},
+      </if>
+      <if test="accountPayable != null" >
+        #{accountPayable,jdbcType=DOUBLE},
+      </if>
+      <if test="alreadyPay != null" >
+        #{alreadyPay,jdbcType=DOUBLE},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="splitTime != null" >
+        #{splitTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="splitUser != null" >
+        #{splitUser,jdbcType=VARCHAR},
+      </if>
+      <if test="payStatus != null" >
+        #{payStatus,jdbcType=INTEGER},
+      </if>
+      <if test="payMethod != null" >
+        #{payMethod,jdbcType=VARCHAR},
+      </if>
+      <if test="payTime != null" >
+        #{payTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createDate != null" >
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null" >
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.OrdersInfoExample" resultType="java.lang.Integer" >
+    select count(*) from orders_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update orders_info
+    <set >
+      <if test="record.orderInfoId != null" >
+        order_info_id = #{record.orderInfoId,jdbcType=BIGINT},
+      </if>
+      <if test="record.orderInfoNo != null" >
+        order_info_no = #{record.orderInfoNo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.orderNo != null" >
+        order_no = #{record.orderNo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.transactionNo != null" >
+        transaction_no = #{record.transactionNo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.courseId != null" >
+        course_id = #{record.courseId,jdbcType=BIGINT},
+      </if>
+      <if test="record.courseName != null" >
+        course_name = #{record.courseName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.accountPayable != null" >
+        account_payable = #{record.accountPayable,jdbcType=DOUBLE},
+      </if>
+      <if test="record.alreadyPay != null" >
+        already_pay = #{record.alreadyPay,jdbcType=DOUBLE},
+      </if>
+      <if test="record.status != null" >
+        `status` = #{record.status,jdbcType=INTEGER},
+      </if>
+      <if test="record.splitTime != null" >
+        split_time = #{record.splitTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.splitUser != null" >
+        split_user = #{record.splitUser,jdbcType=VARCHAR},
+      </if>
+      <if test="record.payStatus != null" >
+        pay_status = #{record.payStatus,jdbcType=INTEGER},
+      </if>
+      <if test="record.payMethod != null" >
+        pay_method = #{record.payMethod,jdbcType=VARCHAR},
+      </if>
+      <if test="record.payTime != null" >
+        pay_time = #{record.payTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.createDate != null" >
+        create_date = #{record.createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateDate != null" >
+        update_date = #{record.updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update orders_info
+    set order_info_id = #{record.orderInfoId,jdbcType=BIGINT},
+      order_info_no = #{record.orderInfoNo,jdbcType=VARCHAR},
+      order_no = #{record.orderNo,jdbcType=VARCHAR},
+      transaction_no = #{record.transactionNo,jdbcType=VARCHAR},
+      course_id = #{record.courseId,jdbcType=BIGINT},
+      course_name = #{record.courseName,jdbcType=VARCHAR},
+      account_payable = #{record.accountPayable,jdbcType=DOUBLE},
+      already_pay = #{record.alreadyPay,jdbcType=DOUBLE},
+      `status` = #{record.status,jdbcType=INTEGER},
+      split_time = #{record.splitTime,jdbcType=TIMESTAMP},
+      split_user = #{record.splitUser,jdbcType=VARCHAR},
+      pay_status = #{record.payStatus,jdbcType=INTEGER},
+      pay_method = #{record.payMethod,jdbcType=VARCHAR},
+      pay_time = #{record.payTime,jdbcType=TIMESTAMP},
+      create_date = #{record.createDate,jdbcType=TIMESTAMP},
+      update_date = #{record.updateDate,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.OrdersInfo" >
+    update orders_info
+    <set >
+      <if test="orderInfoNo != null" >
+        order_info_no = #{orderInfoNo,jdbcType=VARCHAR},
+      </if>
+      <if test="orderNo != null" >
+        order_no = #{orderNo,jdbcType=VARCHAR},
+      </if>
+      <if test="transactionNo != null" >
+        transaction_no = #{transactionNo,jdbcType=VARCHAR},
+      </if>
+      <if test="courseId != null" >
+        course_id = #{courseId,jdbcType=BIGINT},
+      </if>
+      <if test="courseName != null" >
+        course_name = #{courseName,jdbcType=VARCHAR},
+      </if>
+      <if test="accountPayable != null" >
+        account_payable = #{accountPayable,jdbcType=DOUBLE},
+      </if>
+      <if test="alreadyPay != null" >
+        already_pay = #{alreadyPay,jdbcType=DOUBLE},
+      </if>
+      <if test="status != null" >
+        `status` = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="splitTime != null" >
+        split_time = #{splitTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="splitUser != null" >
+        split_user = #{splitUser,jdbcType=VARCHAR},
+      </if>
+      <if test="payStatus != null" >
+        pay_status = #{payStatus,jdbcType=INTEGER},
+      </if>
+      <if test="payMethod != null" >
+        pay_method = #{payMethod,jdbcType=VARCHAR},
+      </if>
+      <if test="payTime != null" >
+        pay_time = #{payTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createDate != null" >
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null" >
+        update_date = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where order_info_id = #{orderInfoId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.OrdersInfo" >
+    update orders_info
+    set order_info_no = #{orderInfoNo,jdbcType=VARCHAR},
+      order_no = #{orderNo,jdbcType=VARCHAR},
+      transaction_no = #{transactionNo,jdbcType=VARCHAR},
+      course_id = #{courseId,jdbcType=BIGINT},
+      course_name = #{courseName,jdbcType=VARCHAR},
+      account_payable = #{accountPayable,jdbcType=DOUBLE},
+      already_pay = #{alreadyPay,jdbcType=DOUBLE},
+      `status` = #{status,jdbcType=INTEGER},
+      split_time = #{splitTime,jdbcType=TIMESTAMP},
+      split_user = #{splitUser,jdbcType=VARCHAR},
+      pay_status = #{payStatus,jdbcType=INTEGER},
+      pay_method = #{payMethod,jdbcType=VARCHAR},
+      pay_time = #{payTime,jdbcType=TIMESTAMP},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      update_date = #{updateDate,jdbcType=TIMESTAMP}
+    where order_info_id = #{orderInfoId,jdbcType=BIGINT}
+  </update>
+</mapper>

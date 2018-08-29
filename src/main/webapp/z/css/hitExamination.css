@@ -1,0 +1,440 @@
+/*滚动条*/
+.select8 .center::-webkit-scrollbar {
+  width: 0.6rem;
+  background: #6788BD;
+  display: block;
+}
+.select8 .center::-webkit-scrollbar-button:start {
+  background: url("../images/hitExamination/scroll-t.png") no-repeat center;
+}
+.select8 .center::-webkit-scrollbar-button:end {
+  background: url("../images/hitExamination/scroll-b.png") no-repeat center;
+}
+.select8 .center::-webkit-scrollbar-track-piece {
+  display: none;
+}
+.select8 .center::-webkit-scrollbar-thumb {
+  background: url("../images/hitExamination/scroll.png") no-repeat center;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.select8 .center::-webkit-scrollbar-corner {
+  background: #000;
+}
+.select8 .center::-webkit-scrollbar-resizer {
+  background: #FF0BEE;
+}
+body {
+  background-color: #364fbc;
+}
+.select {
+  background-color: #73ABF1;
+  margin: 0.26666667rem 0;
+  color: #FFF;
+}
+#select {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  overflow: hidden;
+  display: none;
+}
+#select > img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: none;
+}
+#select #layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+#select .code,
+#select .success {
+  width: 6.69333333rem;
+  height: 5.84rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: none;
+}
+#select .code .clone,
+#select .success .clone {
+  position: absolute;
+  right: 0.13333333rem;
+  top: 0.13333333rem;
+  font-size: 0.4rem;
+}
+.select1 {
+  margin-top: 0;
+  padding-bottom: 0.26666667rem;
+  height: 15.49333333rem;
+  width: 100%;
+  background: url("../images/hitExamination/bg1.jpg") no-repeat top;
+  background-size: 100% 100%;
+  background-color: #73ABF1;
+  padding-top: 8.58666667rem;
+}
+.select1 span {
+  background-color: #C85538;
+  display: inline-block;
+  font-size: 0.42666667rem;
+  line-height: 0.90666667rem;
+}
+.select2 {
+  height: 15.49333333rem;
+  background: url("../images/hitExamination/bg2.png") no-repeat top;
+  background-size: 100% 100%;
+  margin-top: -1.6rem;
+  padding-bottom: 1.06666667rem;
+  padding-top: 1.33333333rem;
+}
+.select2 .select2-1 {
+  height: 3.94666667rem;
+}
+.select2 .select2-1 h1 {
+  font-size: 0.50666667rem;
+  line-height: 1.33333333rem;
+}
+.select2 .select2-1 p {
+  height: 2.61333333rem;
+  overflow: scroll;
+  text-align: left;
+  font-size: 0.34666667rem;
+  line-height: 0.53333333rem;
+  padding: 0 0.48rem;
+  text-indent: 2em;
+}
+.select2 .select2-2 {
+  padding-top: 0.74666667rem;
+  padding-left: 0.48rem;
+}
+.select2 .select2-2 .title {
+  height: 1.33333333rem;
+  text-align: left;
+}
+.select2 .select2-2 .title h1 {
+  font-size: 0.42666667rem;
+  font-weight: bold;
+  line-height: 0.73333333rem;
+}
+.select2 .select2-2 .title p {
+  font-size: 0.32rem;
+  color: #000;
+}
+.select2 .select2-3 {
+  position: relative;
+}
+.select2 .select2-3 #vadio-opacity {
+  height: 6.6rem;
+  width: 100%;
+  position: absolute;
+  z-index: 9;
+  display: none;
+  background: url("../images/hitExamination/load.jpg") no-repeat center;
+  background-size: cover;
+}
+.select2 .select2-3 #video {
+  height: 6.6rem;
+  background-color: #000;
+  padding-top: 0.4rem;
+}
+.select2 .select2-3 #video > div {
+  width: 100%;
+  height: 100%;
+}
+.select2 .select2-3 #video embed {
+  width: 100%;
+  height: 100%;
+}
+.select2 .select2-3 p {
+  line-height: 1rem;
+  padding-right: 0.24rem;
+  text-align: right;
+}
+.select3 {
+  height: 17.86666667rem;
+  width: 100%;
+  background: url("../images/hitExamination/bg3.png") no-repeat top;
+  background-size: 100% 100%;
+  margin-top: -1.06666667rem;
+  padding-top: 3.86666667rem;
+}
+.select3 ul li {
+  width: 8.94666667rem;
+  height: 3.81333333rem;
+  background-color: #507CBA;
+  margin: 0 auto;
+  margin-bottom: 0.8rem;
+  border-radius: 0.24rem;
+}
+.select3 ul li a {
+  display: inline-block;
+  height: 100%;
+}
+.select3 ul li a img {
+  float: left;
+  width: auto;
+  height: 100%;
+}
+.select3 ul li a .right {
+  padding: 0.2rem;
+  padding-left: 0.33333333rem;
+  overflow: scroll;
+  text-align: left;
+  height: 100%;
+}
+.select3 ul li a .right h1 {
+  line-height: 0.66666667rem;
+  color: #FFF;
+}
+.select3 ul li a .right p {
+  font-size: 0.32rem;
+}
+.select3 ul li a .right .p1 {
+  margin-bottom: 0.34666667rem;
+  color: #B8EDFF;
+}
+.select3 ul li a .right .p2 {
+  text-align: left;
+  color: #FEFEFE;
+  line-height: 0.42666667rem;
+}
+.select3-1 {
+  background-color: #364fbc;
+}
+.select3-1 a {
+  margin: 0.26666667rem 0;
+  display: inline-block;
+  font-size: 0.53333333rem;
+  width: 9.46666667rem;
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  color: #FFF;
+  background-color: #C01822;
+}
+.select4 {
+  height: 16.29333333rem;
+  width: 100%;
+  background: url("../images/hitExamination/bg4.png") no-repeat top;
+  background-size: 100% 100%;
+  padding-top: 1.73333333rem;
+}
+.select4 .title {
+  line-height: 0.93333333rem;
+  padding-right: 0.32rem;
+  text-align: right;
+  font-size: 0.37333333rem;
+}
+.select4 .center {
+  height: 9.8rem;
+  margin-top: 0.66666667rem;
+  overflow: hidden;
+  position: relative;
+}
+.select4 .center ul {
+  position: absolute;
+}
+.select4 .center ul li {
+  text-align: left;
+  padding: 0.50666667rem;
+}
+.select4 .center ul li .p1 {
+  padding: 0 0.32rem;
+  font-size: 0.37333333rem;
+  color: #19386E;
+  line-height: 0.6rem;
+}
+.select4 .center ul li .p2 {
+  width: 100%;
+  font-size: 0.34666667rem;
+  padding: 0 0.53333333rem;
+}
+.select4 .bottom {
+  padding-top: 0.53333333rem;
+}
+.select4 .bottom div {
+  height: 1.33333333rem;
+  padding: 0 0.26666667rem;
+}
+.select4 .bottom div input {
+  float: left;
+  width: 6.4rem;
+  background-color: #FFF;
+  height: 100%;
+  font-size: 0.37333333rem;
+  color: #295197;
+  border-radius: 5px;
+  padding-left: 0.33333333rem;
+}
+.select4 .bottom div button {
+  font-size: 0.4rem;
+  float: right;
+  color: #FFF;
+  height: 100%;
+  width: 2.66666667rem;
+  background-color: #295197;
+}
+.select4 .bottom p {
+  margin-top: 0.45333333rem;
+  font-size: 0.34666667rem;
+  color: #134090;
+}
+.select5 {
+  height: 8.05333333rem;
+  width: 100%;
+  background: url("../images/hitExamination/bg5.png") no-repeat top;
+  background-size: 100% 100%;
+  padding-top: 3.2rem;
+}
+.select5 img {
+  width: 3.33333333rem;
+  height: 3.33333333rem;
+}
+.select5 .p1 {
+  line-height: 0.76rem;
+  font-size: 0.32rem;
+}
+.select5 .p2 {
+  font-size: 0.34666667rem;
+  color: #295197;
+  font-weight: bold;
+}
+.select6 {
+  height: 11.18666667rem;
+  width: 100%;
+  background: url("../images/hitExamination/bg6.png") no-repeat top;
+  background-size: 100% 100%;
+  padding-top: 4.2rem;
+}
+.select6 .myForm {
+  width: 7.6rem;
+  margin: auto;
+}
+.select6 .myForm p {
+  border-radius: 5px;
+  padding: 0.13333333rem 0;
+  height: 1.42666667rem;
+}
+.select6 .myForm p select,
+.select6 .myForm p input {
+  height: 100%;
+  font-size: 0.42666667rem;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  padding-left: 0.26666667rem;
+  background-color: #FFF;
+}
+.select6 .myForm p input {
+  width: 100%;
+}
+.select6 .myForm p select {
+  background: url('../images/hitExamination/downicon.png') no-repeat center;
+  background-position-y: 50%;
+  background-position-x: 90%;
+  background-size: 0.26666667rem 0.26666667rem;
+  background-color: #FFF;
+  height: 100%;
+  width: 48%;
+  padding-left: 0.22666667rem;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.select6 .myForm p select option {
+  background: transparent;
+}
+.select6 .myForm button {
+  margin: 0.13333333rem 0;
+  height: 100%;
+  font-size: 0.49333333rem;
+  width: 100%;
+}
+.select7 {
+  height: 11.74666667rem;
+  width: 100%;
+  background: url("../images/hitExamination/bg7.png") no-repeat top;
+  background-size: 100% 100%;
+  padding-top: 8.6rem;
+}
+.select7 ul li {
+  overflow: hidden;
+  padding-left: 0.8rem;
+  text-align: left;
+  height: 0.32rem;
+  font-size: 0.21333333rem;
+  line-height: 0.32rem;
+  margin-bottom: 0.25333333rem;
+}
+.select7 ul li p {
+  width: 200%;
+}
+.select8 {
+  padding-bottom: 0.85333333rem;
+  margin: 0;
+}
+.select8 .title {
+  margin: 0.4rem 0;
+  width: 7.45333333rem;
+  height: auto;
+}
+.select8 .top {
+  margin: 0 auto;
+  height: 0.93333333rem;
+  width: 9.46666667rem;
+}
+.select8 .top table thead tr {
+  height: 0.93333333rem;
+  width: 9.46666667rem;
+  font-size: 0.37333333rem;
+}
+.select8 .top table thead tr th {
+  border: 0.02666667rem solid #FFF;
+}
+.select8 .top table thead tr .th1 {
+  width: 1.42666667rem;
+}
+.select8 .top table thead tr .th2 {
+  width: 2.73333333rem;
+}
+.select8 .top table thead tr .th3 {
+  width: 2.74666667rem;
+}
+.select8 .top table thead tr .th4 {
+  width: 1.97333333rem;
+}
+.select8 .center {
+  width: 9.46666667rem;
+  height: 9.46666667rem;
+  margin: 0 auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 0.01333333rem solid #FFF;
+  border-bottom: none;
+}
+.select8 .center img {
+  width: 100%;
+}
+.select9 {
+  margin: 0;
+  height: 2.8rem;
+  background-color: #4144B8;
+}
+.select9 button {
+  width: 7.62666667rem;
+  height: 1.41333333rem;
+  line-height: 1.41333333rem;
+  background-color: #D7A54A;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  top: 50%;
+  font-size: 0.50666667rem;
+}

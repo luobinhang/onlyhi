@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="嗨课堂,昂立嗨课堂,交大昂立嗨课堂">
+  <meta name="description"
+        content="上海交大昂立嗨课堂，传承百年交大精神，深耕教育辅导行业30余年。昂立嗨课堂从清、北、复、交等著名学府层层筛选团队，专注中小学一对一在线教育，致力于打造行业权威在线教育平台！">
+  <title>嗨课堂-学习力测试</title>
+  <link rel="icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/test.css">
+
+  <script src="js/Ie.js"></script>
+</head>
+<body id="test" class="test_hidden">
+@@include('include/header.html')
+<div class="loading">
+  <div id="load">
+    <div>后</div>
+    <div>稍</div>
+    <div>请</div>
+    <div>,</div>
+    <div>中</div>
+    <div>成</div>
+    <div>生</div>
+    <div>告</div>
+    <div>报</div>
+  </div>
+</div>
+<div class="content animated">
+  <h2 class="test_title">
+    <span style="color:#0a78c7;border-left-color:#0a78c7;">能力评估</span>
+  </h2>
+  <div class="test_top clearf">
+    <div class="test_top_main test_top_l">
+      <h3 class="test_title2">个人信息</h3>
+      <div class="test_top_bar ">
+        <ul>
+          <li>姓名：<span class="test_name">阿萨德</span></li>
+          <li>年级：<span class="test_grade">小四</span></li>
+          <li>薄弱学科：<span class="test_subject">英语</span></li>
+          <li>得分：<span class="test_score">100分</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="test_top_main test_top_c">
+      <h3 class="test_title2">主要问题分布图</h3>
+      <div class="test_top_bar ">
+        <div id="topRadar"></div>
+        <h3>超过平均线即代表合格</h3>
+      </div>
+    </div>
+    <div class="test_top_main test_top_r">
+      <h3 class="test_title2">需提高能力</h3>
+      <div class="test_top_bar ">
+        <div id="pie"></div>
+        <h3>超过60%代表合格</h3>
+      </div>
+    </div>
+
+  </div>
+  <h2 class="test_title">
+    <span style="color:#b16eaf;border-left-color:#b16eaf;"> 检测结果</span>
+  </h2>
+  <div class="bar1">
+    <h3 class="test_title2">学习方法</h3>
+    <div class="test_main">
+      <div class="charts" id="radar"></div>
+      <div class="test_warpper">
+        <div class="test_detail">
+          <i class="test_left" style="border-top:17px solid #32b1bb;"></i>
+          <i class="test_right" style="border-bottom:17px solid #32b1bb;"></i>
+          <p class="bar1_p"></p>
+        </div>
+        <h3>--- 平均线根据嗨课堂学员大数据统计得出，超过平均线即代表合格</h3>
+      </div>
+    </div>
+  </div>
+  <div class="bar2">
+    <h3 class="test_title2">应试心理</h3>
+    <div class="test_main">
+      <div class="charts" id="bar"></div>
+      <div class="test_warpper">
+        <div class="test_detail">
+          <i class="test_left" style="border-top:17px solid #33a8d7;"></i>
+          <i class="test_right" style="border-bottom:17px solid #33a8d7;"></i>
+          <p class="bar2_p"></p>
+        </div>
+        <h3>--- 平均线根据嗨课堂学员大数据统计得出，超过平均线即代表合格</h3>
+      </div>
+    </div>
+  </div>
+  <div class="bar3">
+    <h3 class="test_title2">家庭教育</h3>
+    <div class="test_main">
+      <div class="charts" id="line"></div>
+      <div class="test_warpper">
+        <div class="test_detail">
+          <i class="test_left" style="border-top:17px solid #fff696;"></i>
+          <i class="test_right" style="border-bottom:17px solid #fff696;"></i>
+          <p class="bar3_p"></p>
+        </div>
+        <h3>--- 平均线根据嗨课堂学员大数据统计得出，超过平均线即代表合格</h3>
+      </div>
+    </div>
+  </div>
+  <div class="bar4">
+    <h3 class="test_title2">综合分析</h3>
+    <div class="test_main clearf" style="height:auto;padding: 50px 100px;">
+      <div class="bar4_three bar4_three_1">
+        <div class="bar4_three_img">
+          <img width="84">
+        </div>
+        <div class="bar4_detail">
+          <p>经过嗨课堂个性化测试，您目前的学习基本情况非常糟糕。</p>
+        </div>
+      </div>
+      <div class="bar4_three bar4_three_2">
+        <div class="bar4_three_img">
+          <img src="images/test/2.png" alt="">
+        </div>
+        <div class="bar4_detail">
+          <p>在平时学习中，虽然你有一颗想要赢取高分的心，但表示遗憾的是你的基本知识并不扎实，一味的好高骛远，让你的学习道路上充满荆棘。嗨课堂 建议你平时注意复习总结，以理解知识为基础，制定科学的学习计划。</p>
+        </div>
+      </div>
+      <div class="bar4_three bar4_three_3">
+        <div class="bar4_three_img">
+          <img src="images/test/3.png" alt="">
+        </div>
+        <div class="bar4_detail">
+          <p>嗨课堂 建议你多与同学交流，适当的交流可帮助你心理上的成长，舒缓你心中压力。“三人行必有我师”，学习上的困难可以多向别人求助，你会有意想不到的收获。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bar5">
+    <h3 class="test_title2">课程方案推荐</h3>
+    <div class="test_main clearf" style="height: 300px;">
+      <div class="bar5_img">
+        <img src="images/test/4.png" alt="">
+      </div>
+      <div class="bar5_detail">
+        <p>目前你的学习状况令人非常担忧，照此下去你将可能变为“差”学生的一员。据昂立嗨课堂研究调查显示学生学习的行为受多种因素影响而促成的。包括所处环境影响（如学校、家庭），从而影响你的学习兴趣和目标，不过虽然你的学习成绩不如人意，但只要坚持学习老师建议你可以参加一门补习班，帮助你巩固复习以往学习过的知识，基础更加牢固才能在学习道路上更上一层楼。</p>
+      </div>
+    </div>
+  </div>
+</div>
+@@include('include/footer.html')
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/lib/jquery-cookie/jquery.cookie.js"></script>
+<script src="js/lib/js-sha512/src/sha512.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/lib/kissy/kissy.js"></script>
+<script src="js/gotoTop.js"></script>
+<script src="js/api-config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/login.js"></script>
+
+<script src="js/echarts.min.js"></script>
+<script src="js/testX.js"></script>
+
+<script>
+  if(!window.sessionStorage){
+    alert("浏览暂不支持sessionStorage,请切换浏览器或升级浏览器获得更好体验") ;
+    window.location.href = "index.html";
+  }
+</script>
+</html>

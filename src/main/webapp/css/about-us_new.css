@@ -1,0 +1,235 @@
+.wrapper .banner {
+  background: url(../images/about_us/banner.jpg) no-repeat center;
+  height: 595px;
+}
+.wrapper .banner .content {
+  padding-top: 215px;
+  color: #fff;
+}
+.wrapper .banner .content h1 {
+  line-height: 1;
+  position: relative;
+  color: #fff;
+  font-size: 86px;
+}
+.wrapper .banner .content h1:after {
+  content: '';
+  width: 895px;
+  left: 50%;
+  bottom: -22px;
+  position: absolute;
+  height: 1px;
+  background: #fff;
+  margin-left: -447.5px;
+}
+.wrapper .banner .content p {
+  margin-top: 53px;
+  font-size: 24px;
+}
+.wrapper .banner .content .btn1 {
+  margin-top: 72px;
+  width: 200px;
+  height: 50px;
+  background: rgba(244, 0, 9, 0.64);
+  border-radius: 25px;
+  font-size: 22px;
+}
+.wrapper .section1 .content {
+  padding: 86px 0 60px;
+  color: #0f1d33;
+}
+.wrapper .section1 .content h2 {
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 1;
+  margin-bottom: 48px;
+}
+.wrapper .section1 .content p {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+}
+.wrapper .section2 {
+  background: url(../images/about_us/s2.jpg) no-repeat center;
+  height: 535px;
+}
+.wrapper .section2 .content {
+  padding-top: 100px;
+  color: #fff;
+}
+.wrapper .section2 .content h2 {
+  font-size: 40px;
+  line-height: 1;
+  margin-bottom: 84px;
+}
+.wrapper .section2 .content .flex {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.wrapper .section2 .content .flex .item i {
+  display: block;
+  width: 112px;
+  height: 112px;
+  border: 2px solid #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  margin: 0 auto 18px;
+}
+.wrapper .section2 .content .flex .item span {
+  display: block;
+  font-size: 24px;
+  line-height: 36px;
+}
+.wrapper .section3 .content {
+  padding: 165px 356px 178px 35px;
+  text-align: left;
+  position: relative;
+}
+.wrapper .section3 .content h2 {
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+.wrapper .section3 .content p {
+  font-size: 20px;
+  line-height: 36px;
+}
+.wrapper .section3 .content img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.wrapper .section4 {
+  background: #f40002 url("../images/about_us/s4.png") no-repeat center;
+  height: 801px;
+}
+.wrapper .section4 .content {
+  color: #fff;
+  padding-top: 50px;
+}
+.wrapper .section4 .content h2 {
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.wrapper .section4 .content .list {
+  height: 546px;
+  width: 1118px;
+  margin: 0 auto;
+  position: absolute;
+}
+.wrapper .section4 .content .list .list-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("../images/about_us/arrow.png") no-repeat left top;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  -webkit-animation-duration: 1.6s;
+  animation-duration: 1.6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+}
+.wrapper .section4 .content .list .item {
+  position: absolute;
+  text-align: left;
+}
+.wrapper .section4 .content .list .item i {
+  position: absolute;
+  background: url("../images/about_us/point.png") no-repeat center;
+  width: 58px;
+  height: 58px;
+}
+.wrapper .section4 .content .list .item h3 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.wrapper .section4 .content .list .item p {
+  font-size: 18px;
+  line-height: 22px;
+}
+.wrapper .section5 .bar13Head p:first-child {
+  font-size: 40px;
+  line-height: 40px;
+  color: #0f1d33;
+  padding: 70px 0 15px 0;
+  text-align: center;
+}
+.wrapper .section5 .bar13Head p:nth-child(2) {
+  font-size: 26px;
+  line-height: 26px;
+  color: #989898;
+  text-align: center;
+}
+.wrapper .section5 .bar13Body {
+  position: relative;
+  margin-top: 68px;
+  margin-bottom: 26px;
+}
+.wrapper .section5 .bar13Body .swiper-container {
+  width: 1074px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.wrapper .section5 .bar13Body .swiper-container .swiper-slide div {
+  cursor: pointer;
+}
+.wrapper .section5 .bar13Body .swiper-container .swiper-slide div img {
+  display: block;
+  width: 100%;
+}
+.wrapper .section5 .bar13Body .swiper-container .swiper-slide div p {
+  font-size: 20px;
+  color: #0f1d33;
+  line-height: 34px;
+  text-align: center;
+}
+.wrapper .section5 .bar13Body .swiper-container .swiper-slide div p span {
+  color: #737983;
+  font-size: 16px;
+}
+.wrapper .section5 .bar13Body .swiper-container .swiper-slide:last-child {
+  margin-right: 0;
+}
+.wrapper .section6 {
+  background: url("../images/newIndex/b14.png") no-repeat center;
+  height: 600px;
+}
+.wrapper .section6 .content .bar14Head p {
+  font-size: 40px;
+  line-height: 40px;
+  color: #fff;
+  padding: 66px 0 76px 0;
+  text-align: center;
+}
+.wrapper .section6 .content .bar14Body {
+  padding: 0 52px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper .section6 .content .bar14Body img {
+  margin: 0 10px 10px;
+}
+.wrapper .section7 .content {
+  padding-bottom: 40px;
+}
+.wrapper .section7 .content .bar15Head p {
+  font-size: 40px;
+  color: #0e1d32;
+  padding: 78px 0 58px;
+  text-align: center;
+}
+.wrapper .section7 .content .bar15Body {
+  padding: 0 157px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper .section7 .content .bar15Body img {
+  margin: 0 10px 10px;
+}

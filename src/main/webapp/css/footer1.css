@@ -1,0 +1,190 @@
+.fixedBottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.footer .form1 {
+  height: 100px;
+  background-color: #c20007;
+  line-height: 100px;
+}
+.footer .form1 ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.footer .form1 ul li {
+  height: 100%;
+  display: inline-block;
+  width: 20%;
+}
+.footer .form1 ul li:last-child {
+  background: none;
+}
+.footer .form1 ul li img {
+  vertical-align: middle;
+}
+.footer .form1 ul li div {
+  color: #FFF;
+  margin-left: 10px;
+  display: inline-block;
+  line-height: 20px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.footer .form {
+  height: 49px;
+  line-height: 49px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.footer .form .content {
+  height: 100%;
+  position: relative;
+}
+.footer .form .content form {
+  text-align: center;
+}
+.footer .form .content form input,
+.footer .form .content form select {
+  vertical-align: initial;
+  border: 1px solid #E1E1E1;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 3px;
+  padding-left: 10px;
+  margin: 0 6px;
+  width: 116px;
+  color: #000;
+}
+.footer .form .content form input {
+  width: 200px;
+}
+.footer .form .content form .submit {
+  border: 0;
+  height: 32px;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  width: 116px;
+  background-color: #f40009;
+}
+.footer .form .content form .disabled {
+  background-color: #ccc;
+}
+.footer .consult {
+  background-color: #1e1e1e;
+  width: 100%;
+  padding-top: 46px;
+  text-align: center;
+}
+.footer .consult div.content {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+.footer .consult div.netWorkLink {
+  margin-bottom: 20px;
+}
+.footer .consult div.netWorkLink ul:first-child {
+  margin: 0 200px 0 15px;
+}
+.footer .consult div.netWorkLink ul {
+  display: inline-block;
+  margin-right: 70px;
+  vertical-align: top;
+}
+.footer .consult div.netWorkLink ul li {
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFF;
+  text-align: left;
+}
+.footer .consult div.netWorkLink ul li a {
+  color: #aaaaaa;
+}
+.footer .consult div.netWorkLink ul .title {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.footer .consult div.netWorkLink ul.contactNum {
+  margin-right: 0;
+  margin-left: 100px;
+}
+.footer .consult div.netWorkLink ul.contactNum li:first-child {
+  color: #989898;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+.footer .consult div.netWorkLink ul.contactNum li:nth-child(2) {
+  color: #989898;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.footer .consult div.friendshipLink {
+  position: relative;
+  padding: 28px 3px 12px;
+  border-top: 1px dotted #999;
+  border-bottom: 1px dotted #999;
+}
+.footer .consult div.friendshipLink ul {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 120px;
+  overflow-y: hidden;
+}
+.footer .consult div.friendshipLink ul.active {
+  max-height: none;
+}
+.footer .consult div.friendshipLink ul li {
+  font-size: 16px;
+  margin: 0 34px 18px;
+}
+.footer .consult div.friendshipLink ul li a {
+  color: #999999;
+}
+.footer .consult div.friendshipLink img.linkArrow {
+  position: absolute;
+  bottom: 14px;
+  right: 10px;
+  cursor: pointer;
+}
+.footer .consult div.friendshipLink img.linkArrow.active {
+  animation: linkArrows 0.3s;
+  transform: rotate(180deg);
+}
+@keyframes linkArrows {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.footer .consult .code {
+  display: inline-block;
+  text-align: center;
+}
+.footer .consult .code p {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 30px;
+}
+.footer .consult .footer1 {
+  color: #989898;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 10px;
+  line-height: 40px;
+}
+.footer .consult .footer1 p {
+  display: inline-block;
+  padding: 0 40px;
+}
+.footer .consult .footer1 a {
+  color: #aaa;
+  position: relative;
+  padding: 4px;
+}

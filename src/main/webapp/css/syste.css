@@ -1,0 +1,624 @@
+.main .one {
+  animation: one 2s ease forwards;
+  -moz-animation: one 2s ease forwards;
+  /* Firefox */
+  -webkit-animation: one 2s ease forwards;
+  /* Safari 和 Chrome */
+  -o-animation: one 2s ease forwards;
+  /* Opera */
+}
+.main .two {
+  animation: two 2s ease forwards;
+  -moz-animation: two 2s ease forwards;
+  /* Firefox */
+  -webkit-animation: two 2s ease forwards;
+  /* Safari 和 Chrome */
+  -o-animation: two 2s ease forwards;
+  /* Opera */
+}
+.main .three {
+  animation: three 2s ease forwards;
+  -moz-animation: three 2s ease forwards;
+  /* Firefox */
+  -webkit-animation: three 2s ease forwards;
+  /* Safari 和 Chrome */
+  -o-animation: three 2s ease forwards;
+  /* Opera */
+}
+.main .four {
+  animation: four 2s ease forwards;
+  -moz-animation: four 2s ease forwards;
+  /* Firefox */
+  -webkit-animation: four 2s ease forwards;
+  /* Safari 和 Chrome */
+  -o-animation: four 2s ease forwards;
+  /* Opera */
+}
+.main .five {
+  animation: five 2s ease forwards;
+  -moz-animation: five 2s ease forwards;
+  /* Firefox */
+  -webkit-animation: five 2s ease forwards;
+  /* Safari 和 Chrome */
+  -o-animation: five 2s ease forwards;
+  /* Opera */
+}
+.main .opacity {
+  animation: opacity 2s ease 2s forwards;
+  -moz-animation: opacity 2s ease 2s forwards;
+  /* Firefox */
+  -webkit-animation: opacity 2s ease 2s forwards;
+  /* Safari 和 Chrome */
+  -o-animation: opacity 2s ease 2s forwards;
+  /* Opera */
+}
+@keyframes one {
+  from {
+    height: 0;
+  }
+  to {
+    height: 228px;
+  }
+}
+@keyframes two {
+  from {
+    height: 0;
+  }
+  to {
+    height: 262px;
+  }
+}
+@keyframes three {
+  from {
+    height: 0;
+  }
+  to {
+    height: 306px;
+  }
+}
+@keyframes four {
+  from {
+    height: 0;
+  }
+  to {
+    height: 329px;
+  }
+}
+@keyframes five {
+  from {
+    height: 0;
+  }
+  to {
+    height: 380px;
+  }
+}
+.main h1 {
+  text-align: center;
+  font-size: 46px;
+  line-height: 60px;
+  margin-top: 40px;
+}
+.main .banner1 {
+  height: 500px;
+  /*background: url("../images/system/bg1.jpg") no-repeat center center;*/
+  background: url("../images/system/bg1-new.jpg") no-repeat center center;
+  background-size: cover;
+  border-bottom: 4px solid #f40009;
+}
+.main .banner1 .content {
+  padding-top: 110px;
+  color: #FFF;
+  height: 100%;
+  position: relative;
+}
+.main .banner1 .content h1 {
+  font-size: 90px;
+  font-weight: normal;
+  line-height: 120px;
+}
+.main .banner1 .content p {
+  font-size: 30px;
+}
+.main .banner1 .content button {
+  width: 224px;
+  line-height: 47px;
+  background: #f40009;
+  position: absolute;
+  top:310px;
+  right:304px;
+  border-radius: 20px;
+  color:#efeaea;
+  font-size: 20px;
+}
+.main .banner3 {
+  height: 918px;
+  background-color: #FFF;
+}
+.main .banner3 .content h1 {
+  padding: 60px 0;
+}
+.main .banner3 .content .myWinter #winterContent ul,
+.main .banner3 .content .myWinter #winterTab {
+  border-radius: 5px;
+  border: 0;
+  text-align: center;
+}
+.main .banner3 .content .myWinter #winterContent ul li,
+.main .banner3 .content .myWinter #winterTab li {
+  float: left;
+  height: 48px;
+  line-height: 48px;
+  border: 2px solid #f40009;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 20px;
+}
+.main .banner3 .content .myWinter #winterContent ul li a,
+.main .banner3 .content .myWinter #winterTab li a {
+  border: 0;
+}
+.main .banner3 .content .myWinter #winterContent ul li.active a,
+.main .banner3 .content .myWinter #winterTab li.active a,
+.main .banner3 .content .myWinter #winterContent ul li.active a:hover,
+.main .banner3 .content .myWinter #winterTab li.active a:hover,
+.main .banner3 .content .myWinter #winterContent ul li.active a:focus,
+.main .banner3 .content .myWinter #winterTab li.active a:focus {
+  border: 1px solid #f40009;
+  border-radius: 0;
+}
+.main .banner3 .content .myWinter #winterContent ul li a,
+.main .banner3 .content .myWinter #winterTab li a {
+  display: inline-block;
+  color: #000;
+  line-height: 48px;
+  width: 100%;
+  height: 100%;
+}
+.main .banner3 .content .myWinter .winterTit #winterTab {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+}
+.main .banner3 .content .myWinter .winterTit #winterTab li {
+  width: 150px;
+}
+.main .banner3 .content .myWinter #winterContent ul li {
+  width: 150px;
+  margin: 0 20px;
+}
+.main .banner3 .content .myWinter #winterContent ul {
+  margin: 50px 0;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.main .banner3 .content .myWinter #winterAll h1 {
+  padding: 0;
+}
+.main .banner3 .content .myWinter #winterAll ul {
+  position: relative;
+  height: 460px;
+}
+.main .banner3 .content .myWinter #winterAll ul li {
+  bottom: 0;
+  position: absolute;
+  float: left;
+  width: 220px;
+  height: 480px;
+  /*border: 10px solid #CCC;*/
+  border: 5px solid #f0f0f0;
+  border-radius: 15px;
+  vertical-align: bottom;
+  overflow: hidden;
+}
+.main .banner3 .content .myWinter #winterAll ul li h1,
+.main .banner3 .content .myWinter #winterAll ul li h2 {
+  position: relative;
+  z-index: 1;
+}
+.main .banner3 .content .myWinter #winterAll ul li p {
+  font-size: 14px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-left: 30px;
+  margin-top: 20px;
+  /*background: url("../images/system/bg3-li.jpg") no-repeat center -80px;*/
+  height: 0;
+}
+.main .banner3 .content .myWinter #winterAll ul li:first-child p {
+  background: url("../images/system/L1.jpg") no-repeat center 0px;
+  background-size: 100% 100%;
+}
+.main .banner3 .content .myWinter #winterAll ul li:nth-child(2) p {
+  background: url("../images/system/L2.jpg") no-repeat center 0px;
+  background-size: 100% 100%;
+}
+.main .banner3 .content .myWinter #winterAll ul li:nth-child(3) p {
+  background: url("../images/system/L3.jpg") no-repeat center 0px;
+  background-size: 100% 100%;
+}
+.main .banner3 .content .myWinter #winterAll ul li:nth-child(4) p {
+  background: url("../images/system/L4.jpg") no-repeat center 0px;
+  background-size: 100% 100%;
+}
+.main .banner3 .content .myWinter #winterAll ul li:nth-child(5) p {
+  background: url("../images/system/L5.jpg") no-repeat center 0px;
+  background-size: 100% 100%;
+}
+.main .banner3 .content .myWinter #winterAll ul li p span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 0 30px;
+  line-height: 26px;
+  color: #FFF;
+}
+.main .banner3 .content .myWinter #winterAll ul li:first-child i {
+  border: 0;
+}
+.main .banner3 .content .myWinter #winterAll ul li:nth-child(1) {
+  color: #737373;
+  left: 0;
+}
+.main .banner3 .content .myWinter #winterAll ul li:nth-child(1) p {
+  height: 228px;
+}
+.main .banner3 .content .myWinter #winterAll ul li:nth-child(2) {
+  color: #737373;
+  left: 228px;
+}
+.main .banner3 .content .myWinter #winterAll ul li:nth-child(2) p {
+  height: 262px;
+}
+.main .banner3 .content .myWinter #winterAll ul li:nth-child(3) {
+  color: #737373;
+  left: 456px;
+}
+.main .banner3 .content .myWinter #winterAll ul li:nth-child(3) p {
+  height: 306px;
+}
+.main .banner3 .content .myWinter #winterAll ul li:nth-child(4) {
+  color: #737373;
+  left: 684px;
+}
+.main .banner3 .content .myWinter #winterAll ul li:nth-child(4) p {
+  height: 329px;
+}
+.main .banner3 .content .myWinter #winterAll ul li:nth-child(5) {
+  color: #737373;
+  left: 912px;
+}
+.main .banner3 .content .myWinter #winterAll ul li:nth-child(5) p {
+  height: 380px;
+}
+.main .banner4 .center {
+  height: 1344px;
+  background: url("../images/system/b4.jpg") no-repeat center;
+}
+.main .banner4 .center .content ul {
+  width: 1000px;
+  text-align: center;
+  padding-top: 80px;
+}
+.main .banner4 .center .content ul li {
+  width: 350px;
+  height: 205px;
+  margin: 0 65px;
+  display: inline-block;
+  vertical-align: top;
+}
+.main .banner4 .center .content ul li h3 {
+  font-size: 30px;
+  text-align: left;
+}
+.main .banner4 .center .content ul li p {
+  font-size: 20px;
+  line-height: 35px;
+  text-align: left;
+}
+.main .banner4 .center .content ul li:nth-child(2n+1) h3 {
+  text-align: right;
+}
+.main .banner5 {
+  height: 600px;
+}
+.main .banner5 .content {
+  height: 600px;
+}
+.main .banner5 .content .bottom {
+  position: relative;
+}
+.main .banner5 .content .bottom ul {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.main .banner5 .content .bottom ul li {
+  position: absolute;
+}
+.main .banner5 .content .bottom ul li h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.main .banner5 .content .bottom ul li p {
+  font-size: 20px;
+}
+.main .banner5 .content .bottom ul li img {
+  position: absolute;
+}
+.main .banner5 .content .bottom ul .li1 {
+  left: 10px;
+  top: 70px;
+}
+.main .banner5 .content .bottom ul .li1 img {
+  right: -138px;
+  top: 30px;
+}
+.main .banner5 .content .bottom ul .li2 {
+  left: 70px;
+  top: 365px;
+}
+.main .banner5 .content .bottom ul .li2 img {
+  right: -115px;
+  top: 20px;
+}
+.main .banner5 .content .bottom ul .li3 {
+  width: 347px;
+  height: 241px;
+  padding: 30px 20px;
+  left: 770px;
+  top: 80px;
+  background: url("../images/system/b5-li3.png") no-repeat center;
+}
+.main .banner5 .content .bottom ul .li3 h3 {
+  display: inline-block;
+  padding-left: 8px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+.main .banner5 .content .bottom ul .li3 span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #999999;
+}
+.main .banner5 .content .bottom ul .li3 .img1 {
+  position: static;
+}
+.main .banner5 .content .bottom ul .li3 .img {
+  left: -100px;
+  top: 50%;
+}
+.main .banner5 .content .bottom .center {
+  width: 401px;
+  height: 401px;
+  background: url("../images/system/circle.png") no-repeat center;
+  position: absolute;
+  left: 300px;
+  top: 50px;
+  text-align: center;
+}
+.main .banner5 .content .bottom .center p {
+  font-size: 45px;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  line-height: 50px;
+}
+.main .banner5 .content .bottom .center img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+@keyframes rotate1 {
+  from {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate2 {
+  from {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate3 {
+  from {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+.animate.center .circle1 {
+  -moz-animation: rotate1 7s linear infinite forwards ;
+  -webkit-animation: rotate1 7s linear infinite forwards ;
+  animation: rotate1 7s linear infinite forwards ;
+}
+.animate.center .circle2 {
+  -moz-animation: rotate2 9s linear infinite forwards ;
+  -webkit-animation: rotate2 9s linear infinite forwards ;
+  animation: rotate2 9s linear infinite forwards ;
+}
+.animate.center .circle3 {
+  -moz-animation: rotate3 10s linear infinite forwards ;
+  -webkit-animation: rotate3 10s linear infinite forwards ;
+  animation: rotate3 10s linear infinite forwards ;
+}
+
+/*  luo  07-17 */
+.banner2 .highL{
+  background: url("../images/system/banner2_bg1.jpg") no-repeat center center;
+  background-size: cover;
+}
+.banner2 .earlyL{
+  background: url("../images/system/banner2_bg2.jpg") no-repeat center center;
+  background-size: cover;
+}
+.banner2 .primaryL{
+  background: url("../images/system/banner2_bg3.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.banner2 .content{
+  padding-bottom: 50px;
+}
+.highL .banner2_left{
+  background: url("../images/system/banner2_left.jpg") no-repeat center center;
+  background-size: cover;
+  height:450px;
+  width: 270px;
+  float: left;
+}
+.earlyL .banner2_left{
+  background: url("../images/system/banner2_left2.jpg") no-repeat center center;
+  background-size: cover;
+  height:450px;
+  width: 270px;
+  float: left;
+}
+.banner2_left_title{
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height:70px;
+}
+.banner2_left ul{
+  padding: 60px 0px 40px;
+  width: 190px;
+  margin: 0 auto;
+}
+.banner2_left ul li{
+  width: 33.333%;
+  text-align: center;
+  line-height: 60px;
+  float:left;
+  font-size:18px;
+}
+.banner2_left .btn1{
+  width: 200px;
+  height: 50px;
+  color: #f40009;
+  font-size: 18px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
+  display: block;
+  margin: 0 auto;
+}
+.banner2_main{
+  width: 910px;
+  float: left;
+  padding: 0 50px;
+}
+.banner2_main_title{
+  font-size: 40px;
+  text-align: center;
+  color: #313133;
+  padding-top: 35px;
+  letter-spacing: 2px;
+}
+.banner2_main_title span{
+  color:#f40009;
+  font-weight: 600;
+}
+.banner2_main>ul>li{
+  float: left;
+  width: 33.333%;
+  text-align: center;
+  padding-top: 50px;
+
+}
+.banner2_main>ul>li img{
+  height: 68px;
+}
+.banner2_main_name{
+  font-size: 28px;
+  color: #313133;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.banner2_main ul li li{
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #313133;
+}
+.banner2_three{
+  float:left;
+  width: 300px;
+  margin:35px 46.666px 0;
+}
+.banner2_three_title{
+  background-color: #f40009;
+  background-repeat: no-repeat;
+  background-position: 70px center;
+  line-height: 70px;
+  font-size: 30px;
+  padding-left: 115px;
+  color:#fff;
+}
+.banner2_three_main{
+  background: #f7f2fa;
+}
+.banner2_three_subject span{
+  float:left;
+  width: 64px;
+  line-height: 40px;
+  background: #fff;
+  color:#333333;
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 0 0 27px;
+}
+.banner2_three_main ul{
+  padding: 35px 0;
+}
+.banner2_three_main li{
+  line-height: 42px;
+  font-size: 20px;
+  color:#333;
+  text-align: center;
+}

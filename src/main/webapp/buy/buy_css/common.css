@@ -1,0 +1,22 @@
+.Myhiketang a {
+  color: #f40009;
+}
+.login {
+  height: 90px;
+}
+.login a {
+  display: inline-block;
+  float: left;
+  line-height: 90px;
+}
+.login a img {
+  vertical-align: middle;
+}
+.main {
+  margin: 25px 0 40px 0;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

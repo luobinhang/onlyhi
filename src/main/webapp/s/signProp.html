@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>上海交大 课程免费预约中</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="../images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link href="//cdn.bootcss.com/Swiper/3.4.1/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/w_global.css">
+    <link rel="stylesheet" href="css/w_index.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/lib/js-sha512/build/sha512.min.js"></script>
+    <script src="./js/gotoTop.js"></script>
+</head>
+<body id="bodyTop">
+<nav>
+    <a class="nav-left" href="#bodyTop"><img class="translateXY" src="./images/weixin/nav-left.png" alt="嗨课堂" title=嗨课堂></a>
+    <a class="nav-right" href="tel:400-876-3300">
+        <img class="translateXY" src="./images/weixin/top-icon.png" alt="嗨课堂" title=嗨课堂>
+    </a>
+</nav>
+<div class="select1" style="height: auto">
+    <img src="images/prop/bannerProp.jpg" style="width: 100%;display: block">
+</div>
+<div class="select select2" id="myForm">
+    <img src="images/prop/sign-info.png" alt="嗨课堂" title=嗨课堂>
+    <form class="myForm">
+        <input type="text" name="adid" class="adid" value="" style="display:none">
+        <input type="text" name="jh" class="jh" value="" style="display:none">
+        <input type="text" name="dy" class="dy" value="" style="display:none">
+        <input type="text" name="keyNum" class="keyNum" value="" style="display:none">
+        <p>
+            <input type="text" id="name" name='name' class="name" placeholder="请输入学生姓名">
+        </p>
+        <p>
+            <input name='phone' id="phone" placeholder="请输入手机号" class="mobile">
+        </p>
+        <p id="code">
+            <input type="text" placeholder="请输入验证码" name="code" class="code"><input class="send" value="获取验证码" type=button id="btn">
+        </p>
+        <p class="clearfix"><select name="grade" style="float: left;" class="grade">
+            <option value="请选择" selected style="display: none;">--请选择年级--</option>
+            <option value="小三">新小四</option>
+            <option value="小四">新小五</option>
+            <option value="小五">新小六</option>
+            <option value="小六">新预初</option>
+            <option value="预初">新初一</option>
+            <option value="初一">新初二</option>
+            <option value="初二">新初三</option>
+            <option value="初三">新初四</option>
+            <option value="初四">新高一</option>
+            <option value="高一">新高二</option>
+            <option value="高二">新高三</option>
+        </select>
+            <select name="subject" style="float: right;" class="kemu">
+                <option value="请选择" selected style="display: none;">--请选择科目--</option>
+                <option value="数学">数学</option>
+                <option value="语文">语文</option>
+                <option value="英语">英语</option>
+                <option value="地理">地理</option>
+                <option value="政治">政治</option>
+                <option value="科学">科学</option>
+                <option value="历史">历史</option>
+                <option value="生物">生物</option>
+                <option value="物理">物理</option>
+                <option value="化学">化学</option>
+            </select>
+        </p>
+        <p class="F-button">
+            <button class='submit' type='button'></button>
+        </p>
+    </form>
+    <div class="order">
+        <p>本周已有<span class="order-span" style="color: rgb(255,64,25);"></span>人报名</p>
+    </div>
+</div>
+<div class="warpper">
+    <div class="bar1">
+        <img id="aobama" src="images/prop/bar1.jpg" width="100%">
+    </div>
+    <div class="bar2">
+        <h2><span>私人定制</span>学习方案</h2>
+        <p>嗨课堂四大优势 提分一步到位</p>
+        <img src="images/prop/bar2.jpg">
+        <a href="#myForm"></a>
+        <img id="newImg" src="images/prop/bar2-2.jpg">
+    </div>
+    <div class="bar3">
+        <h2>嗨课堂让你与<span>名校零距离</span></h2>
+        <div id="video-warpper" class='video-info'></div>
+    </div>
+    <div class="bar4">
+        <h2>孩子们如何<span>在嗨课堂上课</span></h2>
+        <img src="images/prop/bar4.jpg">
+    </div>
+    <div class="bar5">
+        <h4>多家媒体专业报道</h4>
+        <h3>品牌荣誉</h3>
+        <img src="images/prop/bar5.jpg">
+    </div>
+</div>
+<footer>
+    <a href="#myForm">
+        <img src="images/weixin/Signed.png" alt="">
+        <span>立即预约</span>
+    </a>
+    <a href="tel:400-876-3300">
+        <img src="images/weixin/tel.png" alt="">
+        <span><i class="translateY"></i>400-876-3300</span>
+    </a>
+</footer>
+</body>
+<script src="https://qzonestyle.gtimg.cn/open/qcloud/video/h5/h5connect.js" charset="utf-8"></script>
+<script>
+  $(function(){
+      var ww = 711/750*$(window).width();
+      var wh = 424/750*$(window).width();
+      var option ={
+        "auto_play":"0",
+        "file_id":"9031868223462278207",
+        "app_id":"1253729545",
+        "width":ww,
+        "height":wh,
+        "https":1
+      };
+      new qcVideo.Player("video-warpper", option );
+
+  })
+
+</script>
+<script src="../js/api-config.js"></script>
+<script src="js/sign.js"></script>
+<!--百度统计代码-->
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?8785cb45f8a7565aad198bde904d51f9";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!--百度统计代码end-->
+<script type="text/javascript">
+    window._pt_lt = new Date().getTime();
+    window._pt_sp_2 = [];
+    _pt_sp_2.push('setAccount,571db548');
+    var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    (function() {
+        var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+        atag.src = _protocol + 'js.ptengine.cn/571db548.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(atag, s);
+    })();
+</script>
+</html>

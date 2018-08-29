@@ -1,0 +1,385 @@
+.head {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.head > img {
+  width: 1.77rem;
+  height: 0.51rem;
+  margin-top: 0.24rem;
+  margin-left: 0.26rem;
+}
+.head p {
+  height: 0.47rem;
+  font-size: 0.4rem;
+  color: #f40009;
+  margin-right: 0.25rem;
+  margin-top: 0.22rem;
+}
+.head p img {
+  width: 0.33rem;
+  height: 0.47rem;
+  display: inline-block;
+  vertical-align: -0.1rem;
+  margin-right: 0.12rem;
+}
+.navBar {
+  padding: 0.3rem 0.1rem 0;
+}
+.navBar li {
+  width: 25%;
+  text-align: center;
+  font-size: .26rem;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 0.74rem 0.74rem;
+  float: left;
+}
+.navBar li a {
+  padding-top: .8rem;
+  display: block;
+}
+.navBar li:nth-of-type(1) {
+  background-image: url("../images/index/i1.png");
+}
+.navBar li:nth-of-type(2) {
+  background-image: url("../images/index/i2.png");
+}
+.navBar li:nth-of-type(3) {
+  background-image: url("../images/index/i3.png");
+}
+.navBar li:nth-of-type(4) {
+  background-image: url("../images/index/i4.png");
+}
+h1,
+h2 {
+  font-weight: normal;
+}
+.join {
+  width: 3.5rem;
+  font-size: 0.3rem;
+  height: .74rem;
+  line-height: 0.74rem;
+  margin: 0 auto;
+  display: block;
+  border-radius: 0.37rem;
+  background: #f40009;
+  color: #fff;
+  text-align: center;
+}
+.bar1 {
+  position: relative;
+}
+.bar1 img {
+  width: 100%;
+  display: block;
+}
+.bar1 .swiper-pagination-bullet {
+  width: 0.16rem;
+  height: 0.16rem;
+  background-color: #c3c3c3;
+  opacity: 1;
+  margin: 0 0.15rem!important;
+}
+.bar1 .swiper-pagination-bullet-active {
+  background-color: #fff!important;
+}
+.bar2 {
+  background-color: #f5f6f7;
+  padding-bottom: 0.7rem;
+}
+.bar2 h1 {
+  color: #333;
+  font-size: .5rem;
+  text-align: center;
+  padding: .3rem 0 0.26rem 0;
+}
+.bar2 h1 span {
+  color: #f40009;
+}
+.bar2 input {
+  width: 6rem;
+  height: .9rem;
+  border: 1px solid #999999;
+  background-color: #f5f6f7;
+  margin: 0 auto 0.22rem;
+  display: block;
+  padding-left: 0.3rem;
+  font-size: .37rem;
+}
+.bar2 p {
+  width: 6rem;
+  height: .9rem;
+  margin: 0 auto 0.22rem;
+  /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+}
+.bar2 p select {
+  width: 2.8rem;
+  border: 1px solid #999;
+  height: 100%;
+  padding-left: .3rem;
+  font-size: .37rem;
+  background-color: #f5f6f7;
+}
+.bar2 p select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url(../images/newIndex/arrow.png) no-repeat scroll 2.44rem center transparent;
+  background-size: 0.14rem 0.1rem;
+}
+.bar2 p select::-ms-expand {
+  display: none;
+}
+.bar2 .clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.bar2 .clearfix {
+  zoom: 1;
+}
+.bar2 button {
+  margin-top: 0.7rem;
+}
+.bar3 {
+  background: url(../images/newIndex/b2.png) no-repeat center;
+  height: 8rem;
+  background-size: cover;
+}
+.bar3 h2 {
+  font-size: 0.6rem;
+  text-align: center;
+  color: #fff;
+  padding: 1rem 0;
+}
+.bar3 p {
+  width: 4.86rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.bar3 p img {
+  width: 2.35rem;
+  height: 1.52rem;
+  margin-bottom: 0.15rem;
+}
+.bar3 .join {
+  margin-top: 0.53rem;
+}
+.bar4 h2 {
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  color: #333333;
+  margin: 0.5rem 0 0.26rem;
+}
+.bar4 .bar4Body {
+  padding-top: 6.28rem;
+  background: url(../images/newIndex/b4.png) no-repeat center top;
+  height: 7.62rem;
+  background-size: 5.5rem 5.11rem;
+  position: relative;
+}
+.bar4 .bar4Body p {
+  font-size: 0.26rem;
+  color: #333333;
+  position: absolute;
+}
+.bar4 .bar4Body p:first-child {
+  top: 1.18rem;
+  left: 3.05rem;
+}
+.bar4 .bar4Body p:nth-child(2) {
+  top: 2.77rem;
+  left: 0.8rem;
+}
+.bar4 .bar4Body p:nth-child(3) {
+  top: 2.77rem;
+  right: 0.83rem;
+}
+.bar4 .bar4Body p:nth-child(4) {
+  top: 5.17rem;
+  left: 1.54rem;
+}
+.bar4 .bar4Body p:nth-child(5) {
+  top: 5.17rem;
+  right: 1.54rem;
+}
+.bar5 {
+  background-color: #f40009;
+}
+.bar5 h2 {
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+  color: #fff;
+  padding: 0.6rem 0 0.7rem;
+}
+.bar5 .bar5Body {
+  padding-top: 5.73rem;
+  background: url(../images/newIndex/b5.png) no-repeat center top;
+  height: 7.12rem;
+  background-size: 5.5rem 5.11rem;
+  position: relative;
+}
+.bar5 .bar5Body p {
+  font-size: 0.24rem;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+}
+.bar5 .bar5Body p:first-child {
+  top: 0.16rem;
+  left: 0.5rem;
+}
+.bar5 .bar5Body p:nth-child(2) {
+  top: 0rem;
+  right: 0.5rem;
+}
+.bar5 .bar5Body p:nth-child(3) {
+  top: 1.54rem;
+  left: 0.38rem;
+}
+.bar5 .bar5Body p:nth-child(4) {
+  top: 3.22rem;
+  right: 0.36rem;
+}
+.bar5 .bar5Body p:nth-child(5) {
+  top: 4.48rem;
+  left: 0.7rem;
+}
+.bar5 .bar5Body p:nth-child(6) {
+  top: 4.48rem;
+  right: 0.79rem;
+}
+.bar5 .bar5Body .join {
+  color: #f40009;
+  background-color: #fff;
+}
+.bar6 h2 {
+  font-size: 0.5rem;
+  text-align: center;
+  color: #333;
+  padding: 0.5rem 0 0.4rem;
+}
+.bar6 .bar6Body img {
+  display: block;
+  width: 93%;
+  margin: 0 auto;
+}
+.bar6 .bar6Body .join {
+  margin-top: 0.46rem;
+}
+.bar7 {
+  background: url(../images/newIndex/b7.png) no-repeat center;
+  height: 7.86rem;
+  background-size: cover;
+  margin-top: 0.47rem;
+}
+.bar7 h2 {
+  font-size: 0.5rem;
+  text-align: center;
+  color: #fff;
+  padding: 0.54rem 0 0.22rem;
+}
+.bar7 .bar7Body .swiper-container {
+  height: 5.54rem;
+}
+.bar7 .bar7Body .talk {
+  width: 5.51rem;
+  margin: 0 auto;
+  height: 3.23rem;
+  background: url(../images/newIndex/boo.png) no-repeat center;
+  background-size: cover;
+  font-size: 0.26rem;
+  color: #666;
+  padding: 0.57rem 0 0 0.6rem;
+  margin-bottom: 0.22rem;
+}
+.bar7 .bar7Body .good {
+  width: 5.51rem;
+  margin: 0 auto;
+}
+.bar7 .bar7Body .good img {
+  display: inline-block;
+  vertical-align: -0.45rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.28rem;
+}
+.bar7 .bar7Body .good > p {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.3rem;
+}
+.bar7 .bar7Body .good > p span:first-child {
+  font-size: 0.24rem;
+  margin: 0 0.07rem;
+}
+.bar7 .bar7Body .good > p span:nth-child(2) {
+  font-size: 0.2rem;
+}
+.bar7 .bar7Body .good > p span:nth-child(3) {
+  font-size: 0.26rem;
+}
+.bar7 .join {
+  margin-top: 0.53rem;
+}
+.bar8 {
+  padding-top: 0.76rem;
+}
+.bar8 > div {
+  width: 7.3rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.bar8 > div img {
+  width: 2.02rem;
+  height: 2.01rem;
+}
+.bar8 > div div.introduce {
+  width: 5rem;
+}
+.bar8 > div div.introduce p:first-child {
+  font-size: 0.36rem;
+  line-height: 0.4rem;
+}
+.bar8 > div div.introduce p:first-child span {
+  font-size: 0.3rem;
+}
+.bar8 > div div.introduce p:nth-child(2) {
+  font-size: 0.2rem;
+}
+.bar9 {
+  padding-bottom: 0.46rem;
+}
+.bar9 div {
+  display: flex;
+  padding: 0 0.2rem;
+  margin-bottom: 0.42rem;
+}
+.bar9 div img {
+  width: 2.16rem;
+  height: 1.51rem;
+}
+.foot {
+  width: 100%;
+  height: 0.75rem;
+  line-height: 0.75rem;
+  background-color: #202020;
+  text-align: center;
+  color: #989898;
+  font-size: 0.18rem;
+}

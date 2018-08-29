@@ -1,0 +1,96 @@
+.select1 {
+  padding: 0 0.70666667rem;
+  color: #333333;
+}
+.select1 h1 {
+  line-height: 1.2rem;
+}
+.select1 p {
+  line-height: 0.4rem;
+  font-size: 0.34666667rem;
+  margin-bottom: 0.34666667rem;
+  text-align: left;
+}
+.select2 {
+  background: url("../images/about-us/bg.jpg") no-repeat center;
+  background-size: cover;
+  padding-bottom: 0.62666667rem;
+}
+.select2 h1 {
+  font-size: 0.37333333rem;
+  line-height: 1.2rem;
+}
+.select2 .center {
+  margin: 0.26666667rem 0;
+  padding: 0 0.73333333rem;
+}
+.select2 .center .center_0 {
+  width: 4.21333333rem;
+  height: 4.21333333rem;
+  box-sizing: border-box;
+  float: left;
+}
+.select2 .center .left {
+  padding: 0 0.26666667rem;
+  padding-top: 0.66666667rem;
+  position: relative;
+  background-color: #FFF;
+}
+.select2 .center .left img {
+  position: absolute;
+  width: 0.37333333rem;
+  height: 0.33333333rem;
+}
+.select2 .center .left p {
+  font-size: 0.26666667rem;
+  text-align: left;
+}
+.select2 .center .left .top {
+  top: 0.26666667rem;
+  left: 0.13333333rem;
+}
+.select2 .center .left .bottom {
+  bottom: 0.26666667rem;
+  right: 0.13333333rem;
+}
+.select3 {
+  color: #777777;
+  height: 8.93333333rem;
+  background-color: #FFF;
+}
+.select3 h1 {
+  padding: 0.48rem 0;
+}
+.select3 .myForm {
+  width: 7.333rem;
+  margin: auto;
+}
+.select3 .myForm p {
+  border-radius: 5px;
+  padding: 0.13333333rem 0;
+}
+.select3 .myForm p select,
+.select3 .myForm p input {
+  height: 0.8rem;
+  font-size: 0.32rem;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  padding-left: 0.26666667rem;
+}
+.select3 .myForm p input {
+  width: 100%;
+}
+.select3 .myForm p select {
+  width: 3.533rem;
+  display: inline-block;
+}
+.select3 .myForm button {
+  margin: 0.2rem 0;
+  height: 0.8rem;
+  font-size: 0.373rem;
+  line-height: 0.76rem;
+  width: 100%;
+}
+.select3 .copy {
+  line-height: 0.45333333rem;
+}

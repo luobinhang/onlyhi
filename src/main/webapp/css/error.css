@@ -1,0 +1,27 @@
+.bg404 {
+  background: url('../images/404.png') no-repeat center bottom;
+  height: 450px;
+  position: relative;
+}
+.bg404 img {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.lose {
+  text-align: center;
+  display: inline-block;
+  margin-top: 60px;
+  line-height: 60px;
+  padding: 0 55px;
+  border-top: 2px solid #0f1d33;
+  border-bottom: 2px solid #0f1d33;
+  font-size: 40px;
+  color: #0f1d33;
+  margin-bottom: 30px;
+}

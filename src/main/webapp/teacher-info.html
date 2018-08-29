@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="嗨课堂,昂立嗨课堂,交大昂立嗨课堂">
+    <meta name="description"
+          content="上海交大昂立嗨课堂，传承百年交大精神，深耕教育辅导行业30余年。昂立嗨课堂从清、北、复、交等著名学府层层筛选团队，专注中小学一对一在线教育，致力于打造行业权威在线教育平台！">
+    <link rel="icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+    <title>嗨课堂·讲师完善资料</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="t/css/teacher_global.css">
+    <link rel="stylesheet" href="t/css/teacher-info.css">
+    <link rel="stylesheet" href="js/lib/jquery-editable-select-master/dist/jquery-editable-select.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/lib/jquery-editable-select-master/dist/jquery-editable-select.js"></script>
+    <script src='./js/lib/imgUp/imgPlugin.js'></script>
+    <script src='js/api-config.js'></script>
+    <script src="t/js/teacher-info.js"></script>
+</head>
+<body>
+<div id="load">
+    <!--<img src="img/teacher-info/load.gif" alt="">-->
+    <div class="loading_css">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div class="all" style="max-width: 750px;width: 100%;position: relative;margin: 0 auto;background: #FFF ">
+    <div class="title">
+        <h1>嗨课堂·讲师完善资料</h1>
+        <img class="translateY" src="images/logo1.png" height=60% width=auto alt="">
+    </div>
+    <div class="center">
+        <form id="teache-info">
+            <h1>基本信息</h1>
+            <div class="select">
+                <input type="text" name="uuid" id="uuid" value=""style="display: none;">
+                <input type="text" name="id" id="id" value="1" style="display: none;">
+                <p><label>姓名</label><input name="tcName" class="tcName readonly" type="text" readonly value=""></p>
+                <p><label>手机号</label><input name="phone" class="phone readonly" type="tel" readonly value=""></p>
+                <p><label>性别</label><select name="sex" class="sex">
+                    <option value="0">男</option>
+                    <option value="1">女</option>
+                </select>
+                </p>
+                <p><label>QQ</label><input type="number" name="qq" class="qq"></p>
+                <p><label>微信</label><input type="text" name="wechat" class="wechat"></p>
+                <p><label>邮箱</label><input type="email" name="email" class="email"></p>
+            </div>
+            <h1>高考所在地</h1>
+            <div class="select">
+                <p class="college-city">
+                    <span style="display: inline-block;color: #f40009;">省：<select data-code=0 style="width:60%;" name="province"
+                                                                  class="province"
+                                                                  id="province"></select></span>
+                    <span style="display: inline-block;color: #f40009;">市：<select data-code=1 style="width:60%;" name="city"
+                                                                  class="city"
+                                                                  id="city"></select></span>
+                    <span style="display: inline-block;color: #f40009;">区：<select data-code=2 style="width:60%;" name="district"
+                                                                  class="district"
+                                                                  id="area"></select></span>
+                </p>
+                <p>
+                    <label>高考文理科</label><select name="artsOrScience" class="artsOrScience">
+                    <option value="1">文科</option>
+                    <option value="2">理科</option>
+                </select>
+                </p>
+            </div>
+            <h1>学历信息</h1>
+            <div class="select">
+                <p><label>在读院校</label><select name="schoolLocation" id="editable-select" placeholder="请输入院校"></select></select></p>
+                <p>
+                    <label>学历</label><select name="education" class="education">
+                    <option value="1">本科</option>
+                    <option value="2">硕士</option>
+                    <option value="3">博士</option>
+                </select>
+                </p>
+                <p><label>年级</label>
+                    <select name="grade" class="grade">
+                    </select>
+                </p>
+                <p><label>专业</label><input type="text" name="major" class="major"></p>
+                <p><label>最高学历</label><select name="highestEducation" class="highestEducation">
+                    <option value="1">本科</option>
+                    <option value="2">硕士</option>
+                    <option value="3">博士</option>
+                </select>
+                </p>
+            </div>
+            <h1>授课偏好</h1>
+            <div class="select">
+                <p class="subject"><label>第一科目</label><select name="teachingSubject" class="teachingSubject">
+                    <option value="" style="display: none">请选择</option>
+                </select>
+                </p>
+                <p class="subject"><label style="color: #000;">第二科目</label><select name="secondSubject" class="secondSubject">
+                    <option value="" style="display: none">请选择</option>
+                </select>
+                </p>
+                <p class="subject"><label style="color: #000;">第三科目</label><select name="thirdSubject" class="thirdSubject">
+                    <option value="" style="display: none">请选择</option>
+                </select>
+                </p>
+                <p>
+                    <label>年级偏好</label>
+                    <select name="gradePreference" class="gradePreference">
+                    </select>
+                </p>
+            </div>
+            <h1>支付信息</h1>
+            <div class="select">
+                <p><label>身份证号码</label><input name="idNumber" class="idNumber"></p>
+                <p><label>身份证正面</label></p>
+                <div class="z_photo upimg-div clear">
+                    <section class="z_file fl">
+                        <img src="images/a11.png" class="add-img">
+                        <input type="file" name="file" id="file1" class="file" value="8"
+                               accept="image/jpg,image/jpeg,image/png,image/bmp"/>
+                    </section>
+                </div>
+                <p><label>身份证反面</label></p>
+                <div class="z_photo upimg-div clear">
+                    <section class="z_file fl">
+                        <img src="images/a11.png" class="add-img">
+                        <input type="file" name="file" id="file2" class="file" value="8"
+                               accept="image/jpg,image/jpeg,image/png,image/bmp"/>
+                    </section>
+                </div>
+                <p><label>银行</label><input type="text" readonly name="bank" class="bank readonly" value="工商银行"></p>
+                <p><label>卡号</label><input type="number" name="cardNumber" class="cardNumber"></p>
+                <p><label>开户行</label><input type="text" name="bankAddress" class="bankAddress"></p>
+                <p><label>银行卡正面</label></p>
+                <div class="z_photo upimg-div clear">
+                    <section class="z_file fl">
+                        <img src="images/a11.png" class="add-img">
+                        <input type="file" name="file" id="file3" class="file" value="8"
+                               accept="image/jpg,image/jpeg,image/png,image/bmp"/>
+                    </section>
+                </div>
+                <p><label>银行卡反面</label></p>
+                <div class="z_photo upimg-div clear">
+                    <section class="z_file fl">
+                        <img src="images/a11.png" class="add-img">
+                        <input type="file" name="file" id="file4" class="file" value="8"
+                               accept="image/jpg,image/jpeg,image/png,image/bmp"/>
+                    </section>
+                </div>
+            </div>
+            <h1>入职材料</h1>
+            <div class="select">
+                <p><label>兼职协议第一页</label></p>
+                <div class="z_photo upimg-div clear">
+                    <section class="z_file fl">
+                        <img src="images/a11.png" class="add-img">
+                        <input type="file" name="file" id="file5" class="file" value="8"
+                               accept="image/jpg,image/jpeg,image/png,image/bmp"/>
+                    </section>
+                </div>
+                <p><label>兼职协议第二页</label></p>
+                <div class="z_photo upimg-div clear">
+                    <section class="z_file fl">
+                        <img src="images/a11.png" class="add-img">
+                        <input type="file" name="file" id="file6" class="file" value="8"
+                               accept="image/jpg,image/jpeg,image/png,image/bmp"/>
+                    </section>
+                </div>
+                <p><label>信息登记表</label></p>
+                <div class="z_photo upimg-div clear">
+                    <section class="z_file fl">
+                        <img src="images/a11.png" class="add-img">
+                        <input type="file" name="file" id="file7" class="file" value="8"
+                               accept="image/jpg,image/jpeg,image/png,image/bmp"/>
+                    </section>
+                </div>
+                <p><label>学生证</label></p>
+                <div class="z_photo upimg-div clear">
+                    <section class="z_file fl">
+                        <img src="images/a11.png" class="add-img">
+                        <input type="file" name="file" id="file8" class="file" value="8"
+                               accept="image/jpg,image/jpeg,image/png,image/bmp"/>
+                    </section>
+                </div>
+            </div>
+        </form>
+        <div class="sub" style="margin-top: 20px">
+            <p><input id="btn" type="button" value="提交"><input id="clone" type="button" value="关闭"></p>
+            <div style="padding: 30px 0">
+                <p style="font-size: 14px"><img src="images/lock.png" width=20 height=20 alt="" style="vertical-align: middle"><span
+                        style="vertical-align: middle;margin-left: 10px;line-height: 20px;color: #f40009;">嗨课堂承诺保护你的隐私资料</span></p>
+            </div>
+        </div>
+        <aside class="mask works-mask">
+            <div class="mask-content translateXY">
+                <p class="del-p">您确定要删除图片吗？</p>
+                <p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
+            </div>
+            <img id="show" class="translateXY"
+                 style="max-width: 700px;position: absolute;width:80%;left: 50%;top: 50%;height:auto;display: none;" src="" alt="">
+        </aside>
+    </div>
+    <div class="success" style="margin-top: 150px;display: none;">
+        <h1 style="line-height: 150px">恭喜加入嗨课堂！</h1>
+        <p>请关注公众号“昂立在线好老师”。</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,360 @@
+.content {
+  width: 1200px;
+}
+
+.main {
+  background-color: #F4F4F4;
+  .title {
+    color: #FFF;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    height: 83px;
+    line-height: 83px;
+    background: url("../images/HundreDay/bg_red-title.png") no-repeat center;
+  }
+  .btn1 {
+    background: url("../images/HundreDay/btn.png") no-repeat center;
+    display: inline-block;
+    width: 225px;
+    height: 53px;
+    text-align: center;
+    line-height: 53px;
+    color: #FFF;
+    font-size: 28px;
+  }
+}
+
+.banner1 {
+  height: 674px;
+  background: url("../images/HundreDay/bg1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.banner2 {
+  .content {
+
+  }
+  .center {
+    background: url("../images/HundreDay/bg2.png") no-repeat center;
+    ul {
+      width: 720px;
+      margin-top: 50px;
+      li {
+        margin: 4px;
+        width: 336px;
+        height: 335px;
+        float: left;
+        position: relative;
+        -webkit-transition: all 1s 0.2s;
+        -moz-transition: all 1s 0.2s;
+        -ms-transition: all 1s 0.2s;
+        -o-transition: all 1s 0.2s;
+        transition: all 1s 0.2s;
+        div{
+          position: absolute;
+          width: 100%;
+          height: 20%;
+          background-color: rgba(0,0,0,.7);
+          left:0;
+          bottom:0;
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -ms-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s;
+          p{
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            left:50%;
+            top:50%;
+            font-size: 24px;
+            line-height: 30px;
+            color: #FFF;
+          }
+        }
+        &:hover{
+          -webkit-transform: translateY(-3px);
+          -moz-transform: translateY(-3px);
+          -ms-transform: translateY(-3px);
+          -o-transform: translateY(-3px);
+          transform: translateY(-3px);
+          box-shadow: -3px 3px 20px #000;
+          div{
+            height:100%;
+          }
+        }
+      }
+    }
+    .btn1 {
+      margin-top: 38px;
+    }
+  }
+}
+
+.banner3 {
+  background: url("../images/HundreDay/bg5.png") no-repeat center top;
+  padding-top: 115px;
+  margin-top: 80px;
+  .content {
+    .title {
+      background: url("../images/HundreDay/bg3-title.png") no-repeat center;
+      color: #F55A49;
+    }
+    .left {
+      margin-top: 60px;
+      p {
+        font-size: 30px;
+        color: #FFF;
+        margin: 17px 0;
+      }
+      .btn1 {
+        background: none;
+        color: #F55A49;
+        background-color: #FFF;
+        border-radius: 5px;
+        margin-top: 80px;
+      }
+    }
+    .right {
+      margin-top: 120px;
+    }
+  }
+}
+
+.banner4 {
+  padding-top: 80px;
+  position: relative;
+  .content {
+    .title {
+      margin-bottom: 46px;
+    }
+    ul {
+      margin-bottom: 56px;
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 20px;
+        width: 80px;
+        margin: 0 30px;
+        img {
+          display: block;
+          margin-bottom: 16px;
+        }
+      }
+    }
+    .center {
+      text-align: center;
+      .btn1 {
+        margin: 30px 95px;
+      }
+    }
+  }
+  .img {
+    position: absolute;
+    top: 300px;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
+  }
+}
+
+.banner5 {
+  padding-top: 78px;
+  .btn1 {
+    margin: 40px 40px;
+  }
+  .title {
+    margin-bottom: 20px;
+  }
+  .myWinter {
+    ul {
+      display: block;
+      margin: 0 auto;
+      border: 0;
+      text-align: center;
+      li {
+        margin: 0 30px;
+        border-radius: 4px;
+        float: left;
+        width: 132px;
+        height: 48px;
+        line-height: 48px;
+        border: 1px solid #f40009;
+        font-size: 30px;
+        &.active {
+          a, a:hover {
+            border: 0;
+          }
+        }
+        a {
+          display: inline-block;
+          color: #000;
+          line-height: 48px;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &#winterTab {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        top: 0;
+      }
+    }
+    #winterContent {
+      ul {
+        margin-top: 30px;
+        margin-bottom: 50px;
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        li {
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  table {
+    font-size: 18px;
+    tr {
+      height: 62px;
+    }
+    td, th {
+      border: 1px solid #CCC;
+      padding: 10px;
+    }
+    thead {
+      background-color: #f40009;
+      color: #FFF;
+      height: 72px;
+      .th1 {
+        width: 25%;
+      }
+      .th2 {
+        width: 35%;
+      }
+      .th3 {
+        width: 10%;
+      }
+    }
+    tbody {
+      tr:nth-child(2n) {
+        background-color: #FEEFEC;
+      }
+    }
+  }
+
+}
+
+.banner6 {
+  background: url("../images/HundreDay/bg5.png") no-repeat center;
+  padding-bottom: 100px;
+  padding-top: 160px;
+  .title {
+    margin-bottom: 10px;
+    background: url("../images/HundreDay/bg3-title.png") no-repeat center;
+    color: #f40009;
+  }
+  .left, .right {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .left {
+    color: #FFF;
+    width: 450px;
+    p {
+      font-size: 26px;
+      line-height: 36px;
+      margin: 40px 0;
+    }
+  }
+}
+
+.banner7 {
+  .content {
+    .title {
+      margin-bottom: 126px;
+    }
+    ul {
+      padding: 0 100px;
+      li {
+        background: url("../images/HundreDay/bg6-white.jpg") no-repeat center;
+        width: 261px;
+        height: 277px;
+        padding: 0 40px;
+        padding-top: 60px;
+        color: #F15746;
+        display: inline-block;
+        margin: 14px 17px;
+        vertical-align: middle;
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        -ms-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+        p {
+          font-size: 16px;
+        }
+        h2 {
+          font-size: 24px;
+          margin-bottom: 60px;
+        }
+        &:hover {
+          background: url("../images/HundreDay/bg6-red.jpg") no-repeat center;
+          color: #FFF;
+        }
+      }
+    }
+    .btn1 {
+      margin-top: 48px;
+    }
+  }
+}
+
+.banner8 {
+  padding-top: 60px;
+  padding-bottom: 230px;
+  .title {
+    margin-bottom: 50px;
+  }
+  ul {
+    li {
+      margin: 0 50px;
+      display: inline-block;
+      h2 {
+        font-size: 30px;
+        color: #EF574B;
+        line-height: 48px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 24px;
+        width: 220px;
+      }
+      img {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

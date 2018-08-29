@@ -1,0 +1,387 @@
+.main {
+  overflow: hidden;
+}
+.main .join {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  background-color: #f40009;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.main .barTitle {
+  padding-top: 60px;
+  text-align: center;
+  color: #0c1d2f;
+  font-size: 40px;
+  line-height: 35px;
+}
+.main .barTitle span {
+  font-size: 26px;
+  color: #989898;
+}
+.main .contain {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main .bar1 {
+  position: relative;
+}
+.main .bar1 img {
+  width: 100%;
+  display: block;
+}
+.main .bar1 .join {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main .bar2 {
+  background: url(../images/teaRecource/b2.jpg) no-repeat center;
+  height: 646px;
+}
+.main .bar2 .bar2Body {
+  display: flex;
+  padding: 0 40px;
+}
+.main .bar2 .bar2Body li {
+  width: 250px;
+  height: 336px;
+  margin: 40px 15px 0;
+  padding-top: 275px;
+  text-align: center;
+  font-size: 22px;
+  color: #0c1d2f;
+  line-height: 22px;
+}
+.main .bar2 .bar2Body li span {
+  font-size: 16px;
+}
+.main .bar2 .bar2Body li:first-child {
+  background: url(../images/teaRecource/a1.jpg) no-repeat center;
+}
+.main .bar2 .bar2Body li:nth-child(2) {
+  background: url(../images/teaRecource/a2.jpg) no-repeat center;
+}
+.main .bar2 .bar2Body li:nth-child(3) {
+  background: url(../images/teaRecource/a3.jpg) no-repeat center;
+}
+.main .bar2 .bar2Body li:nth-child(4) {
+  background: url(../images/teaRecource/a4.jpg) no-repeat center;
+}
+.main .bar2 .join {
+  margin-top: 48px;
+}
+.main .bar3 {
+  background-color: #fafafa;
+}
+.main .bar3 .bar3Body {
+  position: relative;
+  margin-top: 75px;
+  height: 500px;
+}
+.main .bar3 .bar3Body ul li {
+  height: 100px;
+  margin-left: 5px;
+  padding-left: 100px;
+  background-color: #efefef;
+  line-height: 100px;
+  cursor: pointer;
+}
+.main .bar3 .bar3Body ul li img {
+  display: inline-block;
+  margin-right: 24px;
+}
+.main .bar3 .bar3Body ul li .eHide {
+  display: none;
+}
+.main .bar3 .bar3Body ul li .eShow {
+  display: inline-block;
+}
+.main .bar3 .bar3Body ul li p {
+  display: inline-block;
+  font-size: 26px;
+  color: #0c1d2f;
+  vertical-align: middle;
+  line-height: 30px;
+}
+.main .bar3 .bar3Body ul li.active {
+  background-color: #f7f7f7;
+}
+.main .bar3 .bar3Body ul li.active .eHide {
+  display: inline-block;
+}
+.main .bar3 .bar3Body ul li.active .eShow {
+  display: none;
+}
+.main .bar3 .bar3Body ul li.active p {
+  color: #f40009;
+}
+.main .bar3 .bar3Body .courseInfo {
+  display: none;
+  background: url(../images/teaRecource/b3.png) no-repeat center;
+  width: 738px;
+  height: 492px;
+  position: absolute;
+  top: -30px;
+  right: -21px;
+  color: #fff;
+  padding-top: 108px;
+  padding-left: 118px;
+}
+.main .bar3 .bar3Body .courseInfo p:first-child {
+  font-size: 26px;
+  padding-left: 12px;
+  margin-bottom: 8px;
+}
+.main .bar3 .bar3Body .courseInfo p:nth-child(2) {
+  font-size: 20px;
+  text-indent: 35px;
+}
+.main .bar3 .bar3Body .courseInfo .join {
+  color: #db2219;
+  background-color: #fefefe;
+  margin-top: 66px;
+  margin-left: -7px;
+}
+.main .bar4 {
+  overflow: hidden;
+  height: 638px;
+}
+.main .bar4 .bar4Body {
+  position: relative;
+  margin-top: 80px;
+  height: 423px;
+}
+.main .bar4 .bar4Body > div {
+  padding-left: 110px;
+  padding-top: 40px;
+}
+.main .bar4 .bar4Body > div > p:first-child {
+  font-size: 26px;
+  color: #0c1d2f;
+  margin-bottom: 8px;
+}
+.main .bar4 .bar4Body > div > p:first-child span {
+  display: inline-block;
+  background-color: #f40009;
+  width: 5px;
+  height: 27px ;
+  margin-right: 3px;
+  vertical-align: -4px;
+}
+.main .bar4 .bar4Body > div > p:nth-child(2) {
+  font-size: 16px;
+  color: #989898;
+  line-height: 20px;
+}
+.main .bar4 .bar4Body > div > div {
+  margin-top: 45px;
+}
+.main .bar4 .bar4Body > div > div p {
+  width: 427px;
+  margin: 0;
+}
+.main .bar4 .bar4Body > div > div p span {
+  display: inline-block;
+  width: 138px;
+  color: #0c1d2f;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 10px;
+  height: 47px;
+}
+.main .bar4 .bar4Body > div > div p span:nth-child(2) {
+  width: 143px;
+  border-right: 1px solid #e4e4ea;
+  border-left: 1px solid #e4e4ea;
+}
+.main .bar4 .bar4Body > div > div p:first-child {
+  border-bottom: 1px solid #e4e4ea;
+}
+.main .bar4 .bar4Body > div > div p:first-child span {
+  font-size: 30px;
+}
+.main .bar4 .bar4Body > div > div p:first-child span i {
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: #aaa;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  margin-left: -5px;
+}
+.main .bar4 .bar4Body > div .join {
+  margin: 0;
+  margin-top: 54px;
+}
+.main .bar4 .bar4Body > img {
+  position: absolute;
+  top: -44px;
+  right: -76px;
+  z-index: -1;
+}
+.main .bar5 {
+  background: #9e0006 url(../images/teaRecource/b5-2.png) no-repeat center;
+  height: 650px;
+  padding-bottom: 35px;
+}
+.main .bar5 .bar5Head {
+  padding-left: 87px;
+}
+.main .bar5 .bar5Head p:first-child {
+  font-size: 40px;
+  line-height: 40px;
+  color: #fff;
+  padding: 95px 0 18px 0;
+}
+.main .bar5 .bar5Head p:nth-child(2) {
+  font-size: 26px;
+  line-height: 26px;
+  color: #fff;
+}
+.main .bar5 .bar5Body {
+  position: relative;
+  height: 471px;
+}
+.main .bar5 .bar5Body .point {
+  background: url(../images/teaRecource/point.png) no-repeat center;
+  width: 81px;
+  height: 81px;
+  position: absolute;
+  left: -20px;
+  top: 242px;
+}
+.main .bar5 .bar5Body .textInfo {
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+}
+.main .bar5 .bar5Body .textInfo p {
+  height: 84px;
+  width: 2px;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  vertical-align: 3px;
+}
+.main .bar5 .bar5Body .textInfo p i {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 0;
+  left: -3px;
+}
+.main .bar5 .bar5Body .textInfo:nth-child(2n) p {
+  vertical-align: -73px;
+}
+.main .bar5 .bar5Body .textInfo:nth-child(2n) p i {
+  top: 0;
+}
+.main .bar5 .bar5Body .t1 {
+  top: 262px;
+  left: 52px;
+}
+.main .bar5 .bar5Body .t1 p,
+.main .bar5 .bar5Body .t1 i {
+  background-color: #f47301;
+}
+.main .bar5 .bar5Body .t2 {
+  top: 118px;
+  left: 235px;
+}
+.main .bar5 .bar5Body .t2 p,
+.main .bar5 .bar5Body .t2 i {
+  background-color: #f46902;
+}
+.main .bar5 .bar5Body .t3 {
+  top: 220px;
+  left: 533px;
+}
+.main .bar5 .bar5Body .t3 p,
+.main .bar5 .bar5Body .t3 i {
+  background-color: #f43a15;
+}
+.main .bar5 .bar5Body .t4 {
+  top: 86px;
+  left: 742px;
+}
+.main .bar5 .bar5Body .t4 p,
+.main .bar5 .bar5Body .t4 i {
+  background-color: #f44705;
+}
+.main .bar5 .bar5Body .t5 {
+  top: 280px;
+  left: 1004px;
+}
+.main .bar5 .bar5Body .t5 p,
+.main .bar5 .bar5Body .t5 i {
+  background-color: #f42107;
+}
+.main .bar5 .bar5Body .t6 {
+  top: 65px;
+  right: 96px;
+}
+.main .bar5 .bar5Body .t6 p {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.main .bar5 .bar5Body .t6 p,
+.main .bar5 .bar5Body .t6 i {
+  background-color: #f41108;
+}
+.main .bar6 {
+  background: #f2f1ed url(../images/teaRecource/b6.jpg) no-repeat center;
+  height: 680px;
+}
+.main .bar6 .bar6Body {
+  position: relative;
+  height: 530px;
+  padding-top: 446px;
+  z-index: 1;
+}
+.main .bar6 .bar6Body img.b6 {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-54%);
+  z-index: 2;
+}
+.main .bar6 .bar6Body .b1 {
+  position: absolute;
+  top: 18px;
+  left: 120px;
+  z-index: 3;
+}
+.main .bar6 .bar6Body .b2 {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  z-index: 3;
+}
+.main .bar6 .bar6Body .b3 {
+  position: absolute;
+  top: 171px;
+  left: -40px;
+  z-index: 1;
+}
+.main .bar6 .bar6Body .b4 {
+  position: absolute;
+  top: 254px;
+  right: -20px;
+  z-index: 1;
+}
+.main .bar6 .bar6Body .b5 {
+  position: absolute;
+  top: 316px;
+  left: 56px;
+  z-index: 3;
+}

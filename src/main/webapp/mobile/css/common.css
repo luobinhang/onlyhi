@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+html {
+  width: 100%;
+  overflow-x: hidden;
+  background: #fbfbfb;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 14px;
+  color: #646464;
+  background: #fff;
+  max-width: 1027.5px;
+  margin: 0 auto;
+  line-height: 1.4;
+  width: 100%;
+  overflow-x: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+input,
+select,
+textarea,
+button {
+  border: 0;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  background: #fff;
+}
+li {
+  list-style: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+}
+.f4 {
+  color: #f40009;
+}
+header {
+  background: #f40009 url("../images/index/logo.png") no-repeat center center;
+  height: 0.88rem;
+  background-size: 2rem 0.55rem;
+}
+nav {
+  position: relative;
+}
+nav ul {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 0.8rem;
+  white-space: nowrap;
+}
+nav li {
+  display: inline-block;
+  font-size: .34rem;
+  padding: 0 0.2rem;
+  line-height: .8rem;
+}
+nav:after {
+  content: '';
+  background-image: linear-gradient(to left, #ffffff, rgba(255, 255, 255, 0.1));
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0.5rem;
+  height: 0.8rem;
+}
+footer p {
+  color: #d2d2d2;
+  text-align: center;
+  font-size: .2rem;
+  padding: .4rem 0;
+}
+footer li {
+  float: left;
+  width: 33.333%;
+  height: .9rem;
+  line-height: .9rem;
+  background: #333;
+  font-size: .28rem;
+}
+footer li a {
+  display: block;
+  height: 100%;
+  color: #fff;
+}
+footer li:nth-of-type(1) a {
+  background: url("../images/index/b1.png") no-repeat 0.39rem center;
+  background-size: .48rem .39rem;
+  padding-left: 1rem;
+}
+footer li:nth-of-type(2) a {
+  background: #f40009 url("../images/index/b2.png") no-repeat 0.33rem center;
+  background-size: .44rem .42rem;
+  padding-left: .87rem;
+}
+footer li:nth-of-type(3) a {
+  background: url("../images/index/b3.png") no-repeat 0.4rem center;
+  background-size: .44rem .37rem;
+  padding-left: .98rem;
+}

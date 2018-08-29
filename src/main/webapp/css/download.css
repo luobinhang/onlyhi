@@ -1,0 +1,318 @@
+body {
+  background-color: #fff;
+}
+body .main .contain {
+  width: 1200px;
+  margin: 0 auto;
+}
+body .main .nav {
+  height: 38px;
+  line-height: 38px;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+}
+body .main .nav .nav_content {
+  max-width: 1200px;
+  position: relative;
+}
+body .main .nav .nav_content .nav_left {
+  color: #f40009;
+  font-size: 16px;
+  background: url(../images/download2/phone.png) no-repeat left center;
+  padding-left: 16px;
+}
+body .main .nav .nav_content .nav_left img {
+  vertical-align: middle;
+}
+body .main .nav .nav_content .nav_left span {
+  margin-left: 10px;
+}
+body .main .nav .nav_content .nav_right {
+  color: #999;
+  font-size: 14px;
+  overflow: hidden;
+}
+body .main .nav .nav_content .nav_right a {
+  color: #999;
+  padding-right: 25px;
+  margin-right: 25px;
+  position: relative;
+}
+body .main .nav .nav_content .nav_right a:after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 14px;
+  background: #999;
+  right: 0;
+  top: 50%;
+  margin-top: -7px;
+}
+body .main .header {
+  display: flex;
+  height: 80px;
+}
+body .main .header .header_left {
+  height: 80px;
+  width: 130px;
+  text-indent: -9999em;
+  display: inline-block;
+  background: url(../images/download2/logo.svg) no-repeat center;
+  line-height: 80px;
+  margin-right: 120px;
+}
+body .main .header .header_right {
+  height: 100%;
+  line-height: 80px;
+  margin: 0;
+}
+body .main .header .header_right li {
+  margin-left: 30px;
+  float: left;
+}
+body .main .header .header_right li a {
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  color: #575757;
+}
+body .main .header .header_right li a:hover {
+  color: #fff !important;
+  background-color: #f40009 !important;
+}
+body .main .header .header_right li.active a {
+  color: #fff !important;
+  background-color: #f40009 !important;
+}
+body .main .download_content .downMain {
+  background-color: #fcfcfc;
+  padding-bottom: 106px;
+  display: none;
+}
+body .main .download_content .downMain .downHead img {
+  display: block;
+  width: 100%;
+}
+body .main .download_content .downMain .downBody .job {
+  margin: 0;
+  margin-top: 38px;
+  margin-bottom: 26px;
+  display: block;
+}
+body .main .download_content .downMain .downBody .studentLink {
+  display: flex;
+}
+body .main .download_content .downMain .downBody .studentLink li {
+  position: relative;
+  padding-top: 20px;
+  width: 372px;
+  height: 890px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  margin: 0;
+  box-shadow: 0px 18px 49px 0px #f2f2f2;
+}
+body .main .download_content .downMain .downBody .studentLink li:hover {
+  border: 2px solid #f94d63;
+}
+body .main .download_content .downMain .downBody .studentLink li img {
+  display: block;
+  margin: 0 auto;
+}
+body .main .download_content .downMain .downBody .studentLink li div.describe {
+  margin: 30px 0 20px 28px;
+}
+body .main .download_content .downMain .downBody .studentLink li div.describe p {
+  color: #999999;
+  font-size: 14px;
+  line-height: 28px;
+}
+body .main .download_content .downMain .downBody .studentLink li div.describe p span:first-child {
+  width: 70px;
+  display: inline-block;
+  vertical-align: top;
+}
+body .main .download_content .downMain .downBody .studentLink li div.describe p span:last-child {
+  display: inline-block;
+  width: 210px;
+  line-height: 24px;
+}
+body .main .download_content .downMain .downBody .studentLink li .buttons {
+  position: absolute;
+  bottom: 6px;
+  width: 216px;
+  height: 198px;
+  left: 50%;
+  margin-left: -99px;
+}
+body .main .download_content .downMain .downBody .studentLink li .buttons > .buttonLink {
+  position: relative;
+  width: 216px;
+  height: 48px;
+  margin-bottom: 18px;
+}
+body .main .download_content .downMain .downBody .studentLink li .buttons > .buttonLink:hover div.code {
+  display: block;
+}
+body .main .download_content .downMain .downBody .studentLink li .buttons > .buttonLink:hover a {
+  background-color: #f94d63;
+  color: #fff;
+  box-shadow: 0px 8px 16px 0px #ffbcc5;
+}
+body .main .download_content .downMain .downBody .studentLink li .buttons > .buttonLink a {
+  display: block;
+  cursor: pointer;
+  color: #f94d63;
+  font-size: 16px;
+  border: 1px solid #f94d63;
+  width: 216px;
+  height: 48px;
+  line-height: 48px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 24px;
+}
+body .main .download_content .downMain .downBody .studentLink li .buttons > .buttonLink div.code {
+  display: none;
+  position: absolute;
+  width: 292px;
+  height: 306px;
+  background: url(../images/download2/codeBg.png) no-repeat center;
+  left: -39px;
+  top: -284px;
+}
+body .main .download_content .downMain .downBody .studentLink li .buttons > .buttonLink div.code img {
+  margin-top: 18px;
+  width: 216px;
+  height: 216px;
+}
+body .main .download_content .downMain .downBody .teacherLink {
+  position: relative;
+  width: 672px;
+  height: 436px;
+  background-color: #fff;
+  border: 2px solid #4db6ff;
+  border-radius: 8px;
+  margin: 0;
+  box-shadow: 0px 18px 49px 0px #dbdbdb;
+}
+body .main .download_content .downMain .downBody .teacherLink .downLink {
+  display: flex;
+  margin-bottom: 30px;
+}
+body .main .download_content .downMain .downBody .teacherLink .downLink .computer {
+  margin: 20px 0 0 46px;
+  height: 157px;
+  width: 195px;
+}
+body .main .download_content .downMain .downBody .teacherLink .downLink div.describe {
+  margin: 30px 0 0 56px;
+}
+body .main .download_content .downMain .downBody .teacherLink .downLink div.describe p {
+  color: #999999;
+  font-size: 14px;
+  line-height: 28px;
+}
+body .main .download_content .downMain .downBody .teacherLink .downLink div.describe p span:first-child {
+  width: 70px;
+  display: inline-block;
+  vertical-align: top;
+}
+body .main .download_content .downMain .downBody .teacherLink .downLink div.describe p span:last-child {
+  display: inline-block;
+  width: 450px;
+  line-height: 24px;
+}
+body .main .download_content .downMain .downBody .teacherLink .buttons {
+  width: 492px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: absolute;
+  margin-left: -246px;
+  left: 50%;
+  bottom: 20px;
+}
+body .main .download_content .downMain .downBody .teacherLink .buttons a {
+  display: inline-block;
+  cursor: pointer;
+  color: #4db6ff;
+  font-size: 16px;
+  border: 1px solid #4db6ff;
+  width: 216px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 24px;
+  margin-right: 56px;
+  margin-bottom: 24px;
+}
+body .main .download_content .downMain .downBody .teacherLink .buttons a:nth-child(2n) {
+  margin-right: 0;
+}
+body .main .download_content .downMain .downBody .teacherLink .buttons a:hover {
+  background-color: #4db6ff;
+  color: #fff;
+  box-shadow: 0px 8px 16px 0px #bae3ff;
+}
+body .main .footer > p {
+  font-size: 18px;
+  color: #494243;
+  margin: 90px 0 40px;
+  font-weight: bold;
+}
+body .main .footer ul {
+  display: flex;
+}
+body .main .footer ul li {
+  width: 352px;
+  height: 210px;
+  border: 1px solid #f5f5f5;
+  border-radius: 7px;
+  margin: 0 0 360px;
+  padding-left: 44px;
+}
+body .main .footer ul li .otherLink {
+  display: flex;
+  padding: 30px 0 0 0px;
+}
+body .main .footer ul li .otherLink img {
+  margin: 0;
+  margin-right: 20px;
+}
+body .main .footer ul li .otherLink div {
+  margin: 0;
+}
+body .main .footer ul li .otherLink div p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  color: #494243;
+  margin-bottom: 8px;
+}
+body .main .footer ul li .otherLink div p:nth-child(2) {
+  font-size: 14px;
+  color: #797979;
+}
+body .main .footer ul li .otherDown {
+  display: flex;
+  margin-top: 44px;
+}
+body .main .footer ul li .otherDown a {
+  color: #333333;
+  font-size: 14px;
+  border: 1px solid #d2d2d2;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 17px;
+  padding: 0 16px;
+}
+body .main .footer ul li .otherDown a:hover {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid transparent;
+}
+body .main .footer ul li .otherDown a:first-child {
+  margin: 0 24px 0 0px;
+}

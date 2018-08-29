@@ -1,0 +1,181 @@
+.main {
+  overflow: hidden;
+}
+.main .contain {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main .bar1 img {
+  display: block;
+  width: 100%;
+}
+.main .bar2 {
+  height: 346px;
+  background: url(../images/kings/b2.jpg) no-repeat center;
+}
+.main .bar2 img {
+  display: block;
+  padding-top: 80px;
+  margin: 0 auto 50px;
+}
+.main .bar2 p {
+  width: 804px;
+  margin: 0 auto;
+  text-align: center;
+  color: #222222;
+  font-size: 20px;
+  line-height: 36px;
+}
+.main .bar3 {
+  height: 670px;
+  background: url(../images/kings/b3.jpg) no-repeat center;
+}
+.main .bar3 img {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.main .bar4 {
+  position: relative;
+}
+.main .bar4 .bar4L img:first-child {
+  display: block;
+  margin: 30px 0 60px 224px;
+}
+.main .bar4 .bar4L img:nth-child(2) {
+  display: block;
+  margin: 0 0 0 122px;
+  padding-bottom: 116px;
+}
+.main .bar4 .bar4R {
+  position: absolute;
+  right: -191px;
+  bottom: 0;
+}
+.main .bar5 {
+  position: relative;
+  background: url(../images/kings/b5.png) no-repeat center bottom;
+  height: 436px;
+}
+.main .bar5 .bar5Head {
+  display: block;
+  margin: 76px auto 56px;
+}
+.main .bar5 .bar5Body {
+  display: flex;
+  justify-content: center;
+  padding: 0 180px;
+}
+.main .bar5 p {
+  text-align: center;
+  font-size: 20px;
+  color: #000;
+  margin-top: 50px;
+}
+.main .bar6 {
+  margin-top: -145px;
+}
+.main .bar6 .d1 {
+  height: 391px;
+  background: url(../images/kings/d1.jpg) no-repeat center;
+}
+.main .bar6 .d1 img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 224px;
+}
+.main .bar6 .d2 {
+  height: 431px;
+  background: url(../images/kings/d2.jpg) no-repeat center;
+}
+.main .bar6 .d2 .contain img:first-child {
+  margin: 65px 117px 0 200px;
+  vertical-align: top;
+}
+.main .bar6 .d3 {
+  height: 406px;
+  background: url(../images/kings/d3.jpg) no-repeat center;
+}
+.main .bar6 .d3 .contain img:first-child {
+  margin: 0px 130px 0 130px;
+  vertical-align: top;
+}
+.main .bar6 .d4 {
+  height: 340px;
+  background: url(../images/kings/d4.jpg) no-repeat center;
+}
+.main .bar6 .d4 .contain img:first-child {
+  margin: 0px 176px 0 264px;
+  vertical-align: top;
+}
+.main .bar6 .d5 {
+  height: 857px;
+  background: url(../images/kings/d5.jpg) no-repeat center;
+}
+.main .bar6 .d5 .con1 img:first-child {
+  margin: 0px 98px 0 74px;
+  vertical-align: top;
+}
+.main .bar6 .d5 .con2 {
+  position: relative;
+  top: -21px;
+}
+.main .bar6 .d5 .con2 img:first-child {
+  margin: 84px 38px 0 123px;
+  vertical-align: top;
+}
+.main .bar6 .d6 {
+  height: 441px;
+  background: url(../images/kings/d6.jpg) no-repeat center;
+}
+.main .bar6 .d6 img.d6Title {
+  display: block;
+  padding-top: 50px;
+  margin: 0 auto 40px;
+}
+.main .bar6 .d6 .d6Body {
+  display: block;
+  margin: 0 auto;
+}
+.main .bar6 .d7 {
+  height: 476px;
+  background: url(../images/kings/d7.jpg) no-repeat center;
+}
+.main .bar6 .d7 img {
+  display: block;
+  margin: 0 auto;
+}
+.video-window {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.video-info {
+  position: absolute;
+  width: 888px;
+  z-index: 99;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.video-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+#closeVideo {
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  z-index: 1;
+  width: 50px;
+  cursor: pointer;
+}

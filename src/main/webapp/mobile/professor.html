@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>立即报名《拜托了教授》帮您答疑解惑</title>
+    <meta name="keywords" content="嗨课堂,昂立嗨课堂,交大昂立嗨课堂">
+    <meta name="description"
+          content="上海交大昂立嗨课堂，传承百年交大精神，深耕教育辅导行业30余年。昂立嗨课堂从清、北、复、交等著名学府层层筛选团队，专注中小学一对一在线教育，致力于打造行业权威在线教育平台！">
+    <link rel="icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/professor.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <script>
+        function goPAGE() {
+            if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+            } else {
+                window.location.href = "../";
+            }
+        }
+
+        goPAGE();
+    </script>
+</head>
+<body>
+<div class="main">
+    <div class="bar1">
+        <img src="images/professor/banner.jpg" alt="banner">
+    </div>
+    <div class="bar2">
+        <!--<p class="bar2Title">你是否为如何<span>科学教育</span>孩子而<span>苦恼?</span></br>-->
+            <!--你是否为孩子的<span>学习成绩</span>无法提高所<span>困扰？</span></br>-->
+            <!--你是否为孩子的<span>未来</span>而<span>担忧？</span></p>-->
+        <img class="tit2" src="images/professor/e1.png" alt="标题">
+        <img class="down" src="images/professor/up.png" alt="down">
+        <img class="tit" src="images/professor/tit.png" alt="down">
+        <form class="bar2Body myForm">
+            <input type="text" name="adid" class="adid" value="" style="display:none">
+            <input type="text" name="jh" class="jh" value="" style="display:none">
+            <input type="text" name="dy" class="dy" value="" style="display:none">
+            <input type="text" name="keyNum" class="keyNum" value="" style="display:none">
+            <p>
+                <input type="text" name='name' class="name" placeholder="请输入孩子姓名">
+            </p>
+            <p>
+                <select name="grade"class="grade">
+                    <option value="请选择" selected style="display: none;">请输入孩子年级</option>
+                    <option value="小三">新小四</option>
+                    <option value="小四">新小五</option>
+                    <option value="小五">新小六</option>
+                    <option value="小六">新预初</option>
+                    <option value="预初">新初一</option>
+                    <option value="初一">新初二</option>
+                    <option value="初二">新初三</option>
+                    <option value="初三">新初四</option>
+                    <option value="初四">新高一</option>
+                    <option value="高一">新高二</option>
+                    <option value="高二">新高三</option>
+                </select>
+            </p>
+            <p>
+                <input type='tel' name='phone' placeholder="请输入您的手机号" class="mobile">
+            </p>
+            <p style="display: none">
+                <select name="subject"  class="kemu">
+                    <option value="请选择" selected style="display: none;">科目</option>
+                    <option value="数学">数学</option>
+                    <option value="语文">语文</option>
+                    <option value="英语">英语</option>
+                    <option value="地理">地理</option>
+                    <option value="政治">政治</option>
+                    <option value="科学">科学</option>
+                    <option value="历史">历史</option>
+                    <option value="生物">生物</option>
+                    <option value="物理">物理</option>
+                    <option value="化学">化学</option>
+                </select>
+            </p>
+            <button class='join submit' type='button'>提交</button>
+        </form>
+    </div>
+    <div class="bar3">
+        <img class="bar3Title" src="images/professor/tit3.png" alt="与CEO面对面1对1解决家庭困扰">
+        <img class="code" src="images/professor/code.png" alt="二维码">
+        <p>扫码关注</br>与CEO直接沟通</p>
+        <img class="foot" src="images/professor/foot.png" alt="底部">
+    </div>
+</div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/api-config.js"></script>
+<script src="../js/swiper-3.4.2.min.js"></script>
+<script>
+    function REM() {
+        var rem = $(window).width() / 7.5;
+        $("html").css("fontSize", rem);
+    }
+
+    REM();
+    $(window).on("resize", REM);
+    // 选择年级科目select显示颜色的变化Start
+    if ($(".grade").val() == "请选择") {
+        $(".grade").css("color", "#a9aeb2;");
+        $(".grade option").css("color", "#000");
+    } else {
+        $(".grade").css("color", "#000");
+        $(".grade option").css("color", "#000");
+    }
+
+//    if ($(".kemu").val() == "请选择") {
+//        $(".kemu").css("color", "#d3d3d3;");
+//        $(".kemu option").css("color", "#000");
+//    } else {
+//        $(".kemu").css("color", "#000");
+//        $(".kemu option").css("color", "#000");
+//    }
+    $("select").on("change", function () {
+        if ($(".grade").val() == "请选择") {
+            $(".grade").css("color", "#d3d3d3;");
+            $(".grade option").css("color", "#000");
+        } else {
+            $(".grade").css("color", "#000");
+            $(".grade option").css("color", "#000");
+        }
+
+//        if ($(".kemu").val() == "请选择") {
+//            $(".kemu").css("color", "#d3d3d3;");
+//            $(".kemu option").css("color", "#000");
+//        } else {
+//            $(".kemu").css("color", "#000");
+//            $(".kemu option").css("color", "#000");
+//        }
+    });
+    $(function(){
+//表单提交Start
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null)return unescape(r[2]);
+            return "";
+        }
+        $(".myForm input").focus(function () {
+            $(this).css("borderColor", "#f40009")
+        }).blur(function () {
+            $(this).css("borderColor", "#E1E1E1")
+        })
+        $(function () {
+            $('.submit').on('click', function () {
+                var $this = $($(this).parent());
+                $this.find(".adid").val(GetQueryString("adid"));
+                $this.find(".jh").val(GetQueryString("adid"));
+                $this.find(".dy").val(GetQueryString("adid"));
+                $this.find(".keyNum").val(GetQueryString("adid"));
+
+                // $("#myForm .adid").val(GetQueryString("adid"))
+                // $("#myForm .jh").val(GetQueryString("jh"));
+                // $("#myForm .dy").val(GetQueryString("dy"));
+                // $("#myForm .keyNum").val(GetQueryString("keynum"));
+                var mobileReg = /^1(3[0-9]|4[57]|5[0-35-9]|7[0135678]|8[0-9])\d{8}$/;
+                var nameReg = /^([\u4e00-\u9fa5]{1,20}|[a-zA-Z\.\s]{1,20})$/;
+                var formData = $('.myForm').serialize();
+                var name = $this.find(".name")
+                var mobile = $this.find(".mobile");
+                var button = $this.find("button");
+                // var adid = window.location.href.split("?");
+                // // var adid1 = adid.split("&");
+                // console.log(adid);
+                $.ajax({
+                    type: 'get',
+                    url: CMSAPI + '/NewNameList/createNewNameList',
+                    data: formData,
+                    dataType: "jsonp",
+                    jsonp: "jsoncallback",
+                    timeout: 5000,
+                    // 发起请求前就调用
+                    beforeSend: function (data) {
+                        if (!name.val()) {
+                            name.attr({placeholder: "姓名不能为空"}).focus().val("");
+                            return false;
+                        }
+                        if (!nameReg.test(name.val())) {
+                            name.val("");
+                            name.attr({placeholder: "请输入正确姓名"}).focus().val("");
+                            return false;
+                        }
+                        if ($(".grade").val() == "请选择" ) {
+                            alert("请选择年级");
+                            return false;
+                        }
+                        if (!mobileReg.test(mobile.val())) {
+                            button.attr("input::-webkit-input-placeholder", "color", "#FF0000");
+                            mobile.attr({placeholder: "手机号不正确"}).focus().val("");
+                            return false;
+                        }
+                        button.html('正在提交...').addClass("disabled").attr("disabled", true);
+                    },
+                    success: function (data) {
+                        //var data = JSON.parse(data);
+                        console.log(data);
+                        if (data.code == 100) {
+                            $(name, mobile).focus();
+                            window.location.href = "./success.html";
+                            button.html('免费试听').removeClass('disabled').attr("disabled", false);
+                        } else if (data.code == 101) {
+                            alert("预约失败！");
+                            button.css({background:"#e32d1f"}).attr("disabled",false);
+                            name.val("");
+                            mobile.val("");
+                            return false;
+                        }
+                        else {
+                        }
+                        console.log(1);
+                    },
+                    complete: function () { // 请求完成时会调用
+                        // 还原状态
+                        $(".myForm input").val("");
+                        button.html('免费试听').removeClass('disabled').attr("disabled", false);
+                    },
+                    error: function () {
+                        console.log(3);
+                        // window.location.href = "./error.html";
+                    }
+                });
+            });
+        });
+        //表单提交End
+    })
+</script>
+<!--百度统计代码-->
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?8785cb45f8a7565aad198bde904d51f9";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<!--百度统计代码end-->
+<script type="text/javascript">
+    window._pt_lt = new Date().getTime();
+    window._pt_sp_2 = [];
+    _pt_sp_2.push('setAccount,571db548');
+    var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    (function () {
+        var atag = document.createElement('script');
+        atag.type = 'text/javascript';
+        atag.async = true;
+        atag.src = _protocol + 'js.ptengine.cn/571db548.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(atag, s);
+    })();
+</script>
+
+</html>

@@ -1,0 +1,70 @@
+@left-widht:100px;
+@bor-color:green;
+.header{
+  border-bottom: 3px solid @bor-color;
+}
+
+.main{
+  margin: 0;
+  .course{
+    position: relative;
+    #course{
+      position: absolute;
+      left:0;
+      top:0;
+      width:@left-widht;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      border: 0;
+      li{
+        width:100%;
+        line-height: 45px;
+        -webkit-transition: border 0.1s;
+        -moz-transition: border 0.1s;
+        -ms-transition: border 0.1s;
+        -o-transition: border 0.1s;
+        transition: border 0.1s;
+        a{
+          //box-sizing: content-box;
+          display: inline-block;
+          width:100%;
+          margin: 0;
+          border: 0;
+          line-height: 45px;
+          border-radius: 0;
+        }
+        &:hover{
+          border-right: 3px solid red;
+        }
+        &.active{
+          border-right: 3px solid red;
+          a{
+            color: #f40009;
+          }
+        }
+      }
+    }
+    #courseList{
+      border-left: 3px solid @bor-color;
+      width:100%;
+      margin-left: @left-widht;
+      //待上课
+      #wait-course{
+
+      }
+      //课时消耗
+      #consump-course{
+
+      }
+      //课程记录
+      #record-course{
+
+      }
+      //设备测试
+      #test-course{
+
+      }
+    }
+  }
+}

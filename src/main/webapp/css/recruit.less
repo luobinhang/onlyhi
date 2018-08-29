@@ -1,0 +1,219 @@
+.main {
+  .banner2 {
+    ul {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      display: inline-block;
+      margin-top: 100px;
+      & > li:first-child {
+        width: 616px;
+        font-size: 0;
+        float: left;
+        img {
+          margin-bottom: 16px;
+        }
+        & > img:nth-child(2n-1) {
+          margin-right: 16px;
+        }
+      }
+      & > li:last-child {
+        width: 286px;
+        float: right;
+        margin-left: 90px;
+        p:first-child {
+          margin-top: 120px;
+        }
+        p:nth-child(2) {
+          margin-bottom: 45px;
+        }
+        p:nth-child(3) {
+          font-size: 14px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  .banner3 {
+    margin-top: 45px;
+    & > p:first-child {
+      background: url(../images/recruit/b3.jpg) no-repeat center;
+      background-size: cover;
+      height: 500px;
+      text-align: center;
+      color: #fff;
+      font-size: 60px;
+      padding-top: 170px;
+    }
+    & > div:nth-child(2) {
+      //height: 1440px;
+      //background-color: #f5f5f5;
+      //position: relative;
+      //margin-bottom: 420px;
+      background-color: #f5f5f5;
+      position: relative;
+      & > div {
+        //background-color: #fff;
+        //position: absolute;
+        //left: 50%;
+        //transform: translateX(-50%);
+        //-webkit-transform: translateX(-50%);
+        //top: -116px;
+        //padding: 76px 92px 0px;
+        background-color: #fff;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        top: -116px;
+        padding: 76px 92px 0px;
+        display: inline-block;
+        z-index: 1;
+        div:first-child {
+          p:nth-child(3) {
+            line-height: 28px;
+            font-size: 14px;
+          }
+          img {
+            margin-right: -80px;
+            display: block;
+          }
+        }
+        div:nth-child(2) {
+
+        }
+      }
+
+    }
+    .chooseJob {
+      margin-bottom: 30px;
+      text-align: center;
+      span {
+        height: 36px;
+        width: 88px;
+        display: inline-block;
+        margin-right: 19px;
+        text-align: center;
+        line-height: 34px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      span.active {
+        position: relative;
+        border: 2px solid transparent;
+        border-radius: 18px;
+        background-clip: padding-box;
+        background-color: #fff;
+        a{
+          background-image:-webkit-gradient(linear,0 0,0 bottom,from(#ffc371),to(#ff5f6d));
+          -webkit-background-clip:text;
+          -webkit-text-fill-color:transparent;
+        }
+      }
+      span.active:after{
+        position: absolute;
+        top: -2px;
+        bottom: -2px;
+        left: -2px;
+        right: -2px;
+        content: '';
+        z-index: -1;
+        border-radius: 18px;
+        background: linear-gradient(#ffc371, #ff5f6d);
+      }
+    }
+    .job {
+      width: 940px;
+
+      & > li {
+        color: #777;
+        border-bottom: 1px solid #e6e6e6;
+        padding-top: 25px;
+        padding: 22px 0 6px 0;
+        //min-height: 50px;
+        p:first-child{
+          min-height: 25px;
+          font-size: 14px;
+        }
+        img {
+          margin-right: 36px;
+          display: block;
+          margin-top: -16px;
+          cursor: pointer;
+        }
+      }
+      //li:last-child {
+      //  margin-bottom: 60px;
+      //}
+    }
+    .job > li.active > p {
+      color: #fc4229;
+    }
+    .demand {
+      margin: 30px 0;
+      display: none;
+      font-size: 14px;
+      li {
+        p {
+          line-height: 30px;
+        }
+      }
+      li:first-child{
+        float: left;
+        width: 40%;
+      }
+      li:last-child{
+        float: right;
+        width: 40%;
+        margin-right: 36px;
+      }
+    }
+  }
+  .banner4 {
+    margin-bottom: 160px;
+    //p:first-child{
+    //  color: #333;
+    //  font-size: 20px;
+    //}
+    //p:nth-child(2){
+    //  font-size: 24px;
+    //  font-weight: bold;
+    //  color: #ccc;
+    //  margin-bottom: 30px;
+    //  margin-top: -8px;
+    //}
+  }
+  .contain {
+    width: 1200px;
+  }
+  .blank{
+    height: 338px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+  }
+  .title1 {
+    color: #333;
+    font-size: 20px;
+  }
+  .title2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ccc;
+    margin-bottom: 30px;
+    margin-top: -8px;
+  }
+  .wid100{
+    width:100%;
+  }
+  .noJob{
+    font-size: 20px;
+    text-align: center;
+    line-height: 106px;
+    color:#777;
+    display: none;
+  }
+}

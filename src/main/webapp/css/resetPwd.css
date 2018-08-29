@@ -1,0 +1,136 @@
+html,
+body {
+  height: 100%;
+  min-height: 470px;
+}
+.main {
+  height: 100%;
+  background: url("../images/resetPwd/bg-b.png") no-repeat center;
+  background-position: bottom;
+}
+.main .nav {
+  height: 90px;
+  padding-top: 30px;
+}
+.main .nav .reset-title {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 22px;
+}
+.main .nav .reset-title h2 {
+  line-height: 40px;
+  font-size: 24px;
+  color: #494949;
+  font-weight: 600;
+}
+.main .nav .reset-title p {
+  line-height: 24px;
+  font-size: 16px;
+  color: #838383;
+}
+.main .form {
+  padding-top: 65px;
+}
+.main .form #resForm {
+  float: left;
+  margin-left: 182px;
+}
+.main .form #resForm p {
+  width: 400px;
+  height: 70px;
+  border-bottom: 1px solid #ffb3a3;
+  padding: 25px 0 15px 50px;
+  position: relative;
+}
+.main .form #resForm p input {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+.main .form #resForm p:nth-child(1) {
+  background: url("../images/resetPwd/icon-1.png") no-repeat left;
+  background-position: 3px 25px;
+}
+.main .form #resForm p:nth-child(2) {
+  background: url("../images/resetPwd/icon-2.png") no-repeat left;
+  background-position: 3px 25px;
+}
+.main .form #resForm p:nth-child(3) {
+  background: url("../images/resetPwd/icon-3.png") no-repeat left;
+  background-position: 3px 25px;
+}
+.main .form #resForm p span {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  color: #e03636;
+  font-size: 16px;
+  line-height: 18px;
+  display: none;
+}
+.main .form #resForm p span img {
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+.main .form #resForm p .icon-pwd {
+  position: absolute;
+  right: 5px;
+  border-bottom: 16px;
+  display: none;
+  top: 25px;
+}
+.main .form #resForm p .code-btn {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  width: 130px;
+  height: 40px;
+  font-size: 18px;
+  color: #FFF;
+  border-radius: 5px;
+  background-color: #e03636;
+}
+.main .form #resForm p .wait {
+  background-color: #d3d3d3;
+}
+.main .form #resForm #code span {
+  right: 140px;
+}
+.main .form #resForm .btn0 {
+  height: 60px;
+  width: 400px;
+  margin-top: 22px;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 22px;
+  background-color: #e03636;
+}
+.main .form #resForm .wait {
+  background-color: #d3d3d3;
+}
+.main .form .home {
+  float: left;
+  margin-left: 105px;
+  background: url("../images/resetPwd/home.png") no-repeat center;
+  height: 290px;
+  width: 300px;
+}
+.main .succeed {
+  padding-top: 135px;
+  height: 200px;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  display: none;
+}
+.main .succeed .center {
+  margin-left: 35px;
+  font-size: 24px;
+  line-height: 48px;
+}
+.main .succeed .right {
+  width: 160px;
+  height: 100%;
+  background: url("../images/resetPwd/goHome.png") no-repeat left top;
+}

@@ -1,0 +1,241 @@
+body {
+  background-color: #fed45c;
+}
+.main .bar1 img {
+  display: block;
+  width: 100%;
+}
+.main .bar2 img {
+  display: block;
+  width: 6.3rem;
+  margin: 0 auto;
+}
+.main .bar3 img {
+  display: block;
+  width: 6.3rem;
+  margin: 0.4rem auto 0.3rem;
+}
+.main .bar4 {
+  width: 6.3rem;
+  margin: 0.4rem auto 0.3rem;
+}
+.main .bar4 img {
+  display: block;
+  margin-top: 0.24rem;
+  width: 100%;
+}
+.main .bar4 img.tit {
+  width: 4.01rem;
+  height: 0.58rem;
+  display: block;
+  margin: 0 auto;
+}
+.main .bar5 {
+  background: #fff url("../images/schoolOpens/b5.jpg") no-repeat center top;
+  background-size: 100% auto;
+}
+.main .bar5 .contain {
+  width: 6.3rem;
+  margin: 0 auto;
+}
+.main .bar5 .bar5Head {
+  margin: 0.4rem auto 0;
+}
+.main .bar5 .bar5Head img.tit {
+  width: 4.01rem;
+  height: 0.58rem;
+  display: block;
+  margin: 0 auto;
+}
+.main .bar5 .bar5Head .tit2 {
+  font-size: 0.26rem;
+  text-align: center;
+  color: #f84618;
+  font-weight: bold;
+  margin: 0.14rem 0 0 0.5rem;
+}
+.main .bar5 .bar5Body {
+  background: url(../images/schoolOpens/b4.png) no-repeat 50%;
+  background-size: 100% 100%;
+  height: 3.7rem;
+  width: 6.3rem;
+  margin: 0 auto 0.56rem;
+}
+.main .bar5 .bar5Body .tet {
+  padding: 1.18rem 0 0 0.44rem;
+}
+.main .bar5 .bar5Body .tet p.jiyi {
+  font-size: 0.3rem;
+  color: #282828;
+}
+.main .bar5 .bar5Body .tet p.jiyi span {
+  font-size: 0.22rem;
+  color: #282828;
+  margin-left: 0.1rem;
+  vertical-align: -0.04rem;
+}
+.main .bar5 .bar5Body .tet p.describe {
+  width: 3.53rem;
+  font-size: 0.2rem;
+  color: #282828;
+  line-height: 0.3rem;
+  margin: 0.2rem 0 0;
+}
+.main .bar5 .bar5Foot .swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-right: 0.04rem;
+  margin-bottom: 0.4rem;
+}
+.main .bar5 .bar5Foot .swiper-slide p.name {
+  font-size: 0.24rem;
+  color: #282828;
+  text-align: center;
+  letter-spacing: 0.01rem;
+  margin-top: 2.85rem;
+  margin-bottom: 0.1rem;
+}
+.main .bar5 .bar5Foot .swiper-slide p.subject {
+  color: #b92938;
+  font-size: 0.16rem;
+  text-align: center;
+  line-height: 0.26rem;
+  margin-top: 0.12rem;
+}
+.main .bar5 .bar5Foot .swiper-slide p.reward {
+  color: #686868;
+  font-size: 0.16rem;
+  text-align: center;
+  line-height: 0.26rem;
+  margin-bottom: 0.4rem;
+}
+.main .bar6 .bar6Title {
+  display: block;
+  width: 5.87rem;
+  margin: 0.4rem auto 0.2rem;
+}
+.main .bar6 .myForm {
+  width: 6.3rem;
+  height: 5.49rem;
+  margin: 0 auto;
+  background: url("../images/schoolOpens/b6.png") no-repeat center;
+  background-size: 100% 100%;
+  padding: 0.6rem 0.42rem 0;
+}
+.main .bar6 .myForm p {
+  width: 100%;
+  height: 0.8rem;
+  margin: 0 auto 0.3rem;
+}
+.main .bar6 .myForm p input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  padding-left: 0.3rem;
+  font-size: 0.26rem;
+  border-radius: 0.8rem;
+  color: #303135;
+}
+.main .bar6 .myForm p input::-webkit-input-placeholder {
+  /* WebKit browsers*/
+  color: #d3d3d3;
+  font-size: 0.26rem;
+}
+.main .bar6 .myForm p input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18*/
+  color: #d3d3d3;
+  font-size: 0.26rem;
+}
+.main .bar6 .myForm p input::-moz-placeholder {
+  /* Mozilla Firefox 19+*/
+  color: #d3d3d3;
+  font-size: 0.26rem;
+}
+.main .bar6 .myForm p input:-ms-input-placeholder {
+  /* Internet Explorer 10+*/
+  color: #d3d3d3;
+  font-size: 0.26rem;
+}
+.main .bar6 .myForm p select {
+  background: url('../images/schoolOpens/pulldown.png') no-repeat center;
+  background-position-y: 50%;
+  background-position-x: 94%;
+  background-size: 0.31rem 0.16rem;
+  height: 100%;
+  width: 48%;
+  border-radius: 0.4rem;
+  padding-left: 0.3rem;
+  border: 1px solid #d3d3d3;
+  color: #d3d3d3;
+  font-size: 0.26rem;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.main .bar6 .myForm p select option {
+  background: transparent;
+}
+.main .bar6 .myForm #code {
+  display: none;
+}
+.main .bar6 .myForm #code .code {
+  width: 60%;
+  float: left;
+}
+.main .bar6 .myForm #code .send {
+  width: 35%;
+  float: right;
+  padding: 0;
+}
+.main .bar6 .submit {
+  width: 4.13333333rem;
+  height: 1.4rem;
+  background: url("../images/schoolOpens/button.png") no-repeat center;
+  background-size: 100% 100%;
+  margin: 0.08rem auto 0;
+  display: block;
+  color: transparent;
+}
+.main .bar7 img.bar7Title {
+  width: 6.3rem;
+  display: block;
+  margin: 0.3rem auto 0.4rem;
+}
+.main .bar7 .line {
+  width: 0.45rem;
+  height: 0.02rem;
+  margin: 0 auto 0.24rem;
+  background-color: #f84e1d;
+}
+.main .bar7 .call {
+  display: block;
+  margin: 0 auto 0.2rem;
+}
+.main .bar7 .phoneNum {
+  text-align: center;
+  font-size: 0.32rem;
+  color: #f84e1d;
+  margin-bottom: 0.4rem;
+}
+.main .bar8 p {
+  float: left;
+  width: 50%;
+  text-align: center;
+  height: 1rem;
+  background-color: #fff;
+}
+.main .bar8 p a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size: 0.34rem;
+  line-height: 1rem ;
+  color: #686868;
+  font-weight: bold;
+}
+.main .bar8 p:nth-child(2) {
+  background-color: #f84e1d;
+}
+.main .bar8 p:nth-child(2) a {
+  color: #fff;
+}

@@ -1,0 +1,447 @@
+.content {
+  width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+.tanchuang {
+  position: relative;
+  width: 1020px;
+  height: 680px;
+  position: fixed;
+  left: 50%;
+  margin-left: -510px;
+  top: 100px;
+  background: url("../images/priComposition/tan/卡片.png") no-repeat center;
+  z-index: 100;
+}
+.tanchuang .close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+.tanchuang .tansapn1 {
+  font-size: 46px;
+  color: #000;
+  display: block;
+  line-height: 60px;
+  text-align: left;
+  margin-top: 96px;
+  margin-left: 72px;
+  letter-spacing: 2px;
+}
+.tanchuang .tansapn2 {
+  font-size: 40px;
+  color: #000;
+  display: block;
+  text-align: left;
+  margin-left: 72px;
+  letter-spacing: 2px;
+}
+.tanchuang .tanForm {
+  margin-top: 32px;
+}
+.tanchuang .tanForm p {
+  text-align: left;
+  margin-left: 72px;
+  position: relative;
+}
+.tanchuang .tanForm p input,
+.tanchuang .tanForm p select {
+  width: 410px;
+  height: 50px;
+  border: 1px #bbb solid;
+  border-radius: 25px;
+  padding: 5px;
+  padding-left: 55px;
+  font-size: 18px;
+  margin-top: 24px;
+}
+.tanchuang .tanForm p button {
+  width: 410px;
+  height: 72px;
+  background: url("../images/priComposition/tan/buttonBg.png") no-repeat center;
+  margin-top: 22px;
+  font-size: 18px;
+  padding-bottom: 13px;
+  cursor: pointer;
+}
+.tanchuang .tanForm p img {
+  position: absolute;
+  top: 35px;
+  left: 14px;
+}
+.main .banner1 {
+  height: 1000px;
+  overflow: visible;
+  background: url("../images/priComposition/Banner.jpg") no-repeat center;
+}
+.main .banner1 .content {
+  height: 100%;
+  position: relative;
+}
+.main .banner1 .content .bg1-z1 {
+  width: 490px;
+  height: 313px;
+  background: url("../images/priComposition/b1-bg1.png") no-repeat center;
+  position: absolute;
+  top: 675px;
+  left: 50px;
+  z-index: 10;
+}
+.main .banner1 .content .bg1-z1 .b1-logo1 {
+  display: inline-block;
+  margin-top: 44px;
+  margin-left: 90px;
+  float: left;
+}
+.main .banner1 .content .bg1-z1 .span-wrap {
+  width: 285px;
+  margin-left: 135px;
+  margin-top: 59px;
+}
+.main .banner1 .content .bg1-z1 .span-wrap span {
+  font-weight: bold;
+  color: #F0EDFE;
+  font-size: 58px;
+  height: 80px;
+  line-height: 80px;
+  letter-spacing: 10px;
+}
+.main .banner1 .content .bg1-z1 .span-wrap .bg1span1 {
+  font-size: 54px;
+}
+.main .banner1 .content .bg1-z2 {
+  width: 881px;
+  height: 387px;
+  background: url("../images/priComposition/b1-bg2.png") no-repeat center;
+  position: absolute;
+  right: 50px;
+  top: 770px;
+}
+.main .banner1 .content .bg1-z2 p {
+  font-size: 23px;
+  color: #F0EDFE;
+  line-height: 40px;
+  margin-top: 80px;
+  width: 687px;
+  margin-left: 79px;
+  text-align: justify;
+  letter-spacing: 0.8px;
+}
+.main .banner1 .content .bg1-z2 p span {
+  font-size: 26px;
+}
+.main .banner2 {
+  margin-top: -1px;
+  height: 990px;
+  background: #A255F7;
+}
+.main .banner2 .content .b2-logo1 {
+  margin-left: 105px;
+  margin-top: 190px;
+  float: left;
+}
+.main .banner2 .content .b2-span1 {
+  display: inline-block;
+  font-size: 48px;
+  color: #F0EDFE;
+  margin-top: 220px;
+  margin-left: -80px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+.main .banner2 .content .b2-span2 {
+  display: block;
+  color: #EEE8B2;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 300px;
+  letter-spacing: 2px;
+}
+.main .banner2 .content .b2-span2 .b2-span3 {
+  letter-spacing: 0px;
+}
+.main .banner2 .b2Body {
+  height: 573px;
+  padding-top: 75px;
+}
+.main .banner2 .b2Body .swiper-container {
+  width: 1200px;
+  height: 573px;
+}
+.main .banner2 .b2Body .swiper-container .swiper-pagination-bullet-active {
+  background: #fff;
+}
+.main .banner2 .b2Body .swiper-slide {
+  background: url("../images/priComposition/b2.bgb.png") no-repeat center;
+  width: 476px;
+  height: 573px;
+}
+.main .banner2 .b2Body .swiper-slide .b2-point {
+  width: 144px;
+  height: 144px;
+  background: url(../images/priComposition/b2-point-active.png) no-repeat center;
+  display: block;
+  padding-top: 20px;
+  color: #9d54fc;
+  font-size: 49px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.main .banner2 .b2Body .swiper-slide .b2-contentspan {
+  display: block;
+  color: #FFFBFF;
+  line-height: 45px;
+  font-size: 35px;
+  letter-spacing: 3px;
+  width: 100%;
+  text-align: center;
+}
+.main .banner2 .b2Body .swiper-slide .b2-p {
+  display: block;
+  width: 310px;
+  font-size: 24px;
+  color: #F0EDFE;
+  line-height: 34px;
+  text-align: justify;
+  padding-top: 15px;
+  border-top: 2px solid #f0edfe;
+  margin: 0 auto;
+  margin-top: 38px;
+}
+.main .banner2 .b2Body .swiper-button-next {
+  background: url("../images/priComposition/arrow-r.png") no-repeat center;
+  width: 40px;
+  height: 75px;
+  margin-top: -50px;
+}
+.main .banner2 .b2Body .swiper-button-prev {
+  background: url("../images/priComposition/arrow-l.png") no-repeat center;
+  width: 40px;
+  height: 75px;
+  margin-top: -50px;
+}
+.main .banner3 {
+  height: 1065px;
+  background-color: #A255F7;
+}
+.main .banner3 .content .b2-logo1 {
+  margin-left: 105px;
+  margin-top: 65px;
+  float: left;
+}
+.main .banner3 .content .b2-span1 {
+  display: inline-block;
+  font-size: 48px;
+  color: #F0EDFE;
+  margin-top: 100px;
+  margin-left: 12px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+.main .banner3 .content .b2-span2 {
+  display: block;
+  color: #EEE8B2;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 300px;
+  letter-spacing: 2px;
+}
+.main .banner3 .content .b2-span2 .b2-span3 {
+  letter-spacing: 0px;
+}
+.main .banner3 .content .b3content-wrap {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+.main .banner3 .content .b3content-wrap .b3-card {
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  float: left;
+  margin-right: 30px;
+}
+.main .banner3 .content .b3content-wrap .b3-card:last-child {
+  margin-right: 0;
+}
+.main .banner3 .content .b3content-wrap .b3-card:hover img.fan {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+}
+.main .banner3 .content .b3content-wrap .b3-card:hover .zhen {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.main .banner3 .content .b3content-wrap .b3-card > img.fan,
+.main .banner3 .content .b3content-wrap .b3-card .zhen {
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.main .banner3 .content .b3content-wrap .b3-card > img.fan {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.main .banner3 .content .b3content-wrap .b3-card .zhen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.main .banner3 .content .b3content-wrap .b3-card .b3card-title {
+  font-size: 46px;
+  color: #fff;
+  margin-left: 56px;
+  margin-top: 84px;
+  float: left;
+}
+.main .banner3 .content .b3content-wrap .b3-card .b3card-p {
+  font-size: 24px;
+  color: #686868;
+  line-height: 34px;
+  position: absolute;
+  bottom: 50px;
+  width: 290px;
+  text-align: justify;
+  margin-left: 40px;
+}
+.main .banner3 .content .b3content-wrap .b3-card1 {
+  width: 380px;
+  height: 500px;
+}
+.main .banner3 .content .b3content-wrap .b3-card1 .zhen {
+  background: url("../images/priComposition/c1.png") no-repeat center;
+}
+.main .banner3 .content .b3content-wrap .b3-card2 {
+  width: 380px;
+  height: 600px;
+}
+.main .banner3 .content .b3content-wrap .b3-card2 .zhen {
+  background: url("../images/priComposition/c2.png") no-repeat center;
+}
+.main .banner3 .content .b3content-wrap .b3-card3 {
+  width: 380px;
+  height: 700px;
+}
+.main .banner3 .content .b3content-wrap .b3-card3 .zhen {
+  background: url("../images/priComposition/c3.png") no-repeat center;
+}
+.main .banner4 {
+  height: 775px;
+  background-color: #A255F7;
+}
+.main .banner4 .content .b2-logo1 {
+  margin-left: 155px;
+  margin-top: 20px;
+  float: left;
+}
+.main .banner4 .content .b2-span1 {
+  display: inline-block;
+  font-size: 48px;
+  color: #F0EDFE;
+  margin-top: 39px;
+  margin-left: -147px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+.main .banner4 .content .b2-span2 {
+  display: block;
+  color: #EEE8B2;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 300px;
+  letter-spacing: 2px;
+}
+.main .banner4 .content .b2-span2 .b2-span3 {
+  letter-spacing: 0px;
+}
+.main .banner5 {
+  background-color: #A255F7;
+  height: 955px;
+}
+.main .banner6 {
+  background-color: #A255F7;
+}
+.main .banner7 {
+  background-color: #A255F7;
+}
+.main .banner7 .content {
+  position: relative;
+}
+.main .banner7 .content #timer {
+  position: absolute;
+  transform: translate(-50%, -27%);
+  left: 50%;
+  top: 50%;
+  color: #c20007;
+  font-size: 70px;
+}
+.main .banner7 img {
+  display: block;
+  margin: 0 auto;
+}
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+.video-window {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.video-info {
+  position: absolute;
+  width: 888px;
+  z-index: 99;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.video-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+#closeVideo {
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  z-index: 1;
+  width: 50px;
+  cursor: pointer;
+}

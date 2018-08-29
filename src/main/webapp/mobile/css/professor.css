@@ -1,0 +1,147 @@
+body {
+  background-color: #8dbef1;
+}
+.main .bar1 img {
+  display: block;
+  width: 100%;
+}
+.main .bar2 {
+  background-color: #fff;
+  width: 6.8rem;
+  margin: 0 auto;
+  border-radius: 0.28rem;
+  padding-top: 0.64rem;
+  padding-bottom: 0.52rem;
+}
+.main .bar2 .bar2Title {
+  font-size: 0.3rem;
+  color: #83878a;
+  text-align: center;
+  line-height: 0.6rem;
+  letter-spacing: 0.04rem;
+  margin-bottom: 0.24rem;
+}
+.main .bar2 .bar2Title span {
+  font-size: 0.3rem;
+  color: #e34949;
+}
+.main .bar2 .tit2 {
+  width: 5.65rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+}
+.main .bar2 .down {
+  display: block;
+  width: 0.64rem;
+  height: 0.64rem;
+  margin: 0 auto 0.3rem;
+}
+.main .bar2 .tit {
+  display: block;
+  width: 5.8rem;
+  height: 1.16rem;
+  margin: 0 auto 0.48rem;
+}
+.main .bar2 .myForm {
+  width: 100%;
+  padding: 0 0.47rem;
+}
+.main .bar2 .myForm p {
+  width: 100%;
+  height: 0.8rem;
+  margin: 0 auto 0.32rem;
+}
+.main .bar2 .myForm p input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #bababa;
+  padding-left: 0.3rem;
+  font-size: 0.24rem;
+  border-radius: 0.8rem;
+  color: #303135;
+}
+.main .bar2 .myForm p input::-webkit-input-placeholder {
+  /* WebKit browsers*/
+  color: #a9aeb2;
+  font-size: 0.24rem;
+}
+.main .bar2 .myForm p input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18*/
+  color: #a9aeb2;
+  font-size: 0.24rem;
+}
+.main .bar2 .myForm p input::-moz-placeholder {
+  /* Mozilla Firefox 19+*/
+  color: #a9aeb2;
+  font-size: 0.24rem;
+}
+.main .bar2 .myForm p input:-ms-input-placeholder {
+  /* Internet Explorer 10+*/
+  color: #a9aeb2;
+  font-size: 0.24rem;
+}
+.main .bar2 .myForm p select {
+  background: url('../images/professor/pulldown.png') no-repeat center;
+  background-position-y: 50%;
+  background-position-x: 94%;
+  background-size: 0.31rem 0.16rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.4rem;
+  padding-left: 0.3rem;
+  border: 1px solid #bababa;
+  color: #a9aeb2;
+  font-size: 0.24rem;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.main .bar2 .myForm p select option {
+  background: transparent;
+}
+.main .bar2 .myForm #code {
+  display: none;
+}
+.main .bar2 .myForm #code .code {
+  width: 60%;
+  float: left;
+}
+.main .bar2 .myForm #code .send {
+  width: 35%;
+  float: right;
+  padding: 0;
+}
+.main .bar2 .submit {
+  background: url("../images/professor/btn.png") no-repeat center;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  color: #fff;
+  font-size: 0.34rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  letter-spacing: 0.08rem;
+}
+.main .bar3 .bar3Title {
+  display: block;
+  width: 5.83rem;
+  margin: 0.56rem auto 0.38rem;
+}
+.main .bar3 .code {
+  display: block;
+  width: 2.67rem;
+  margin: 0rem auto 0.28rem;
+}
+.main .bar3 p {
+  font-size: 0.3rem;
+  color: #fff;
+  line-height: 0.36rem;
+  text-align: center;
+  margin-bottom: 0.16rem;
+}
+.main .bar3 .foot {
+  display: block;
+  width: 100%;
+}

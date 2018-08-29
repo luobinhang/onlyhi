@@ -1,0 +1,654 @@
+.translateX {
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.translateY {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.translateXY {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.fixedTop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.nav {
+  height: 35px;
+  line-height: 35px;
+  background-color: #F1F1F1;
+  font-size: 14px;
+}
+.nav .site-nav-r {
+  position: relative;
+}
+.nav .site-nav-r ul {
+  float: right;
+}
+.nav .site-nav-r ul li {
+  float: left;
+  padding: 0 10px;
+}
+.nav .site-nav-r ul li:last-child {
+  position: absolute;
+  left: 0;
+  color: #f40009;
+}
+.nav .site-nav-r ul li.wechat {
+  padding: 0 5px;
+  position: relative;
+}
+.nav .site-nav-r ul li.wechat .wechat_1 {
+  width: 182px;
+  height: 217px;
+  box-sizing: border-box;
+  z-index: 99;
+}
+.nav .site-nav-r ul li.wechat .wechat_1:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 1px solid #eeeeee;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-bottom: 0;
+  border-right: 0;
+  position: absolute;
+  background-color: #fff;
+  top: -5px;
+  left: 50%;
+  margin-left: -5px;
+}
+.nav .site-nav-r ul li.wechat .wechat_1 {
+  display: none;
+  padding-top: 25px;
+  background-color: #fff;
+  border: 1px solid #eeeeee;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 45px;
+}
+.nav .site-nav-r ul li.wechat .wechat_1 i {
+  font-style: normal;
+  display: block;
+  line-height: 20px;
+  color: #000;
+  font-size: 14px;
+}
+.nav .site-nav-r ul li.listen {
+  padding: 0 5px;
+  position: relative;
+}
+.nav .site-nav-r ul li span {
+  display: inline-block;
+  width: 27px;
+  height: 20px;
+  vertical-align: middle;
+}
+.nav .site-nav-r ul li span:hover {
+  cursor: pointer;
+}
+.nav .site-nav-r ul li span.font1 {
+  background: url("../images/wechat.png") no-repeat center center;
+}
+.nav .site-nav-r ul li span.font2 {
+  background: url("../images/listen.png") no-repeat center center;
+}
+.nav .site-nav-r ul li span.font3 {
+  background: url("../images/phone.png") no-repeat center center;
+}
+.nav .site-nav-r ul li .tel {
+  padding: 0 2px;
+}
+.nav .site-nav-r ul li:last-child {
+  font-size: 16px;
+  padding: 0;
+}
+.nav .site-nav-r ul li a {
+  padding: 0 15px;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 12px;
+  background-color: #dedede;
+}
+.nav .site-nav-r ul li:last-child {
+  padding-right: 0;
+}
+.nav .site-nav-r ul li .Register2 a {
+  background-color: #f40009;
+  color: #FFF;
+}
+.nav .site-nav-r ul .Register_over {
+  position: relative;
+}
+.nav .site-nav-r ul .Register_over .Register2 a {
+  display: inline-block;
+}
+.nav .site-nav-r ul .Register_over .Register_over0 {
+  position: absolute;
+  width: 100px;
+  top: 34px;
+  left: 50%;
+  margin-left: -50px;
+  text-align: center;
+  z-index: 9999;
+}
+.nav .site-nav-r ul .line {
+  width: 1px;
+  height: 14px;
+  background-color: #E1E1E1;
+  margin-top: 11px;
+  padding: 0;
+}
+.header {
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
+  height: 85px;
+  box-sizing: border-box;
+}
+.header .logo {
+  width: 162px;
+  height: 46px;
+  margin-top: 19.5px;
+  background: url(../images/logo.svg) no-repeat left center;
+  background-size: cover;
+}
+.header .tip1 {
+  font-size: 20px;
+  text-align: center;
+  background-color: #FFF;
+  display: none;
+  padding: 20px;
+  position: fixed;
+  left: 50%;
+  top: 200px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 99999;
+}
+.header .login_f {
+  width: 406px;
+  height: 427px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -213px;
+  margin-left: -203px;
+  background-color: #fbfbfb;
+  z-index: 9999;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 28px;
+  display: none;
+}
+.header .login_f .login {
+  height: 100%;
+  width: 100%;
+  display: none;
+  text-align: center;
+}
+.header .login_f .login > img,
+.header .login_f .login h1 {
+  margin-bottom: 50px;
+}
+.header .login_f .login a {
+  font-size: 14px;
+  color: #777777;
+}
+.header .login_f .login div {
+  width: 316px;
+  height: 40px;
+  position: relative;
+}
+.header .login_f .login div input,
+.header .login_f .login div button {
+  border: 1px solid #ccc;
+  background-color: #fbfbfb;
+  width: 100%;
+  height: 100%;
+  padding-left: 54px;
+  border-radius: 4px;
+}
+.header .login_f .login div button {
+  border: 0;
+  padding: 0;
+  background-color: #f40009;
+}
+.header .login_f .login div.name {
+  margin-bottom: 26px;
+}
+.header .login_f .login div.name button {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.header .login_f .login div.pwd {
+  margin-bottom: 54px;
+}
+.header .login_f .login div.login-d {
+  margin-bottom: 26px;
+  font-size: 18px;
+  color: #fbfbfb;
+}
+.header .login_f .login div img {
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  left: 16px;
+}
+.header .Register1 {
+  display: none;
+  width: 406px;
+  height: 520px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -260px;
+  margin-left: -203px;
+  background-color: #fbfbfb;
+  z-index: 9999;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 28px;
+}
+.header .Register1 .name input,
+.header .Register1 .code input {
+  padding-left: 20px;
+}
+.header .Register1 div {
+  width: 316px;
+  height: 40px;
+  position: relative;
+  margin: 15px auto;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.header .Register1 div input,
+.header .Register1 div button {
+  border: 1px solid #ccc;
+  background-color: #fbfbfb;
+  width: 100%;
+  height: 100%;
+  padding-left: 54px;
+  border-radius: 4px;
+}
+.header .Register1 div button {
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  color: #FFF;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.header .Register1 div img {
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  left: 16px;
+}
+.header .Register1 div.checked {
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+}
+.header .Register1 div.checked input {
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+}
+.header .Register1 div.checked a {
+  display: inline-block;
+  margin-left: 10px;
+}
+.header .Register1 .login-z button {
+  border-radius: 4px;
+}
+.header .Register1 .login-clone {
+  top: 5px;
+  right: 5px;
+}
+.header .close1 {
+  display: inline-block;
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  width: 23px;
+  height: 23px;
+  background: url("../buy/buy_images/packet/close1.png") no-repeat center;
+}
+.header #overlay,
+.header #overlay1 {
+  background: #000;
+  filter: alpha(opacity=50);
+  /* IE的透明度 */
+  opacity: 0.5;
+  /* 透明度 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  /* 此处的图层要大于页面 */
+  display: none;
+}
+.header #overlay4 {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  display: none;
+}
+.header #overlay4 .close1 {
+  cursor: pointer;
+}
+.header #overlay4 .translateXY {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 9999;
+}
+.header #overlay4 .translateXY img {
+  width: 800px;
+}
+.header .box {
+  display: none;
+  float: left;
+  height: 424px;
+  width: 600px;
+  position: fixed;
+  top: 50%;
+  margin-top: -195px;
+  box-sizing: border-box;
+  z-index: 9999;
+  left: 50%;
+  margin-left: -300px;
+  border-radius: 5px;
+}
+.header .box .Positive,
+.header .box .other {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.header .box .close_1 {
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/tan/close2.png");
+  background-size: cover;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.header .box .close_1:hover {
+  cursor: pointer;
+}
+.header .box .other {
+  display: none;
+}
+.header .box .other #Layer_1 {
+  height: 100%;
+  background-image: url("../images/tan/study6.jpg");
+  background-size: cover;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.header .box .other #Layer_1 .myForm {
+  width: 210px;
+  font: 15px "Microsoft YaHei";
+  position: absolute;
+  box-sizing: border-box;
+  left: 58px;
+  top: 112px;
+}
+.header .box .other #Layer_1 .myForm p {
+  border-bottom: 1px solid #cdcdcd;
+  color: #515151;
+  font-size: 14px;
+  margin: 7px 0;
+  /*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+}
+.header .box .other #Layer_1 .myForm p input {
+  width: 210px;
+  height: 24px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: #000;
+  font-size: 14px;
+}
+.header .box .other #Layer_1 .myForm p select {
+  border: 0;
+  font-size: 14px;
+  width: 210px;
+  height: 24px;
+  border-radius: 3px;
+  color: #a8a8a8;
+}
+.header .box .other #Layer_1 .myForm p select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url(../images/tan/arrow.png) no-repeat scroll 193px center transparent;
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 14px;
+}
+.header .box .other #Layer_1 .myForm p select::-ms-expand {
+  display: none;
+}
+.header .box .other #Layer_1 .myForm p input::-webkit-input-placeholder {
+  /* WebKit browsers*/
+  color: #a8a8a8;
+  font-size: 14px;
+}
+.header .box .other #Layer_1 .myForm p input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18*/
+  color: #a8a8a8;
+  font-size: 14px;
+}
+.header .box .other #Layer_1 .myForm p input::-moz-placeholder {
+  /* Mozilla Firefox 19+*/
+  color: #a8a8a8;
+  font-size: 14px;
+}
+.header .box .other #Layer_1 .myForm p input:-ms-input-placeholder {
+  /* Internet Explorer 10+*/
+  color: #a8a8a8;
+  font-size: 14px;
+}
+.header .box .other #Layer_1 .myForm .submit1 {
+  border: 0;
+  display: block;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  background-color: #f40009;
+  border-radius: 15px;
+  margin-top: 18px;
+  color: #FFF;
+  font-family: Microsoft YaHei;
+  cursor: pointer;
+}
+.header .box .other #Layer_1 .myForm .disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+.header .box .Positive #Layer {
+  background-image: url("../images/tan/study1.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  left: 27%;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.header .box .Positive .layer2 {
+  display: block;
+  width: 142px;
+  height: 34px;
+  background-color: #f40009;
+  position: absolute;
+  left: 50px;
+  bottom: 14px;
+  border-radius: 2px;
+}
+.header .content {
+  position: relative;
+  height: 85px;
+}
+.header .content .left {
+  position: absolute;
+  line-height: 85px;
+}
+.header .content .left a {
+  float: left;
+}
+.header .content .left a img {
+  vertical-align: middle;
+}
+.header .content .left ul {
+  float: left;
+  margin-left: 45px;
+}
+.header .content .left ul li {
+  float: left;
+  position: relative;
+  margin: 0 5px;
+}
+.header .content .left ul li.active span {
+  width: 100%;
+}
+.header .content .left ul li.active a {
+  color: #f40009;
+}
+.header .content .left ul li span {
+  display: inline-block;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #f40009;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+.header .content .left ul li:hover span {
+  width: 100%;
+}
+.header .content .left ul li a {
+  padding: 0 15px;
+  font-size: 16px;
+  color: #333333;
+}
+.header .content .left ul li a:hover {
+  color: #f40009;
+}
+.header .content .left ul li .downColor {
+  color: #fff;
+}
+.header .content .left ul li .color_red1 {
+  color: #f40009;
+}
+.header .content .right {
+  width: 180px;
+  height: 31px;
+  line-height: 31px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -15px;
+  border-radius: 4px;
+  background-color: #f40009;
+  text-align: left;
+}
+.header .content .right a {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding-left: 39px;
+  position: relative;
+  font-size: 16px;
+  color: #fff;
+}
+.header .content .right a span {
+  background: url("../images/appointment.png") no-repeat center center;
+  display: inline-block;
+  width: 19px;
+  height: 21px;
+  left: 14px;
+  top: 6px;
+  position: absolute;
+}
+#right-float {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 22;
+  text-align: right;
+}
+#right-float ul {
+  padding-top: 71px;
+}
+#right-float ul li {
+  cursor: pointer;
+}
+#right-float ul .p1 {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  z-index: 2;
+}
+#right-float ul .p3 {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+#right-float ul .p1:hover {
+  opacity: 0;
+}
+#right-float ul .p1:hover + .p3 {
+  display: block;
+}

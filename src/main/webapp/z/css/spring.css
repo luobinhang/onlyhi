@@ -1,0 +1,394 @@
+.main .btn1 {
+  font-size: 28px;
+  margin-top: 40px;
+  border-radius: 5px;
+  height: 63px;
+  width: 244px;
+  padding: 10px 30px 0 0;
+  color: #ffffff;
+  background: url("../images/spring/btn.png") no-repeat center;
+  display: inline-block;
+}
+.main .banner1 {
+  height: 772px;
+  background: url("../images/spring/bg1.jpg") center center no-repeat;
+}
+.main .bg-title {
+  height: 102px;
+  border-left: 10px solid #FFF;
+  padding-bottom: 50px;
+  text-align: left;
+  font-size: 50px;
+  line-height: 51px;
+  padding-left: 5px;
+  margin-bottom: 50px;
+  color: #FFF;
+}
+.main .bg-title1 {
+  margin-bottom: 50px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.main .bg-title1 span {
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 30px;
+  font-size: 40px;
+  color: #3AC63A;
+  font-weight: bold;
+}
+.main .banner2 {
+  height: 590px;
+  padding-top: 90px;
+  position: relative;
+}
+.main .banner2 .content {
+  text-align: left;
+  position: relative;
+}
+.main .banner2 .content ul {
+  text-align: left;
+  font-size: 30px;
+}
+.main .banner2 .content ul li {
+  line-height: 50px;
+}
+.main .banner2 .content .bg2-t {
+  position: absolute;
+  left: 700px;
+  top: 130px;
+}
+.main .banner3 {
+  height: 650px;
+  padding-top: 60px;
+  background: url("../images/spring/sea.png") no-repeat 0 0;
+  position: relative;
+}
+.main .banner3 .content {
+  position: relative;
+}
+.main .banner3 ul li {
+  margin: 0 20px;
+  background-color: #E7E7E7;
+  padding: 0 20px;
+  padding-top: 40px;
+  color: #323232;
+  border: 5px solid #3AC63A;
+  height: 357px;
+  width: 353px;
+  float: left;
+  font-size: 22px;
+}
+.main .banner3 ul li h3 {
+  font-size: 30px;
+  line-height: 70px;
+}
+.main .banner3 ul li p {
+  font-size: 16px;
+  line-height: 30px;
+}
+.main .banner3-1 {
+  padding-top: 50px;
+}
+.main .banner3-1 .banner4 {
+  padding-bottom: 100px;
+  background: url("../images/spring/sea1.png") no-repeat left bottom;
+}
+.main .banner3-1 .banner4 .btn1 {
+  margin: 40px 40px;
+}
+.main .banner3-1 .banner4 .myWinter ul {
+  display: block;
+  border: 0;
+  text-align: center;
+}
+.main .banner3-1 .banner4 .myWinter ul li {
+  margin: 0 30px;
+  border-radius: 4px;
+  float: left;
+  width: 132px;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #3AC63A;
+  font-size: 30px;
+}
+.main .banner3-1 .banner4 .myWinter ul li.active a,
+.main .banner3-1 .banner4 .myWinter ul li.active a:hover {
+  border: 0;
+}
+.main .banner3-1 .banner4 .myWinter ul li a {
+  display: inline-block;
+  color: #000;
+  line-height: 48px;
+  width: 100%;
+  height: 100%;
+  color: #3AC63A;
+}
+.main .banner3-1 .banner4 .myWinter #springContent ul {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.main .banner3-1 .banner4 .myWinter #springContent ul li {
+  border-radius: 4px;
+}
+.main .banner3-1 .banner4 table {
+  font-size: 16px;
+}
+.main .banner3-1 .banner4 table tr {
+  height: 62px;
+}
+.main .banner3-1 .banner4 table td,
+.main .banner3-1 .banner4 table th {
+  border: 1px solid #CCC;
+  padding: 10px;
+}
+.main .banner3-1 .banner4 table thead {
+  background-color: #3AC63A;
+  color: #FFF;
+  height: 72px;
+}
+.main .banner3-1 .banner4 table thead .th1 {
+  width: 20%;
+}
+.main .banner3-1 .banner4 table thead .th2 {
+  width: 40%;
+}
+.main .banner3-1 .banner4 table thead .th3 {
+  width: 10%;
+}
+.main .banner3-1 .banner4 table tbody tr:nth-child(2n) {
+  background-color: rgba(58, 198, 58, 0.3);
+}
+.main .banner3-1 .banner5 {
+  position: relative;
+  background: url("../images/spring/bg5.png") no-repeat 100% 100%;
+}
+.main .banner3-1 .banner5 #bulletin1 {
+  height: 520px;
+}
+.main .banner3-1 .banner5 #bulletin1 img {
+  border-radius: 50%;
+  border: 2px dashed #3AC63A;
+  padding: 5px;
+}
+.main .banner3-1 .banner5 #bulletin1:hover .carousel-control {
+  display: block;
+}
+.main .banner3-1 .banner5 #bulletin1 .carousel-control {
+  background-image: none;
+  font-size: 100px;
+  line-height: 380px;
+  display: none;
+}
+.main .banner3-1 .banner5 #bulletin1 .carousel-control.left {
+  left: -177px;
+}
+.main .banner3-1 .banner5 #bulletin1 .carousel-control.right {
+  left: 100%;
+}
+.main .banner3-1 .banner5 ul {
+  width: 100%;
+}
+.main .banner3-1 .banner5 ul li {
+  text-align: center;
+  width: 280px;
+  float: left;
+  margin: 0 55px;
+  font-size: 18px;
+}
+.main .banner3-1 .banner5 ul li h1 {
+  line-height: 80px;
+  font-size: 30px;
+}
+.main .banner3-1 .banner5 ul li p {
+  line-height: 28px;
+  text-align: left;
+  text-indent: 2em;
+}
+.main .banner3-1 .banner5 button {
+  margin: 40px 40px;
+}
+.main .banner6 {
+  height: 520px;
+  padding-top: 56px;
+  background: url("../images/spring/bg6.jpg") center center no-repeat;
+}
+.main .banner6 ul li {
+  height: 230px;
+  width: 220px;
+  font-size: 24px;
+  float: left;
+  margin: 0 30px;
+  color: #3AC63A;
+}
+.main .banner6 ul li img {
+  margin-top: 32px;
+  margin-bottom: 22px;
+}
+.main .banner6 ul li p {
+  line-height: 70px;
+}
+.main .banner7 {
+  height: 1000px;
+  padding-top: 60px;
+  background: url("../images/spring/bg6-round.jpg") no-repeat center center;
+}
+.main .banner7 .content {
+  position: relative;
+}
+.main .banner7 .content .trigon {
+  left: 50%;
+  top: 320px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.main .banner7 .content .line0 {
+  position: absolute;
+  text-align: center;
+}
+.main .banner7 .content .line0 .line0 p {
+  width: 100%;
+  color: #3AC63A;
+  font-size: 18px;
+  padding: 0 30px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.main .banner7 .content .line_A {
+  left: 370px;
+  top: 200px;
+}
+.main .banner7 .content .line_A .line1 {
+  width: 0px;
+  height: 2px;
+  border-top: 2px dashed #3AC63A;
+  left: 190px;
+  top: 33px;
+}
+.main .banner7 .content .line_A div {
+  display: none;
+  width: 230px;
+  height: 230px;
+  border-radius: 230px;
+  border: 2px dashed #3AC63A;
+  left: 370px;
+  top: -80px;
+}
+.main .banner7 .content .line_F {
+  left: 300px;
+  top: 530px;
+}
+.main .banner7 .content .line_F .line1 {
+  width: 0px;
+  height: 2px;
+  border-top: 2px dashed #3AC63A;
+  left: -150px;
+  top: 80px;
+}
+.main .banner7 .content .line_F .line2 {
+  width: 2px;
+  height: 0px;
+  border-left: 2px dashed #3AC63A;
+  left: -150px;
+  top: 85px;
+}
+.main .banner7 .content .line_F div {
+  display: none;
+  width: 180px;
+  height: 180px;
+  border-radius: 180px;
+  border: 2px dashed #3AC63A;
+  left: -240px;
+  top: 175px;
+}
+.main .banner7 .content .line_E {
+  left: 800px;
+  top: 500px;
+}
+.main .banner7 .content .line_E .line1 {
+  width: 0px;
+  height: 2px;
+  border-top: 2px dashed #3AC63A;
+  left: 130px;
+  top: 85px;
+}
+.main .banner7 .content .line_E .line2 {
+  width: 2px;
+  height: 0px;
+  border-left: 2px dashed #3AC63A;
+  left: 260px;
+  top: 85px;
+}
+.main .banner7 .content .line_E div {
+  display: none;
+  width: 180px;
+  height: 180px;
+  border-radius: 180px;
+  border: 2px dashed #3AC63A;
+  left: 170px;
+  top: 175px;
+}
+.main .banner8 {
+  height: 650px;
+  padding-top: 56px;
+  background: url("../images/spring/bg7.jpg") no-repeat center center;
+  color: #FFF;
+}
+.main .banner8 .bg-title {
+  margin-bottom: 20px;
+  color: #FFF;
+  border-left: 10px solid #FFF;
+}
+.main .banner8 .period {
+  width: 1000px;
+  text-align: left;
+  font-size: 24px;
+}
+.main .banner8 .period p {
+  line-height: 40px;
+}
+.main .banner8 .btn1 {
+  background: transparent;
+  border: 2px solid #FFF;
+  margin: 40px 20px;
+  padding: 0;
+}
+.main .banner9 {
+  height: 720px;
+  padding-top: 60px;
+}
+.main .banner9 ul {
+  margin-top: 58px;
+}
+.main .banner9 ul li {
+  float: left;
+  width: 360px;
+}
+.main .banner9 ul li h3 {
+  font-size: 30px;
+  line-height: 60px;
+  color: #3AC63A;
+}
+.main .banner9 ul li p {
+  font-size: 20px;
+  color: #2c2c2c;
+}

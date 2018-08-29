@@ -1,0 +1,319 @@
+.content {
+  width: 1200px;
+}
+.main {
+  background-color: #F4F4F4;
+}
+.main .title {
+  color: #FFF;
+  font-size: 40px;
+  text-align: center;
+  font-style: italic;
+  height: 83px;
+  line-height: 83px;
+  background: url("../images/HundreDay/bg_red-title.png") no-repeat center;
+}
+.main .btn1 {
+  background: url("../images/HundreDay/btn.png") no-repeat center;
+  display: inline-block;
+  width: 225px;
+  height: 53px;
+  text-align: center;
+  line-height: 53px;
+  color: #FFF;
+  font-size: 28px;
+}
+.banner1 {
+  height: 674px;
+  background: url("../images/HundreDay/bg1.jpg") no-repeat center;
+  background-size: cover;
+}
+.banner2 .center {
+  background: url("../images/HundreDay/bg2.png") no-repeat center;
+}
+.banner2 .center ul {
+  width: 720px;
+  margin-top: 50px;
+}
+.banner2 .center ul li {
+  margin: 4px;
+  width: 336px;
+  height: 335px;
+  float: left;
+  position: relative;
+  -webkit-transition: all 1s 0.2s;
+  -moz-transition: all 1s 0.2s;
+  -ms-transition: all 1s 0.2s;
+  -o-transition: all 1s 0.2s;
+  transition: all 1s 0.2s;
+}
+.banner2 .center ul li div {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  bottom: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.banner2 .center ul li div p {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFF;
+}
+.banner2 .center ul li:hover {
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  transform: translateY(-3px);
+  box-shadow: -3px 3px 20px #000;
+}
+.banner2 .center ul li:hover div {
+  height: 100%;
+}
+.banner2 .center .btn1 {
+  margin-top: 38px;
+}
+.banner3 {
+  background: url("../images/HundreDay/bg5.png") no-repeat center top;
+  padding-top: 115px;
+  margin-top: 80px;
+}
+.banner3 .content .title {
+  background: url("../images/HundreDay/bg3-title.png") no-repeat center;
+  color: #F55A49;
+}
+.banner3 .content .left {
+  margin-top: 60px;
+}
+.banner3 .content .left p {
+  font-size: 30px;
+  color: #FFF;
+  margin: 17px 0;
+}
+.banner3 .content .left .btn1 {
+  background: none;
+  color: #F55A49;
+  background-color: #FFF;
+  border-radius: 5px;
+  margin-top: 80px;
+}
+.banner3 .content .right {
+  margin-top: 120px;
+}
+.banner4 {
+  padding-top: 80px;
+  position: relative;
+}
+.banner4 .content .title {
+  margin-bottom: 46px;
+}
+.banner4 .content ul {
+  margin-bottom: 56px;
+}
+.banner4 .content ul li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  width: 80px;
+  margin: 0 30px;
+}
+.banner4 .content ul li img {
+  display: block;
+  margin-bottom: 16px;
+}
+.banner4 .content .center {
+  text-align: center;
+}
+.banner4 .content .center .btn1 {
+  margin: 30px 95px;
+}
+.banner4 .img {
+  position: absolute;
+  top: 300px;
+}
+.banner4 .left {
+  left: 0;
+}
+.banner4 .right {
+  right: 0;
+}
+.banner5 {
+  padding-top: 78px;
+}
+.banner5 .btn1 {
+  margin: 40px 40px;
+}
+.banner5 .title {
+  margin-bottom: 20px;
+}
+.banner5 .myWinter ul {
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  text-align: center;
+}
+.banner5 .myWinter ul li {
+  margin: 0 30px;
+  border-radius: 4px;
+  float: left;
+  width: 132px;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #f40009;
+  font-size: 30px;
+}
+.banner5 .myWinter ul li.active a,
+.banner5 .myWinter ul li.active a:hover {
+  border: 0;
+}
+.banner5 .myWinter ul li a {
+  display: inline-block;
+  color: #000;
+  line-height: 48px;
+  width: 100%;
+  height: 100%;
+}
+.banner5 .myWinter ul#winterTab {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  top: 0;
+}
+.banner5 .myWinter #winterContent ul {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.banner5 .myWinter #winterContent ul li {
+  border-radius: 4px;
+}
+.banner5 table {
+  font-size: 18px;
+}
+.banner5 table tr {
+  height: 62px;
+}
+.banner5 table td,
+.banner5 table th {
+  border: 1px solid #CCC;
+  padding: 10px;
+}
+.banner5 table thead {
+  background-color: #f40009;
+  color: #FFF;
+  height: 72px;
+}
+.banner5 table thead .th1 {
+  width: 25%;
+}
+.banner5 table thead .th2 {
+  width: 35%;
+}
+.banner5 table thead .th3 {
+  width: 10%;
+}
+.banner5 table tbody tr:nth-child(2n) {
+  background-color: #FEEFEC;
+}
+.banner6 {
+  background: url("../images/HundreDay/bg5.png") no-repeat center;
+  padding-bottom: 100px;
+  padding-top: 160px;
+}
+.banner6 .title {
+  margin-bottom: 10px;
+  background: url("../images/HundreDay/bg3-title.png") no-repeat center;
+  color: #f40009;
+}
+.banner6 .left,
+.banner6 .right {
+  display: inline-block;
+  vertical-align: middle;
+}
+.banner6 .left {
+  color: #FFF;
+  width: 450px;
+}
+.banner6 .left p {
+  font-size: 26px;
+  line-height: 36px;
+  margin: 40px 0;
+}
+.banner7 .content .title {
+  margin-bottom: 126px;
+}
+.banner7 .content ul {
+  padding: 0 100px;
+}
+.banner7 .content ul li {
+  background: url("../images/HundreDay/bg6-white.jpg") no-repeat center;
+  width: 261px;
+  height: 277px;
+  padding: 0 40px;
+  padding-top: 60px;
+  color: #F15746;
+  display: inline-block;
+  margin: 14px 17px;
+  vertical-align: middle;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.banner7 .content ul li p {
+  font-size: 16px;
+}
+.banner7 .content ul li h2 {
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+.banner7 .content ul li:hover {
+  background: url("../images/HundreDay/bg6-red.jpg") no-repeat center;
+  color: #FFF;
+}
+.banner7 .content .btn1 {
+  margin-top: 48px;
+}
+.banner8 {
+  padding-top: 60px;
+  padding-bottom: 230px;
+}
+.banner8 .title {
+  margin-bottom: 50px;
+}
+.banner8 ul li {
+  margin: 0 50px;
+  display: inline-block;
+}
+.banner8 ul li h2 {
+  font-size: 30px;
+  color: #EF574B;
+  line-height: 48px;
+}
+.banner8 ul li p {
+  font-size: 20px;
+  line-height: 24px;
+  width: 220px;
+}
+.banner8 ul li img {
+  margin-bottom: 20px;
+}

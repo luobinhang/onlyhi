@@ -1,0 +1,480 @@
+/*滚动条*/
+//滚动条整体部分，其中的属性有width,height,background,border（就和一个块级元素一样）等。
+.select8 .center::-webkit-scrollbar {
+  width: 45/75rem;
+  background: #6788BD;
+  display: block;
+}
+
+//滚动条两端的按钮。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。
+.select8 .center::-webkit-scrollbar-button:start {
+  background: url("../images/hitExamination/scroll-t.png") no-repeat center;
+}
+
+.select8 .center::-webkit-scrollbar-button:end {
+  background: url("../images/hitExamination/scroll-b.png") no-repeat center;
+}
+
+//外层轨道。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。
+.select8 .center::-webkit-scrollbar-track {
+  //display: none;
+  //background:#6788BD;
+}
+
+//内层轨道，滚动条中间部分（除去）。
+.select8 .center::-webkit-scrollbar-track-piece {
+  display: none;
+  //background:url(http://www.lyblog.net/wp/wp-content/themes/mine/img/stripes_tiny_08.png);
+}
+
+//滚动条里面可以拖动的那部分
+.select8 .center::-webkit-scrollbar-thumb {
+  background: url("../images/hitExamination/scroll.png") no-repeat center;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+////边角
+.select8 .center::-webkit-scrollbar-corner {
+  background: #000;
+}
+
+////定义右下角拖动块的样式
+.select8 .center::-webkit-scrollbar-resizer {
+  background: #FF0BEE;
+}
+
+//滚动条End
+body {
+  background-color: #364fbc;
+}
+
+.select {
+  background-color: #73ABF1;
+  margin: 20/75rem 0;
+  color: #FFF;
+}
+#select{
+  position: fixed;
+  width:100%;
+  height:100%;
+  z-index:999;
+  overflow: hidden;
+  display: none;
+  >img{
+    position: absolute;
+    left:50%;
+    top:50%;
+    display: none;
+  }
+  #layer{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,.5);
+    display: none;
+  }
+  .code,.success{
+    width:502/75rem;
+    height:438/75rem;
+    position: absolute;
+    left:50%;
+    top:50%;
+    display: none;
+    .clone{
+      position: absolute;
+      right:10/75rem;
+      top:10/75rem;
+      font-size: 30/75rem;
+    }
+  }
+}
+.select1 {
+  margin-top: 0;
+  padding-bottom: 20/75rem;
+  height: 1162/75rem;
+  width: 100%;
+  background: url("../images/hitExamination/bg1.jpg") no-repeat top;
+  background-size: 100% 100%;
+  background-color: #73ABF1;
+  padding-top: 644/75rem;
+  span {
+    background-color: #C85538;
+    display: inline-block;
+    font-size: 32/75rem;
+    line-height: 68/75rem;
+    //margin-left: 50/75rem;
+  }
+}
+
+.select2 {
+  height: 1162/75rem;
+  background: url("../images/hitExamination/bg2.png") no-repeat top;
+  background-size: 100% 100%;
+  margin-top: -120/75rem;
+  padding-bottom: 80/75rem;
+  padding-top: 100/75rem;
+  .select2-1 {
+    height: 296/75rem;
+    h1 {
+      font-size: 38/75rem;
+      line-height: 100/75rem;
+    }
+    p {
+      height:196/75rem;
+      overflow: scroll;
+      text-align: left;
+      font-size: 26/75rem;
+      line-height: 40/75rem;
+      padding: 0 36/75rem;
+      text-indent: 2em;
+    }
+  }
+  .select2-2 {
+    padding-top: 56/75rem;
+    padding-left: 36/75rem;
+    .title {
+      height: 100/75rem;
+      text-align: left;
+      h1 {
+        font-size: 32/75rem;
+        font-weight: bold;
+        line-height: 55/75rem;
+      }
+      p {
+        font-size: 24/75rem;
+        color: #000;
+      }
+    }
+  }
+  .select2-3 {
+    position: relative;
+    #vadio-opacity{
+      height: 495/75rem;
+      width:100%;
+      position: absolute;
+      z-index: 9;
+      display: none;
+      background: url("../images/hitExamination/load.jpg") no-repeat center;
+      background-size: cover;
+    }
+      #video {
+        height: 495/75rem;
+        background-color: #000;
+        padding-top: 30/75rem;
+        >div{
+          width:100%;
+          height:100%;
+        }
+        embed{
+          width:100%;
+          height:100%;
+        }
+      }
+    p {
+      line-height: 75/75rem;
+      padding-right: 18/75rem;
+      text-align: right;
+    }
+  }
+}
+
+.select3 {
+  height: 1340/75rem;
+  width: 100%;
+  background: url("../images/hitExamination/bg3.png") no-repeat top;
+  background-size: 100% 100%;
+  margin-top: -80/75rem;
+  padding-top: 290/75rem;
+  ul {
+    li {
+      width: 671/75rem;
+      height: 286/75rem;
+      background-color: #507CBA;
+      margin: 0 auto;
+      margin-bottom: 60/75rem;
+      border-radius: 18/75rem;
+      a{
+        display: inline-block;
+        height:100%;
+        img {
+          float: left;
+          width: auto;
+          height: 100%;
+        }
+      .right {
+        padding: 15/75rem;
+        padding-left: 25/75rem;
+        overflow: scroll;
+        text-align: left;
+        height:100%;
+        h1 {
+          line-height: 50/75rem;
+          color: #FFF;
+        }
+        p {
+          font-size: 24/75rem;
+        }
+        .p1 {
+          margin-bottom: 26/75rem;
+          color: #B8EDFF;
+        }
+        .p2 {
+          text-align: left;
+          color: #FEFEFE;
+          line-height: 32/75rem;
+        }
+      }
+      }
+
+    }
+  }
+}
+.select3-1{
+  background-color: #364fbc;
+  a{
+    margin: 20/75rem 0;
+    display: inline-block;
+    font-size: 40/75rem;
+    width:710/75rem;
+    height:100/75rem;
+    line-height: 100/75rem;
+    color: #FFF;
+    background-color: #C01822;
+
+  }
+}
+.select4 {
+  height: 1222/75rem;
+  width: 100%;
+  background: url("../images/hitExamination/bg4.png") no-repeat top;
+  background-size: 100% 100%;
+  padding-top: 130/75rem;
+  .title {
+    line-height: 70/75rem;
+    padding-right: 24/75rem;
+    text-align: right;
+    font-size: 28/75rem;
+  }
+  .center {
+    height: 735/75rem;
+    margin-top: 50/75rem;
+    overflow: hidden;
+    position: relative;
+    ul{
+      position: absolute;
+      li{
+        text-align: left;
+        padding: 38/75rem;
+        .p1 {
+          padding: 0 24/75rem;
+          font-size: 28/75rem;
+          color: #19386E;
+          line-height: 45/75rem;
+        }
+        .p2 {
+          width: 100%;
+          font-size: 26/75rem;
+          padding: 0 40/75rem;
+        }
+      }
+    }
+  }
+  .bottom {
+    padding-top: 40/75rem;
+    div {
+      height: 100/75rem;
+      padding: 0 20/75rem;
+      input {
+        float: left;
+        width: 480/75rem;
+        background-color: #FFF;
+        height: 100%;
+        font-size: 28/75rem;
+        color: #295197;
+        border-radius: 5px;
+        padding-left: 25/75rem;
+      }
+      button {
+        font-size: 30/75rem;
+        float: right;
+        color: #FFF;
+        height: 100%;
+        width: 200/75rem;
+        background-color: #295197;
+      }
+    }
+    p {
+      margin-top: 34/75rem;
+      font-size: 26/75rem;
+      color: #134090;
+    }
+  }
+}
+
+.select5 {
+  height: 604/75rem;
+  width: 100%;
+  background: url("../images/hitExamination/bg5.png") no-repeat top;
+  background-size: 100% 100%;
+  padding-top: 240/75rem;
+  img {
+    width: 250/75rem;
+    height: 250/75rem;
+  }
+  .p1 {
+    line-height: 57/75rem;
+    font-size: 24/75rem;
+  }
+  .p2 {
+    font-size: 26/75rem;
+    color: #295197;
+    font-weight: bold;
+  }
+}
+
+.select6 {
+  height: 839/75rem;
+  width: 100%;
+  background: url("../images/hitExamination/bg6.png") no-repeat top;
+  background-size: 100% 100%;
+  padding-top: 315/75rem;
+  .myForm {
+    width: 570/75rem;
+    margin: auto;
+    p {
+      border-radius: 5px;
+      padding: 10/75rem 0;
+      height: 107/75rem;
+      select, input {
+        height: 100%;
+        font-size: 32/75rem;
+        border: 1px solid #CCC;
+        border-radius: 5px;
+        padding-left: 20/75rem;
+        background-color: #FFF;
+      }
+      input {
+        width: 100%;
+      }
+      select {
+        background: url('../images/hitExamination/downicon.png') no-repeat center;
+        background-position-y: 50%;
+        background-position-x: 90%;
+        background-size: 20/75rem 20/75rem;
+        background-color: #FFF;
+        height: 100%;
+        width: 48%;
+        padding-left: 17/75rem;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        option {
+          background: transparent;
+        }
+      }
+    }
+    button {
+      margin: 10/75rem 0;
+      height: 100%;
+      font-size: 37/75rem;
+      width: 100%;
+    }
+
+  }
+}
+
+.select7 {
+  height: 881/75rem;
+  width: 100%;
+  background: url("../images/hitExamination/bg7.png") no-repeat top;
+  background-size: 100% 100%;
+  padding-top: 645/75rem;
+  ul {
+    li {
+      overflow: hidden;
+      padding-left: 60/75rem;
+      text-align: left;
+      height: 24/75rem;
+      font-size: 16/75rem;
+      line-height: 24/75rem;
+      margin-bottom: 19/75rem;
+      p {
+        width: 200%;
+      }
+    }
+  }
+}
+
+.select8 {
+  padding-bottom: 64/75rem;
+  margin: 0;
+  .title {
+    margin: 30/75rem 0;
+    width: 559/75rem;
+    height: auto;
+  }
+
+  .top {
+    margin: 0 auto;
+    height: 70/75rem;
+    width: 710/75rem;
+    table{
+      thead{
+        tr{
+          height: 70/75rem;
+          width: 710/75rem;
+          font-size: 28/75rem;
+          th{
+            border: 2/75rem solid #FFF;
+          }
+          .th1{
+            width:107/75rem;
+          }
+          .th2{
+            width:205/75rem;
+          }
+          .th3{
+            width:206/75rem;
+          }
+          .th4{
+            width:148/75rem;
+          }
+        }
+      }
+    }
+  }
+  .center {
+    width: 710/75rem;
+    height: 710/75rem;
+    margin: 0 auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1/75rem solid #FFF;
+    border-bottom:none;
+    img {
+      width: 100%;
+    }
+  }
+
+}
+
+.select9 {
+  margin: 0;
+  height: 210/75rem;
+  background-color: #4144B8;
+  button {
+    width: 572/75rem;
+    height: 106/75rem;
+    line-height: 106/75rem;
+    background-color: #D7A54A;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+    top: 50%;
+    font-size: 38/75rem;
+  }
+}

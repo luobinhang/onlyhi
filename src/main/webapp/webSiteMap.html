@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="嗨课堂,昂立嗨课堂,交大昂立嗨课堂">
+    <meta name="description"
+          content="上海交大昂立嗨课堂，传承百年交大精神，深耕教育辅导行业30余年。昂立嗨课堂从清、北、复、交等著名学府层层筛选团队，专注中小学一对一在线教育，致力于打造行业权威在线教育平台！">
+    <title>嗨课堂_中小学一对一在线辅导_小初高课程补习_K12在线辅导【官网】</title>
+    <link rel="icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/webSiteMap.css">
+    <script src="js/Ie.js"></script>
+</head>
+<body style="min-width: 1180px ">
+@@include('include/header.html')
+<div class="main">
+    <!--<div class="mapTitle contain">-->
+        <!--<p class="title1">网站地图</p>-->
+        <!--<p class="title2">首页> 网站地图</p>-->
+    <!--</div>-->
+    <!--<div class="singleMap contain">-->
+        <!--<p class="singleTitle">-->
+            <!--<img src="images/map.png" alt="">-->
+            <!--热门栏目-->
+        <!--</p>-->
+        <!--<ul class="mapContain">-->
+            <!--<li><a href="">嗨课堂</a></li>-->
+            <!--<li><a href="">优秀名师</a></li>-->
+            <!--<li><a href="">优秀拉了</a></li>-->
+            <!--<li><a href="">嗨课堂优势</a></li>-->
+            <!--<li><a href="">嗨课堂</a></li>-->
+            <!--<li><a href="">优秀名师</a></li>-->
+            <!--<li><a href="">优秀拉了</a></li>-->
+            <!--<li><a href="">嗨课堂优势</a></li>-->
+            <!--<li><a href="">嗨课堂</a></li>-->
+            <!--<li><a href="">优秀名师</a></li>-->
+            <!--<li><a href="">优秀拉了</a></li>-->
+            <!--<li><a href="">嗨课堂优势</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+    <!--<div class="singleMap contain">-->
+        <!--<p class="singleTitle">-->
+            <!--<img src="images/map.png" alt="">-->
+            <!--热门栏目-->
+        <!--</p>-->
+        <!--<ul class="mapContain">-->
+            <!--<li><a href="">嗨课堂</a></li>-->
+            <!--<li><a href="">优秀名师</a></li>-->
+            <!--<li><a href="">优秀拉了</a></li>-->
+            <!--<li><a href="">嗨课堂优势</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+</div>
+<div class="video translateXY">
+    <div id="id_video_container_9031868222995681094" style="position: relative;z-index: 1;width:100%;height:auto;"></div>
+    <img id=video-clone src="images/tan/close2.png" width=30 height=30 alt="">
+</div>
+@@include('include/footer.html')
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/lib/artTemplate-master/dist/template.js"></script>
+<script src="js/lib/jquery-cookie/jquery.cookie.js"></script>
+<script src="js/lib/js-sha512/src/sha512.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/gotoTop.js"></script>
+<script src="js/api-config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/login.js"></script>
+
+<script>
+    $(function () {
+        //获取网站地图
+        $.ajax({
+            url: CMSPCAPI + '/cms/server/systemManager/getWebsiteMap',
+            type: "get",
+            dataType: "json",
+            success: function (res) {
+                var data = res.data;
+                for (var i = 0; i < data.length; i++) {
+                    var item = '<p class="singleTitle"> <img src="' +
+                        'images/map.png' +
+                        '">'+
+                        data[i].firstColumnName+
+                       '</p> ';
+                    var websiteMapChildList=data[i].resultMap.websiteMapChildList;
+                    var itemSum='';
+                    for(var a = 0; a < websiteMapChildList.length; a++){
+                        var item2 = '<li><a href="'+
+                            websiteMapChildList[a].childLink+
+                            '">'+
+                            websiteMapChildList[a].childName +
+                            '</a></li>';
+                        itemSum=itemSum+item2;
+                    }
+                    var items='<div class="singleMap contain">'+item+'<ul class="mapContain">'+itemSum+'</ul></div>';
+                    console.log(items);
+                    $(".main").append(items);
+                }
+                $(".main .singleMap:first-child").prepend("<div class=\"mapTitle contain\">\n" +
+                    "        <p class=\"title1\">网站地图</p>\n" +
+                    "        <p class=\"title2\">首页> 网站地图</p>\n" +
+                    "    </div>");
+            },
+            error: function (res) {
+            }
+        });
+    })
+</script>
+
+</html>

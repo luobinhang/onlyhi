@@ -1,0 +1,61 @@
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  padding-top: 36px;
+  padding-bottom: 24px;
+}
+.main .contain {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main .mapTitle {
+  background-color: #fff;
+  width: 100%;
+}
+.main .mapTitle .title1 {
+  line-height: 57px;
+  padding-left: 24px;
+  font-size: 20px;
+  color: #0f1d33;
+  border-bottom: 1px solid #cccccc;
+}
+.main .mapTitle .title2 {
+  color: #cccccc;
+  font-size: 18px;
+  padding-left: 24px;
+  line-height: 48px;
+  padding-bottom: 12px;
+}
+.main .singleMap {
+  background-color: #fff;
+  padding: 0 24px;
+  margin-bottom: 12px;
+  box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.1);
+}
+.main .singleMap .singleTitle {
+  font-size: 20px;
+  color: #0f1d33;
+  line-height: 55px;
+  padding-top: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+.main .singleMap .singleTitle img {
+  vertical-align: -5px;
+  margin-right: 10px;
+}
+.main .singleMap .mapContain {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .singleMap .mapContain li {
+  line-height: 96px;
+  color: #999999;
+  font-size: 20px;
+  width: 150px;
+  text-align: center;
+  margin: 0;
+}
+.main .singleMap .mapContain li a {
+  color: #999999;
+}

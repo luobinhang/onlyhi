@@ -1,0 +1,292 @@
+.main p.barTitle {
+  width: 323px;
+  height: 97px;
+  color: #292929;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 26px;
+}
+.main .contain {
+  width: 1200px!important;
+  margin: 0 auto;
+}
+.main .bar1 img {
+  width: 100%;
+  display: block;
+}
+.main .bar2 {
+  width: 1040px;
+  height: 272px;
+  margin: 0 auto;
+  margin-top: 35px;
+  box-shadow: 0 0 38px 3px rgba(14, 5, 9, 0.1);
+  border-radius: 33px;
+}
+.main .bar2 p.barTitle {
+  background: url(../images/professor/t1.png) no-repeat center bottom;
+}
+.main .bar2 p:nth-child(2) {
+  width: 982px;
+  color: #848484;
+  font-size: 20px;
+  line-height: 35px;
+  padding: 20px;
+}
+.main .bar3 {
+  margin-top: 20px;
+}
+.main .bar3 .bar3Head p.barTitle {
+  background: url(../images/professor/t2.png) no-repeat center bottom;
+}
+.main .bar3 .bar3Body li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.main .bar3 .bar3Body li img {
+  width: 244px;
+  height: 244px;
+}
+.main .bar3 .bar3Body li div p {
+  color: #525252;
+  font-size: 30px;
+}
+.main .bar3 .bar3Body li div p:first-child {
+  margin-top: 26px;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+.main .bar3 .bar3Body li div p:nth-child(3) {
+  font-size: 20px;
+  color: #848484;
+  line-height: 37px;
+  margin-top: 17px;
+}
+.main .bar3 .bar3Body li:first-child > div {
+  background: url(../images/professor/c1.png) no-repeat 782px 0px;
+}
+.main .bar3 .bar3Body li:nth-child(2) div {
+  background: url(../images/professor/c2.png) no-repeat 0px 40px;
+  margin-right: 0;
+}
+.main .bar3 .bar3Body li:nth-child(2) div p:not(:nth-child(3)) {
+  text-align: right;
+}
+.main .bar4 {
+  margin-top: 75px;
+}
+.main .bar4 .bar4Head {
+  display: flex;
+  justify-content: space-between;
+}
+.main .bar4 .bar4Head .bar4Title {
+  font-size: 28px;
+  color: #292929;
+  margin: 0;
+}
+.main .bar4 .bar4Head .bar4Title img {
+  margin-right: 8px;
+}
+.main .bar4 .bar4Head p.month {
+  margin: 0;
+}
+.main .bar4 .bar4Head p.month span {
+  width: 56px;
+  height: 28px;
+  line-height: 28px;
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 18px;
+  background-color: #eaeaea;
+  color: #b5b5b5;
+  border-radius: 14px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.main .bar4 .bar4Head p.month span.active {
+  color: #292929;
+}
+.main .bar4 .bar4Body ul {
+  display: flex;
+}
+.main .bar4 .bar4Body ul li {
+  margin-top: 30px;
+  width: 381px;
+  height: 300px;
+  cursor: pointer;
+}
+.main .bar4 .bar4Body ul li p:first-child {
+  padding: 234px 13px 0 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .bar4 .bar4Body ul li p:first-child span.periods {
+  color: #363636;
+  font-size: 20px;
+}
+.main .bar4 .bar4Body ul li p:first-child span.frequency {
+  font-size: 16px;
+  color: #7d7d7d;
+}
+.main .bar4 .bar4Body ul li p:nth-child(2) {
+  padding: 5px 0px 0 9px;
+  font-size: 18px;
+  color: #7d7d7d;
+}
+.main .bar4 .bar4Body ul li:first-child {
+  background: url(../images/professor/e1.png) no-repeat center;
+}
+.main .bar4 .bar4Body ul li:nth-child(2) {
+  margin: 30px 26px 0 26px;
+  background: url(../images/professor/e2.png) no-repeat center;
+}
+.main .bar4 .bar4Body ul li:nth-child(3) {
+  background: url(../images/professor/e3.png) no-repeat center;
+}
+.main .bar5 {
+  margin-top: 20px;
+}
+.main .bar5 .bar5Head p.barTitle {
+  background: url(../images/professor/t3.png) no-repeat center bottom;
+}
+.main .bar5 .bar5Body {
+  margin-top: 30px;
+  color: #848484;
+  font-size: 20px;
+  width: 1162px;
+  height: 69px;
+  line-height: 69px;
+  text-align: center;
+  background: url(../images/professor/b5.png) no-repeat center;
+  margin-bottom: 52px;
+}
+.video-window {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.video-info {
+  position: absolute;
+  width: 888px;
+  z-index: 99;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.video-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.btns {
+  width: 330px;
+  line-height: 52px;
+  background-color: #f40009;
+  color: #fff;
+  text-align: center;
+  border-radius: 26px;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.tanBox {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.tanBox #tan1 {
+  height: 530px;
+  width: 750px;
+  position: absolute;
+  top: 50%;
+  margin-top: -265px;
+  background-image: url("../images/professor/tanBg.png");
+  box-sizing: border-box;
+  z-index: 9999;
+  left: 50%;
+  margin-left: -375px;
+}
+.tanBox #tan1 .tanForm {
+  width: 210px;
+  font: 15px "Microsoft YaHei";
+  position: absolute;
+  box-sizing: border-box;
+  left: 32px;
+  top: 174px;
+}
+.tanBox #tan1 .tanForm p {
+  color: #515151;
+  font-size: 14px;
+  margin-bottom: 36px;
+}
+.tanBox #tan1 .tanForm p input {
+  width: 330px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  color: #000;
+  font-size: 14px;
+  border: 1px solid #d7d7d7;
+  padding-left: 20px;
+}
+.tanBox #tan1 .tanForm p input::-webkit-input-placeholder {
+  /* WebKit browsers*/
+  color: #d7d7d7;
+  font-size: 18px;
+}
+.tanBox #tan1 .tanForm p input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18*/
+  color: #d7d7d7;
+  font-size: 18px;
+}
+.tanBox #tan1 .tanForm p input::-moz-placeholder {
+  /* Mozilla Firefox 19+*/
+  color: #d7d7d7;
+  font-size: 18px;
+}
+.tanBox #tan1 .tanForm p input:-ms-input-placeholder {
+  /* Internet Explorer 10+*/
+  color: #d7d7d7;
+  font-size: 18px;
+}
+.tanBox #tan1 .tanForm #submitTan {
+  width: 330px;
+  line-height: 52px;
+  background-color: #f40009;
+  color: #fff;
+  text-align: center;
+  border-radius: 26px;
+  font-size: 20px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.tanBox #tan1 .tanForm .disabled {
+  background-color: #ccc;
+  cursor: default;
+}
+.tanBox .closeTan {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../images/tan/close2.png");
+  background-size: cover;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}

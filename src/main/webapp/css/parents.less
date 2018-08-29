@@ -1,0 +1,318 @@
+h1 {
+  font-size: 40px;
+  color: #33332d;
+  span {
+    color: #f40009;
+  }
+}
+.b-top{
+  padding-top: 60px;
+}
+
+.main {
+  .banner1 {
+    height: 400px;
+    background: url("../images/parents/banner.jpg") no-repeat center;
+    .content{
+      position: relative;
+      height:100%;
+      .center{
+        display: inline-block;
+        position: absolute;
+        left:56%;
+        top:28%;
+        h1{
+          color: #f40009;
+          line-height: 60px;
+        }
+        p{
+          color: #585858;
+          font-size: 23px;
+          line-height: 60px;
+          margin-bottom: 30px;
+        }
+        button{
+          width:169px;
+          height:44px;
+          border-radius: 22px;
+          background-color: #f40009;
+          color: #FFF;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .banner2 {
+    height: 630px;
+    background-color: #FFF;
+    overflow: hidden;
+    .content {
+      height:100%;
+      #myCarousel{
+        height:100%;
+        width:478px;
+        padding-top: 100px;
+        .carousel-inner{
+          margin-left: -50%;
+          overflow: visible;
+          height:100%;
+          padding-top: 109px;
+          background: url("../images/primary/iPhone-.jpg") no-repeat left top;
+          .item{
+            position: relative;
+            img{
+              -webkit-transform: translateX(8px);
+              -moz-transform: translateX(8px);
+              -ms-transform: translateX(8px);
+              -o-transform: translateX(8px);
+              transform: translateX(8px);
+            }
+            .P-item{
+              position: absolute;
+              right:-410px;
+              top:60px;
+              text-align: center;
+              h2{
+                font-size: 40px;
+                margin-bottom: 40px;
+                span{
+                  color: #f40009;
+                }
+              }
+              p{
+                font-size: 22px;
+              }
+              img{
+                margin-top: 20px;
+                display: block;
+              }
+              .P-item-p{
+                font-size: 12px;
+                display: block;
+                text-align: center;
+              }
+            }
+          }
+        }
+
+        .t-left{
+          background: url("../images/primary/btn-left.png") no-repeat center;
+          width:25px;
+          height:49px;
+          top:50%;
+          left: -280px;
+        }
+        .t-right{
+          background: url("../images/primary/btn-right.png") no-repeat center;
+          height:49px;
+          width:25px;
+          top:50%;
+          left:720px;
+        }
+      }
+    }
+    //轮播图样式
+    .carousel-fade {
+      .carousel-inner {
+        .item {
+          transition-property: opacity;
+        }
+
+        .item,
+        .active.left,
+        .active.right {
+          opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+          opacity: 1;
+        }
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+          left: 0;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      .carousel-control {
+        z-index: 2;
+      }
+    }
+    //轮播图样式
+  }
+  .banner3 {
+    height:857px;
+    background-color: #f5f5f5;
+    .content{
+      p{
+        line-height: 30px;
+        padding-left: 175px;
+        font-size: 16px;
+        color: #626262;
+        text-align: left;
+        position: relative;
+        span{
+          display: inline-block;
+          position: absolute;
+          width:26px;
+          height:4px;
+          left:130px;
+          top:50%;
+          margin-top: -2px;
+          background-color: #5793f3;
+        }
+      }
+      ul{
+        padding-left: 150px;
+        padding-top: 40px;
+
+        li{
+          float: left;
+          font-size: 24px;
+          color: #333333;
+          margin-right: 60px;
+          position: relative;
+          &:before{
+            content: '';
+            background-color: #979797;
+            width:8px;
+            height: 8px;
+            position: absolute;
+            left:-20px;
+            top:50%;
+            border-radius: 4px;
+            margin-top: -4px;
+          }
+        }
+      }
+    }
+  }
+  .banner4 {
+    height:500px;
+    background-color: #FFF;
+    .content{
+      overflow: hidden;
+      height:100%;
+      h1{
+        margin-bottom: 80px;
+      }
+      #Students{
+        .carousel-indicators{
+          bottom: -40px;
+          li{
+            border:1px solid #f40009;
+            margin:0 5px;
+          }
+          .active{
+            background-color:#f40009;
+          }
+        }
+        .carousel-inner{
+          overflow: visible;
+          .item{
+            text-align: center;
+            .center{
+              display: inline-block;
+              li{
+                float: left;
+                width:348px;
+                height: 212px;
+                border-radius: 5px;
+                background-color: #f8f8f8;
+                margin: 0 12px;
+                padding: 10px 45px;
+                font-size: 16px;
+                position: relative;
+                img{
+                  position: absolute;
+                  left:-15px;
+                  top:-37px;
+                }
+                .p1{
+                  margin-bottom: 15px;
+                  span{
+                    font-size: 18px;
+                    display: inline-block;
+                    margin-right: 20px;
+                  }
+                }
+                .p2{
+                  text-align: left;
+                  text-indent: 2em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .banner5 {
+    height:670px;
+    background: url('../images/parents/bg.jpg') no-repeat center;
+    .content{
+      .center{
+        margin-top: 33px;
+        width:932px;
+        height: 536px;
+        background: url("../images/parents/macbook-retina.png") no-repeat center;
+        ul{
+          width:712px;
+          height:445px;
+          padding-top: 30px;
+          .li0{
+            color: #FFF;
+            height:50px;
+            line-height: 50px;
+            background-color: #ea300a;
+            .span1,.span3{
+              background-color:#da2b07;
+              border-top: 0;
+            }
+            .span2{
+              border-top: 0;
+            }
+            .span2,.span3{
+              border-left: 0;
+            }
+          }
+          li{
+            height:44px;
+            line-height: 43px;
+            font-size: 16px;
+            color: #000;
+            background-color: #fff;
+            text-align: center;
+            &:nth-child(2){
+              span{
+                border-top: 0;
+              }
+            }
+            span{
+              display: inline-block;
+            }
+            .span1{
+              width:156px;
+              border-top: 1px dashed #f8f8f8;
+            }
+            .span2{
+              width:385px;
+              border-top: 1px dashed #f8f8f8;
+              border-left:1px dashed #f8f8f8;
+            }
+            .span3{
+              width:170px;
+              border-top: 1px dashed #f8f8f8;
+              border-left:1px dashed #f8f8f8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#myCarousel{
+}

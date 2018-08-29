@@ -1,0 +1,137 @@
+html,body{
+  height:100%;
+  min-height: 470px;
+}
+.main{
+  height:100%;
+  background: url("../images/resetPwd/bg-b.png") no-repeat center;
+  background-position: bottom;
+  .nav{
+    height:90px;
+    padding-top:30px;
+    .reset-title{
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 22px;
+      h2{
+        line-height: 40px;
+        font-size: 24px;
+        color: #494949;
+        font-weight: 600;
+      }
+      p{
+        line-height: 24px;
+        font-size: 16px;
+        color:#838383;
+      }
+    }
+  }
+  .form{
+    padding-top: 65px;
+    #resForm{
+      float: left;
+      margin-left: 182px;
+      p{
+        width:400px;
+        height:70px;
+        border-bottom: 1px solid #ffb3a3;
+        padding:25px 0 15px 50px;
+        position: relative;
+        input{
+          background-color: transparent;
+          width:100%;
+          height:100%;
+          font-size: 20px;
+        }
+        &:nth-child(1){
+          background: url("../images/resetPwd/icon-1.png") no-repeat left;
+          background-position: 3px 25px;
+        }
+        &:nth-child(2){
+          background: url("../images/resetPwd/icon-2.png") no-repeat left;
+          background-position: 3px 25px;
+        }
+        &:nth-child(3){
+          background: url("../images/resetPwd/icon-3.png") no-repeat left;
+          background-position: 3px 25px;
+        }
+        span{
+          position: absolute;
+          right: 0;
+          bottom: 20px;
+          color: #e03636;
+          font-size: 16px;
+          line-height: 18px;
+          display: none;
+          img{
+            vertical-align: text-bottom;
+            margin-right: 5px;
+          }
+        }
+        .icon-pwd{
+          position: absolute;
+          right:5px;
+          border-bottom: 16px;
+          display: none;
+          top: 25px;
+        }
+        .code-btn{
+          position: absolute;
+          right:0;
+          bottom: 10px;
+          width:130px;
+          height:40px;
+          font-size: 18px;
+          color: #FFF;
+          border-radius: 5px;
+          background-color: #e03636;
+        }
+        .wait{
+          background-color: #d3d3d3;
+        }
+      }
+      #code{
+        span{
+          right: 140px;
+        }
+      }
+      .btn0{
+        height:60px;
+        width:400px;
+        margin-top: 22px;
+        border-radius: 5px;
+        color: #FFF;
+       font-size: 22px;
+        background-color: #e03636;
+      }
+      .wait{
+        background-color: #d3d3d3;
+      }
+    }
+    .home{
+      float: left;
+      margin-left: 105px;
+      background: url("../images/resetPwd/home.png") no-repeat center;
+      height:290px;
+      width:300px;
+    }
+  }
+  .succeed{
+    padding-top: 135px;
+    height:200px;
+    position: relative;
+    display: inline-block;
+    margin:0 auto;
+    display: none;
+    .center{
+      margin-left: 35px;
+      font-size: 24px;
+      line-height: 48px;
+    }
+    .right{
+      width:160px;
+      height:100%;
+      background: url("../images/resetPwd/goHome.png") no-repeat left top;
+    }
+  }
+}

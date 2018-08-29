@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="嗨课堂,昂立嗨课堂,交大昂立嗨课堂">
+    <meta name="description"
+          content="上海交大昂立嗨课堂，传承百年交大精神，深耕教育辅导行业30余年。昂立嗨课堂从清、北、复、交等著名学府层层筛选团队，专注中小学一对一在线教育，致力于打造行业权威在线教育平台！">
+    <title>嗨课堂-忘记密码</title>
+    <link rel="icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/resetPwd.css">
+</head>
+<body style="min-width: 1180px ">
+<div class="main">
+    <div class="content">
+        <div class="nav">
+            <img src="images/logo.svg" alt="" width=160 height=60>
+            <div class="reset-title t_l">
+                <h2>重设密码</h2>
+                <p>请按要求设置您的新密码</p>
+            </div>
+        </div>
+        <div class="form clearfix">
+            <form id="resForm">
+                <p id="phone">
+                    <input class="phone" type="text" name="phone" placeholder="请输入手机号" autocomplete="off"><span><img src="images/resetPwd/icon-error.png"width=18 height=18 alt="">手机号码无效</span></p>
+                <p id="code">
+                    <input type="text" name="code" style="position: absolute;top: -999px;opacity: 0;z-index: -10">
+                    <input class="code" type="text" name="code" autocomplete="off" placeholder="验证码">
+                    <span><img src="images/resetPwd/icon-error.png" width=18 height=18 alt="">验证码错误</span>
+                    <input class="code-btn" type="button" value="重新发送"></p>
+                <p id="pwd">
+                    <input type="password" name="pwd" style="position: absolute;top: -999px;opacity: 0;z-index: -10">
+                    <input class="pwd" name="pwd" type="password" autocomplete="off" placeholder="请输入6-20位的密码，包含字母和数字">
+                    <img class="icon-pwd" src="images/resetPwd/icon-right.png" width=29 height=29></p>
+                <input id="btn" class="btn0" type="button" value="确定">
+            </form>
+            <div class="home">
+
+            </div>
+        </div>
+        <div class="succeed clearfix">
+                <img class="left FL" src="images/resetPwd/icon-right1.png" width=97 height=97 alt="">
+                <div class="center FL">
+                    <p>恭喜您密码重置成功!</p>
+                    <p>请使用新密码登录嗨课堂老师客户端!</p>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/lib/js-sha512/src/sha512.js"></script>
+<script src="js/api-config.js"></script>
+<script src="js/resetPwd.js"></script>
+</html>

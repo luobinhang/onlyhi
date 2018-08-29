@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="嗨课堂,昂立嗨课堂,交大昂立嗨课堂">
+  <meta name="description"
+        content="上海交大昂立嗨课堂，传承百年交大精神，深耕教育辅导行业30余年。昂立嗨课堂从清、北、复、交等著名学府层层筛选团队，专注中小学一对一在线教育，致力于打造行业权威在线教育平台！">
+  <title>嗨课堂</title>
+  <link rel="icon" href="../images/favicon.ico" type="../../image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="css/studentClient.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="../css/swiper-4.2.2.min.css">
+</head>
+<body>
+  <div class="header clear">
+    <div class="header-left clear">
+      <img src="images/studentClient/logo.png" alt="嗨课堂logo">
+      <p>学生客户端</p>
+    </div>
+    <div class="header-right">
+      <a href="/">返回首页</a>
+    </div>
+  </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide page-one">
+        <h2 class="title">
+          <img src="images/studentClient/page1-title.png">
+        </h2>
+        <div class="img1">
+          <img src="images/studentClient/page1-img.png">
+        </div>
+      </div>
+      <div class="swiper-slide page-two">
+        <h2 class="title">
+          <img src="images/studentClient/page2-title.png">
+        </h2>
+        <div class="img4">
+          <img src="images/studentClient/page2-img4.png">
+        </div>
+        <div class="img2">
+          <img src="images/studentClient/page2-img2.png">
+        </div>
+        <div class="img1">
+          <img src="images/studentClient/page2-img1.png">
+        </div>
+        <div class="img3">
+          <img src="images/studentClient/page2-img3.png">
+        </div>
+      </div>
+      <div class="swiper-slide page-three">
+        <h2 class="title">
+          <img src="images/studentClient/page3-title.png">
+        </h2>
+        <div class="img1">
+          <img src="images/studentClient/page3-img1.png">
+        </div>
+        <div class="img2">
+          <img src="images/studentClient/page3-img2.png">
+        </div>
+        <div class="img3">
+          <img src="images/studentClient/page3-img3.png">
+        </div>
+        <div class="img4">
+          <img src="images/studentClient/page3-img4.png">
+        </div>
+
+      </div>
+      <div class="swiper-slide page-four">
+        <h2 class="title">
+          <img src="images/studentClient/page4-title.png">
+        </h2>
+        <div class="img1">
+          <img src="images/studentClient/page4-img.png">
+        </div>
+      </div>
+      <div class="swiper-slide page-five">
+        <h2 class="title">
+          <img src="images/studentClient/page5-title.png">
+        </h2>
+        <div class="img1">
+          <img src="images/studentClient/page5-img.png">
+        </div>
+        <div class="img2">
+          <img src="images/studentClient/page5-img2.png">
+        </div>
+        <div class="img3">
+          <a href="http://download.onlyhi.cn/win7_student/haiketang-stu-beta.exe"><img src="images/studentClient/page5-img3.png"></a>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/swiper-4.2.2.min.js"></script>
+<script>
+
+  var swiper = new Swiper('.swiper-container',{
+    direction : 'vertical',
+    followFinger : false,
+    speed:800,
+    mousewheel: true,
+    autoplay: {
+     delay: 5000,
+     stopOnLastSlide: true,
+     disableOnInteraction: true,
+    },
+    pagination : {
+      el:'.swiper-pagination',
+      clickable :true,
+    },
+    keyboard: {
+      enabled: true,
+    },
+    on:{
+      init:function(swiper){
+        slide=this.slides.eq(0);
+        slide.addClass('animation');
+      },
+      transitionStart: function(){
+        for(i=0;i<this.slides.length;i++){
+          slide=this.slides.eq(i);
+          slide.removeClass('animation');
+        }
+      },
+      transitionEnd: function(){
+        slide=this.slides.eq(this.activeIndex);
+        slide.addClass('animation');
+
+      },
+    }
+  });
+
+</script>
+</html>

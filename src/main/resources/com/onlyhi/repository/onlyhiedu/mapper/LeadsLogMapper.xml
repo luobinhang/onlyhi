@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.onlyhi.repository.onlyhiedu.mapper.LeadsLogMapper" >
+  <resultMap id="BaseResultMap" type="com.onlyhi.repository.onlyhiedu.mbg_po.LeadsLog" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="grade" property="grade" jdbcType="VARCHAR" />
+    <result column="subject" property="subject" jdbcType="VARCHAR" />
+    <result column="signup_date" property="signupDate" jdbcType="TIMESTAMP" />
+    <result column="contact_time" property="contactTime" jdbcType="VARCHAR" />
+    <result column="connect_status" property="connectStatus" jdbcType="VARCHAR" />
+    <result column="channel_uuid" property="channelUuid" jdbcType="VARCHAR" />
+    <result column="jh" property="jh" jdbcType="VARCHAR" />
+    <result column="dy" property="dy" jdbcType="VARCHAR" />
+    <result column="key_num" property="keyNum" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="BIT" />
+    <result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
+    <result column="update_date" property="updateDate" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, `name`, phone, grade, subject, signup_date, contact_time, connect_status, channel_uuid, 
+    jh, dy, key_num, `status`, create_date, update_date
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.LeadsLogExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from leads_log
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from leads_log
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from leads_log
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.LeadsLogExample" >
+    delete from leads_log
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.LeadsLog" >
+    insert into leads_log (id, `name`, phone, 
+      grade, subject, signup_date, 
+      contact_time, connect_status, channel_uuid, 
+      jh, dy, key_num, `status`, 
+      create_date, update_date)
+    values (#{id,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, 
+      #{grade,jdbcType=VARCHAR}, #{subject,jdbcType=VARCHAR}, #{signupDate,jdbcType=TIMESTAMP}, 
+      #{contactTime,jdbcType=VARCHAR}, #{connectStatus,jdbcType=VARCHAR}, #{channelUuid,jdbcType=VARCHAR}, 
+      #{jh,jdbcType=VARCHAR}, #{dy,jdbcType=VARCHAR}, #{keyNum,jdbcType=VARCHAR}, #{status,jdbcType=BIT}, 
+      #{createDate,jdbcType=TIMESTAMP}, #{updateDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.LeadsLog" >
+    insert into leads_log
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="name != null" >
+        `name`,
+      </if>
+      <if test="phone != null" >
+        phone,
+      </if>
+      <if test="grade != null" >
+        grade,
+      </if>
+      <if test="subject != null" >
+        subject,
+      </if>
+      <if test="signupDate != null" >
+        signup_date,
+      </if>
+      <if test="contactTime != null" >
+        contact_time,
+      </if>
+      <if test="connectStatus != null" >
+        connect_status,
+      </if>
+      <if test="channelUuid != null" >
+        channel_uuid,
+      </if>
+      <if test="jh != null" >
+        jh,
+      </if>
+      <if test="dy != null" >
+        dy,
+      </if>
+      <if test="keyNum != null" >
+        key_num,
+      </if>
+      <if test="status != null" >
+        `status`,
+      </if>
+      <if test="createDate != null" >
+        create_date,
+      </if>
+      <if test="updateDate != null" >
+        update_date,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null" >
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null" >
+        #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="subject != null" >
+        #{subject,jdbcType=VARCHAR},
+      </if>
+      <if test="signupDate != null" >
+        #{signupDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="contactTime != null" >
+        #{contactTime,jdbcType=VARCHAR},
+      </if>
+      <if test="connectStatus != null" >
+        #{connectStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="channelUuid != null" >
+        #{channelUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="jh != null" >
+        #{jh,jdbcType=VARCHAR},
+      </if>
+      <if test="dy != null" >
+        #{dy,jdbcType=VARCHAR},
+      </if>
+      <if test="keyNum != null" >
+        #{keyNum,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=BIT},
+      </if>
+      <if test="createDate != null" >
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null" >
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.LeadsLogExample" resultType="java.lang.Integer" >
+    select count(*) from leads_log
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update leads_log
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.name != null" >
+        `name` = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.phone != null" >
+        phone = #{record.phone,jdbcType=VARCHAR},
+      </if>
+      <if test="record.grade != null" >
+        grade = #{record.grade,jdbcType=VARCHAR},
+      </if>
+      <if test="record.subject != null" >
+        subject = #{record.subject,jdbcType=VARCHAR},
+      </if>
+      <if test="record.signupDate != null" >
+        signup_date = #{record.signupDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.contactTime != null" >
+        contact_time = #{record.contactTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.connectStatus != null" >
+        connect_status = #{record.connectStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="record.channelUuid != null" >
+        channel_uuid = #{record.channelUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="record.jh != null" >
+        jh = #{record.jh,jdbcType=VARCHAR},
+      </if>
+      <if test="record.dy != null" >
+        dy = #{record.dy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.keyNum != null" >
+        key_num = #{record.keyNum,jdbcType=VARCHAR},
+      </if>
+      <if test="record.status != null" >
+        `status` = #{record.status,jdbcType=BIT},
+      </if>
+      <if test="record.createDate != null" >
+        create_date = #{record.createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateDate != null" >
+        update_date = #{record.updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update leads_log
+    set id = #{record.id,jdbcType=BIGINT},
+      `name` = #{record.name,jdbcType=VARCHAR},
+      phone = #{record.phone,jdbcType=VARCHAR},
+      grade = #{record.grade,jdbcType=VARCHAR},
+      subject = #{record.subject,jdbcType=VARCHAR},
+      signup_date = #{record.signupDate,jdbcType=TIMESTAMP},
+      contact_time = #{record.contactTime,jdbcType=VARCHAR},
+      connect_status = #{record.connectStatus,jdbcType=VARCHAR},
+      channel_uuid = #{record.channelUuid,jdbcType=VARCHAR},
+      jh = #{record.jh,jdbcType=VARCHAR},
+      dy = #{record.dy,jdbcType=VARCHAR},
+      key_num = #{record.keyNum,jdbcType=VARCHAR},
+      `status` = #{record.status,jdbcType=BIT},
+      create_date = #{record.createDate,jdbcType=TIMESTAMP},
+      update_date = #{record.updateDate,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.LeadsLog" >
+    update leads_log
+    <set >
+      <if test="name != null" >
+        `name` = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null" >
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null" >
+        grade = #{grade,jdbcType=VARCHAR},
+      </if>
+      <if test="subject != null" >
+        subject = #{subject,jdbcType=VARCHAR},
+      </if>
+      <if test="signupDate != null" >
+        signup_date = #{signupDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="contactTime != null" >
+        contact_time = #{contactTime,jdbcType=VARCHAR},
+      </if>
+      <if test="connectStatus != null" >
+        connect_status = #{connectStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="channelUuid != null" >
+        channel_uuid = #{channelUuid,jdbcType=VARCHAR},
+      </if>
+      <if test="jh != null" >
+        jh = #{jh,jdbcType=VARCHAR},
+      </if>
+      <if test="dy != null" >
+        dy = #{dy,jdbcType=VARCHAR},
+      </if>
+      <if test="keyNum != null" >
+        key_num = #{keyNum,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        `status` = #{status,jdbcType=BIT},
+      </if>
+      <if test="createDate != null" >
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateDate != null" >
+        update_date = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.onlyhi.repository.onlyhiedu.mbg_po.LeadsLog" >
+    update leads_log
+    set `name` = #{name,jdbcType=VARCHAR},
+      phone = #{phone,jdbcType=VARCHAR},
+      grade = #{grade,jdbcType=VARCHAR},
+      subject = #{subject,jdbcType=VARCHAR},
+      signup_date = #{signupDate,jdbcType=TIMESTAMP},
+      contact_time = #{contactTime,jdbcType=VARCHAR},
+      connect_status = #{connectStatus,jdbcType=VARCHAR},
+      channel_uuid = #{channelUuid,jdbcType=VARCHAR},
+      jh = #{jh,jdbcType=VARCHAR},
+      dy = #{dy,jdbcType=VARCHAR},
+      key_num = #{keyNum,jdbcType=VARCHAR},
+      `status` = #{status,jdbcType=BIT},
+      create_date = #{createDate,jdbcType=TIMESTAMP},
+      update_date = #{updateDate,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

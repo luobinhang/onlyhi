@@ -1,0 +1,406 @@
+.nav #weixin {
+  position: fixed;
+  z-index: 9999;
+  width: 300px;
+  height: 400px;
+  left: 50%;
+  top: 50%;
+  display: none;
+  background-color: #FFF;
+  padding-top: 20px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.nav #weixin .weixin_img {
+  width: 100%;
+  height: auto;
+}
+.nav #weixin a {
+  display: block;
+  width: 125px;
+  margin-top: 20px;
+  margin: 10px auto;
+  height: 34px;
+  text-decoration: underline;
+  font-size: 20px;
+  text-align: center;
+  line-height: 34px;
+  color: #f40009;
+}
+.nav #weixin .close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.nav #tool {
+  width: 460px;
+  height: 230px;
+  position: fixed;
+  left: 50%;
+  top: 200px;
+  margin-left: -233px;
+  box-sizing: border-box;
+  background-color: #FFF;
+  z-index: 9999;
+  display: none;
+  padding: 0 70px;
+  border-radius: 4px;
+}
+.nav #tool #problem {
+  background-color: #f40009;
+  color: #FFF;
+}
+.nav #tool #close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.nav #tool #login {
+  display: block;
+  margin: 30px auto;
+}
+.nav #tool p {
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  color: #5E5E5E;
+}
+.nav #tool a {
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+  color: #5E5E5E;
+  font-weight: bold;
+  height: 34px;
+  width: 134px;
+  line-height: 34px;
+  border: 1px solid #CDCDCD;
+}
+.nav #tool a:hover {
+  background-color: #f40009;
+  color: #FFF;
+  border: 0;
+}
+.nav #BaiduUmoney {
+  width: 460px;
+  height: 300px;
+  position: fixed;
+  left: 50%;
+  top: 200px;
+  margin-left: -233px;
+  box-sizing: border-box;
+  background-color: #FFF;
+  z-index: 9999;
+  text-align: center;
+  display: none;
+  padding: 24px 50px;
+  border-radius: 4px;
+}
+.nav #BaiduUmoney #close1 {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.nav #BaiduUmoney .title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  line-height: 25px;
+}
+.nav #BaiduUmoney .msg {
+  color: #F42D00;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.nav #BaiduUmoney label {
+  width: 90px;
+  display: inline-block;
+  text-align: right;
+}
+.nav #BaiduUmoney input {
+  width: 240px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 6px;
+  box-sizing: border-box;
+}
+.nav #BaiduUmoney .put {
+  display: inline-block;
+  width: 136px;
+  height: 35px;
+  background-color: #F52D00;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: #FFF;
+}
+.nav #MianXi {
+  width: 460px;
+  height: 340px;
+  position: fixed;
+  left: 50%;
+  top: 200px;
+  margin-left: -233px;
+  box-sizing: border-box;
+  background-color: #FFF;
+  z-index: 9999;
+  text-align: center;
+  display: none;
+  padding: 24px 50px;
+  border-radius: 4px;
+}
+.nav #MianXi #close2 {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.nav #MianXi .title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  line-height: 25px;
+}
+.nav #MianXi .msg {
+  color: #F42D00;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.nav #MianXi label {
+  width: 90px;
+  display: inline-block;
+  text-align: right;
+}
+.nav #MianXi input,
+.nav #MianXi select {
+  width: 240px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 6px;
+  box-sizing: border-box;
+}
+.nav #MianXi #Mput {
+  display: inline-block;
+  width: 136px;
+  height: 35px;
+  background-color: #F52D00;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: #FFF;
+}
+.nav #overlay,
+.nav #overlay-m {
+  background: #000;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  display: none;
+}
+.nav #ICBCPayMethod {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  display: none;
+}
+.nav #ICBCPayMethod div {
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav #ICBCPayMethod div img.ICBCCode {
+  height: 100%;
+}
+.nav #ICBCPayMethod div .closeICBC {
+  position: absolute;
+  right: 24px;
+  top: 20px;
+  cursor: pointer;
+}
+.main {
+  color: #777777;
+}
+.main .color {
+  color: #434343;
+}
+.main .order {
+  background-color: #FFF;
+  border: 1px solid #F5F5F5;
+  padding: 0 15px;
+}
+.main .order .orderRight .Money {
+  text-align: right;
+}
+.main .order .orderRight #count {
+  display: inline-block;
+  color: #f40009;
+}
+.main .order .orderLeft .orderGrade {
+  color: #333333;
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.main .order p {
+  line-height: 60px;
+}
+.main .payment {
+  padding: 18px 15px;
+  background-color: #F5F5F5;
+  margin-top: 20px;
+}
+.main .payment .paymentTop {
+  height: 125px;
+}
+.main .payment .paymentTop .paymentTopR {
+  text-align: right;
+}
+.main .payment .paymentTop .paymentTopR a {
+  color: #1698D0;
+  text-decoration: underline;
+}
+.main .payment .paymentTop .paymentTopL p {
+  margin-top: 10px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.main .payment .paymentTop .paymentTopL #payment li {
+  font-size: 14px;
+  float: left;
+  width: 125px;
+  height: 34px;
+  border-radius: 4px;
+  margin-right: 40px;
+  text-align: center;
+  margin-left: 10px;
+  line-height: 34px;
+  font-weight: bold;
+  color: #BBBBBB;
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+.main .payment .paymentTop .paymentTopL #payment li.outLine {
+  padding-left: 0;
+}
+.main .payment .paymentTop .paymentTopL #payment li.weixin {
+  background: url("../buy_images/payment/wx.png") center center;
+  background-size: cover;
+}
+.main .payment .paymentTop .paymentTopL #payment li.weixin.pick {
+  background: url("../buy_images/payment/w 2.png") center center;
+  background-size: cover;
+}
+.main .payment .paymentTop .paymentTopL #payment li.alipay {
+  background: url("../buy_images/payment/z 2.png") center center;
+  background-size: cover;
+}
+.main .payment .paymentTop .paymentTopL #payment li.alipay.pick {
+  background: url("../buy_images/payment/z-x.png") center center;
+  background-size: cover;
+}
+.main .payment .paymentTop .paymentTopL #payment li.unionpay {
+  background: url("../buy_images/payment/y.png") center center;
+  background-size: cover;
+}
+.main .payment .paymentTop .paymentTopL #payment li.unionpay.pick {
+  background: url("../buy_images/payment/yx-.png") center center;
+  background-size: cover;
+}
+.main .payment .paymentTop .paymentTopL #payment li.BaiduUmoney {
+  background: url("../buy_images/payment/BaiduUmoney1.jpg") center center;
+  background-size: cover;
+}
+.main .payment .paymentTop .paymentTopL #payment li.BaiduUmoney.pick {
+  background: url("../buy_images/payment/BaiduUmoney2.jpg") center center;
+  background-size: cover;
+}
+.main .payment .paymentTop .paymentTopL #payment li.MianXi {
+  background: url("../buy_images/payment/haimi.png") center center;
+  background-size: cover;
+}
+.main .payment .paymentTop .paymentTopL #payment li.MianXi.pick {
+  background: url("../buy_images/payment/haimi1.png") center center;
+  background-size: cover;
+}
+.main .payment .paymentTop .paymentTopL #payment li.offLine {
+  background: url("../buy_images/payment/xx.png") center center;
+  background-size: cover;
+}
+.main .payment .paymentTop .paymentTopL #payment li.offLine.pick {
+  background: url("../buy_images/payment/xxz.png") center center;
+  background-size: cover;
+}
+.main .payment .paymentTop .paymentTopL #payment li.ICBC_E {
+  width: 240px;
+  background: url(../buy_images/payment/ICBC.jpg) no-repeat center;
+  background-size: 100% 100%;
+}
+.main .payment .paymentBottom {
+  border-top: 1px solid #CBCBCB;
+  padding: 0 27px;
+  position: relative;
+  display: none;
+}
+.main .payment .paymentBottom .ICBCback {
+  width: 400px;
+  height: 160px;
+  margin-top: 18px;
+  padding: 0 14px;
+  border-radius: 10px;
+  float: left;
+  font-size: 16px;
+  background-color: #FFF;
+}
+.main .payment .paymentBottom .ICBCback h3 {
+  padding: 20px 0;
+}
+.main .payment .paymentBottom .ICBCback h3 img {
+  vertical-align: middle;
+}
+.main .payment .paymentBottom .ICBCback h3 span {
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 14px;
+  border-bottom: 1px solid #777777;
+  height: 24px;
+}
+.main .payment .paymentBottom .ICBCback p {
+  line-height: 26px;
+}
+.main .next0 {
+  display: inline-block;
+  float: right;
+  margin-top: 50px;
+}
+.main .next0 .next {
+  width: 107px;
+  height: 32px;
+  background-color: #f40009;
+  border-radius: 5px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 12px;
+  color: #FFF;
+}
+.main .next0 .next img {
+  vertical-align: middle;
+  margin-left: 5px;
+}

@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>嗨课堂兼职老师报名——上市国企在线一对一辅导品牌</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="t/css/teacher_global.css">
+    <link rel="stylesheet" href="t/css/teacher_sign.css">
+    <link rel="stylesheet" href="js/lib/jquery-editable-select-master/dist/jquery-editable-select.css">
+    <style>
+        body {
+            background-color: #F2F2F2;
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script src="t/js/weixin.js"></script>
+    <script src="js/lib/jquery-editable-select-master/dist/jquery-editable-select.js"></script>
+    <script src="js/api-config.js"></script>
+    <script src="t/js/teacher-sign.js"></script>
+</head>
+<body>
+<div class="seccess">
+    <h1>恭喜您报名成功！</h1>
+    <p class="top">我们将向您的邮箱发送试讲邮件，请您注意查收！</p>
+
+    <img src="t/img/teacher-sign/erweima.jpg" alt="二维码关注微信公众号">
+    <p class="bottom">如果您有任何疑问可以长按上方二维码关注微信公众号 嗨课堂在线讲师平台 进行咨询。</p>
+</div>
+
+<div class="first">
+
+    <img id=title src="t/img/teacher-sign/title.png" alt="嗨课堂">
+    <div class="border">
+        <div class="content">
+            <form id="Myform">
+                <section class="select1">
+                    <div class="t_l"><h1>· 基本信息</h1></div>
+                    <!--<input name="agentName" id="agentName" type="text" style="display: none;" value="">-->
+                    <input name="agentType" id="agentType" type="text" style="display: none;" value="">
+                    <p><input name="tcName" id="name" type="text" placeholder="姓名"
+                              required="required"></p>
+                    <p><input name="phone" id="phone" type="tel" placeholder="手机"
+                              required="required"></p>
+                    <p><input name="email" id="mail" type="email" placeholder="邮箱"
+                              required="required"></p>
+                    <p><select name="schoolLocation" id="editable-select" placeholder="院校">
+                        <option value="在职教师">在职教师</option>
+                        <option value="北京大学">北京大学</option>
+                        <option value="清华大学">清华大学</option>
+                        <option value="南京大学">南京大学</option>
+                        <option value="武汉大学">武汉大学</option>
+                        <option value="浙江大学">浙江大学</option>
+                        <option value="厦门大学">厦门大学</option>
+                        <option value="同济大学">同济大学</option>
+                        <option value="南开大学">南开大学</option>
+                        <option value="四川大学">四川大学</option>
+                        <option value="山东大学">山东大学</option>
+                        <option value="天津大学">天津大学</option>
+                        <option value="上海交通大学">上海交通大学</option>
+                        <option value="中国科学院大学">中国科学院大学</option>
+                        <option value="西安交通大学">西安交通大学</option>
+                        <option value="中国科学技术大学">中国科学技术大学</option>
+                        <option value="哈尔滨工业大学">哈尔滨工业大学</option>
+                        <option value="华中科技大学">华中科技大学</option>
+                        <option value="大连理工大学">大连理工大学</option>
+                        <option value="北京航空航天大学">北京航空航天大学</option>
+                        <option value="吉林大学">吉林大学</option>
+                        <option value="东南大学">东南大学</option>
+                        <option value="西北工业大学">西北工业大学</option>
+                        <option value="西北大学">西北大学</option>
+                        <option value="北京理工大学">北京理工大学</option>
+                        <option value="兰州大学">兰州大学</option>
+                        <option value="西北农林科技大学">西北农林科技大学</option>
+                        <option value="中南大学">中南大学</option>
+                        <option value="中国海洋大学">中国海洋大学</option>
+                        <option value="中国人民大学">中国人民大学</option>
+                        <option value="复旦大学">复旦大学</option>
+                        <option value="中山大学">中山大学</option>
+                        <option value="华南理工大学">华南理工大学</option>
+                        <option value="湖南大学">湖南大学</option>
+                        <option value="中南大学">中南大学</option>
+                        <option value="重庆大学">重庆大学</option>
+                        <option value="电子科技大学">电子科技大学</option>
+                        <option value="东北大学">东北大学</option>
+                        <option value="中国农业大学">中国农业大学</option>
+                        <option value="国防科技大学">国防科技大学</option>
+                        <option value="中央民族大学">中央民族大学</option>
+                        <option value="国际关系学院">国际关系学院</option>
+                        <option value="中国政法大学">中国政法大学</option>
+                        <option value="西南政法大学">西南政法大学</option>
+                        <option value="华东师范大学">华东师范大学</option>
+                        <option value="北京师范大学">北京师范大学</option>
+                        <option value="陕西师范大学">陕西师范大学</option>
+                        <option value="上海外国语大学">上海外国语大学</option>
+                        <option value="北京外国语大学">北京外国语大学</option>
+                        <option value="中南财经政法大学">中南财经政法大学</option>
+                        <option value="西南财经大学">西南财经大学</option>
+                        <option value="中央财经大学">中央财经大学</option>
+                        <option value="上海财经大学">上海财经大学</option>
+                        <option value="香港大学">香港大学</option>
+                        <option value="香港中文大学">香港中文大学</option>
+                        <option value="香港理工大学">香港理工大学</option>
+                        <option value="东北师范大学">东北师范大学</option>
+                        <option value="华中师范大学">华中师范大学</option>
+                        <option value="华南师范大学">华南师范大学</option>
+                        <option value="湖南师范大学">湖南师范大学</option>
+                        <option value="西安电子科技大学">西安电子科技大学</option>
+                        <option value="郑州大学">郑州大学</option>
+                        <option value="南京航空航天大学">南京航空航天大学</option>
+                        <option value="中国矿业大学">中国矿业大学</option>
+                        <option value="武汉理工大学">武汉理工大学</option>
+                        <option value="中国社会科学院大学">中国社会科学院大学</option>
+                        <option value="南京师范大学">南京师范大学</option>
+                        <option value="南京理工大学">南京理工大学</option>
+                        <option value="华东理工大学">华东理工大学</option>
+                        <option value="苏州大学">苏州大学</option>
+                        <option value="江南大学">江南大学</option>
+                        <option value="国外名校">国外名校</option>
+                    </select>
+                    </p>
+                    <p><input name="qq" id="qq" type="num" placeholder="QQ"></p>
+                    <p><input name="wechat" id="wechat" type="" placeholder="微信号"></p>
+                </section>
+                <section class="select2">
+                    <div class="t_l"><h1>· 教授学科</h1><span>(第一志愿不能为空，其他志愿为选填)</span></div>
+                    <p class="select-down">
+                        <select class="select" name="teachingSubject" id="teachingSubject" required>
+                            <option value="" style="display: none"></option>
+                        </select>
+                        <b>第一志愿</b>
+                    </p>
+                    <p class="select-down">
+                        <select class="select" name="secondSubject" id="secondSubject">
+                            <option value="" style="display: none"></option>
+                        </select>
+                        <b>第二志愿</b>
+                    </p>
+                    <p class="select-down">
+                        <select class="select" name="thirdSubject" id="thirdSubject">
+                            <option value="" style="display: none"></option>
+                        </select>
+                        <b>第三志愿</b>
+                    </p>
+                </section>
+                <section class="select3">
+                    <div class="t_l"><h1>· 年级偏好</h1><span>(请选择一项年级偏好)</span></div>
+                    <div class="t_l">
+                        <p class="select-down">
+                            <select name="gradePreference" id="gradePreference">
+                                <option value="" style="display: none"></option>
+                                <option value="1">小学</option>
+                                <option value="2">小学,初中</option>
+                                <option value="3">小学,初中,高中</option>
+                                <option value="4">初中</option>
+                                <option value="5">初中,高中</option>
+                                <option value="6">高中</option>
+                            </select>
+                            <b>年级</b>
+                        </p>
+                    </div>
+                </section>
+                <section class="select4">
+                    <div class="t_l"><h1>推荐人</h1><span>(如果有推荐人请输入)</span></div>
+                    <p>
+                        <!--<label>推荐人</label>-->
+                        <input id="agentName" name="agentName" type="text" placeholder="请输入姓名或手机号">
+                    </p >
+                </section>
+            </form>
+            <button id="btn">提 交</button>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
